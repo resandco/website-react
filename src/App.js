@@ -44,7 +44,8 @@ function App() {
   return (
     <Route>
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={Home4} />
+        <Route path="/index1" component={Home} />
         <Route path="/index2" component={Home2} />
         <Route path="/index3" component={Home3} />
         <Route path="/index4" component={Home4} />
@@ -56,6 +57,7 @@ function App() {
         <Route path="/listing-list" component={ListingList} />
         <Route path="/list-map-view" component={ListMapView} />
         <Route path="/list-map-view2" component={ListMapView2} />
+        <Route path="/reservation-restaurant" component={ListMapView2} />
         <Route path="/list-left-sidebar" component={ListLeftSidebar} />
         <Route path="/list-right-sidebar" component={ListRightSidebar} />
         <Route path="/listing-details" component={ListingDetails} />

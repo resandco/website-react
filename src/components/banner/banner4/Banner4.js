@@ -1,25 +1,21 @@
 import React from 'react';
-import BannerOneSearchInput from "../banner1/BannerOneSearchInput";
+import Banner4SearchInput from "./Banner4SearchInput";
 import SectionsHeading from "../../common/SectionsHeading";
 import { FiChevronDown } from 'react-icons/fi'
 
-function Banner4({videoUrl}) {
+function Banner4() {
     return (
         <>
             <section className="hero-wrapper hero-wrapper4">
                 <div className="hero-overlay"></div>
-                <div className="video-bg">
-                    <video autoPlay loop>
-                        <source src={videoUrl} />
-                    </video>
-                </div>
+                
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="hero-heading">
-                                <SectionsHeading title="Find the Best Places to Be" desc="Discover the best places to stay, eat, shop & visit the city nearest to you." />
+                                <SectionsHeading title="Mangez au restaurant autrement" desc="Réservez votre menu surprise anti-gaspi" />
                             </div>
-                            <BannerOneSearchInput />
+                            <Banner4SearchInput />
                         </div>
                     </div>
                 </div>

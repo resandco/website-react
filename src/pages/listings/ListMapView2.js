@@ -22,7 +22,7 @@ class ListMapView2 extends Component {
                 <GeneralHeader />
 
                 {/* Place List */}
-                <section className="card-area margin-top-190px padding-bottom-100px">
+                <section className="card-area margin-top-100px padding-bottom-100px">
                     <div className="container">
                         <div className="row align-items-start">
 
@@ -32,10 +32,7 @@ class ListMapView2 extends Component {
                                         <MapViewCluster />
                                     </div>
                                 </div>
-                                <div className="margin-top-30px">
-                                    <GenericHeader />
-                                </div>
-                                <div className="row twocol align-items-start justify-content-start">
+                                <div className="row twocol align-items-start justify-content-start margin-top-30px">
                                     <PlaceGrid />
                                 </div>
                             </div>

@@ -17,7 +17,7 @@ export default class GeneralHeader extends Component {
     }
 
     state = {
-        logo: require('../../assets/images/logo.png')
+        logo: require('../../assets/images/logo-resandco.png')
     }
     render() {
         return (
@@ -35,9 +35,6 @@ export default class GeneralHeader extends Component {
 
                                         {/* Navbar */}
                                         <Navbar />
-
-                                        {/* Author Access */}
-                                        <HeaderAuthorAccess />
                                     </div>
                                 </div>
                             </div>

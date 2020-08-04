@@ -8,26 +8,26 @@ class IconBoxTwo extends Component {
             {
                 id: 1,
                 icon: <FaSearchPlus />,
-                title: 'Find a Place',
-                desc: 'Proin dapibus nisl ornare diam varius ecos tempus. Aenean a quam'
+                title: 'Découverte',
+                desc: 'Découvrez de nouveaux restaurants et de nouvelles saveurs'
             },
             {
                 id: 2,
                 icon: <FaRegMap />,
-                title: 'Select a location',
-                desc: 'Proin dapibus nisl ornare diam varius ecos tempus. Aenean a quam'
+                title: 'Eco-responsable',
+                desc: 'Optez pour une restauration qui limite le gaspillage alimentaire'
             },
             {
                 id: 3,
                 icon: <FaSort />,
-                title: 'Select a Category',
-                desc: 'Proin dapibus nisl ornare diam varius ecos tempus. Aenean a quam'
+                title: 'Surprise',
+                desc: 'Laissez-vous surprendre par un menu surprise sélectionné par le Chef'
             },
             {
                 id: 4,
                 icon: <FiCheckCircle />,
-                title: 'See Result',
-                desc: 'Proin dapibus nisl ornare diam varius ecos tempus. Aenean a quam'
+                title: 'Promotion',
+                desc: 'Bénéficiez d’un tarif réduit sur le prix habituel du menu'
             }
         ]
     }
@@ -43,7 +43,6 @@ class IconBoxTwo extends Component {
                                         <span className="d-inline-block">
                                             {item.icon}
                                         </span>
-                                        <span className="info-number">{item.id}</span>
                                     </div>
                                     <div className="info-content">
                                         <h4 className="info__title">

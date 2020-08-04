@@ -14,21 +14,8 @@ function ListingListSidebar() {
     return (
         <>
             <div className="sidebar">
-                <WidgetSearch />
                 <WidgetFilterCategory />
-                <WidgetFilterPrice />
-                <WidgetFilterTags />
-                <WidgetFilterFeatures />
                 <WidgetSortBy />
-                <WidgetFilterRatings />
-                <WidgetPostedBy />
-                <div className="sidebar-widget">
-                    <div className="btn-box">
-                        <Button text="apply filter" url="#" className="d-block w-100 text-center">
-                            <span className="d-inline-block"><BsChevronRight /></span>
-                        </Button>
-                    </div>
-                </div>
             </div>
         </>
     );

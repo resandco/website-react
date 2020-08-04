@@ -2,11 +2,10 @@ import React, {Component} from 'react';
 import GeneralHeader from "../../components/common/GeneralHeader";
 import Banner4 from "../../components/banner/banner4/Banner4";
 import SectionsHeading from "../../components/common/SectionsHeading";
-import BrowseCategoriesTwo from "../../components/other/categories/BrowseCategoriesTwo";
 import IconBoxTwo from "../../components/other/iconboxes/IconBoxTwo";
-import PlaceOne from "../../components/places/PlaceOne";
 import FunFactsOne from "../../components/other/funfacts/funfacts1/FunFactsOne";
 import InfoBox2 from "../../components/other/infoboxes/InfoBox2";
+import RecommendedPlace from "../../components/places/RecommendedPlace";
 import Button from "../../components/common/Button";
 import Testimonial from "../../components/sliders/Testimonial";
 import SectionDivider from "../../components/common/SectionDivider";
@@ -50,75 +49,29 @@ class Home4 extends Component {
                 {/* Banner */}
                 <Banner4 videoUrl={this.state.videoSrc} />
 
-                {/* Browse Categories */}
-                <section className="cat-area padding-top-100px padding-bottom-90px">
+                {/* Recommended Place */}
+                <section className="card-area padding-top-100px padding-bottom-90px text-left">
                     <div className="container">
-                        <div className="row section-title-width text-center">
-                            <SectionsHeading title="Browse by Categories" titleClass=" before-none pt-0" desc="Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortors." />
+                        <div className="row section-title-width text-left">
+                            <SectionsHeading title="Les restaurants Res&Co" />
                         </div>
-
-                        <BrowseCategoriesTwo />
+                        <RecommendedPlace />
                     </div>
                 </section>
 
-                {/* How it work */}
-                <section className="hiw-area text-center padding-top-100px padding-bottom-80px">
+                {/* How it works */}
+                <section className="hiw-area text-left padding-top-100px padding-bottom-80px">
                     <div className="container">
-                        <div className="row section-title-width text-center">
-                            <SectionsHeading title="How Dirto Works" titleClass=" before-none pt-0" desc="Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortors." />
+                        <div className="row section-title-width text-left">
+                            <SectionsHeading
+                                title="Res&Co c'est quoi ?"
+                                titleClass=" before-none pt-0"
+                                desc="
+                                    La seule plateforme de réservation de tables avec un menu surprise à prix réduit pour lutter contre le gaspillage alimentaire des restaurants de votre quartier.
+                                " />
                         </div>
 
                         <IconBoxTwo />
-                    </div>
-                </section>
-
-                {/* Most Visited Place */}
-                <section className="card-area text-center padding-top-100px padding-bottom-100px">
-                    <div className="container">
-                        <div className="row section-title-width text-center">
-                            <SectionsHeading title="Most Visited Places" titleClass=" before-none pt-0" desc="Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortors." />
-                        </div>
-
-                        <PlaceOne />
-                    </div>
-                </section>
-
-                {/* FunFacts */}
-                <section className="funfact-area section-bg-2 padding-top-100px padding-bottom-50px text-center">
-                    <div className="container">
-                        <div className="row section-title-width">
-                            <SectionsHeading title="Numbers Say Everything" titleClass=" text-white before-none pt-0" desc="Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortors." />
-                        </div>
-
-                        <FunFactsOne />
-                    </div>
-                </section>
-
-                {/* How It Word */}
-                <section className="hiw-area padding-top-100px padding-bottom-80px after-none text-center">
-                    <div className="container">
-                        <div className="row section-title-width text-center">
-                            <SectionsHeading title="What We Offer" titleClass=" before-none pt-0" desc="Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortors." />
-                        </div>
-
-                        <InfoBox2 />
-                    </div>
-                </section>
-
-                {/* CTA */}
-                <section className="cta-area section-bg column-sm-center padding-top-80px padding-bottom-80px">
-                    <div className="container">
-                        <div className="row align-items-center">
-                            <div className="col-lg-9 text-left">
-                                <SectionsHeading title="Dirto is the best way to find & discover great local businesses" titleClass=" before-none pt-0 mb-3 font-size-28" descClass=" font-size-17" desc="Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero" />
-                            </div>
-
-                            <div className="col-lg-3">
-                                <div className="btn-box">
-                                    <Button text="Create Account" url="/sign-up" />
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </section>
 
@@ -131,7 +84,7 @@ class Home4 extends Component {
                     })}
                     <div className="container">
                         <div className="row section-title-width text-center">
-                            <SectionsHeading title="What Our Users Said" titleClass=" before-none pt-0" desc="Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortors." />
+                            <SectionsHeading title="Témoignages de gourmets" titleClass=" before-none pt-0" />
                         </div>
                         <div className="row">
                             <div className="col-lg-8 mx-auto mt-4">
@@ -154,14 +107,6 @@ class Home4 extends Component {
 
                     </div>
                 </section>
-
-                {/* CTA 2 */}
-                <section className="cta-area cta-area3 padding-top-100px padding-bottom-100px section-bg">
-                    <CtaOne />
-                </section>
-
-                {/* Client Logo */}
-                <ClientLogo />
 
                 {/* NewsLetter */}
                 <NewsLetter />
