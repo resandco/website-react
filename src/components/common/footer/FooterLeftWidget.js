@@ -4,8 +4,8 @@ import SocialProfile from "../../other/account/SocialProfile";
 
 class FooterLeftWidget extends Component {
     state = {
-        logo: require('../../../assets/images/logo2.png'),
-        desc: 'Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros',
+        logo: require('../../../assets/images/logo-resandco.png'),
+        desc: 'La solution anti-gaspi de vos restaurants préférés.',
     }
     render() {
         return (

@@ -18,7 +18,6 @@ import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 
 class Home4 extends Component {
     state = {
-        videoSrc: require('../../assets/video/slice-video.mp4'),
         tmimage: [
             {
                 tmimg: require('../../assets/images/testi-img1.jpg')
@@ -64,7 +63,7 @@ class Home4 extends Component {
                     <div className="container">
                         <div className="row section-title-width text-left">
                             <SectionsHeading
-                                title="Res&Co c'est quoi ?"
+                                title="Res&amp;Co c'est quoi ?"
                                 titleClass=" before-none pt-0"
                                 desc="
                                     La seule plateforme de réservation de tables avec un menu surprise à prix réduit pour lutter contre le gaspillage alimentaire des restaurants de votre quartier.
@@ -96,7 +95,7 @@ class Home4 extends Component {
 
                 <SectionDivider />
 
-                {/* Blog */}
+                {/* Blog
                 <section className="blog-area padding-top-100px padding-bottom-80px">
                     <div className="container">
                         <div className="row section-title-width text-center">
@@ -107,6 +106,7 @@ class Home4 extends Component {
 
                     </div>
                 </section>
+                */}
 
                 {/* NewsLetter */}
                 <NewsLetter />

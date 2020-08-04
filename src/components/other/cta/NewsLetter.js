@@ -12,7 +12,7 @@ class NewsLetter extends Component {
                             <div className="col-lg-12">
                                 <div className="cta-box d-flex align-items-center">
                                     <div className="col-lg-8">
-                                        <SectionsHeading title="Subscribe to Newsletter!" titleClass="text-white" desc="Subscribe to get latest updates and information." />
+                                        <SectionsHeading title="Abonnez vous à nos emails" titleClass="text-white" desc="Soyez les premiers à découvrir nos nouveaux restaurants partenaires." />
                                     </div>
                                     <div className="col-lg-4">
                                         <div className="contact-form-action">
@@ -21,8 +21,8 @@ class NewsLetter extends Component {
                                                     <span className="form-icon">
                                                         <FaRegEnvelope />
                                                     </span>
-                                                    <input className="form-control" type="email" placeholder="Enter your email" />
-                                                        <button className="theme-btn" type="submit">Subscribe</button>
+                                                    <input className="form-control" type="email" placeholder="votre@email.ici" />
+                                                        <button className="theme-btn" type="submit">S'abonner</button>
                                                 </div>
                                             </form>
                                         </div>

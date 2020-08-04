@@ -4,17 +4,13 @@ class CopyrightMenu extends Component {
     state = {
         links: [
             {
-                path: '#',
-                title: 'Terms & Conditions'
+                path: 'https://www.res-and-co.fr/mentions-legales/',
+                text: 'Mentions légales'
             },
             {
-                path: '#',
-                title: 'Privacy Policy'
+                path: 'https://www.res-and-co.fr/politique-de-confidentialite/',
+                text: 'Politique de confidentialité'
             },
-            {
-                path: '#',
-                title: 'Help Center'
-            }
         ]
     }
     render() {
@@ -24,7 +20,7 @@ class CopyrightMenu extends Component {
                     {this.state.links.map((link, index) => {
                         return (
                             <li key={index}>
-                                <a href={link.path}>{link.title}</a>
+                                <a href={link.path}>{link.text}</a>
                             </li>
                         )
                     })}

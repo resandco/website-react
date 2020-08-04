@@ -5,19 +5,17 @@ import { FaRegEnvelope } from 'react-icons/fa'
 
 class FooterContactWidget extends Component {
     state = {
-        title: 'Contact With Us',
+        title: 'Contactez nous',
         lists: [
             {
-                icon: <AiOutlineHome />,
-                text: '12345 Little Baker St, Melbourne'
-            },
-            {
                 icon: <FiHeadphones />,
-                text: '+ 61 23 8093 3400'
+                text: '01.86.70.05.20',
+                href: 'tel:0033196700520'
             },
             {
                 icon: <FaRegEnvelope />,
-                text: 'dirto@gmail.com'
+                text: 'hello@res-and-co.fr',
+                href: 'mailto:hello@res-and-co.fr'
             }
         ]
     }
@@ -33,9 +31,11 @@ class FooterContactWidget extends Component {
                             {this.state.lists.map((list, index) => {
                                 return (
                                     <li key={index}>
-                                        <span className="la">
-                                            {list.icon}
-                                        </span> {list.text}
+                                        <a href={list.href}>
+                                            <span className="la">
+                                                {list.icon}
+                                            </span> {list.text}
+                                        </a>
                                     </li>
                                 )
                             })}

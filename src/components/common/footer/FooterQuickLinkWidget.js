@@ -2,32 +2,20 @@ import React, {Component} from 'react';
 
 class FooterQuickLinkWidget extends Component {
     state = {
-        title: 'Quick Links',
+        title: 'Liens',
         links: [
             {
-                path: '/about',
-                text: 'about us'
+                path: 'https://www.res-and-co.fr/faq/',
+                text: 'À propos'
             },
             {
-                path: '/sign-up',
-                text: 'sign up'
+                path: 'https://www.res-and-co.fr/faq/',
+                text: 'FAQ'
             },
             {
-                path: '/login',
-                text: 'log in'
+                path: 'https://resandco.typeform.com/to/xP5GlH',
+                text: 'Devenir partenaire'
             },
-            {
-                path: '/add-listing',
-                text: 'add listing'
-            },
-            {
-                path: '/contact',
-                text: 'contact us'
-            },
-            {
-                path: '/pricing',
-                text: 'pricing'
-            }
         ]
     }
     render() {

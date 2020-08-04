@@ -9,24 +9,21 @@ class Testimonial extends Component {
         sliders: [
             {
                 id: '1',
-                img: require('../../assets/images/team8.jpg'),
-                title: 'Richard Doe',
-                designation: 'united states',
-                content: 'Excepteur sint occaecat cupidatat non proident sunt in culpa officia deserunt mollit anim laborum sint occaecat cupidatat non proident. Occaecat cupidatat non proident des culpa officia deserunt mollit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at cumque fuga minima molestias nihil perspiciatis repudiandae sed vitae voluptatibus?'
+                title: 'Pascal P.',
+                designation: 'Gourmet Yuman',
+                content: 'Je viens de tester le YUMAN avec Res&Co... c’est mieux qu’une surprise c’est un cadeau ! Excellentissime curry de rascasse aux carottes croquantes et courgettes fondantes : yumy ! Et l’accueil n’est pas en reste. Merci Malo, nous reviendrons.'
             },
             {
                 id: '2',
-                img: require('../../assets/images/team9.jpg'),
-                title: 'Denwen Evil',
-                designation: 'united kingdom',
-                content: 'Excepteur sint occaecat cupidatat non proident sunt in culpa officia deserunt mollit anim laborum sint occaecat cupidatat non proident. Occaecat cupidatat non proident des culpa officia deserunt mollit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at cumque fuga minima molestias nihil perspiciatis repudiandae sed vitae voluptatibus?'
+                title: 'Emeline M.',
+                designation: 'Gourmet Yuman',
+                content: 'J\'ai testé Yuman grâce à Res&Co, un resto sympa où l\'on est bien reçu et on repart en ayant très bien mangé. La formule surprise est une super idée ! On est agréablement surpris et on fait sa BA !'
             },
             {
                 id: '3',
-                img: require('../../assets/images/team10.jpg'),
-                title: 'Collis Pong',
-                designation: 'melbourne, australia',
-                content: 'Excepteur sint occaecat cupidatat non proident sunt in culpa officia deserunt mollit anim laborum sint occaecat cupidatat non proident. Occaecat cupidatat non proident des culpa officia deserunt mollit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at cumque fuga minima molestias nihil perspiciatis repudiandae sed vitae voluptatibus?'
+                title: 'Charlotte R.',
+                designation: 'Gourmet Nos Grands Mères Ont du Talent',
+                content: 'Après avoir testé un goûter et un resto, le bilan est super positif ! Personnel charmant, de belles surprises et surtout de très bons plats ! Je recommande !'
             }
         ]
     }
@@ -56,7 +53,6 @@ class Testimonial extends Component {
                                     </p>
                                 </div>
                                 <div className="testi-content">
-                                    <img src={slider.img} className="testi__img" alt="testimonial" />
                                     <h4 className="tesi__title">{slider.title}</h4>
                                     <span className="testi__meta">{slider.designation}</span>
                                 </div>

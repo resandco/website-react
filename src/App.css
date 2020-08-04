@@ -131,4 +131,11 @@ dl, ol, ul {
     background: #808996;
 }
 
+.card-image img {
+    display: block;
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
 

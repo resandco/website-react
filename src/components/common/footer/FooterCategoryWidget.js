@@ -3,32 +3,20 @@ import {Link} from "react-router-dom";
 
 class FooterCategoryWidget extends Component {
     state = {
-        title: 'Categories',
+        title: 'Le blog',
         links: [
             {
-                path: '#',
-                text: 'Shops'
+                path: 'https://www.res-and-co.fr/category/gaspillage-alimentaire/',
+                text: 'Le gaspillage alimentaire'
             },
             {
-                path: '#',
-                text: 'Hotels'
+                path: 'https://www.res-and-co.fr/category/recettes-anti-gaspi/',
+                text: 'Recettes anti-gaspi'
             },
             {
-                path: '#',
-                text: 'Restaurants'
+                path: 'https://www.res-and-co.fr/category/parole-de-restaurateurs/',
+                text: 'Paroles de restaurateurs'
             },
-            {
-                path: '#',
-                text: 'Bars'
-            },
-            {
-                path: '#',
-                text: 'Events'
-            },
-            {
-                path: '#',
-                text: 'Fitness'
-            }
         ]
     }
     render() {
