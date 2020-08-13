@@ -5,11 +5,9 @@ import useSupercluster from "use-supercluster";
 // import googleMapStyles from '../common/GoogleMapStyle'
 import mpIcon from '../../assets/images/map-marker.png'
 
-const fetcher = (...args) => fetch(...args).then(response => response.json());
-
 const Marker = ({children}) => children;
 
-export default function MapViewCluster() {
+export default function MapViewCluster({ restaurants, hoveredRestaurant, selectRestaurant }) {
 
     // 1) map setup
     const mapRef = useRef();
@@ -17,21 +15,17 @@ export default function MapViewCluster() {
     const [bounds, setBounds] = useState(null);
 
     // 2) load and format data
-    const url = "https://data.police.uk/api/crimes-street/all-crime?lat=52.6376&lng=-1.135171&data=2019-10";
-    const { data, error } = useSwr(url, fetcher);
-    const crimes = data && !error ? data.slice(0, 9) : [];
-    const points = crimes.map(crime => ({
+    const points = restaurants.map((restaurant) => ({
         type: "Feature",
         properties: {
             cluster: false,
-            crimeId: crime.id,
-            category: crime.category
+            restaurantId: restaurant.id,
         },
         geometry: {
             type: "Point",
             coordinates: [
-                parseFloat(crime.location.longitude),
-                parseFloat(crime.location.latitude)
+                parseFloat(restaurant.coordinates.lng),
+                parseFloat(restaurant.coordinates.lat)
             ]
         }
     }))
@@ -44,15 +38,19 @@ export default function MapViewCluster() {
         options: {radius: 75, maxZoom: 20}
     });
 
+    const handleMarkerClick = (placeId) => {
+        selectRestaurant(placeId)
+    }
+
     // 4) render map
     return (
         <>
             <div className="map-container map-height w-100">
                 <GoogleMapReact
                 bootstrapURLKeys={{key: 'AIzaSyAYzby4yYDVaXPmtu4jZAGR258K6IYwjIY&libraries'}}
-                defaultCenter={{lat: 52.6376, lng: -1.135171}}
+                defaultCenter={{lat: 48.853032, lng: 2.3477133}}
                 defaultZoom={12}
-                yesIWantToUseGoogleMapApiInternals
+                yesIWantToUseGoogleMapApiInternals={false}
                 onGoogleApiLoaded={({map}) => {
                     mapRef.current = map;
                 }}
@@ -65,6 +63,7 @@ export default function MapViewCluster() {
                         bounds.nw.lat
                     ])
                 }}
+                onChildClick={handleMarkerClick}
                 >
                     {clusters.map(cluster => {
                         const  [longitude, latitude]  = cluster.geometry.coordinates;
@@ -91,11 +90,14 @@ export default function MapViewCluster() {
                         }
                         return (
                             <Marker
-                                key={cluster.properties.crimeId}
+                                key={cluster.properties.restaurantId}
                                 lat={latitude}
-                                lng={longitude}>
-                                <div className="crime-marker">
-                                    <img src={mpIcon} alt="Icon"/>
+                                lng={longitude}
+                            >
+                                <div className={`restaurant-marker ${hoveredRestaurant === cluster.properties.restaurantId ? 'restaurant-marker__hover' : ''}`}>
+                                    <svg viewBox="0 0 365 560" preserveAspectRatio="none">
+                                        <path d="M182.9 551.7c0 .1.2.3.2.3s175.2-269 175.2-357.4c0-130.1-88.8-186.7-175.4-186.9C96.3 7.9 7.5 64.5 7.5 194.6 7.5 283 182.8 552 182.8 552l.1-.3zm-60.7-364.5c0-33.6 27.2-60.8 60.8-60.8 33.6 0 60.8 27.2 60.8 60.8S216.5 248 182.9 248c-33.5 0-60.7-27.2-60.7-60.8z"/>
+                                    </svg>
                                 </div>
                             </Marker>
                         )

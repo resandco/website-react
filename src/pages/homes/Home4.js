@@ -16,6 +16,10 @@ import NewsLetter from "../../components/other/cta/NewsLetter";
 import Footer from "../../components/common/footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 
+import restaurants from '../../restaurants'
+
+const threeRestaurants = Object.values(restaurants).slice(0, 3)
+
 class Home4 extends Component {
     state = {
         tmimage: [
@@ -37,7 +41,8 @@ class Home4 extends Component {
             {
                 tmimg: require('../../assets/images/testi-img6.jpg')
             }
-        ]
+        ],
+        items: threeRestaurants
     }
     render() {
         return (
@@ -46,7 +51,7 @@ class Home4 extends Component {
                 <GeneralHeader />
 
                 {/* Banner */}
-                <Banner4 videoUrl={this.state.videoSrc} />
+                <Banner4 />
 
                 {/* Recommended Place */}
                 <section className="card-area padding-top-100px padding-bottom-90px text-left">
@@ -54,7 +59,13 @@ class Home4 extends Component {
                         <div className="row section-title-width text-left">
                             <SectionsHeading title="Les restaurants Res&Co" />
                         </div>
-                        <RecommendedPlace />
+                        <div className="row mt-5">
+                            {this.state.items.map((item, index) => {
+                                return (
+                                    <RecommendedPlace place={item} key={index}/>
+                                )
+                            })}
+                        </div>
                     </div>
                 </section>
 

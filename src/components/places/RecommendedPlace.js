@@ -3,46 +3,39 @@ import restaurants from '../../restaurants'
 
 const threeRestaurants = Object.values(restaurants).slice(0, 3);
 
-class RecommendedPlace extends Component {
-    state = {
-        items: threeRestaurants
+export default function RecommendedPlace({ place, handleEnterPlace, handleLeavePlace, isSelected, isHovered }) {
+    const handleMouseEnter = () => {
+        handleEnterPlace(place.id)
     }
-    render() {
-        return (
-            <>
-                <div className="row mt-5">
-                    {this.state.items.map((item, index) => {
-                        return (
-                            <div className="col-lg-4 column-td-6" key={index}>
-                                <div className="card-item">
-                                    <a href={item.titleUrl} className="card-image-wrap">
-                                        <div className="card-image">
-                                            <img src={item.image} className="card__img" alt="Place" />
-                                            <span className={item.titleIcon ? 'badge': 'badge badge-closed' }>{item.bedge}</span>
-                                        </div>
-                                    </a>
-                                    <div className="card-content-wrap">
-                                        <div className="card-content">
-                                            <a href={item.titleUrl}>
-                                                <h5 className="card-meta">
-                                                    <span>{item.cardTypeIcon}</span> {item.cardType}
-                                                </h5>
-                                                <h4 className="card-title">{item.title} <i>{item.titleIcon}</i>
-                                                </h4>
-                                                <p className="card-sub">
-                                                    {item.stitle}, {item.scity}
-                                                </p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        )
-                    })}
-                </div>
-            </>
-        );
+    const handleMouseLeave = () => {
+        handleLeavePlace(place.id)
     }
-}
 
-export default RecommendedPlace;
+    return (
+        <>
+            <div className="col-lg-4 column-td-6"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+            >
+                <div className={`card-item ${isHovered || isSelected ? 'card-item__hover': ''}`}>
+                    <a href={place.titleUrl} className="card-image-wrap">
+                        <div className="card-image">
+                            <img src={place.image} className="card__img" alt="Place" />
+                            <span className={place.titleIcon ? 'badge': 'badge badge-closed' }>{place.badge}</span>
+                        </div>
+                    </a>
+                    <div className="card-content-wrap">
+                        <div className="card-content">
+                            <a href={place.titleUrl}>
+                                <h4 className="card-title">{place.title} <i>{place.titleIcon}</i></h4>
+                                <p className="card-sub">
+                                    {place.stitle}, {place.scity}
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
+}
