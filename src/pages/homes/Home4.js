@@ -57,7 +57,7 @@ class Home4 extends Component {
                 <section className="card-area padding-top-100px padding-bottom-90px text-left">
                     <div className="container">
                         <div className="row section-title-width text-left">
-                            <SectionsHeading title="Les restaurants Res&Co" />
+                            <SectionsHeading title="Les restaurants RES&CO" />
                         </div>
                         <div className="row mt-5">
                             {this.state.items.map((item, index) => {
@@ -74,7 +74,7 @@ class Home4 extends Component {
                     <div className="container">
                         <div className="row section-title-width text-left">
                             <SectionsHeading
-                                title="Res&amp;Co c'est quoi ?"
+                                title="RES&CO c'est quoi ?"
                                 titleClass=" before-none pt-0"
                                 desc="
                                     La seule plateforme de réservation de tables avec un menu surprise à prix réduit pour lutter contre le gaspillage alimentaire des restaurants de votre quartier.

@@ -1,9 +1,18 @@
-import React, {Component} from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { IoIosCheckmarkCircle } from "react-icons/io";
+
 import restaurants from '../../restaurants'
 
 const threeRestaurants = Object.values(restaurants).slice(0, 3);
 
-export default function RecommendedPlace({ place, handleEnterPlace, handleLeavePlace, isSelected, isHovered }) {
+export default function RecommendedPlace({
+    place,
+    handleEnterPlace = () => {},
+    handleLeavePlace = () => {},
+    isSelected,
+    isHovered
+}) {
     const handleMouseEnter = () => {
         handleEnterPlace(place.id)
     }
@@ -18,20 +27,23 @@ export default function RecommendedPlace({ place, handleEnterPlace, handleLeaveP
                 onMouseLeave={handleMouseLeave}
             >
                 <div className={`card-item ${isHovered || isSelected ? 'card-item__hover': ''}`}>
-                    <a href={place.titleUrl} className="card-image-wrap">
+                    <Link to={`/restaurant/${place.id}`} className="card-image-wrap">
                         <div className="card-image">
                             <img src={place.image} className="card__img" alt="Place" />
                             <span className={place.titleIcon ? 'badge': 'badge badge-closed' }>{place.badge}</span>
                         </div>
-                    </a>
+                    </Link>
                     <div className="card-content-wrap">
                         <div className="card-content">
-                            <a href={place.titleUrl}>
-                                <h4 className="card-title">{place.title} <i>{place.titleIcon}</i></h4>
+                            <Link to={`/restaurant/${place.id}`}>
+                                <h4 className="card-title">
+                                    { place.title }
+                                    { place.verifie ? ( <i> {<IoIosCheckmarkCircle />}</i> ) : "" }
+                                </h4>
                                 <p className="card-sub">
                                     {place.stitle}, {place.scity}
                                 </p>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

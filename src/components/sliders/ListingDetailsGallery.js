@@ -50,12 +50,8 @@ class ListingDetailsGallery extends Component {
     render() {
         return (
             <>
-                <h2 className="widget-title">
-                    {this.state.title}
-                </h2>
-                <div className="title-shape"></div>
                 <OwlCarousel
-                    className="gallery-carousel padding-top-35px"
+                    className="gallery-carousel"
                     loop
                     margin={10}
                     autoplay={true}

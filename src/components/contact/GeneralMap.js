@@ -1,84 +1,50 @@
-import React from "react"
-import markericon from '../../assets/images/map-marker.png'
+import React, {useState, useRef} from 'react';
+import useSwr from 'swr'
+import GoogleMapReact from "google-map-react"
 
-const { compose, withProps } = require("recompose");
-const {
-    withScriptjs,
-    withGoogleMap,
-    GoogleMap,
-    BicyclingLayer,
-    Marker
-} = require("react-google-maps");
-const GeneralMap = compose(
-    withProps({
-        googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyAYzby4yYDVaXPmtu4jZAGR258K6IYwjIY&libraries",
-        loadingElement: <div style={{ height: `100%` }} />,
-        containerElement: <div style={{ height: `500px` }} />,
-        mapElement: <div style={{ height: `100%` }} />,
-    }),
-    withScriptjs,
-    withGoogleMap
-)(props =>
-    <GoogleMap
-        defaultZoom={13}
-        defaultCenter={{ lat: 40.712776, lng: -74.005974 }}
-        defaultOptions={{
-            disableDefaultUI: false, // disable default map UI
-            draggable: true, // make map draggable
-            keyboardShortcuts: false, // disable keyboard shortcuts
-            scaleControl: true, // allow scale control
-            scrollwheel: true, // allow scroll wheel
-            styles: [
-                {
-                    "featureType": "road",
-                    "stylers": [
-                        { "color": "#ffffff" }
-                    ]
-                }, {
-                    "featureType": "water",
-                    "stylers": [
-                        { "color": "#e9e9e9" }
-                    ]
-                }, {
-                    "featureType": "landscape",
-                    "stylers": [
-                        { "color": "#f5f5f5" }
-                    ]
-                }, {
-                    "elementType": "labels.text.fill",
-                    "stylers": [
-                        { "color": "transparent" }
-                    ]
-                }, {
-                    "featureType": "poi",
-                    "stylers": [
-                        { "color": "#fefefe" }
-                    ]
-                }, {
-                    "elementType": "labels.text",
-                    "stylers": [
-                        { "saturation": 1 },
-                        { "weight": 0.1 },
-                        { "color": "#737980" }
-                    ]
-                }
-            ],
-            icon: markericon
-        }}
-    >
-        <Marker
-            icon={{
-                url: markericon
-            }}
-            animation={1}
+const Marker = ({children}) => children;
 
-            position={{
-                lat: 40.712776, // latitude to position the marker
-                lng: -74.005974 // longitude to position the marker
-            }}
-        />
-        <BicyclingLayer autoUpdate />
-    </GoogleMap>
-);
+export default function MapViewCluster({ restaurant }) {
 
-export default GeneralMap
+    // 1) map setup
+    const mapRef = useRef();
+    const [zoom, setZoom] = useState(13);
+    const [bounds, setBounds] = useState(null);
+
+    // 4) render map
+    return (
+        <>
+            <div className="map-container map-height w-100">
+                <GoogleMapReact
+                bootstrapURLKeys={{key: 'AIzaSyAYzby4yYDVaXPmtu4jZAGR258K6IYwjIY&libraries'}}
+                defaultCenter={restaurant.coordinates}
+                defaultZoom={14}
+                yesIWantToUseGoogleMapApiInternals={false}
+                onGoogleApiLoaded={({map}) => {
+                    mapRef.current = map;
+                }}
+                onChange={({zoom, bounds}) => {
+                    setZoom(zoom);
+                    setBounds([
+                        bounds.nw.lng,
+                        bounds.se.lat,
+                        bounds.se.lng,
+                        bounds.nw.lat
+                    ])
+                }}
+                >
+                    <Marker
+                        lat={restaurant.coordinates.lat}
+                        lng={restaurant.coordinates.lng}
+                    >
+                        <div className="restaurant-marker">
+                            <svg viewBox="0 0 365 560" preserveAspectRatio="none">
+                                <path d="M182.9 551.7c0 .1.2.3.2.3s175.2-269 175.2-357.4c0-130.1-88.8-186.7-175.4-186.9C96.3 7.9 7.5 64.5 7.5 194.6 7.5 283 182.8 552 182.8 552l.1-.3zm-60.7-364.5c0-33.6 27.2-60.8 60.8-60.8 33.6 0 60.8 27.2 60.8 60.8S216.5 248 182.9 248c-33.5 0-60.7-27.2-60.7-60.8z"/>
+                            </svg>
+                        </div>
+                    </Marker>
+                </GoogleMapReact>
+            </div>
+        </>
+    );
+}

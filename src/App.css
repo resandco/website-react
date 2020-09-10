@@ -172,4 +172,26 @@ dl, ol, ul {
     object-fit: cover;
 }
 
+.react-datepicker__day--disabled {
+    cursor: default;
+    background-color: transparent;
+}
 
+.react-datepicker-wrapper,
+.react-datepicker-wrapper input {
+    width: 100%;
+    height: 50px;
+}
+
+.react-datepicker-wrapper input {
+    padding-left: 20px;
+}
+
+.select-wrapper > div:first-of-type {
+    height: 50px;
+    padding-left: 18px;
+}
+
+.menus .card-item {
+    margin-bottom: 10px;
+}

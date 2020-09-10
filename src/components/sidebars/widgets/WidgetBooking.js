@@ -77,7 +77,7 @@ class WidgetBooking extends Component {
             <>
                 <div className="sidebar-widget date-widget">
                     <h3 className="widget-title">
-                        {this.state.title}
+                        Réserver
                     </h3>
                     <div className="title-shape"></div>
                     <div className="contact-form-action padding-top-35px">

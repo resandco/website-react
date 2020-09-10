@@ -71,17 +71,6 @@ class ContactInfo extends Component {
                             ) : ''}
                         </ul>
                     </div>
-
-                    <div className="section-block"></div>
-                    <div className="social-contact padding-top-40px">
-                        {this.states.socials.map((item, i) => {
-                            return (
-                                <a key={i} href={item.url} className={'theme-btn '+item.title+'-link'}>
-                                    <i className="d-inline-block">{item.icon}</i> {item.title}
-                                </a>
-                            )
-                        })}
-                    </div>
                 </div>
             </>
         );
