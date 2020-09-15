@@ -1,9 +1,5 @@
 import React from 'react';
-import { GiPositionMarker, GiChickenOven } from 'react-icons/gi'
-import { MdClose } from 'react-icons/md'
-import { BsPencil } from 'react-icons/bs'
-import { AiOutlineFlag } from 'react-icons/ai'
-import { RiSendPlane2Line } from 'react-icons/ri'
+import { GiPositionMarker } from 'react-icons/gi'
 
 function ListingDetailsBreadcrumb ({restaurant}) {
     return (

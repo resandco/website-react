@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaBehance, FaDribbble } from 'react-icons/fa'
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 
 class SocialProfile extends Component {
     state = {

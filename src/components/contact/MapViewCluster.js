@@ -1,9 +1,7 @@
 import React, {useState, useRef} from 'react';
-import useSwr from 'swr'
 import GoogleMapReact from "google-map-react"
 import useSupercluster from "use-supercluster";
 // import googleMapStyles from '../common/GoogleMapStyle'
-import mpIcon from '../../assets/images/map-marker.png'
 
 const Marker = ({children}) => children;
 

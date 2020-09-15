@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { AiOutlineHome } from 'react-icons/ai'
 import { FiHeadphones } from 'react-icons/fi'
 import { FaRegEnvelope } from 'react-icons/fa'
 

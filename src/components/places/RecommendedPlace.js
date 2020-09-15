@@ -2,10 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { IoIosCheckmarkCircle } from "react-icons/io";
 
-import restaurants from '../../restaurants'
-
-const threeRestaurants = Object.values(restaurants).slice(0, 3);
-
 export default function RecommendedPlace({
     place,
     handleEnterPlace = () => {},

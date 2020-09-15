@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import SectionsHeading from "../../common/SectionsHeading";
 import { FaRegEnvelope } from 'react-icons/fa'
 

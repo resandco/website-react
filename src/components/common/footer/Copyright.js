@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import CopyrightMenu from "./CopyrightMenu";
-import { FiHeart } from 'react-icons/fi'
 
 class Copyright extends Component {
     render() {

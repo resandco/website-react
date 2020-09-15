@@ -1,15 +1,14 @@
 import React, {useState, useRef} from 'react';
-import useSwr from 'swr'
 import GoogleMapReact from "google-map-react"
 
 const Marker = ({children}) => children;
 
-export default function MapViewCluster({ coordinates }) {
+export default function GeneralMap({ coordinates }) {
 
     // 1) map setup
     const mapRef = useRef();
-    const [zoom, setZoom] = useState(13);
-    const [bounds, setBounds] = useState(null);
+    const [, setZoom] = useState(13);
+    const [, setBounds] = useState(null);
 
     // 4) render map
     return (

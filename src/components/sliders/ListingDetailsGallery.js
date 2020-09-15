@@ -21,7 +21,7 @@ function ListingDetailsGallery({ galery: images, restaurantName }) {
                 {images.map((image, i) => {
                     return (
                         <div key={i} className="gallery-item">
-                            <img src={`${image}?tr=ar-4-3,w-770,cm-pad_resize`} alt={`Photo d'un plat du restaurant ${restaurantName}`} />
+                            <img src={`${image}?tr=ar-4-3,w-770,cm-pad_resize`} alt={`Un plat du restaurant ${restaurantName}`} />
                         </div>
                     )
                 })}
