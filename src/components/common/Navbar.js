@@ -1,18 +1,13 @@
 import React, { useState } from 'react'
 import { FiChevronDown } from 'react-icons/fi'
 import {Link} from "react-router-dom";
-import  $ from 'jquery';
 
 export default function Navbar() {
     const [navOpen, setNavOpen] = useState(false)
 
-    $(document).on('click', '.side-menu-ul li', function () {
-        $(".side-menu-ul li").removeClass('active');
-        $(this).toggleClass("active")
-    })
-    $(document).on('click', '.side-menu-ul li.active', function () {
-        $(".side-menu-ul li.active").removeClass('active');
-    })
+    const handleToggleNavOpen = function() {
+        setNavOpen(!navOpen)
+    }
 
     return (
         <>
@@ -39,14 +34,14 @@ export default function Navbar() {
                     </ul>
                 </nav>
             </div>
-            <div className="side-menu-open" onClick={() => setNavOpen(!navOpen)}>
+            <div className="side-menu-open" onClick={handleToggleNavOpen}>
                 <span className="menu__bar"></span>
                 <span className="menu__bar"></span>
                 <span className="menu__bar"></span>
             </div>
             <div className={navOpen ? 'side-nav-container active' : 'side-nav-container'}>
                 <div className="humburger-menu">
-                    <div className="humburger-menu-lines side-menu-close" onClick={() => setNavOpen(!navOpen)}></div>
+                    <div className="humburger-menu-lines side-menu-close" onClick={handleToggleNavOpen}></div>
                 </div>
                 <div className="side-menu-wrap">
                     <ul className="side-menu-ul">

@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import {BsChevronUp} from 'react-icons/bs'
-import $ from 'jquery';
 
 class ScrollTopBtn extends Component {
     componentDidMount() {
+        const { jQuery: $ } = window
+
         $(window).on('scroll', function () {
             if ($(window).scrollTop() > 200) {
                 $('.back-to-top').show();
@@ -11,16 +12,21 @@ class ScrollTopBtn extends Component {
                 $('.back-to-top').hide();
             }
         });
-        /* ======= Back to Top Button and Navbar Scrolling control ======= */
-        $(document).on('click', '.back-to-top', function () {
-            $('html, body').animate({ scrollTop: 0 }, 1000);
-        });
     }
 
     render() {
+        const handleClick = function() {
+            window.scroll({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
         return (
             <>
-                <div className="back-to-top show-back-to-top">
+                <div className="back-to-top show-back-to-top"
+                    onClick={handleClick}
+                >
                     <BsChevronUp />
                 </div>
             </>

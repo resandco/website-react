@@ -38,7 +38,16 @@ function ListingDetails () {
                         <div className="col-lg-8">
                             <div className="single-listing-wrap">
                                 <ListingDetailsGallery galery={restaurant.gallerie || []} restaurantName={restaurant.title} />
-
+                            </div>
+                        </div>
+                        
+                        <div className="col-lg-4">
+                            <ListingDetailsSidebar restaurant={restaurant} />
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-lg-8">
+                            <div className="single-listing-wrap">
                                 <div className="listing-description padding-top-40px padding-bottom-35px">
                                     <h2 className="widget-title">
                                         Description
@@ -81,9 +90,6 @@ function ListingDetails () {
                                 </div>
 
                             </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <ListingDetailsSidebar restaurant={restaurant} />
                         </div>
                     </div>
                 </div>

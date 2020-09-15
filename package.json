@@ -29,6 +29,7 @@
     "react-scrolltop-button": "^0.1.6",
     "react-select": "^3.1.0",
     "react-tabs": "^3.1.0",
+    "source-map-explorer": "^2.5.0",
     "supercluster": "^7.1.0",
     "swr": "^0.2.2",
     "use-supercluster": "^0.2.8"
@@ -37,7 +38,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -1,5 +1,6 @@
 import React from 'react';
 import { GiPositionMarker } from 'react-icons/gi'
+import { BsCheckCircle } from 'react-icons/bs'
 
 function ListingDetailsBreadcrumb ({restaurant}) {
     return (
@@ -15,6 +16,16 @@ function ListingDetailsBreadcrumb ({restaurant}) {
                                 <div className="breadcrumb-content">
                                     <h1 className="breadcrumb__title">
                                         {restaurant.title}
+                                        &nbsp;
+                                        {
+                                            restaurant.verifie ? (
+                                                <span className="author-verified-badge">
+                                                    <span className="author__verified-badge" data-toggle="tooltip" data-placement="top" title="Le restaurant a été testé et validé en personne par un membre de notre équipe">
+                                                        <span className="d-inline-block"><BsCheckCircle /></span>
+                                                    </span>  
+                                                </span>
+                                            ) : ""
+                                        }
                                     </h1>
                                     <p className="breadcrumb__desc">
                                         <span className="la d-inline-block"><GiPositionMarker /></span> {restaurant.stitle}, {restaurant.scity}

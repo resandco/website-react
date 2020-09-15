@@ -47,7 +47,7 @@ export default function MapViewCluster({ restaurants, hoveredRestaurant, selectR
                 <GoogleMapReact
                 bootstrapURLKeys={{key: 'AIzaSyAYzby4yYDVaXPmtu4jZAGR258K6IYwjIY&libraries'}}
                 defaultCenter={{lat: 48.853032, lng: 2.3477133}}
-                defaultZoom={13}
+                defaultZoom={12}
                 yesIWantToUseGoogleMapApiInternals={false}
                 onGoogleApiLoaded={({map}) => {
                     mapRef.current = map;

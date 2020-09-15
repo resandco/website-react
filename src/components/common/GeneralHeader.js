@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar'
 import Logo from './Logo'
-import $ from 'jquery';
 
 export default class GeneralHeader extends Component {
     componentDidMount() {
+        const {$} = window;
+        
         $(window).on('scroll', function () {
             //header fixed animation and control
             if ($(window).scrollTop() > 10) {

@@ -185,26 +185,6 @@ class ListMapView2 extends Component {
                                         />
                                     </div>
                                 </div>
-                                <div className="row twocol align-items-start justify-content-start margin-top-30px" ref={this.cardListRef}>
-                                    {
-                                        this.state.filteredRestaurants.length === 0
-                                            ? (
-                                                <div className="col-lg-8">
-                                                    <span>Aucun réstaurant ne correspond à ces critères</span>
-                                                </div>
-                                            )
-                                            : this.state.filteredRestaurants.map((item, index) => (
-                                                <RecommendedPlace
-                                                    place={item}
-                                                    key={index}
-                                                    isSelected={item.id === this.state.selectedRestaurant}
-                                                    isHovered={item.id === this.state.hoveredRestaurant}
-                                                    handleEnterPlace={this.handleEnterPlace}
-                                                    handleLeavePlace={this.handleLeavePlace}
-                                                />
-                                            ))
-                                    }
-                                </div>
                             </div>
 
                             <div className="col-lg-4">
@@ -234,6 +214,32 @@ class ListMapView2 extends Component {
                                 </div>
                             </div>
 
+                        </div>
+
+                        <div className="row align-items-start">
+
+                            <div className="col-lg-8 ">
+                                <div className="row twocol align-items-start justify-content-start margin-top-30px" ref={this.cardListRef}>
+                                    {
+                                        this.state.filteredRestaurants.length === 0
+                                            ? (
+                                                <div className="col-lg-8">
+                                                    <span>Aucun réstaurant ne correspond à ces critères</span>
+                                                </div>
+                                            )
+                                            : this.state.filteredRestaurants.map((item, index) => (
+                                                <RecommendedPlace
+                                                    place={item}
+                                                    key={index}
+                                                    isSelected={item.id === this.state.selectedRestaurant}
+                                                    isHovered={item.id === this.state.hoveredRestaurant}
+                                                    handleEnterPlace={this.handleEnterPlace}
+                                                    handleLeavePlace={this.handleLeavePlace}
+                                                />
+                                            ))
+                                    }
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>

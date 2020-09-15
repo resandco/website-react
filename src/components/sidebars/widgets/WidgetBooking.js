@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { FaRegCalendarAlt } from 'react-icons/fa'
-import $ from 'jquery'
 import Button from "../../common/Button";
 import Select from "react-select";
 
@@ -45,23 +44,6 @@ const timeSlots = [
 ]
 
 class WidgetBooking extends Component {
-    componentDidMount() {
-        $(document).on('click', '.input-number-increment', function() {
-            var $input = $(this).parents('.input-number-group').find('.input-number');
-            var val = parseInt($input.val(), 10);
-            $input.val(val + 1);
-
-        });
-
-        /*==== Quantity number decrement control =====*/
-        $(document).on('click', '.input-number-decrement', function() {
-            var $input = $(this).parents('.input-number-group').find('.input-number');
-            var val = parseInt($input.val(), 10);
-            if(val !== 0) {
-                $input.val(val - 1);
-            }
-        });
-    }
     state = {
         selectedCatOp: null,
         title: 'Booking',

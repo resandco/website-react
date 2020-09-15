@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { BsCheckCircle } from 'react-icons/bs'
 import { addDays, getDay, format } from "date-fns"
 import { fr } from 'date-fns/locale'
 import Select from 'react-select'
@@ -79,21 +78,8 @@ function ListingDetailsSidebar({ restaurant }) {
 
     return (
         <>
-            {
-                restaurant.verifie ? (
-                    <div className="author-verified-badge margin-bottom-20px">
-                        <div className="author__verified-badge" data-toggle="tooltip" data-placement="top" title="Le restaurant a été testé et validé en personne par un membre de notre équipe">
-                            <span className="d-inline-block"><BsCheckCircle /></span> Restaurant vérifié
-                        </div>  
-                    </div>
-                ) : ""
-            }
             <div className="sidebar section-bg">
-                <h3 className="widget-title">
-                    Réserver
-                </h3>
-                <div className="title-shape"></div>
-                <div className="contact-form-action padding-top-35px">
+                <div className="contact-form-action">
                     <div className="form-group">
                         <DatePicker
                             selected={selectedDate}
