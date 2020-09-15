@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar'
-import HeaderAuthorAccess from '../other/account/HeaderAuthorAccess'
 import Logo from './Logo'
 import $ from 'jquery';
 

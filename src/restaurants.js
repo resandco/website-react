@@ -64,7 +64,6 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
         scity: 'Paris 6ème',
         szip: '75006',
         coordinates: { lat: 48.854150, lng: 2.338720 },
-        image: require('./photos-restau/opium-la-cabane.jpg'),
         tags: ['Français', 'Dejeuner'],
         creneaux: {
             'mercredi soir': ['19h30', '20h'],
@@ -79,7 +78,6 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
         scity: 'Paris 3ème',
         szip: '75003',
         coordinates: { lat: 48.868592, lng: 2.347777 },
-        image: require('./photos-restau/a-l-angle.jpg'),
         tags: ['Bar à tapas'],
         creneaux: {
             'vendredi soir': ['19h30', '20h'],
