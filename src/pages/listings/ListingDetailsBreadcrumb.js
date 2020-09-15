@@ -17,9 +17,9 @@ function ListingDetailsBreadcrumb ({restaurant}) {
                         <div className="row">
                             <div className="col-lg-12 position-relative">
                                 <div className="breadcrumb-content">
-                                    <h2 className="breadcrumb__title">
+                                    <h1 className="breadcrumb__title">
                                         {restaurant.title}
-                                    </h2>
+                                    </h1>
                                     <p className="breadcrumb__desc">
                                         <span className="la d-inline-block"><GiPositionMarker /></span> {restaurant.stitle}, {restaurant.scity}
                                     </p>
