@@ -8,7 +8,10 @@ import { RiSendPlane2Line } from 'react-icons/ri'
 function ListingDetailsBreadcrumb ({restaurant}) {
     return (
         <>
-            <section className="breadcrumb-area listing-detail-breadcrumb">
+            <section className="breadcrumb-area listing-detail-breadcrumb"
+                style={{ backgroundImage: `url("${restaurant.image}?tr=w-1920")`}}
+                data-zob="truc"
+            >
                 <div className="breadcrumb-wrap">
                     <div className="container">
                         <div className="row">
@@ -21,8 +24,8 @@ function ListingDetailsBreadcrumb ({restaurant}) {
                                         <span className="la d-inline-block"><GiPositionMarker /></span> {restaurant.stitle}, {restaurant.scity}
                                     </p>
                                     <ul className="listing-info mt-3 mb-3">
-                                        { restaurant.tags.map((tag) => (
-                                            <li>
+                                        { restaurant.tags.map((tag, i) => (
+                                            <li key={i}>
                                                 <span className="theme-btn listing-tag">
                                                     {tag}
                                                 </span>
@@ -40,37 +43,6 @@ function ListingDetailsBreadcrumb ({restaurant}) {
                     </svg>
                 </div>
             </section>
-
-            <div className="modal-form">
-                <div className="modal fade report-modal-box bs-example-modal-lg" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                    <div className="modal-bg"></div>
-                    <div className="modal-dialog modal-lg" role="document">
-                        <div className="modal-content">
-                            <div className="modal-top">
-                                <button type="button" className="close close-arrow" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true" className="mb-0"><MdClose /></span>
-                                </button>
-                                <h4 className="modal-title"><span className="mb-0"><AiOutlineFlag /></span> Report this Listing</h4>
-                            </div>
-                            <div className="contact-form-action">
-                                <form method="post">
-                                    <div className="msg-box">
-                                        <label className="label-text">Write Message</label>
-                                        <div className="form-group">
-                                            <i className="form-icon"><BsPencil /></i>
-                                            <textarea className="message-control form-control" name="message" placeholder="What's wrong with this listing?" required></textarea>
-                                        </div>
-                                    </div>
-                                    <div className="btn-box text-right">
-                                        <button type="submit" className="theme-btn button-success border-0"><i><RiSendPlane2Line /></i> Send message
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </>
     );
 }

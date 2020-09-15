@@ -3,7 +3,7 @@ import GeneralHeader from "../../components/common/GeneralHeader";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import BlogGridItems from "../../components/blogs/BlogGridItems";
 import Pagination from "../../components/blogs/Pagination";
-import NewsLetter from "../../components/other/cta/NewsLetter";
+import Newsletter from "../../components/other/cta/Newsletter";
 import Footer from "../../components/common/footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 
@@ -33,7 +33,7 @@ class BlogGrid extends Component {
                 </section>
 
                 {/* Newsletter */}
-                <NewsLetter />
+                <Newsletter />
 
                 {/* Footer */}
                 <Footer />

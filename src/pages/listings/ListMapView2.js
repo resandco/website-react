@@ -2,7 +2,7 @@ import React, { Component, useState } from 'react';
 import Select from "react-select";
 
 import GeneralHeader from "../../components/common/GeneralHeader";
-import NewsLetter from "../../components/other/cta/NewsLetter";
+import Newsletter from "../../components/other/cta/Newsletter";
 import Footer from "../../components/common/footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 import MapViewCluster from "../../components/contact/MapViewCluster";
@@ -235,7 +235,7 @@ class ListMapView2 extends Component {
                 </section>
 
                 {/* Newsletter */}
-                <NewsLetter />
+                <Newsletter />
 
                 {/* Footer */}
                 <Footer />

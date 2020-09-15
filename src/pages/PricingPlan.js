@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import GeneralHeader from "../components/common/GeneralHeader";
 import Breadcrumb from "../components/common/Breadcrumb";
 import Plans from "../components/other/plans/Plans";
-import NewsLetter from "../components/other/cta/NewsLetter";
+import Newsletter from "../components/other/cta/Newsletter";
 import Footer from "../components/common/footer/Footer";
 import ScrollTopBtn from "../components/common/ScrollTopBtn";
 
@@ -27,7 +27,7 @@ class PricingPlan extends Component {
                 </section>
 
                 {/* Newsletter */}
-                <NewsLetter />
+                <Newsletter />
 
                 {/* Footer */}
                 <Footer />

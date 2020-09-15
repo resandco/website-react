@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import GeneralHeader from "../components/common/GeneralHeader";
 import Breadcrumb from "../components/common/Breadcrumb";
 import Authors from "../components/sliders/Authors";
-import NewsLetter from "../components/other/cta/NewsLetter";
+import Newsletter from "../components/other/cta/Newsletter";
 import Footer from "../components/common/footer/Footer";
 import ScrollTopBtn from "../components/common/ScrollTopBtn";
 
@@ -27,7 +27,7 @@ class TopAuthors extends Component {
                 </section>
 
                 {/* Newsletter */}
-                <NewsLetter />
+                <Newsletter />
 
                 {/* Footer */}
                 <Footer />

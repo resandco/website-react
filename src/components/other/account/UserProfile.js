@@ -5,7 +5,7 @@ import UserSidebar from "./UserSidebar";
 import PlaceGrid from "../../places/PlaceGrid";
 import Button from "../../common/Button";
 import { FiRefreshCw } from 'react-icons/fi'
-import NewsLetter from "../cta/NewsLetter";
+import Newsletter from "../cta/Newsletter";
 import Footer from "../../common/footer/Footer";
 import ScrollTopBtn from "../../common/ScrollTopBtn";
 
@@ -53,7 +53,7 @@ class UserProfile extends Component {
                 </section>
 
                 {/* Newsletter */}
-                <NewsLetter />
+                <Newsletter />
 
                 {/* Footer */}
                 <Footer />

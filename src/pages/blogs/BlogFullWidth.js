@@ -4,7 +4,7 @@ import Breadcrumb from "../../components/common/Breadcrumb";
 import BlogSidebar from "../../components/sidebars/BlogSidebar";
 import BlogFullWidthItems from "../../components/blogs/BlogFullWidthItems";
 import Pagination from "../../components/blogs/Pagination";
-import NewsLetter from "../../components/other/cta/NewsLetter";
+import Newsletter from "../../components/other/cta/Newsletter";
 import Footer from "../../components/common/footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 
@@ -40,7 +40,7 @@ class BlogFullWidth extends Component {
                 </section>
 
                 {/* Newsletter */}
-                <NewsLetter />
+                <Newsletter />
 
                 {/* Footer */}
                 <Footer />

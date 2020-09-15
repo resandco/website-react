@@ -4,7 +4,7 @@ import GeneralHeader from "../../components/common/GeneralHeader";
 import PlaceListing from "../../components/places/PlaceListing";
 import ListingListSidebar from "../../components/sidebars/ListingListSidebar";
 import Button from "../../components/common/Button";
-import NewsLetter from "../../components/other/cta/NewsLetter";
+import Newsletter from "../../components/other/cta/Newsletter";
 import Footer from "../../components/common/footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 import GenericHeader from "../../components/common/GenericHeader";
@@ -56,7 +56,7 @@ class ListMapView extends Component {
                 </section>
 
                 {/* Newsletter */}
-                <NewsLetter />
+                <Newsletter />
 
                 {/* Footer */}
                 <Footer />

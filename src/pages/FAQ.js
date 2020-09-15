@@ -6,7 +6,7 @@ import AccordionList from "../components/other/AccordionList";
 import SectionsHeading from "../components/common/SectionsHeading";
 import AskQuestionField from "../components/contact/AskQuestionField";
 import IconBoxThree from "../components/other/iconboxes/IconBoxThree";
-import NewsLetter from "../components/other/cta/NewsLetter";
+import Newsletter from "../components/other/cta/Newsletter";
 import Footer from "../components/common/footer/Footer";
 import ScrollTopBtn from "../components/common/ScrollTopBtn";
 
@@ -52,7 +52,7 @@ class Faq extends Component {
                 </section>
 
                 {/* Newsletter */}
-                <NewsLetter />
+                <Newsletter />
 
                 {/* Footer */}
                 <Footer />

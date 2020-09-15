@@ -4,7 +4,7 @@ import Breadcrumb from "../../components/common/Breadcrumb";
 import PopularDestination from "../../components/places/PopularDestination";
 import Button from "../../components/common/Button";
 import {FiRefreshCw} from "react-icons/fi";
-import NewsLetter from "../../components/other/cta/NewsLetter";
+import Newsletter from "../../components/other/cta/Newsletter";
 import Footer from "../../components/common/footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 
@@ -42,7 +42,7 @@ class TopPlaces extends  Component {
                 </section>
 
                 {/* Cta */}
-                <NewsLetter />
+                <Newsletter />
 
                 {/* Footer */}
                 <Footer />

@@ -4,7 +4,7 @@ import GoogleMapReact from "google-map-react"
 
 const Marker = ({children}) => children;
 
-export default function MapViewCluster({ restaurant }) {
+export default function MapViewCluster({ coordinates }) {
 
     // 1) map setup
     const mapRef = useRef();
@@ -17,7 +17,7 @@ export default function MapViewCluster({ restaurant }) {
             <div className="map-container map-height w-100">
                 <GoogleMapReact
                 bootstrapURLKeys={{key: 'AIzaSyAYzby4yYDVaXPmtu4jZAGR258K6IYwjIY&libraries'}}
-                defaultCenter={restaurant.coordinates}
+                defaultCenter={coordinates}
                 defaultZoom={14}
                 yesIWantToUseGoogleMapApiInternals={false}
                 onGoogleApiLoaded={({map}) => {
@@ -34,8 +34,8 @@ export default function MapViewCluster({ restaurant }) {
                 }}
                 >
                     <Marker
-                        lat={restaurant.coordinates.lat}
-                        lng={restaurant.coordinates.lng}
+                        lat={coordinates.lat}
+                        lng={coordinates.lng}
                     >
                         <div className="restaurant-marker">
                             <svg viewBox="0 0 365 560" preserveAspectRatio="none">

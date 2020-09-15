@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import GeneralHeader from "../components/common/GeneralHeader";
 import Breadcrumb from "../components/common/Breadcrumb";
 import RecoverPassBox from "../components/other/account/RecoverPassBox";
-import NewsLetter from "../components/other/cta/NewsLetter";
+import Newsletter from "../components/other/cta/Newsletter";
 import Footer from "../components/common/footer/Footer";
 import ScrollTopBtn from "../components/common/ScrollTopBtn";
 
@@ -22,7 +22,7 @@ class RecoverPassword extends Component {
                 <RecoverPassBox />
 
                 {/* Newsletter */}
-                <NewsLetter />
+                <Newsletter />
 
                 {/* Footer */}
                 <Footer />

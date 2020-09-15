@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import GeneralHeader from "../../components/common/GeneralHeader";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import PopularCategories from "../../components/other/categories/PopularCategories";
-import NewsLetter from "../../components/other/cta/NewsLetter";
+import Newsletter from "../../components/other/cta/Newsletter";
 import Footer from "../../components/common/footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 import PopularCategoriesMore from "../../components/other/categories/PopularCategoriesMore";
@@ -29,8 +29,8 @@ class AllCategories extends Component {
                     </div>
                 </section>
 
-                {/* NewsLetter */}
-                <NewsLetter />
+                {/* Newsletter */}
+                <Newsletter />
 
                 {/* Footer */}
                 <Footer />

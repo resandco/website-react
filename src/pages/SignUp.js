@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import SignUpBox from "../components/other/account/SignUpBox";
 import GeneralHeader from "../components/common/GeneralHeader";
 import Breadcrumb from "../components/common/Breadcrumb";
-import NewsLetter from "../components/other/cta/NewsLetter";
+import Newsletter from "../components/other/cta/Newsletter";
 import Footer from "../components/common/footer/Footer";
 import ScrollTopBtn from "../components/common/ScrollTopBtn";
 
@@ -31,7 +31,7 @@ class SignUp extends Component {
 
 
             {/* Newsletter */}
-            <NewsLetter />
+            <Newsletter />
 
             {/* Footer */}
             <Footer />

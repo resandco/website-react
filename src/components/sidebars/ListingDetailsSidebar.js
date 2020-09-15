@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { BsCheckCircle } from 'react-icons/bs'
 import { addDays, getDay, format } from "date-fns"
+import { fr } from 'date-fns/locale'
 import Select from 'react-select'
 import DatePicker from "react-datepicker"
+
+import "react-datepicker/dist/react-datepicker.css";
 
 const dayNameToNumber = ( name ) =>(
     ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"].indexOf(name)
@@ -99,6 +102,7 @@ function ListingDetailsSidebar({ restaurant }) {
                             startDate={today}
                             endDate={inTwoMonths}
                             filterDate={isOpen}
+                            locale={fr}
                         />
                     </div>
                 </div>
@@ -136,7 +140,7 @@ function ListingDetailsSidebar({ restaurant }) {
                 </div>
 
                 <div className="padding-bottom-20px">
-                    <label for="checkbox-cgv">
+                    <label htmlFor="checkbox-cgv">
                         <input id="checkbox-cgv" type="checkbox"
                             onChange={handleCgvChange}
                             checked={isCgvChecked}

@@ -11,7 +11,7 @@ import Testimonial from "../components/sliders/Testimonial";
 import HowItWork4 from "../components/hiw/HowItWork4";
 import TeamOne from "../components/team/TeamOne";
 import Button from "../components/common/Button";
-import NewsLetter from "../components/other/cta/NewsLetter";
+import Newsletter from "../components/other/cta/Newsletter";
 import Footer from "../components/common/footer/Footer";
 import ScrollTopBtn from "../components/common/ScrollTopBtn";
 
@@ -135,8 +135,8 @@ class About extends Component {
                     </div>
                 </section>
 
-                {/* NewsLetter */}
-                <NewsLetter />
+                {/* Newsletter */}
+                <Newsletter />
 
                 {/* Footer */}
                 <Footer />

@@ -173,8 +173,8 @@ dl, ol, ul {
 }
 
 .react-datepicker__day--disabled {
-    cursor: default;
-    background-color: transparent;
+    cursor: default !important;
+    background-color: transparent !important;
 }
 
 .react-datepicker-wrapper,

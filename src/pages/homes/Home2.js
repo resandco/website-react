@@ -16,7 +16,7 @@ import Testimonial from "../../components/sliders/Testimonial";
 import LatestBlog from "../../components/blogs/LatestBlog";
 import CtaOne from "../../components/other/cta/CtaOne";
 import ClientLogo from "../../components/sliders/ClientLogo";
-import NewsLetter from "../../components/other/cta/NewsLetter";
+import Newsletter from "../../components/other/cta/Newsletter";
 import Footer from "../../components/common/footer/Footer";
 
 class Home2 extends Component {
@@ -153,8 +153,8 @@ libero, a feugiat eros. Nunc ut lacinia tortors." />
                 {/* Client Logo */}
                 <ClientLogo />
 
-                {/* NewsLetter */}
-                <NewsLetter />
+                {/* Newsletter */}
+                <Newsletter />
 
                 {/* Footer */}
                 <Footer />

@@ -12,7 +12,7 @@ import SectionDivider from "../../components/common/SectionDivider";
 import LatestBlog from "../../components/blogs/LatestBlog";
 import CtaOne from "../../components/other/cta/CtaOne";
 import ClientLogo from "../../components/sliders/ClientLogo";
-import NewsLetter from "../../components/other/cta/NewsLetter";
+import Newsletter from "../../components/other/cta/Newsletter";
 import Footer from "../../components/common/footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 
@@ -119,8 +119,8 @@ class Home4 extends Component {
                 </section>
                 */}
 
-                {/* NewsLetter */}
-                <NewsLetter />
+                {/* Newsletter */}
+                <Newsletter />
 
                 {/* Footer */}
                 <Footer />

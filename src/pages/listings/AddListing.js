@@ -8,7 +8,7 @@ import PhotoUploader from "../../components/addlisting/PhotoUploader";
 import Amenities from "../../components/addlisting/Amenities";
 import OpeningHours from "../../components/addlisting/OpeningHours";
 import AddPrice from "../../components/addlisting/AddPrice";
-import NewsLetter from "../../components/other/cta/NewsLetter";
+import Newsletter from "../../components/other/cta/Newsletter";
 import Footer from "../../components/common/footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 import {Link} from "react-router-dom";
@@ -67,7 +67,7 @@ class AddListing extends Component {
                 </section>
 
                 {/* Newsletter */}
-                <NewsLetter />
+                <Newsletter />
 
                 {/* Footer */}
                 <Footer />

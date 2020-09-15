@@ -4,7 +4,7 @@ import GeneralHeader from "../../components/common/GeneralHeader";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import ListingListSidebar from "../../components/sidebars/ListingListSidebar";
 import Button from "../../components/common/Button";
-import NewsLetter from "../../components/other/cta/NewsLetter";
+import Newsletter from "../../components/other/cta/Newsletter";
 import Footer from "../../components/common/footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 import PlaceTwoColumn from "../../components/places/PlaceTwoColumn";
@@ -54,7 +54,7 @@ class ListLeftSidebar extends Component {
                 </section>
 
                 {/* Newsletter */}
-                <NewsLetter />
+                <Newsletter />
 
                 {/* Footer */}
                 <Footer />
