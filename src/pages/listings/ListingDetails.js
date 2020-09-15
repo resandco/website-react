@@ -1,6 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import Helmet from "react-helmet"
 import ReactMarkdown from 'react-markdown'
+
 import GeneralHeader from "../../components/common/GeneralHeader";
 import ListingDetailsBreadcrumb from "./ListingDetailsBreadcrumb";
 import ListingDetailsSidebar from "../../components/sidebars/ListingDetailsSidebar";
@@ -20,6 +22,10 @@ function ListingDetails () {
 
     return (
         <main className="listing-details">
+            <Helmet>
+                <title>Restaurant {restaurant.title} à {restaurant.scity} - RES&CO</title>
+            </Helmet>
+
             {/* Header */}
             <GeneralHeader />
 

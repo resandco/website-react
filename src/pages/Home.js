@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import Helmet from "react-helmet";
+
 import GeneralHeader from "../components/common/GeneralHeader";
 import Banner4 from "../components/banner/banner4/Banner4";
 import SectionsHeading from "../components/common/SectionsHeading";
@@ -41,6 +43,10 @@ class Home4 extends Component {
     render() {
         return (
             <main className="home-4">
+                <Helmet>
+                    <title>RES&CO - La solution anti-gaspi de vos restaurants préférés</title>
+                </Helmet>
+
                 {/* Header */}
                 <GeneralHeader />
 

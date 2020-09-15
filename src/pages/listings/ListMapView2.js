@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Helmet from "react-helmet";
 import Select from "react-select";
 
 import GeneralHeader from "../../components/common/GeneralHeader";
@@ -84,7 +85,6 @@ class ListMapView2 extends Component {
     }
 
     state = {
-        breadcrumbimg: require('../../assets/images/bread-bg.jpg'),
         allRestaurants: allRestaurants,
         filteredRestaurants: allRestaurants,
         timeslotOptions,
@@ -163,6 +163,10 @@ class ListMapView2 extends Component {
     render() {
         return (
             <main className="List-map-view2">
+                <Helmet>
+                    <title>Trouvez votre restaurant anti-gaspi - RES&CO</title>
+                </Helmet>
+
                 {/* Header */}
                 <GeneralHeader />
 
