@@ -31,7 +31,7 @@ class FooterCategoryWidget extends Component {
                             {this.state.links.map((link, index) => {
                                 return (
                                     <li key={index}>
-                                        <Link to={link.path}>{link.text}</Link>
+                                        <a href={link.path}>{link.text}</a>
                                     </li>
                                 )
                             })}
