@@ -118,11 +118,17 @@ export default function ListMapView2() {
             filteredRestaurants.filter(({ id }) => id === placeId)[0],
             ...filteredRestaurants.filter(({ id }) => id !== placeId),
         ]
-        console.log(placeId, newRestaurants)
         setFilteredRestaurants(newRestaurants)
         setSelectedRestaurant(placeId)
 
-        window.scroll({ behavior: 'smooth', top: cardListRef.current.offsetTop })
+        setTimeout(() => {
+            const placeCard = document.getElementById(`place-${placeId}`)
+            placeCard.scrollIntoView && placeCard.scrollIntoView({
+                behavior: "smooth",
+                block: "end",
+                inline: "nearest"
+            })
+        }, 150)
     }
 
     const handleEnterPlace = ( placeId ) => {
@@ -189,7 +195,6 @@ export default function ListMapView2() {
                     </div>
 
                     <div className="row align-items-start">
-
                         <div className="col-lg-8 ">
                             <div className="row twocol align-items-start justify-content-start margin-top-30px" ref={cardListRef}>
                                 {

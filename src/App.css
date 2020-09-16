@@ -150,6 +150,12 @@ dl, ol, ul {
     text-decoration-color: #d45d69;
     text-decoration-thickness: 2px;
 }
+.List-map-view2 .card-content-wrap {
+    border-top-width: 0px;
+}
+.List-map-view2 .card-item__hover .card-content-wrap {
+    border-color: #d45d69;
+}
 
 /* .List-map-view2 .card-item:hover .card-image:after, */
 .List-map-view2 .card-item__hover .card-image:after {
