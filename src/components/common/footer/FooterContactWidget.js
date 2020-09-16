@@ -9,7 +9,7 @@ class FooterContactWidget extends Component {
             {
                 icon: <FiHeadphones />,
                 text: '01.86.70.05.20',
-                href: 'tel:0033196700520'
+                href: 'tel:0033186700520'
             },
             {
                 icon: <FaRegEnvelope />,
