@@ -13,7 +13,7 @@ export default function Newsletter() {
                         <div className="col-lg-12">
                             <div className="cta-box d-flex align-items-center">
                                 <div className="col-lg-8">
-                                    <SectionsHeading title="Abonnez-vous à nos emails" titleClass="text-white" desc="Soyez les premiers à découvrir nos nouveaux restaurants partenaires." />
+                                    <SectionsHeading title="Abonnez-vous à notre newsletter" titleClass="text-white" desc="Soyez les premiers à découvrir nos nouveaux restaurants partenaires." />
                                 </div>
                                 <div className="col-lg-4">
                                     <div className="contact-form-action">
