@@ -28,7 +28,14 @@ const locationOptions = [
 
             return unique; 
         }, [])
-        .sort()
+        .sort((aRaw, bRaw) => {
+            // We want Paris to always come first and arrondissements properly sorted
+            const fixLocation = (loc) => loc.replace(/^Paris/i, "00Paris").replace(/ (\d[eè])/, " 0$1")
+            const a = fixLocation(aRaw)
+            const b = fixLocation(bRaw)
+            
+            return a === b ? 0 : (a < b ? -1 : 1)
+        })
         .map((value) => ({
             value,
             label: value
