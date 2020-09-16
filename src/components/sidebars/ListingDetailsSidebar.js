@@ -89,6 +89,7 @@ function ListingDetailsSidebar({ restaurant }) {
                             endDate={inTwoMonths}
                             filterDate={isOpen}
                             locale={fr}
+                            dateFormat="dd/MM/yyyy"
                         />
                     </div>
                 </div>
