@@ -2390,7 +2390,6 @@ body {
    about-breadcrumb
  ====================================================*/
 .about-breadcrumb {
-  background-image: url("../images/bread-bg3.jpg");
   background-position: inherit; }
   .about-breadcrumb .breadcrumb-content {
     text-align: left; }
@@ -3399,7 +3398,6 @@ body {
     hero-wrapper
  ====================================================*/
 .hero-wrapper {
-  background-image: url("../images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -3652,7 +3650,6 @@ body {
     hero-wrapper2
  ====================================================*/
 .hero-wrapper2 {
-  background-image: url("../images/hero-bg2.jpg");
   text-align: left;
   padding-bottom: 230px; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -3723,7 +3720,6 @@ body {
     hero-wrapper3
  ====================================================*/
 .hero-wrapper3 {
-  background-image: url("../images/hero-bg3.jpg");
   padding-top: 330px;
   padding-bottom: 255px; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -3811,7 +3807,6 @@ body {
       height: 100%;
       background-position: center;
       background-repeat: no-repeat;
-      background-image: url("../images/hero-shape.png");
       top: 0;
       left: 0;
       z-index: -1; }
@@ -6845,7 +6840,6 @@ body {
     author-area
  ====================================================*/
 .author-area {
-  background-image: url("../images/hero-bg.jpg");
   position: relative;
   background-size: cover;
   background-position: center;

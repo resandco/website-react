@@ -1,5 +1,5 @@
 {
-  "name": "dirto-react",
+  "name": "resandco-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -28,6 +28,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "serve": "^11.3.2",
     "source-map-explorer": "^2.5.0"
   },
   "scripts": {

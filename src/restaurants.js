@@ -64,8 +64,8 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
             "Graines de sésame",
         ]
     },
-    'comptoir-43': {
-        title: 'Comptoir 43 Bio O Top',
+    'opium-la-cabane': {
+        title: 'Opium, La Cabane',
         stitle: '44 Rue du Dauphine',
         scity: 'Paris 6ème',
         szip: '75006',
@@ -312,7 +312,7 @@ Vous serez chaleureusement accueillis par Valérie et Julie, les co-fondatrices.
 Le comptoir 43 - Bio Ô Top était déjà engagé au niveau anti-gaspi. Cependant, il renforce sa lutte contre le gaspillage en devenant restaurant partenaire avec RES&CO. En effet, Valérie, sensible à cette cause souhaite limiter toute perte à l’issue de son service et c’est pour cette raison qu’elle vous accueille, de 12h à 15h, le mardi et le jeudi dans son restaurant, au 43 rue de l’Arbre Sec !
 `,
    
-    infos: [
+        infos: [
             "Accès handicapé",
             "Animaux acceptés",
             "Climatisé",
@@ -758,4 +758,4 @@ Object.keys(restaurants).forEach((restaurantId) => (
     restaurants[restaurantId].id = restaurantId
 ))
 
-export default restaurants
+module.exports = restaurants

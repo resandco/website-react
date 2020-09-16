@@ -1,4 +1,4 @@
-import React, { Component, useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import Helmet from "react-helmet";
 import Select from "react-select";
 
