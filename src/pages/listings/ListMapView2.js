@@ -60,18 +60,25 @@ const timeslotOptions = [
         }, [])
         .sort((a, b) => {
             const timeslotsOrder = {
+                'lundi matin': 0,
                 'lundi midi': 1,
                 'lundi soir': 2,
+                'mardi matin': 10,
                 'mardi midi': 11,
                 'mardi soir': 12,
+                'mercredi matin': 20,
                 'mercredi midi': 21,
                 'mercredi soir': 22,
+                'jeudi matin': 30,
                 'jeudi midi': 31,
                 'jeudi soir': 32,
+                'vendredi matin': 40,
                 'vendredi midi': 41,
                 'vendredi soir': 42,
+                'samedi matin': 50,
                 'samedi midi': 51,
                 'samedi soir': 52,
+                'dimanche matin': 60,
                 'dimanche midi': 61,
                 'dimanche soir': 62
             }
