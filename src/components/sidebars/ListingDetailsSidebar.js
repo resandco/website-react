@@ -132,7 +132,7 @@ function ListingDetailsSidebar({ restaurant }) {
                             onChange={handleCgvChange}
                             checked={isCgvChecked}
                         />
-                        &nbsp;J'ai lu et j'accepte les <a href="#nogo">Conditions Générales de Vente</a>
+                        &nbsp;J'ai lu et j'accepte les <a href="#nogo">Conditions Générales de Vente</a>*
                     </label>
                 </div>
 
