@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { FiChevronDown } from 'react-icons/fi'
 import {Link} from "react-router-dom";
 
 export default function Navbar() {
@@ -24,12 +23,7 @@ export default function Navbar() {
                             <a href="https://resandco.typeform.com/to/xP5GlH">Devenir partenaire</a>
                         </li>
                         <li>
-                            <a href="https://www.res-and-co.fr/blog/">Blog <FiChevronDown /></a>
-                            <ul className="dropdown-menu-item">
-                                <li><a href="https://www.res-and-co.fr/category/gaspillage-alimentaire/">Le gaspillage alimentaire</a></li>
-                                <li><a href="https://www.res-and-co.fr/category/recettes-anti-gaspi/">Recettes anti-gaspi</a></li>
-                                <li><a href="https://www.res-and-co.fr/category/parole-de-restaurateurs/">Parole de restaurateurs</a></li>
-                            </ul>
+                            <a href="https://www.res-and-co.fr/blog/">Blog</a>
                         </li>
                     </ul>
                 </nav>
@@ -55,12 +49,7 @@ export default function Navbar() {
                             <a href="https://resandco.typeform.com/to/xP5GlH">Devenir partenaire</a>
                         </li>
                         <li>
-                            <a href="https://www.res-and-co.fr/blog/">Blog <FiChevronDown /></a>
-                            <ul className="dropdown-menu-item">
-                                <li><a href="https://www.res-and-co.fr/category/gaspillage-alimentaire/">Le gaspillage alimentaire</a></li>
-                                <li><a href="https://www.res-and-co.fr/category/recettes-anti-gaspi/">Recettes anti-gaspi</a></li>
-                                <li><a href="https://www.res-and-co.fr/category/parole-de-restaurateurs/">Parole de restaurateurs</a></li>
-                            </ul>
+                            <a href="https://www.res-and-co.fr/blog/">Blog</a>
                         </li>
                     </ul>
                 </div>
