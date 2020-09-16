@@ -72,7 +72,7 @@ class Home4 extends Component {
                 {/* How it works */}
                 <section className="hiw-area text-left padding-top-100px padding-bottom-80px">
                     <div className="container">
-                        <div className="row section-title-width text-left">
+                        <div className="section-title-width text-left">
                             <SectionsHeading
                                 title="RES&CO c'est quoi ?"
                                 titleClass=" before-none pt-0"
