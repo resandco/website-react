@@ -130,22 +130,16 @@ dl, ol, ul {
 }
 
 .restaurant-marker {
-    position: relative;
-}
-.restaurant-marker svg {
     width: 40px;
     height: 65px;
-    position: absolute;
-    top: -65px;
-    left: -20px;
 
     fill: #ff929d;
     stroke:  #ff929d;
     stroke-width: 2px;
     transition: fill 0.5s;
 }
-.restaurant-marker:hover svg,
-.restaurant-marker__hover svg{
+.restaurant-marker:hover,
+.restaurant-marker__hover{
     cursor: pointer;
     fill: #d45d69;
 }
@@ -193,3 +187,6 @@ dl, ol, ul {
 .menus .card-item {
     margin-bottom: 10px;
 }
+
+/* Fix react-select z-index issues */
+.Select [class$="-menu"] { position: relative; z-index: 1000; }

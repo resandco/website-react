@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState, useRef } from 'react';
 import Helmet from "react-helmet";
 import Select from "react-select";
 
@@ -34,7 +34,6 @@ const locationOptions = [
             label: value
         }))
 ]
-
 const timeslotOptions = [
     {
         label: 'Tout voir',
@@ -78,182 +77,152 @@ const timeslotOptions = [
         }))
 ]
 
-class ListMapView2 extends Component {
-    constructor(props) {
-        super(props);
-        this.cardListRef = React.createRef();
+function filterRestaurants(all, location, timeslot) {
+    return all.reduce((acc, curr) => {
+        if (location && location !== curr.scity) {
+            return acc;
+        }
+
+        if (timeslot && !(timeslot in curr.creneaux)) {
+            return acc;
+        }
+
+        acc.push(curr);
+        return acc;
+    }, [])
+}
+
+export default function ListMapView2() {
+    const cardListRef = useRef();
+
+    const [filteredRestaurants, setFilteredRestaurants] = useState(allRestaurants)
+    const [selectedTimeslot, setSelectedTimeslot] = useState(timeslotOptions[0])
+    const [selectedLocation, setSelectedLocation] = useState(locationOptions[0])
+    const [selectedRestaurant, setSelectedRestaurant] = useState()
+    const [hoveredRestaurant, setHoveredRestaurant] = useState()
+
+    const handleTimeslotChange = ( newTimeslot ) => {
+        setFilteredRestaurants( filterRestaurants(allRestaurants, selectedLocation.value, newTimeslot.value) )
+        setSelectedTimeslot(newTimeslot)
+        setSelectedRestaurant(null)
     }
 
-    state = {
-        allRestaurants: allRestaurants,
-        filteredRestaurants: allRestaurants,
-        timeslotOptions,
-        locationOptions,
-        selectedTimeslot: Object.values(timeslotOptions)[0],
-        selectedCity: Object.values(locationOptions)[0],
-        hoveredRestaurant: null,
-        selectedRestaurant: null,
-    }
-
-    handleTimeslotChange = ( selectedTimeslot ) => {
-        const {
-            allRestaurants,
-            selectedCity,
-        } = this.state;
-        const filteredRestaurants =
-            this.filterRestaurants(allRestaurants, selectedCity.value, selectedTimeslot.value)
-        this.setState(
-            {
-                selectedTimeslot,
-                filteredRestaurants,
-                selectedRestaurant: null,
-            }
-        );
-    };
-    handleCityChange = ( selectedCity ) => {
-        const {
-            allRestaurants,
-            selectedTimeslot
-        } = this.state;
-        const filteredRestaurants =
-            this.filterRestaurants(allRestaurants, selectedCity.value, selectedTimeslot.value)
-        this.setState(
-            {
-                selectedCity,
-                filteredRestaurants,
-                selectedRestaurant: null
-            }
-        );
+    const handleLocationChange = ( newLocation ) => {
+        setFilteredRestaurants( filterRestaurants(allRestaurants, newLocation.value, selectedTimeslot.value) )
+        setSelectedLocation(newLocation)
+        setSelectedRestaurant(null)
     }
     
-    handleSelectRestaurant = ( placeId ) => {
-        const { filteredRestaurants } = this.state;
-        this.setState({
-            selectedRestaurant: placeId,
-            filteredRestaurants: [
-                filteredRestaurants.filter(({ id }) => id === placeId)[0],
-                ...filteredRestaurants.filter(({ id }) => id !== placeId),
-            ]
-        })
-        window.scroll({ behavior: 'smooth', top: this.cardListRef.current.offsetTop })
+    const handleRestaurantChange = ( placeId ) => {
+        const newRestaurants = [
+            filteredRestaurants.filter(({ id }) => id === placeId)[0],
+            ...filteredRestaurants.filter(({ id }) => id !== placeId),
+        ]
+        console.log(placeId, newRestaurants)
+        setFilteredRestaurants(newRestaurants)
+        setSelectedRestaurant(placeId)
+
+        window.scroll({ behavior: 'smooth', top: cardListRef.current.offsetTop })
     }
 
-    handleEnterPlace = ( placeId ) => {
-        this.setState({ hoveredRestaurant: placeId })
+    const handleEnterPlace = ( placeId ) => {
+        setHoveredRestaurant( placeId )
     }
-    handleLeavePlace = () => {
-        this.setState({ hoveredRestaurant: null })
-    }
-
-    filterRestaurants = (all, location, timeslot) => {
-        return all.reduce((acc, curr) => {
-            if (location && location !== curr.scity) {
-                return acc;
-            }
-
-            if (timeslot && !(timeslot in curr.creneaux)) {
-                return acc;
-            }
-
-            acc.push(curr);
-            return acc;
-        }, [])
+    const handleLeavePlace = () => {
+        setHoveredRestaurant(null)
     }
 
-    render() {
-        return (
-            <main className="List-map-view2">
-                <Helmet>
-                    <title>Trouvez votre restaurant anti-gaspi - RES&CO</title>
-                </Helmet>
+    return (
+        <main className="List-map-view2">
+            <Helmet>
+                <title>Trouvez votre restaurant anti-gaspi - RES&CO</title>
+            </Helmet>
 
-                {/* Header */}
-                <GeneralHeader />
+            {/* Header */}
+            <GeneralHeader />
 
-                {/* Place List */}
-                <section className="card-area margin-top-100px padding-bottom-100px">
-                    <div className="container">
-                        <div className="row align-items-start">
+            {/* Place List */}
+            <section className="card-area margin-top-100px padding-bottom-100px">
+                <div className="container">
+                    <div className="row align-items-start">
 
-                            <div className="col-lg-8 ">
-                                <div className="home-map">
-                                    <div className="map-container map-height w-100">
-                                        <MapViewCluster
-                                            restaurants={this.state.filteredRestaurants}
-                                            hoveredRestaurant={this.state.hoveredRestaurant}
-                                            selectRestaurant={this.handleSelectRestaurant}
+                        <div className="col-lg-8 ">
+                            <div className="home-map">
+                                <div className="map-container map-height w-100">
+                                    <MapViewCluster
+                                        restaurants={filteredRestaurants}
+                                        hoveredRestaurant={hoveredRestaurant}
+                                        selectRestaurant={handleRestaurantChange}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-4">
+                            <div className="sidebar">
+                                <div className="sidebar-widget">
+                                    <h3 className="widget-title">Choisissez un créneau</h3>
+                                    <div className="sidebar-option mb-3">
+                                        <Select
+                                            value={selectedTimeslot}
+                                            placeholder="Tout voir"
+                                            onChange={handleTimeslotChange}
+                                            options={timeslotOptions}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="sidebar-widget">
+                                    <h3 className="widget-title">Choisissez une localisation</h3>
+                                    <div className="sidebar-option">
+                                        <Select
+                                            className="Select"
+                                            value={selectedLocation}
+                                            placeholder="Tout voir"
+                                            onChange={handleLocationChange}
+                                            options={locationOptions}
                                         />
                                     </div>
                                 </div>
                             </div>
-
-                            <div className="col-lg-4">
-                                <div className="sidebar">
-                                    <div className="sidebar-widget">
-                                        <h3 className="widget-title">Choisissez un créneau</h3>
-                                        <div className="sidebar-option mb-3">
-                                            <Select
-                                                value={this.state.selectedOption}
-                                                placeholder="Tout voir"
-                                                onChange={this.handleTimeslotChange}
-                                                options={this.state.timeslotOptions}
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="sidebar-widget">
-                                        <h3 className="widget-title">Choisissez une localisation</h3>
-                                        <div className="sidebar-option">
-                                            <Select
-                                                value={this.state.selectedCatOp}
-                                                placeholder="Tout voir"
-                                                onChange={this.handleCityChange}
-                                                options={this.state.locationOptions}
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
 
-                        <div className="row align-items-start">
+                    </div>
 
-                            <div className="col-lg-8 ">
-                                <div className="row twocol align-items-start justify-content-start margin-top-30px" ref={this.cardListRef}>
-                                    {
-                                        this.state.filteredRestaurants.length === 0
-                                            ? (
-                                                <div className="col-lg-8">
-                                                    <span>Aucun réstaurant ne correspond à ces critères</span>
-                                                </div>
-                                            )
-                                            : this.state.filteredRestaurants.map((item, index) => (
-                                                <RecommendedPlace
-                                                    place={item}
-                                                    key={index}
-                                                    isSelected={item.id === this.state.selectedRestaurant}
-                                                    isHovered={item.id === this.state.hoveredRestaurant}
-                                                    handleEnterPlace={this.handleEnterPlace}
-                                                    handleLeavePlace={this.handleLeavePlace}
-                                                />
-                                            ))
-                                    }
-                                </div>
+                    <div className="row align-items-start">
+
+                        <div className="col-lg-8 ">
+                            <div className="row twocol align-items-start justify-content-start margin-top-30px" ref={cardListRef}>
+                                {
+                                    filteredRestaurants.length === 0
+                                        ? (
+                                            <div className="col-lg-8">
+                                                <span>Aucun restaurant ne correspond à ces critères</span>
+                                            </div>
+                                        )
+                                        : filteredRestaurants.map((item, index) => (
+                                            <RecommendedPlace
+                                                place={item}
+                                                key={index}
+                                                isSelected={item.id === selectedRestaurant}
+                                                isHovered={item.id === hoveredRestaurant}
+                                                handleEnterPlace={handleEnterPlace}
+                                                handleLeavePlace={handleLeavePlace}
+                                            />
+                                        ))
+                                }
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                {/* Newsletter */}
-                <Newsletter />
+            {/* Newsletter */}
+            <Newsletter />
 
-                {/* Footer */}
-                <Footer />
+            {/* Footer */}
+            <Footer />
 
-                <ScrollTopBtn />
-            </main>
-        );
-    }
+            <ScrollTopBtn />
+        </main>
+    );
 }
-
-export default ListMapView2;
