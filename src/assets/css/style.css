@@ -3014,7 +3014,11 @@ body {
   @media (max-width: 1199px) {
     .header-area {
       padding-top: 30px;
-      padding-bottom: 30px; } }
+      padding-bottom: 30px; }
+    .header-area .logo img {
+      transform: translateY(-10px);
+    }
+  }
   .header-area:after {
     position: absolute;
     content: '';
