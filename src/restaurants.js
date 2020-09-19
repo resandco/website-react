@@ -198,6 +198,7 @@ Casadiagana est déjà engagé depuis un an dans la lutte contre le gaspillage a
     },
     'carmen-ragosta': {
         title: 'Carmen Ragosta',
+        verifie: true,
         stitle: '8 Rue de la Grange aux Belles',
         scity: 'Paris 10ème',
         szip: '75010',
@@ -750,6 +751,78 @@ Le personnel met son enthousiasme et son savoir-faire à votre disposition et vo
             "Terrasse",
             "Wifi",
             "Kids friendly",
+        ]
+    },
+    'tiki-bowls': {
+        badge: 'jusqu\'à -40%',
+        title: 'Tiki Bowls',
+        stitle: '12 Rue de Castellane',
+        scity: 'Paris 8ème',
+        szip: '75008',
+        coordinates: { lat: 48.872727, lng: 2.324529 },
+        image: "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_Bowls-Photos-13_tSCgHmxGS6.jpg",
+        gallerie: [
+            "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_en_photos-lieu-06_ek_gNYsMEi.jpg",
+            "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_en_photos-lieu-01_T7Q1AFWTlt.jpg",
+            "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_Bowls-Photos-34_we7w1oa3bS.jpg",
+            "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_en_photos-lieu-03_5mtQcmvban.jpg",
+            "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_Bowls-Photos-32_GhxDbtCwiZ.jpg",
+            "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_Bowls-Photos-18_2m1pzg2Ri.jpg",
+            "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_en_photos-lieu-02_NUFq4edUR.jpg",
+        ],
+        tags: ['Hawaïen', 'Poké', 'Healthy'],
+        creneaux: {
+            'vendredi midi': ['12h', '12h30', '13h', '13h30', '14h'],
+        },
+        menus: [
+            {
+                menu: "petit bol + dessert",
+                prix: 7
+            },
+            {
+                menu: "petit bol + dessert - végétarien",
+                prix: 7
+            },
+            {
+                menu: "grand bol + dessert",
+                prix: 9
+            },
+            {
+                menu: "grand bol + dessert - végétarien",
+                prix: 9
+            }
+        ],
+        description: `
+### L’ambiance et l'équipe
+
+Chez Tiki, on s'évade dans l'univers des plages et des vacances à Hawaï. Leurs spécialités : les bols sucrés pour le petit déjeuner, et les bols salés pour un déjeuner healthy. Ils proposent aussi des tartines. Vous ne trouverez pas de viande, uniquement du poisson. Ouvert en 2017 par Marie, ce lieu est idéal pour pause gourmande, saine et à petit prix.
+
+### Et l’anti-gaspi ?
+
+Tiki Bowls est fermé le week-end. Les pertes alimentaires sont donc essentiellement le vendredi, à la fin du service. C'est pour cette raison que nos menus surprises anti-gaspi sont disponibles uniquement le vendredi midi !
+        `,
+        infos: [
+            "Option végétarienne",
+            "Option végane",
+            "Terrasse",
+            "Animaux acceptés",
+            "Climatisé",
+            "Wifi",
+            "Option sans gluten",
+        ]
+         ,
+        allergenes: [
+            "Céréales contenant du gluten",
+            "Crustacés",
+            "Oeufs",
+            "Poissons",
+            "Arachides",
+            "Soja",
+            "Lait",
+            "Fruits à coque",
+            "Graines de sésame",
+            "Moutarde",
+            "Mollusques",
         ]
     },
 }
