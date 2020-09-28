@@ -6,8 +6,9 @@ import DatePicker from "react-datepicker"
 
 import "react-datepicker/dist/react-datepicker.css";
 
-const dayNameToNumber = ( name ) =>(
-    ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"].indexOf(name)
+const dayNameToNumber = ( name ) => (
+    // This will be matched with dateFns.getDay which returns 0 for Sunday
+    ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"].indexOf(name)
 )
 
 function numberToEuroPrice( number = 0 ) {
