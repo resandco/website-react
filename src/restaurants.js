@@ -282,8 +282,11 @@ Carmen a toujours été très attentive à l’anti-gaspi. D'ailleurs, c'est men
         ],
         tags: ['Français', 'Epicerie fine', 'Bio'],
         creneaux: {
-            'mardi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
-            'jeudi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
+            'mardi soir': ['16h30', '17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30'],
+            'mercredi soir': ['16h30', '17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30'],
+            'jeudi soir': ['16h30', '17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30'],
+            'vendredi soir': ['16h30', '17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30'],
+            'samedi soir': ['16h30', '17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30'],
         },
         menus: [
             {
@@ -753,6 +756,66 @@ Le personnel met son enthousiasme et son savoir-faire à votre disposition et vo
             "Kids friendly",
         ]
     },
+    'love-me-cru': {
+        badge: 'jusqu\'à -25%',
+        title: 'Love Me Cru',
+        stitle: '44 rue de Tourtille',
+        scity: 'Paris 20ème',
+        szip: '75020',
+        coordinates: { lat: 48.872748, lng: 2.380119 },
+        image: "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_Bowls-Photos-13_tSCgHmxGS6.jpg",
+        gallerie: [
+            "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_en_photos-lieu-06_ek_gNYsMEi.jpg",
+            "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_en_photos-lieu-01_T7Q1AFWTlt.jpg",
+            "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_Bowls-Photos-34_we7w1oa3bS.jpg",
+            "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_en_photos-lieu-03_5mtQcmvban.jpg",
+            "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_Bowls-Photos-32_GhxDbtCwiZ.jpg",
+            "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_Bowls-Photos-18_2m1pzg2Ri.jpg",
+            "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_en_photos-lieu-02_NUFq4edUR.jpg",
+        ],
+        tags: ['Crudivore', 'Brunch', 'Bowls', 'Vegan', 'Bio'],
+        creneaux: {
+            'mardi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30'],
+            'mercredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30'],
+            'jeudi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30'],
+            'vendredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30'],
+            'dimanche midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30'],
+        },
+        menus: [
+            {
+                menu: "assiette brunch végan",
+                prix: 12
+            },
+            {
+                menu: "smoothie bowl",
+                prix: 7,5
+            }
+        ],
+        description: `
+### L’ambiance et l'équipe
+
+David est un véritable engagé. Suite à une prise de conscience personnelle il y a quelques années, Marc découvre l'alimentation crue et les bienfaits des jus. Afin de partager sa nouvelle passion au plus grand nombre, il décide d'ouvrir Love Me Cru en 2016. Love Me Cru est un lieu à son image et surtout qui répond à ses exigences alimentaires : qualité, produits bio et respectueux de l'environnement, des animaux et des consommateurs. Ses plats sont essentiellement végans.
+Sa carte change au fil des saisons et de son inspiration ! On y retrouve : des salades, des soupes, des wraps, des jus. 100% végétal, 100% cru.
+Love Me Cru est implanté dans le dynamique quartier de Belleville, dans le 20e arrondissement de Paris.
+
+### Et l’anti-gaspi ?
+
+Love Me Cru, c'est une cuisine préparée à la minute, en fonction de la clientèle, afin de limiter les pertes alimentaires. L'assiette brunch surprise, ainsi que le smoothie bowl surprise permet à David d'ajuster ses stocks en fruits et légumes, en changeant facilement les ingrédients dans ces formules surprises.        `,
+        infos: [
+            "Option végétarienne",
+            "Option végane",
+            "Terrasse",
+            "Option sans gluten",
+        ]
+         ,
+        allergenes: [
+            "Arachides",
+            "Soja",
+            "Fruits à coque",
+            "Graines de sésame",
+            "Moutarde",
+        ]
+    },
     'tiki-bowls': {
         badge: 'jusqu\'à -40%',
         title: 'Tiki Bowls',
@@ -794,11 +857,8 @@ Le personnel met son enthousiasme et son savoir-faire à votre disposition et vo
         ],
         description: `
 ### L’ambiance et l'équipe
-
 Chez Tiki, on s'évade dans l'univers des plages et des vacances à Hawaï. Leurs spécialités : les bols sucrés pour le petit déjeuner, et les bols salés pour un déjeuner healthy. Ils proposent aussi des tartines. Vous ne trouverez pas de viande, uniquement du poisson. Ouvert en 2017 par Marie, ce lieu est idéal pour pause gourmande, saine et à petit prix.
-
 ### Et l’anti-gaspi ?
-
 Tiki Bowls est fermé le week-end. Les pertes alimentaires sont donc essentiellement le vendredi, à la fin du service. C'est pour cette raison que nos menus surprises anti-gaspi sont disponibles uniquement le vendredi midi !
         `,
         infos: [
