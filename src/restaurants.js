@@ -79,19 +79,19 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
         tags: ['Français', 'Bar à huîtres'],
         creneaux: {
             'lundi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'lundi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
+            'lundi soir': ['17h', '17h30', '18h', '18h30', '19h', /*'19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'*/],
             'mardi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'mardi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
+            'mardi soir': ['17h', '17h30', '18h', '18h30', '19h', /*'19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'*/],
             'mercredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'mercredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
+            'mercredi soir': ['17h', '17h30', '18h', '18h30', '19h', /*'19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'*/],
             'jeudi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'jeudi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
+            'jeudi soir': ['17h', '17h30', '18h', '18h30', '19h', /*'19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'*/],
             'vendredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'vendredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
+            'vendredi soir': ['17h', '17h30', '18h', '18h30', '19h', /*'19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'*/],
             'samedi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'samedi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
+            'samedi soir': ['17h', '17h30', '18h', '18h30', '19h', /*'19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'*/],
             'dimanche midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'dimanche soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
+            'dimanche soir': ['17h', '17h30', '18h', '18h30', '19h', /*'19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'*/],
         },
         menus: [
             {
@@ -148,7 +148,7 @@ Chez lui, les clients y sont accueillis comme des rois.
         tags: ['Traiteur', 'Sandwicherie', 'Africain'],
         creneaux: {
             'vendredi midi': ['14h30', '15h', '15h30', '16h', '16h30'],
-            'vendredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30']
+            'vendredi soir': ['17h', '17h30', '18h']
         },
         menus: [
             {
@@ -353,22 +353,22 @@ Le comptoir 43 - Bio Ô Top était déjà engagé au niveau anti-gaspi. Cependan
         creneaux: {
             'lundi matin': ['9h', '9h30', '10h', '10h30', '11h'],
             'lundi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
-            'lundi soir': ['16h30', '17h', '17h30', '18h', '18h30', '19h'],
+            'lundi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
             'mardi matin': ['9h', '9h30', '10h', '10h30', '11h'],
             'mardi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
-            'mardi soir': ['16h30', '17h', '17h30', '18h', '18h30', '19h'],
+            'mardi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
             'mercredi matin': ['9h', '9h30', '10h', '10h30', '11h'],
             'mercredi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
-            'mercredi soir': ['16h30', '17h', '17h30', '18h', '18h30', '19h'],
+            'mercredi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
             'jeudi matin': ['9h', '9h30', '10h', '10h30', '11h'],
             'jeudi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
-            'jeudi soir': ['16h30', '17h', '17h30', '18h', '18h30', '19h'],
+            'jeudi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
             'vendredi matin': ['9h', '9h30', '10h', '10h30', '11h'],
             'vendredi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
-            'vendredi soir': ['16h30', '17h', '17h30', '18h', '18h30', '19h'],
+            'vendredi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
             'samedi matin': ['10h', '10h30', '11h'],
             'samedi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
-            'samedi soir': ['16h30', '17h', '17h30', '18h', '18h30', '19h'],
+            'samedi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
         },
         menus: [
             {
@@ -532,7 +532,7 @@ L’anti-gaspi apparaît clairement être une priorité pour le Seunsep. En effe
         tags: ['Bio', 'Cuisine créative', 'Français', 'Cuisine engagée'],
         creneaux: {
             'jeudi midi': ['13h30', '14h', '14h40'],
-            'jeudi soir': ['19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'],
+            'jeudi soir': ['19h', /*'19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'*/],
         },
         menus: [
             {
@@ -593,9 +593,9 @@ Les recettes sont préparées à partir d’ingrédients ultra frais, 100% bio e
         ],
         tags: ['Africain', 'Epicerie'],
         creneaux: {
-            'mardi soir': ['22h', '22h30'],
+            /*'mardi soir': ['22h', '22h30'],
             'mercredi soir': ['22h', '22h30'],
-            'jeudi soir': ['22h', '22h30'],
+            'jeudi soir': ['22h', '22h30'],*/
         },
         menus: [
             {
@@ -720,7 +720,7 @@ Engagés dans une démarche éco-responsable, Arthur et Jean ont tout de suite d
         tags: ['Français', 'Brasserie'],
         creneaux: {
             'samedi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30'],
-            'samedi soir': ['19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'],
+            'samedi soir': ['19h', /*'19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'*/],
         },
         menus: [
             {
