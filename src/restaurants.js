@@ -850,19 +850,19 @@ Tiki Bowls est fermé le week-end. Les pertes alimentaires sont donc essentielle
         menus: [
             {
                 menu: "grand bol",
-                prix: 11,90
+                prix: 11.90
             },
             {
                 menu: "grand bol - végétarien",
-                prix: 11,90
+                prix: 11.90
             },
             {
                 menu: "grand bol + dessert",
-                prix: 14,90
+                prix: 14.90
             },
             {
                 menu: "grand bol + dessert - végétarien",
-                prix: 14,90
+                prix: 14.90
             },
         ],
         description: `
