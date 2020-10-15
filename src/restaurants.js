@@ -825,6 +825,97 @@ Tiki Bowls est fermé le week-end. Les pertes alimentaires sont donc essentielle
             "Mollusques",
         ]
     },
+    'bar-bol': {
+        title: 'Bar Bol',
+        stitle: '3bis Rue de Vaugirard',
+        scity: 'Paris 6ème',
+        szip: '75006',
+        coordinates: { lat: 48.849010, lng: 2.340342 },
+        image: "https://ik.imagekit.io/resandco/bar-bol/121699103_792897407939343_3123092142266481611_n_k3fZdD8YAt.jpg",
+        gallerie: [
+            "https://ik.imagekit.io/resandco/bar-bol/121629264_2687870774862321_5694144547547571565_n_2RXFXJYXGN.jpg",
+            "https://ik.imagekit.io/resandco/bar-bol/121564518_1373244736363114_4361378519185792611_n_VBxfM9QUjJ.jpg",
+            "https://ik.imagekit.io/resandco/bar-bol/121699103_792897407939343_3123092142266481611_n_k3fZdD8YAt.jpg",
+            "https://ik.imagekit.io/resandco/bar-bol/121541146_399699831032219_8234539388690704283_n_XB25DBgO35F-.jpg",
+            "https://ik.imagekit.io/resandco/bar-bol/121645318_1262786907412626_3262946073193933546_n_OmvCVcXSQ3.jpg",
+            "https://ik.imagekit.io/resandco/bar-bol/121547274_413694492966157_2753976060741265428_n_gTjN4KbpZW.jpg",
+            "https://ik.imagekit.io/resandco/bar-bol/121542772_358430588689190_5996482935606606149_n_Woj10jBCuseu.jpg",
+        ],
+        tags: ['Hawaïen', 'Poké'],
+        creneaux: {
+            'lundi soir': ['18h', '18h30', '19h', '19h30'],
+            'mardi soir': ['18h', '18h30', '19h', '19h30'],
+            'mercredi soir': ['18h', '18h30', '19h', '19h30'],
+        },
+        menus: [
+            {
+                menu: "grand bol",
+                prix: 11.90
+            },
+            {
+                menu: "grand bol - végétarien",
+                prix: 11.90
+            },
+            {
+                menu: "grand bol + dessert",
+                prix: 14.90
+            },
+            {
+                menu: "grand bol + dessert - végétarien",
+                prix: 14.90
+            },
+        ],
+        description: `
+### L’ambiance
+
+Bar Bol, c'est un lieu qui où la cuisine et l'art ne font qu'un. Situé à deux pas du Jardin du Luxembourg, le Bar Bol offre une décoration d'intérieure unique signée Philippe Saade et Richard Orlinski.
+
+### Au menu
+
+Vous y dégusterez un large choix de bols, dont les bols signatures du célèbre chef Philippe Legendre, triplement étoilé. Ces bols sont des associations de saveurs pour un plaisir à la fois gustatif et visuel. Vos bols sont servis telles des oeuvres d'art ! 
+
+Votre menu est surprise ! Mais voici quelques informations sur ce que vous pourrirez retrouver dans votre menu.
+
+Les grands bols sont composés de : 1 base + 1 protéine + 3 mix-in + 2 toppings + 1 sauce
+
+- Bases : Riz vinaigré, Riz Tropical, Riz Betterave framboise, Riz Soja, Quinoa
+
+- Protéines : Saumon Cru, Dorade Cru, Thon Rouge Cru, Lieu fumé, Poulet rôti
+
+- Mix-in : Edamame, Avocat, Mangue, Choux rouge, Choux Blanc, Radis, Oignons rouge, Concombre, Grenade, Betterave, Gingembre, Ciboulette
+
+Tous les bols peuvent être végétariens, ou végan si besoin.
+
+Les desserts peuvent être par exemple : riz au lait, crème chocolat, crème caramel, panna cotta, mousse au chocolat, salade de fruits...
+
+### Et l'anti-gaspi alors ?
+
+Faire partie de l’aventure RES&CO ce n’est pas pour rien. Avec produits de qualité, frais et gourmands, il n'est pas question de gaspiller !
+
+Le Bar Bol n'est pas uniquement engagé dans la lutte contre le gaspillage alimentaire, mais aussi la lutte contre le cancer, en reversant un pourcentage de leur chiffre d'affaires à la Ligue contre le Cancer. 
+
+Chez Bar Bol, c'est un repas de qualité, sain, copieux, et engagé, avec des prix abordables pour tous !
+
+N’hésitez plus, rendez-vous dans ce bar gastronomique pour un voyage 100% hawaïen et sain.
+        `,
+        infos: [
+            "Option végétarienne",
+            "Option végane",
+            "Produits bio",
+            "Animaux acceptés",
+            "Terrasse",
+            "Option sans gluten",
+            "Wifi",
+        ],
+        allergenes: [
+            "Céréales contenant du glutent",
+            "Oeufs",
+            "Poissons",
+            "Soja",
+            "Graines de sésame",
+            "Anhydride sulfureux et sulfites",
+        ]
+    },
 }
 
 Object.keys(restaurants).forEach((restaurantId) => (
