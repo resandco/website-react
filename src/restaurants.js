@@ -257,8 +257,7 @@ Carmen a toujours été très attentive à l’anti-gaspi. D'ailleurs, c'est men
             "Accessibilité handicapé",
             "Terrasse",
             "Kids friendly",
-        ]
-         ,
+        ],
         allergenes: [
             "Céréales contenant du gluten",
             "Crustacés",
@@ -422,8 +421,7 @@ Les jus frais sont leur spécialité, mais leur conservation est de courte duré
             "Option végétarienne",
             "Terrasse",
             "Wifi",
-        ]
-         ,
+        ],
         allergenes: [
             "Cérérales contenant du gluten",
             "Oeufs",
@@ -499,8 +497,7 @@ L’anti-gaspi apparaît clairement être une priorité pour le Seunsep. En effe
             "Option végétarienne",
             "Terrasse",
             "Wifi",
-        ]
-         ,
+        ],
         allergenes: [
             "Cérérales contenant du gluten",
             "Crustacés",
@@ -628,8 +625,7 @@ C'est donc le dimanche soir, que BMK a choisit d'ouvrir des créneaux de réserv
         infos: [
             "Option végétarienne",
             "Kids friendly",
-        ]
-         ,
+        ],
         allergenes: [
             "Céréales contenant du gluten",
             "Oeufs",
@@ -693,8 +689,7 @@ Engagés dans une démarche éco-responsable, Arthur et Jean ont tout de suite d
             "Terrasse",
             "Wifi",
             "Emploi senior"
-        ]
-         ,
+        ],
         allergenes: [
             "Céréales contenant du gluten",
             "Lait",
@@ -926,7 +921,7 @@ N’hésitez plus, rendez-vous dans ce bar gastronomique pour un voyage 100% haw
         scity: 'Levallois-Perret',
         szip: '92300',
         coordinates: { lat: 48.898146, lng: 2.294886 },
-        image: ,
+        image: "",
         gallerie: [
       
         ],
