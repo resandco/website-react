@@ -257,8 +257,7 @@ Carmen a toujours été très attentive à l’anti-gaspi. D'ailleurs, c'est men
             "Accessibilité handicapé",
             "Terrasse",
             "Kids friendly",
-        ]
-         ,
+        ],
         allergenes: [
             "Céréales contenant du gluten",
             "Crustacés",
@@ -422,8 +421,7 @@ Les jus frais sont leur spécialité, mais leur conservation est de courte duré
             "Option végétarienne",
             "Terrasse",
             "Wifi",
-        ]
-         ,
+        ],
         allergenes: [
             "Cérérales contenant du gluten",
             "Oeufs",
@@ -499,8 +497,7 @@ L’anti-gaspi apparaît clairement être une priorité pour le Seunsep. En effe
             "Option végétarienne",
             "Terrasse",
             "Wifi",
-        ]
-         ,
+        ],
         allergenes: [
             "Cérérales contenant du gluten",
             "Crustacés",
@@ -628,8 +625,7 @@ C'est donc le dimanche soir, que BMK a choisit d'ouvrir des créneaux de réserv
         infos: [
             "Option végétarienne",
             "Kids friendly",
-        ]
-         ,
+        ],
         allergenes: [
             "Céréales contenant du gluten",
             "Oeufs",
@@ -693,8 +689,7 @@ Engagés dans une démarche éco-responsable, Arthur et Jean ont tout de suite d
             "Terrasse",
             "Wifi",
             "Emploi senior"
-        ]
-         ,
+        ],
         allergenes: [
             "Céréales contenant du gluten",
             "Lait",
@@ -916,6 +911,74 @@ N’hésitez plus, rendez-vous dans ce bar gastronomique pour un voyage 100% haw
             "Soja",
             "Graines de sésame",
             "Anhydride sulfureux et sulfites",
+        ]
+    },
+    'verde': {
+        title: 'Verdé',
+        badge: 'jusqu\'à -25%',
+        verifie: true,
+        stitle: '138 Rue Victor Hugo',
+        scity: 'Levallois-Perret',
+        szip: '92300',
+        coordinates: { lat: 48.898146, lng: 2.294886 },
+        image: "",
+        gallerie: [
+      
+        ],
+        tags: ['Salade', 'Poké', 'Quiche', 'Soupe'],
+        creneaux: {
+            'mardi midi': ['13h30', '14h', '14h30'],
+            'mercredi midi': ['13h30', '14h', '14h30'],
+            'vendredi midi': ['13h30', '14h', '14h30'],
+        },
+        menus: [
+            {
+                menu: "plat",
+                prix: 6
+            },
+            {
+                menu: "plat + dessert",
+                prix: 9
+            },
+            {
+                menu: "plat - végétarien",
+                prix: 6
+            },
+            {
+                menu: "plat + dessert - végétarien",
+                prix: 9
+            },
+        ],
+        description: `
+### L’ambiance
+
+Le comptoir à salade Verdé a vu le jour en septembre 2020 à Levallois-Perret Comptoir à salade oui, mais pas que, quiches, pokés, soupes et pâtisseries sont à déguster. Le tout, préparé à partir de produits extra-frais de saison. La décoration verte et boisée fait du Verdé un vrai petit coin de nature en plein Levallois, et si vous tendez l'oreille vous parviendrez même à entendre le chant des oiseaux !
+
+### Au menu
+
+Le comptoir à salade Verdé, c’est le rêve de Nathalie Fernandes, une entrepreneure dynamique. Après une reconversion professionnelle, elle décide de se former et d’ouvrir un lieu à son image. Et ce n’est certainement pas la crise sanitaire qui allait la stopper !
+
+### Et l'anti-gaspi alors ?
+
+Engagée pour la valorisation des légumes et fruits, Nathalie déborde d’idées de recettes à vous faire découvrir ! C’est le mercredi et le vendredi qu’il y a le plus de restes alimentaires. Alors réservez vite votre menu surprise pour un déjeuner équilibré et engagé !
+
+Après votre dégustation vous serez amenés vous même à débarrasser votre plateau et à trier vos déchets. Chez Verdé chaque choses a sa place et le plastique, les couverts et les cartons ont tous un emplacement réservé pour le bonheur de dame nature.
+        `,
+        infos: [
+            "Option végétarienne",
+            "Option végane",
+            "Option sans gluten",
+            "Compost",
+        ],
+        allergenes: [
+            "Céréales contenant du glutent",
+            "Oeufs",
+            "Poissons",
+            "Soja",
+            "Lait",
+            "Fruits à coque",
+            "Moutarde",
+            "Graines de sésame",
         ]
     },
 }
