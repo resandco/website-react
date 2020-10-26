@@ -921,9 +921,14 @@ N’hésitez plus, rendez-vous dans ce bar gastronomique pour un voyage 100% haw
         scity: 'Levallois-Perret',
         szip: '92300',
         coordinates: { lat: 48.898146, lng: 2.294886 },
-        image: "",
+        image: "https://ik.imagekit.io/resandco/verde/IMG_6389_9yBImsPtJY.jpg",
         gallerie: [
-      
+            "https://ik.imagekit.io/resandco/verde/2791910D-BE2B-4E91-85C2-5A4DA3D35C1F_b5s-aki1MS.JPG",
+            "https://ik.imagekit.io/resandco/verde/IMG_6193_W2l6DabFZ5IMP.jpg",
+            "https://ik.imagekit.io/resandco/verde/14129029-B5E9-4A03-A4EE-D76CD539AD45_yuc_vbkEw4.JPG",
+            "https://ik.imagekit.io/resandco/verde/IMG_6079_DHxxtp7ur-.jpg",
+            "https://ik.imagekit.io/resandco/verde/IMG_6288_jCfnlh3hdzJm3.jpg",
+            "https://ik.imagekit.io/resandco/verde/IMG_6235_Qe0fZAjArAhGc.jpg",
         ],
         tags: ['Salade', 'Poké', 'Quiche', 'Soupe'],
         creneaux: {
