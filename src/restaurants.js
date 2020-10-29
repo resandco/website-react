@@ -1041,8 +1041,8 @@ Après votre dégustation vous serez amenés vous même à débarrasser votre pl
         szip: '92110',
         coordinates: { lat: 48.898647, lng: 2.302957 },
         image: "",
-        gallerie: [ "",
-                   "https://ik.imagekit.io/resandco/new-shri-ganesh/IMG_3271_W_xGdxKv2-dU.jpeg",
+        gallerie: [ "https://ik.imagekit.io/resandco/cantine-populaire/40407581_532304780552105_3408748610341306368_o_mTE_3-lwMfyN.jpg",
+                   "https://ik.imagekit.io/resandco/cantine-populaire/40407581_532304780552105_3408748610341306368_o_mTE_3-lwMfyN.jpg",
         ],
         tags: ['cantine', 'Offre Spéciale Covid'],
         creneaux: {
