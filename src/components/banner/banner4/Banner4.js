@@ -13,7 +13,7 @@ function Banner4() {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="hero-heading">
-                                <SectionsHeading title="Mangez au restaurant autrement" desc="Réservez votre menu surprise anti-gaspi" />
+                                <SectionsHeading title="Soutenez vos restaurants préférés en commandant à emporter" desc="Commandez votre menu surprise" />
                             </div>
                             <Banner4SearchInput />
                         </div>
