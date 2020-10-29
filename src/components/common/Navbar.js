@@ -17,7 +17,7 @@ export default function Navbar() {
                             <Link to="/">Accueil</Link>
                         </li>
                         <li>
-                            <Link to="/reservation-restaurant">Réserver un restaurant</Link>
+                            <Link to="/reservation-restaurant">Commander un repas surprise</Link>
                         </li>
                         <li>
                             <a href="https://resandco.typeform.com/to/xP5GlH">Devenir partenaire</a>
@@ -43,7 +43,7 @@ export default function Navbar() {
                             <Link to="/">Accueil</Link>
                         </li>
                         <li>
-                            <Link to="/reservation-restaurant">Réserver un restaurant</Link>
+                            <Link to="/reservation-restaurant">Commander un repas surprise</Link>
                         </li>
                         <li>
                             <a href="https://resandco.typeform.com/to/xP5GlH">Devenir partenaire</a>
