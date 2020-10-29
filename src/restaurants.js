@@ -865,7 +865,7 @@ Tiki Bowls est fermé le week-end. Les pertes alimentaires sont donc essentielle
         description: `
 ### L’ambiance
 
-Bar Bol, c'est un lieu qui où la cuisine et l'art ne font qu'un. Situé à deux pas du Jardin du Luxembourg, le Bar Bol offre une décoration d'intérieure unique signée Philippe Saade et Richard Orlinski.
+Bar Bol, c'est un lieu où la cuisine et l'art ne font qu'un. Situé à deux pas du Jardin du Luxembourg, le Bar Bol offre une décoration d'intérieure unique signée Philippe Saade et Richard Orlinski.
 
 ### Au menu
 
@@ -967,7 +967,7 @@ Le comptoir à salade Verdé, c’est le rêve de Nathalie Fernandes, une entrep
 
 Engagée pour la valorisation des légumes et fruits, Nathalie déborde d’idées de recettes à vous faire découvrir ! C’est le mercredi et le vendredi qu’il y a le plus de restes alimentaires. Alors réservez vite votre menu surprise pour un déjeuner équilibré et engagé !
 
-Après votre dégustation vous serez amenés vous même à débarrasser votre plateau et à trier vos déchets. Chez Verdé chaque choses a sa place et le plastique, les couverts et les cartons ont tous un emplacement réservé pour le bonheur de dame nature.
+Après votre dégustation vous serez amenés vous même à débarrasser votre plateau et à trier vos déchets. Chez Verdé chaque chose à sa place et le plastique, les couverts et les cartons ont tous un emplacement réservé pour le bonheur de dame nature.
         `,
         infos: [
             "Option végétarienne",
