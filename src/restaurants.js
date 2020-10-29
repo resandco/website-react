@@ -508,7 +508,7 @@ L’anti-gaspi apparaît clairement être une priorité pour le Seunsep. En effe
         ]
     },
     'yuman': {
-        badge: 'jusqu\'à -52%',
+        badge: 'fermé pendant confinement' /*'jusqu\'à -52%'*/,
         title: 'Yuman',
         verifie: true,
         stitle: '70 Rue du Chevaleret',
@@ -528,8 +528,8 @@ L’anti-gaspi apparaît clairement être une priorité pour le Seunsep. En effe
         ],
         tags: ['Bio', 'Cuisine créative', 'Français', 'Cuisine engagée'],
         creneaux: {
-            'jeudi midi': ['13h30', '14h', '14h40'],
-            'jeudi soir': ['19h', '19h30', '20h', '20h30', /*'21h', '21h30', '22h', '22h30'*/],
+            /*'jeudi midi': ['13h30', '14h', '14h40'],
+            'jeudi soir': ['19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'],*/
         },
         menus: [
             {
