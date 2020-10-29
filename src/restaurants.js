@@ -932,9 +932,11 @@ N’hésitez plus, rendez-vous dans ce bar gastronomique pour un voyage 100% haw
         ],
         tags: ['Salade', 'Poké', 'Quiche', 'Soupe'],
         creneaux: {
-            'mardi midi': ['13h30', '14h', '14h30'],
-            'mercredi midi': ['13h30', '14h', '14h30'],
-            'vendredi midi': ['13h30', '14h', '14h30'],
+            'lundi midi': ['11h', '11h30', '12h', '12h30', '13h', '13h30'],
+            'mardi midi': ['11h', '11h30', '12h', '12h30', '13h', '13h30'],
+            'mercredi midi': ['11h', '11h30', '12h', '12h30', '13h', '13h30'],
+            'jeudi midi': ['11h', '11h30', '12h', '12h30', '13h', '13h30'],
+            'vendredi midi': ['11h', '11h30', '12h', '12h30', '13h', '13h30'],
         },
         menus: [
             {
@@ -984,6 +986,94 @@ Après votre dégustation vous serez amenés vous même à débarrasser votre pl
             "Fruits à coque",
             "Moutarde",
             "Graines de sésame",
+        ]
+    },
+        'new-shri-ganesh': {
+        title: 'New Shri Ganesh',
+        badge: 'offre spéciale Covid',
+       
+        stitle: '52 avenue Marceau',
+        scity: 'Courbevoie',
+        szip: '92400',
+        coordinates: { lat: 48.900523, lng: 2.245154 },
+        image: "https://ik.imagekit.io/resandco/new-shri-ganesh/2017-08-31_CR8a0dWZeW.jpg",
+        gallerie: [ "https://ik.imagekit.io/resandco/new-shri-ganesh/2017-08-30_tA3vktgjS.jpg",
+                   "https://ik.imagekit.io/resandco/new-shri-ganesh/IMG_3271_W_xGdxKv2-dU.jpeg",
+        ],
+        tags: ['Indien', 'Offre Spéciale Covid'],
+        creneaux: {
+            'lundi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'lundi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h'],
+            'mardi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'mardi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h'],
+            'mercredi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'mercredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h'],
+            'jeudi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'jeudi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h'],
+            'vendredi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'vendredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h'],
+            'samedi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'samedi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h'],
+            'dimanche midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'dimanche soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h'],
+        },
+        menus: [
+            {
+                menu: "entrée + plat + dessert",
+                prix: 13.5
+            },
+        ],
+        description: `
+        `,
+        infos: [
+          
+        ],
+        allergenes: [
+          
+        ]
+    },
+        'cantine-populaire': {
+        title: 'Cantine Populaire',
+        badge: 'offre spéciale Covid',
+       
+        stitle: '21 Henri Barbusse',
+        scity: 'Clichy',
+        szip: '92110',
+        coordinates: { lat: 48.898647, lng: 2.302957 },
+        image: "",
+        gallerie: [ "",
+                   "https://ik.imagekit.io/resandco/new-shri-ganesh/IMG_3271_W_xGdxKv2-dU.jpeg",
+        ],
+        tags: ['cantine', 'Offre Spéciale Covid'],
+        creneaux: {
+            'lundi matin': ['8h', '8h30', '9h', '9h30', '10h', '10h30', '11h'],
+            'lundi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
+            'mardi matin': ['8h', '8h30', '9h', '9h30', '10h', '10h30', '11h'],
+            'mardi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
+            'mercredi matin':  ['8h', '8h30', '9h', '9h30', '10h', '10h30', '11h'],
+            'mercredi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
+            'jeudi matin': ['8h', '8h30', '9h', '9h30', '10h', '10h30', '11h'],
+            'jeudi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
+            'vendredi matin': ['8h', '8h30', '9h', '9h30', '10h', '10h30', '11h'],
+            'vendredi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
+        },
+        menus: [
+            {
+                menu: "entrée + plat ou plat + dessert",
+                prix: 13
+            },
+            {
+                menu: "entrée + plat + dessert",
+                prix: 15
+            },
+        ],
+        description: `
+        `,
+        infos: [
+          
+        ],
+        allergenes: [
+          
         ]
     },
 }
