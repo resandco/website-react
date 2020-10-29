@@ -17,7 +17,7 @@ export default class BannerOneSearchInput extends Component {
             <>
                 <div className="main-search-input">
                     <div className="main-search-input-btn">
-                        <Link to="/reservation-restaurant" className="button theme-btn" type="submit">Réserver un restaurant</Link>
+                        <Link to="/reservation-restaurant" className="button theme-btn" type="submit">Je commande un repas surprise</Link>
                     </div>
                 </div>
             </>
