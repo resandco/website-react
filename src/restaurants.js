@@ -1024,9 +1024,13 @@ Après votre dégustation vous serez amenés vous même à débarrasser votre pl
             },
         ],
         description: `
+        Installé en plein cœur de Courbevoie, le restaurant New Shri Ganesh vous propose une évasion culinaire dans le nord de l’Inde : grillades, plats en sauces, plats végétariens, curry…
+        Vous pourrez vous régaler dans ce restaurant indien complètement typique. Leurs plats sont épicés et parfumés mais pas forcément pimentés. 
+
+        En raison du confinement, le service sera assuré uniquement à emporter. 
+
         `,
-        infos: [
-          
+        infos: [ 
         ],
         allergenes: [
           
@@ -1070,6 +1074,10 @@ Après votre dégustation vous serez amenés vous même à débarrasser votre pl
             },
         ],
         description: `
+        La Cantine populaire vous propose une cuisine familiale saine et gourmande 100% fait maison avec amour. 
+ 
+
+        En raison du confinement, le service sera assuré uniquement à emporter. 
         `,
         infos: [
           
@@ -1119,7 +1127,11 @@ Après votre dégustation vous serez amenés vous même à débarrasser votre pl
             },
         ],
         description: `
-            Plus d'informations sur www.lassiette-de-rebecca.fr 
+        Restaurant africain qui vous propose un voyage dans le continent africain à travers leurs différents plats. Leurs plats sont cuisinés  avec des produits frais par leur chef tous les jours.
+
+        En raison du confinement, le service sera assuré uniquement à emporter. 
+        
+        Plus d'informations sur www.lassiette-de-rebecca.fr 
         `,
         infos: [
           
