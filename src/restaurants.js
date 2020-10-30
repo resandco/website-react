@@ -199,6 +199,7 @@ Casadiagana est déjà engagé depuis un an dans la lutte contre le gaspillage a
     'carmen-ragosta': {
         title: 'Carmen Ragosta',
         verifie: true,
+        badge: 'fermé pendant confinement'
         stitle: '8 Rue de la Grange aux Belles',
         scity: 'Paris 10ème',
         szip: '75010',
@@ -214,13 +215,13 @@ Casadiagana est déjà engagé depuis un an dans la lutte contre le gaspillage a
             "https://ik.imagekit.io/resandco/carmen-ragosta/Carmen_Ragosta_3_-_site_internet_rzQI_fTMk.png",
         ],
         tags: ['Créative', 'Italien', 'Végan'],
-        creneaux: {
+        creneaux: {/*
             'mercredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
             'mercredi soir': ['17h', '17h30', '18h', '18h30'],
             'jeudi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
             'jeudi soir': ['17h', '17h30', '18h', '18h30'],
             'vendredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'vendredi soir': ['17h', '17h30', '18h', '18h30'],
+            'vendredi soir': ['17h', '17h30', '18h', '18h30']*/,
         },
         menus: [
             {
