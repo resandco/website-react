@@ -1078,7 +1078,7 @@ Après votre dégustation vous serez amenés vous même à débarrasser votre pl
           
         ]
     },
-        'l-assiette-de-rebecca': {
+    'l-assiette-de-rebecca': {
         title: 'L\'assiette de Rebecca',
         badge: 'offre spéciale Covid',
         stitle: '14 rue Mercoeur',
@@ -1086,7 +1086,8 @@ Après votre dégustation vous serez amenés vous même à débarrasser votre pl
         szip: '75011',
         coordinates: { lat: 48.858177, lng: 2.384472 },
         image: "https://ik.imagekit.io/resandco/l-assiette-de-rebecca/original_cuisine-senegalaise-mafe_3hdNHjK3b2lX.jpg",
-        gallerie: [ "https://ik.imagekit.io/resandco/l-assiette-de-rebecca/original_cuisine-senegalaise-mafe_3hdNHjK3b2lX.jpg,        
+        gallerie: [
+            "https://ik.imagekit.io/resandco/l-assiette-de-rebecca/original_cuisine-senegalaise-mafe_3hdNHjK3b2lX.jpg",        
         ],
         tags: ['Africain', 'Offre Spéciale Covid'],
         creneaux: {
@@ -1118,7 +1119,7 @@ Après votre dégustation vous serez amenés vous même à débarrasser votre pl
             },
         ],
         description: `
-        Plus d'informations sur www.lassiette-de-rebecca.fr 
+            Plus d'informations sur www.lassiette-de-rebecca.fr 
         `,
         infos: [
           
