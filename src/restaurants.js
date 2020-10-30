@@ -221,7 +221,7 @@ Casadiagana est déjà engagé depuis un an dans la lutte contre le gaspillage a
             'jeudi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
             'jeudi soir': ['17h', '17h30', '18h', '18h30'],
             'vendredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'vendredi soir': ['17h', '17h30', '18h', '18h30']*/,
+            'vendredi soir': ['17h', '17h30', '18h', '18h30'],*/
         },
         menus: [
             {
