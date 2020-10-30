@@ -1035,14 +1035,16 @@ Après votre dégustation vous serez amenés vous même à débarrasser votre pl
         'cantine-populaire': {
         title: 'Cantine Populaire',
         badge: 'offre spéciale Covid',
-       
         stitle: '21 Henri Barbusse',
         scity: 'Clichy',
         szip: '92110',
         coordinates: { lat: 48.898647, lng: 2.302957 },
-        image: "",
-        gallerie: [ "https://ik.imagekit.io/resandco/cantine-populaire/40407581_532304780552105_3408748610341306368_o_mTE_3-lwMfyN.jpg",
-                   "https://ik.imagekit.io/resandco/cantine-populaire/40407581_532304780552105_3408748610341306368_o_mTE_3-lwMfyN.jpg",
+        image: "https://ik.imagekit.io/resandco/cantine-populaire/40407581_532304780552105_3408748610341306368_o_mTE_3-lwMfyN.jpg",
+        gallerie: ["https://ik.imagekit.io/resandco/cantine-populaire/40407581_532304780552105_3408748610341306368_o_mTE_3-lwMfyN.jpg",
+                   "https://ik.imagekit.io/resandco/cantine-populaire/ob_211a33_menu-a-emporter-la-cantine-populaire-r_S8UuNRU_A.jpg",
+                   "https://ik.imagekit.io/resandco/cantine-populaire/20201029_163613_ve7s3D46u6.jpg",
+                   "https://ik.imagekit.io/resandco/cantine-populaire/photo0jpg_BRHwHqU3QRTWe.jpg",
+                   "https://ik.imagekit.io/resandco/cantine-populaire/ob_703ac2_tarte-normande-la-cantine-populaire-re_CPw9_-bPkyTqN.jpg",
         ],
         tags: ['cantine', 'Offre Spéciale Covid'],
         creneaux: {
@@ -1068,6 +1070,55 @@ Après votre dégustation vous serez amenés vous même à débarrasser votre pl
             },
         ],
         description: `
+        `,
+        infos: [
+          
+        ],
+        allergenes: [
+          
+        ]
+    },
+        'l-assiette-de-rebecca': {
+        title: 'L\'assiette de Rebecca',
+        badge: 'offre spéciale Covid',
+        stitle: '14 rue Mercoeur',
+        scity: 'Paris',
+        szip: '75011',
+        coordinates: { lat: 48.858177, lng: 2.384472 },
+        image: "https://ik.imagekit.io/resandco/l-assiette-de-rebecca/original_cuisine-senegalaise-mafe_3hdNHjK3b2lX.jpg",
+        gallerie: [ "https://ik.imagekit.io/resandco/l-assiette-de-rebecca/original_cuisine-senegalaise-mafe_3hdNHjK3b2lX.jpg,        
+        ],
+        tags: ['Africain', 'Offre Spéciale Covid'],
+        creneaux: {
+            'mardi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'mardi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'mercredi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'mercredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'jeudi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'jeudi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'vendredi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'vendredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'samedi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'samedi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'dimanche midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'dimanche soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+        },
+        menus: [
+            {
+                menu: "plat",
+                prix: 8.9
+            },
+            {
+                menu: "entrée + plat ou plat + dessert",
+                prix: 10.9
+            },
+            {
+                menu: "entrée + plat ou plat + dessert",
+                prix: 13.9
+            },
+        ],
+        description: `
+        Plus d'informations sur www.lassiette-de-rebecca.fr 
         `,
         infos: [
           
