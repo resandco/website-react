@@ -1125,7 +1125,7 @@ En raison du confinement, le service sera assuré uniquement à emporter.
                 prix: 10.9
             },
             {
-                menu: "entrée + plat ou plat + dessert",
+                menu: "entrée + plat + dessert",
                 prix: 13.9
             },
         ],
@@ -1135,6 +1135,62 @@ Restaurant africain qui vous propose un voyage dans le continent africain à tra
 En raison du confinement, le service sera assuré uniquement à emporter. 
 
 Plus d'informations sur www.lassiette-de-rebecca.fr 
+        `,
+        infos: [
+          
+        ],
+        allergenes: [
+          
+        ]
+    },
+    'chok-dee': {
+        title: 'Chok Dee',
+        badge: 'offre spéciale Covid',
+        stitle: '54 rue Lafayette',
+        scity: 'Paris',
+        szip: '75009',
+        coordinates: { lat: 48.875501, lng: 2.341864 },
+        image: "https://ik.imagekit.io/resandco/chok-dee/DSCF0884_3HVmIAGU1kXw.jpg",
+        gallerie: [
+            "https://ik.imagekit.io/resandco/chok-dee/DSCF0731_rxb0itiqT.jpg",
+            "https://ik.imagekit.io/resandco/chok-dee/DSCF0649_W47JjDPNy.jpg",
+            "https://ik.imagekit.io/resandco/chok-dee/DSCF0641_7m5gIZ8AgT8m.jpg",
+        ],
+        tags: ['Brasserie', 'Asiatique', 'Thaï', 'Offre Spéciale Covid'],
+        creneaux: {
+            'lundi midi': ['11h', '11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'lundi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'mardi midi': ['11h', '11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'mardi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'mercredi midi': ['11h', '11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'mercredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'jeudi midi': ['11h', '11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'jeudi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'vendredi midi': ['11h', '11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'vendredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'samedi midi': ['11h', '11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'samedi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'dimanche midi': ['11h', '11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'dimanche soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+        },
+        menus: [
+            {
+                menu: "entrée + plat ou plat + dessert",
+                prix: 16.5
+            },
+            {
+                menu: "entrée + plat + dessert",
+                prix: 20.5
+            },
+        ],
+        description: `
+"Chok Dee Café est une brasserie thaïlandaise « à la parisienne ».
+C’est dans un décor végétal, aux chics allures contemporaines, que nous vous proposons de découvrir une cuisine thaïlandaise traditionnelle et soignée élaborée à partir de produits premium, frais et bio.
+Nous favorisons les circuits courts et la qualité de nos produits choisis en fonction des saisons et des disponibilités."
+
+En raison du confinement, le service sera assuré uniquement à emporter. 
+
+Plus d'informations sur www.chokdeecafe.com
         `,
         infos: [
           
