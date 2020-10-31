@@ -590,9 +590,11 @@ Les recettes sont préparées à partir d’ingrédients ultra frais, 100% bio e
         ],
         tags: ['Africain', 'Epicerie'],
         creneaux: {
-            'mardi soir': [/*'22h', '22h30'*/],
-            'mercredi soir': [/*'22h', '22h30'*/],
-            'jeudi soir': [/*'22h', '22h30'*/],
+            'mardi soir': ['20h30', '21h', '21h30'/*'22h', '22h30'*/],
+            'mercredi soir': ['20h30', '21h', '21h30'/*'22h', '22h30'*/],
+            'jeudi soir': ['20h30', '21h', '21h30'/*'22h', '22h30'*/],
+            'vendredi soir': ['20h30', '21h', '21h30'/*'22h', '22h30'*/],
+            'samedi soir': ['20h30', '21h', '21h30'/*'22h', '22h30'*/],
         },
         menus: [
             {
@@ -767,7 +769,7 @@ Le personnel met son enthousiasme et son savoir-faire à votre disposition et vo
         ],
         tags: ['Hawaïen', 'Poké', 'Healthy'],
         creneaux: {
-            'vendredi midi': ['12h', '12h30', '13h', '13h30', '14h'],
+            'vendredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30'],
         },
         menus: [
             {
@@ -932,11 +934,11 @@ N’hésitez plus, rendez-vous dans ce bar gastronomique pour un voyage 100% haw
         ],
         tags: ['Salade', 'Poké', 'Quiche', 'Soupe'],
         creneaux: {
-            'lundi midi': ['11h', '11h30', '12h', '12h30', '13h', '13h30'],
-            'mardi midi': ['11h', '11h30', '12h', '12h30', '13h', '13h30'],
-            'mercredi midi': ['11h', '11h30', '12h', '12h30', '13h', '13h30'],
-            'jeudi midi': ['11h', '11h30', '12h', '12h30', '13h', '13h30'],
-            'vendredi midi': ['11h', '11h30', '12h', '12h30', '13h', '13h30'],
+            'lundi midi': ['12h', '12h30', '13h', '13h30'],
+            'mardi midi': ['12h', '12h30', '13h', '13h30'],
+            'mercredi midi': ['12h', '12h30', '13h', '13h30'],
+            'jeudi midi': ['12h', '12h30', '13h', '13h30'],
+            'vendredi midi': ['12h', '12h30', '13h', '13h30'],
         },
         menus: [
             {
@@ -1024,11 +1026,10 @@ Après votre dégustation vous serez amenés vous même à débarrasser votre pl
             },
         ],
         description: `
-        Installé en plein cœur de Courbevoie, le restaurant New Shri Ganesh vous propose une évasion culinaire dans le nord de l’Inde : grillades, plats en sauces, plats végétariens, curry…
-        Vous pourrez vous régaler dans ce restaurant indien complètement typique. Leurs plats sont épicés et parfumés mais pas forcément pimentés. 
+Installé en plein cœur de Courbevoie, le restaurant New Shri Ganesh vous propose une évasion culinaire dans le nord de l’Inde : grillades, plats en sauces, plats végétariens, curry…
+Vous pourrez vous régaler dans ce restaurant indien complètement typique. Leurs plats sont épicés et parfumés mais pas forcément pimentés. 
 
-        En raison du confinement, le service sera assuré uniquement à emporter. 
-
+En raison du confinement, le service sera assuré uniquement à emporter. 
         `,
         infos: [ 
         ],
@@ -1074,10 +1075,9 @@ Après votre dégustation vous serez amenés vous même à débarrasser votre pl
             },
         ],
         description: `
-        La Cantine populaire vous propose une cuisine familiale saine et gourmande 100% fait maison avec amour. 
+La Cantine populaire vous propose une cuisine familiale saine et gourmande 100% fait maison avec amour. 
  
-
-        En raison du confinement, le service sera assuré uniquement à emporter. 
+En raison du confinement, le service sera assuré uniquement à emporter. 
         `,
         infos: [
           
@@ -1127,11 +1127,11 @@ Après votre dégustation vous serez amenés vous même à débarrasser votre pl
             },
         ],
         description: `
-        Restaurant africain qui vous propose un voyage dans le continent africain à travers leurs différents plats. Leurs plats sont cuisinés  avec des produits frais par leur chef tous les jours.
+Restaurant africain qui vous propose un voyage dans le continent africain à travers leurs différents plats. Leurs plats sont cuisinés  avec des produits frais par leur chef tous les jours.
 
-        En raison du confinement, le service sera assuré uniquement à emporter. 
-        
-        Plus d'informations sur www.lassiette-de-rebecca.fr 
+En raison du confinement, le service sera assuré uniquement à emporter. 
+
+Plus d'informations sur www.lassiette-de-rebecca.fr 
         `,
         infos: [
           
