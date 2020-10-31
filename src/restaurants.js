@@ -66,6 +66,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
     },
     'opium-la-cabane': {
         title: 'Opium, La Cabane',
+        badge: 'fermé pendant confinement',
         stitle: '44 Rue du Dauphine',
         scity: 'Paris 6ème',
         szip: '75006',
@@ -78,20 +79,20 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
         ],
         tags: ['Français', 'Bar à huîtres'],
         creneaux: {
-            'lundi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'lundi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', /*'21h', '21h30', '22h', '22h30', '23h', '23h30'*/],
+            /*'lundi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'lundi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
             'mardi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'mardi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', /*'21h', '21h30', '22h', '22h30', '23h', '23h30'*/],
+            'mardi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
             'mercredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'mercredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', /*'21h', '21h30', '22h', '22h30', '23h', '23h30'*/],
+            'mercredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
             'jeudi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'jeudi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', /*'21h', '21h30', '22h', '22h30', '23h', '23h30'*/],
+            'jeudi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
             'vendredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'vendredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', /*'21h', '21h30', '22h', '22h30', '23h', '23h30'*/],
+            'vendredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
             'samedi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'samedi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', /*'21h', '21h30', '22h', '22h30', '23h', '23h30'*/],
+            'samedi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
             'dimanche midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'dimanche soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', /*'21h', '21h30', '22h', '22h30', '23h', '23h30'*/],
+            'dimanche soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],*/
         },
         menus: [
             {
@@ -198,6 +199,7 @@ Casadiagana est déjà engagé depuis un an dans la lutte contre le gaspillage a
     },
     'carmen-ragosta': {
         title: 'Carmen Ragosta',
+        badge: 'fermé pendant confinement',
         verifie: true,
         stitle: '8 Rue de la Grange aux Belles',
         scity: 'Paris 10ème',
@@ -215,12 +217,12 @@ Casadiagana est déjà engagé depuis un an dans la lutte contre le gaspillage a
         ],
         tags: ['Créative', 'Italien', 'Végan'],
         creneaux: {
-            'mercredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            /*'mercredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
             'mercredi soir': ['17h', '17h30', '18h', '18h30'],
             'jeudi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
             'jeudi soir': ['17h', '17h30', '18h', '18h30'],
             'vendredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'vendredi soir': ['17h', '17h30', '18h', '18h30'],
+            'vendredi soir': ['17h', '17h30', '18h', '18h30'],*/
         },
         menus: [
             {
@@ -270,6 +272,7 @@ Carmen a toujours été très attentive à l’anti-gaspi. D'ailleurs, c'est men
     },
     'comptoir-43': {
         title: 'Comptoir 43 Bio Ô Top',
+        badge: 'fermé pendant confinement',
         stitle: '43 Rue de l\'Arbre Sec',
         scity: 'Paris 1er',
         szip: '75001',
@@ -281,8 +284,8 @@ Carmen a toujours été très attentive à l’anti-gaspi. D'ailleurs, c'est men
         ],
         tags: ['Français', 'Epicerie fine', 'Bio'],
         creneaux: {
-            'mardi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
-            'jeudi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
+            /*'mardi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
+            'jeudi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],*/
         },
         menus: [
             {
@@ -325,7 +328,7 @@ Le comptoir 43 - Bio Ô Top était déjà engagé au niveau anti-gaspi. Cependan
         ]
     },
     'cafezen': {
-        badge: 'jusqu\'à -38%',
+        badge: 'fermé pendant confinement', /*'jusqu\'à -38%',*/
         title: 'CaféZen',
         verifie: true,
         stitle: '3 Rue Poissonnière',
@@ -350,7 +353,7 @@ Le comptoir 43 - Bio Ô Top était déjà engagé au niveau anti-gaspi. Cependan
         ],
         tags: ['Français', 'Scandinave', 'Co-working', 'Coffee shop'],
         creneaux: {
-            'lundi matin': ['9h', '9h30', '10h', '10h30', '11h'],
+            /*'lundi matin': ['9h', '9h30', '10h', '10h30', '11h'],
             'lundi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
             'lundi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
             'mardi matin': ['9h', '9h30', '10h', '10h30', '11h'],
@@ -367,7 +370,7 @@ Le comptoir 43 - Bio Ô Top était déjà engagé au niveau anti-gaspi. Cependan
             'vendredi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
             'samedi matin': ['10h', '10h30', '11h'],
             'samedi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
-            'samedi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
+            'samedi soir': ['16h30', '17h', '17h30', '18h', '18h30'],*/
         },
         menus: [
             {
@@ -435,8 +438,8 @@ Les jus frais sont leur spécialité, mais leur conservation est de courte duré
         ]
     },
     'seunsep': {
-        badge: 'jusqu\'à -42%',
-        title: 'Seunsep',
+        badge: 'fermé pendant le confinement', /*'jusqu\'à -42%',*/
+        title: 'Seunsep', 
         stitle: '46 Passage Choiseul',
         scity: 'Paris 2ème',
         szip: '75002',
@@ -452,7 +455,7 @@ Les jus frais sont leur spécialité, mais leur conservation est de courte duré
         ],
         tags: ['Asiatique', 'Thaï-lao', 'Street-food'],
         creneaux: {
-            'mercredi midi': ['14h', '14h30', '15h'],
+            /*'mercredi midi': ['14h', '14h30', '15h'],*/
         },
         menus: [
             {
@@ -638,7 +641,7 @@ C'est donc le dimanche soir, que BMK a choisit d'ouvrir des créneaux de réserv
         ]
     },
     'nos-grands-meres-ont-du-talent': {
-        badge: 'jusqu\'à -32%',
+        badge: 'fermé pendant le confinement', /*'jusqu\'à -32%',*/
         title: 'Nos Grands-Mères ont du Talent',
         verifie: true,
         stitle: '43 Rue des Petits Carreaux',
@@ -656,10 +659,10 @@ C'est donc le dimanche soir, que BMK a choisit d'ouvrir des créneaux de réserv
         ],
         tags: ['Français', 'Restauration Rapide'],
         creneaux: {
-            'mardi midi': ['13h45', '14h', '14h30', '15h'],
+            /*'mardi midi': ['13h45', '14h', '14h30', '15h'],
             'mercredi midi': ['13h45', '14h', '14h30', '15h'],
             'jeudi midi': ['13h45', '14h', '14h30', '15h'],
-            'vendredi midi': ['13h45', '14h', '14h30', '15h'],
+            'vendredi midi': ['13h45', '14h', '14h30', '15h'],*/
         },
         menus: [
             {
