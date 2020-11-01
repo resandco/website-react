@@ -1199,6 +1199,55 @@ Plus d'informations sur www.chokdeecafe.com
           
         ]
     },
+    'saveurs-du-monde': {
+        title: 'Saveurs du monde',
+        badge: 'En livraison ou à emporter',
+        stitle: '55 rue de la charité',
+        scity: 'Lyon',
+        szip: '69002',
+        coordinates: { lat: 45.750270, lng: 4.830275 },
+        image: "",
+        gallerie: [
+            "",
+        ],
+        tags: ['Asiatique', 'Viet', 'Vente à emporter', 'livraison', 'option végane'],
+        creneaux: {
+            'lundi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'lundi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'mardi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'mardi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'mercredi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'mercredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'jeudi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'jeudi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'vendredi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'vendredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'samedi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'samedi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'dimanche midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'dimanche soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+        },
+        menus: [
+            {
+                menu: "plat",
+                prix: 10.5
+            },
+            {
+                menu: "entrée + plat",
+                prix: 16
+            },
+        ],
+        description: `
+
+Le service sera assuré uniquement à emporter ou en livraison (+2€). 
+        `,
+        infos: [
+          
+        ],
+        allergenes: [
+          
+        ]
+    },
 }
 
 Object.keys(restaurants).forEach((restaurantId) => (
