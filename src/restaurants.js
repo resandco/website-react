@@ -1247,6 +1247,53 @@ Le service sera assuré uniquement à emporter ou en livraison (+2€).
         allergenes: [
           
         ]
+     },
+    'mr-burritos': {
+        title: 'Mr Burritos',
+        badge: 'Offre spéciale confinement',
+        stitle: '26 Rue Custine',
+        scity: 'Paris',
+        szip: '75018',
+        coordinates: { lat: 48.889343, lng: 2.347359 },
+        image: "https://ik.imagekit.io/resandco/mr-burritos/2020-06-11_G_98snmue.jpg",
+        gallerie: [
+            "https://ik.imagekit.io/resandco/mr-burritos/120128022_3342144615877858_1724071122403569176_o_ZL2ScO494.jpg",
+            "https://ik.imagekit.io/resandco/mr-burritos/120479105_3358544904237829_5300903864857860246_o_CrmREuXhKkkd.jpg",
+        ],
+        tags: ['Mexicain', 'Vente à emporter', 'Offre spéciale confinement'],
+        creneaux: {
+            'lundi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30'],
+            'lundi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'],
+            'mardi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30'],
+            'mardi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'],
+            'mercredi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30'],
+            'mercredi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'],
+            'jeudi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30'],
+            'jeudi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'],
+            'vendredi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30'],
+            'vendredi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'],
+            'samedi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30'],
+            'samedi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'],
+            'dimanche midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30'],
+            'dimanche soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'],
+        },
+        menus: [
+            {
+                menu: "plat",
+                prix: 10.9
+            },
+        ],
+        description: `
+
+Le plat est surprise, il sera composé d'un des plats suivants : quesadillas, bowls, burritos.
+Le service sera assuré uniquement à emporter.
+        `,
+        infos: [
+          
+        ],
+        allergenes: [
+          
+        ]
     },
 }
 
