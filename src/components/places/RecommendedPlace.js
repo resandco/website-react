@@ -25,7 +25,7 @@ export default function RecommendedPlace({
             <div className={`card-item ${isHovered || isSelected ? 'card-item__hover': ''}`}>
                 <Link to={`/restaurant/${place.id}`} className="card-image-wrap">
                     <div className="card-image">
-                        <img src={place.image} className="card__img" alt="Place" />
+                    <img src={`${place.image}?tr=h-540`} className="card__img" alt="Place" />
                         <span className={place.titleIcon ? 'badge': 'badge badge-closed' }>{place.badge}</span>
                     </div>
                 </Link>

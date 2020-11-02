@@ -84,7 +84,13 @@ class Home4 extends Component {
                             <SectionsHeading
                                 title="RES&CO c'est quoi ?"
                                 titleClass=" before-none pt-0"
-                                desc="La seule plateforme de réservation de tables avec un menu surprise à prix réduit pour lutter contre le gaspillage alimentaire des restaurants de votre quartier." />
+                                desc="La seule plateforme de réservation de tables avec un menu surprise à prix réduit pour lutter contre le gaspillage alimentaire des restaurants de votre quartier."
+                                className="text-center"
+                            >
+                                <div className="text-center padding-top-50px">
+                                    <iframe style={ {width: "100%", maxWidth: "670px", height: "350px"}} height="350" src="https://www.youtube.com/embed/PuDw7d32rvc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </SectionsHeading>
                         </div>
 
                         <IconBoxTwo />
