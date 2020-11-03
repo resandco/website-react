@@ -439,7 +439,8 @@ Les jus frais sont leur spécialité, mais leur conservation est de courte duré
     },
     'seunsep': {
         badge: 'fermé pendant le confinement', /*'jusqu\'à -42%',*/
-        title: 'Seunsep', 
+        title: 'Seunsep',
+        verifie: true,
         stitle: '46 Passage Choiseul',
         scity: 'Paris 2ème',
         szip: '75002',
@@ -995,7 +996,7 @@ Après votre dégustation vous serez amenés vous même à débarrasser votre pl
     },
         'new-shri-ganesh': {
         title: 'New Shri Ganesh',
-        badge: 'offre spéciale Covid',
+        badge: 'Offre Spéciale Confinement',
        
         stitle: '52 avenue Marceau',
         scity: 'Courbevoie',
@@ -1005,7 +1006,7 @@ Après votre dégustation vous serez amenés vous même à débarrasser votre pl
         gallerie: [ "https://ik.imagekit.io/resandco/new-shri-ganesh/2017-08-30_tA3vktgjS.jpg",
                    "https://ik.imagekit.io/resandco/new-shri-ganesh/IMG_3271_W_xGdxKv2-dU.jpeg",
         ],
-        tags: ['Indien', 'Offre Spéciale Covid'],
+        tags: ['Indien', 'Offre Spéciale Confinement'],
         creneaux: {
             'lundi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
             'lundi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h'],
@@ -1042,7 +1043,7 @@ En raison du confinement, le service sera assuré uniquement à emporter.
     },
         'cantine-populaire': {
         title: 'Cantine Populaire',
-        badge: 'offre spéciale Covid',
+        badge: 'offre spéciale Confinement',
         stitle: '21 Henri Barbusse',
         scity: 'Clichy',
         szip: '92110',
@@ -1054,7 +1055,7 @@ En raison du confinement, le service sera assuré uniquement à emporter.
                    "https://ik.imagekit.io/resandco/cantine-populaire/photo0jpg_BRHwHqU3QRTWe.jpg",
                    "https://ik.imagekit.io/resandco/cantine-populaire/ob_703ac2_tarte-normande-la-cantine-populaire-re_CPw9_-bPkyTqN.jpg",
         ],
-        tags: ['cantine', 'Offre Spéciale Covid'],
+        tags: ['cantine', 'Offre Spéciale Confinement'],
         creneaux: {
             'lundi matin': ['8h', '8h30', '9h', '9h30', '10h', '10h30', '11h'],
             'lundi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
@@ -1091,7 +1092,7 @@ En raison du confinement, le service sera assuré uniquement à emporter.
     },
     'l-assiette-de-rebecca': {
         title: 'L\'assiette de Rebecca',
-        badge: 'offre spéciale Covid',
+        badge: 'Offre Spéciale Confinement',
         stitle: '14 rue Mercoeur',
         scity: 'Paris',
         szip: '75011',
@@ -1100,7 +1101,7 @@ En raison du confinement, le service sera assuré uniquement à emporter.
         gallerie: [
             "https://ik.imagekit.io/resandco/l-assiette-de-rebecca/original_cuisine-senegalaise-mafe_3hdNHjK3b2lX.jpg",        
         ],
-        tags: ['Africain', 'Offre Spéciale Covid'],
+        tags: ['Africain', 'Offre Spéciale Confinement'],
         creneaux: {
             'mardi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
             'mardi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
@@ -1145,7 +1146,7 @@ Plus d'informations sur www.lassiette-de-rebecca.fr
     },
     'chok-dee': {
         title: 'Chok Dee',
-        badge: 'offre spéciale Covid',
+        badge: 'offre spéciale Confinement',
         stitle: '54 rue Lafayette',
         scity: 'Paris',
         szip: '75009',
@@ -1156,7 +1157,7 @@ Plus d'informations sur www.lassiette-de-rebecca.fr
             "https://ik.imagekit.io/resandco/chok-dee/DSCF0649_W47JjDPNy.jpg",
             "https://ik.imagekit.io/resandco/chok-dee/DSCF0641_7m5gIZ8AgT8m.jpg",
         ],
-        tags: ['Brasserie', 'Asiatique', 'Thaï', 'Offre Spéciale Covid'],
+        tags: ['Brasserie', 'Asiatique', 'Thaï', 'Offre Spéciale Confinement'],
         creneaux: {
             'lundi midi': ['11h', '11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
             'lundi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
