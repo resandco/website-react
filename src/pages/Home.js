@@ -88,7 +88,12 @@ class Home4 extends Component {
                                 className="text-center"
                             >
                                 <div className="text-center padding-top-50px">
-                                    <iframe style={ {width: "100%", maxWidth: "670px", height: "350px"}} height="350" src="https://www.youtube.com/embed/PuDw7d32rvc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe title="Présentation RES&CO"
+                                        src="https://www.youtube.com/embed/PuDw7d32rvc"
+                                        style={ {width: "100%", maxWidth: "670px", height: "350px"}} height="350" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen
+                                    ></iframe>
                                 </div>
                             </SectionsHeading>
                         </div>
