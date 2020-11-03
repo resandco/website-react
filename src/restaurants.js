@@ -1284,7 +1284,7 @@ Le service sera assuré uniquement à emporter ou en livraison (+2€).
             },
         ],
         description: `
-
+Le Mexique reste loin et inaccessible encore , mais leurs tacos et burritos sont là pour pimenter votre confinement. Leurs spécialités mexicaines sont préparées de façon traditionnelle !
 Le plat est surprise, il sera composé d'un des plats suivants : quesadillas, bowls, burritos.
 Le service sera assuré uniquement à emporter.
         `,
