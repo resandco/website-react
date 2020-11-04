@@ -66,7 +66,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
     },
     'opium-la-cabane': {
         title: 'Opium, La Cabane',
-        badge: 'fermé pendant confinement',
+        badge: '-20%',
         stitle: '44 Rue du Dauphine',
         scity: 'Paris 6ème',
         szip: '75006',
@@ -79,7 +79,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
         ],
         tags: ['Français', 'Bar à huîtres'],
         creneaux: {
-            /*'lundi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'lundi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
             'lundi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
             'mardi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
             'mardi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
@@ -92,10 +92,26 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
             'samedi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
             'samedi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
             'dimanche midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'dimanche soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],*/
+            'dimanche soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
         },
         menus: [
             {
+                menu: "Plateau de 12 huîtres Fines de Claire",
+                prix: 20
+            },
+            {
+                menu: "Plateau de 12 huîtres Spéciales de Claire",
+                prix: 24
+            },
+            {
+                menu: "Plateau de 12 huîtres Pousses en Claire",
+                prix: 36
+            },
+            {
+                menu: "Plateau de 12 huîtres bretonnes",
+                prix: 44
+            },
+            /*{
                 menu: "assortiment de douze huîtres",
                 prix: 20
             },
@@ -106,7 +122,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
             {
                 menu: "de la terre",
                 prix: 20
-            },
+            },*/
         ],
         description: `
 ### L’ambiance
@@ -984,7 +1000,7 @@ Après votre dégustation vous serez amenés vous même à débarrasser votre pl
             "Compost",
         ],
         allergenes: [
-            "Céréales contenant du glutent",
+            "Céréales contenant du gluten",
             "Oeufs",
             "Poissons",
             "Soja",
@@ -1213,20 +1229,9 @@ Plus d'informations sur www.chokdeecafe.com
         ],
         tags: ['Asiatique', 'Viet', 'Vente à emporter', 'livraison', 'option végane'],
         creneaux: {
-            'lundi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'lundi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
-            'mardi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'mardi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
-            'mercredi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'mercredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
-            'jeudi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'jeudi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
-            'vendredi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'vendredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
-            'samedi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'samedi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
-            'dimanche midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'dimanche soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'mardi soir': ['18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'mercredi soir': ['18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'jeudi soir': ['18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
         },
         menus: [
             {
@@ -1239,14 +1244,23 @@ Plus d'informations sur www.chokdeecafe.com
             },
         ],
         description: `
-
+Découvrez la cuisine fusion asiatique du traiteur « Saveurs du monde », bobun traditionnel ou végan, samoussa veggie ou encore nems savoureux. N’hésitez pas à commander votre menu à emporter ! 
+Toutes les commandes doivent être passées avant 15h pour une livraison/retrait le jour-même. Toute commande passée après 15h ne pourra pas être prise en compte.
 Le service sera assuré uniquement à emporter ou en livraison (+2€). 
         `,
         infos: [
-          
+            "Option végétarienne",
+            "Option végane",
+            "Option sans gluten",
+            "Fruits et légumes locaux",
         ],
         allergenes: [
-          
+            "Crustacé",
+            "Oeuf",
+            "Poisson",
+            "Soja",
+            "Lait",
+            "Graines de sésame",
         ]
      },
     'mr-burritos': {
