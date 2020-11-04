@@ -1223,9 +1223,16 @@ Plus d'informations sur www.chokdeecafe.com
         scity: 'Lyon',
         szip: '69002',
         coordinates: { lat: 45.750270, lng: 4.830275 },
-        image: "",
+        image: "https://ik.imagekit.io/resandco/saveurs-du-monde/123801109_661835127833791_1823386090005053462_n_QxluJ0tGj.jpg",
         gallerie: [
-            "",
+            "https://ik.imagekit.io/resandco/saveurs-du-monde/123801109_661835127833791_1823386090005053462_n_QxluJ0tGj.jpg",
+            "https://ik.imagekit.io/resandco/saveurs-du-monde/123856749_839171070152494_3240175817640180472_n_68qR9hmGYgA5r.jpg",
+            "https://ik.imagekit.io/resandco/saveurs-du-monde/123907891_880996128971787_4236354405004895616_n_DghLR7ie9.jpg",
+            "https://ik.imagekit.io/resandco/saveurs-du-monde/123551477_994683807704678_7942670629398486502_n_c_DDOzZ4Q7bj.jpg",
+            "https://ik.imagekit.io/resandco/saveurs-du-monde/123738183_3997867400241763_5665585955128079970_n_uY19KhVoeeLj.jpg",
+            "https://ik.imagekit.io/resandco/saveurs-du-monde/123365049_2897914123641403_4625769503621430336_n_DnInGk0sBLaJ.jpg",
+            "https://ik.imagekit.io/resandco/saveurs-du-monde/123524869_2894096490827693_6318062346654306517_n_NUqBKZeng.jpg",
+            "https://ik.imagekit.io/resandco/saveurs-du-monde/123763606_2764571003790030_7864632122463096900_n_sETJyKS2S.jpg",
         ],
         tags: ['Asiatique', 'Viet', 'Vente à emporter', 'livraison', 'option végane'],
         creneaux: {
@@ -1244,7 +1251,7 @@ Plus d'informations sur www.chokdeecafe.com
             },
         ],
         description: `
-Découvrez la cuisine fusion asiatique du traiteur « Saveurs du monde », bobun traditionnel ou végan, samoussa veggie ou encore nems savoureux. N’hésitez pas à commander votre menu à emporter ! 
+Découvrez la cuisine fusion asiatique du traiteur « Saveur du monde », bobun traditionnel ou végan, samoussa veggie ou encore nems savoureux. N’hésitez pas à commander votre menu à emporter ! 
 Toutes les commandes doivent être passées avant 15h pour une livraison/retrait le jour-même. Toute commande passée après 15h ne pourra pas être prise en compte.
 Le service sera assuré uniquement à emporter ou en livraison (+2€). 
         `,
@@ -1305,6 +1312,60 @@ Le service sera assuré uniquement à emporter.
         `,
         infos: [
           
+        ],
+        allergenes: [
+          
+        ]
+    },
+    'delice-de-henan': {
+        title: 'Délice de Henan',
+        stitle: '18 route de genas',
+        scity: 'Lyon',
+        szip: '69003',
+        coordinates: { lat: 45.75536559066979, lng: 4.879239313841082 }, 
+        image: "https://ik.imagekit.io/resandco/delice-de-henan/51752266_312363542753621_2917545312505561088_n_xrT66G4bcYvm.jpg",
+        gallerie: [
+            "https://ik.imagekit.io/resandco/delice-de-henan/52816619_317155065607802_6245043067275968512_o_1WbDvhJlV.jpg",
+            "https://ik.imagekit.io/resandco/delice-de-henan/52877858_317155342274441_7239055029653471232_o_0Z--Gk4Mt.jpg",
+            "https://ik.imagekit.io/resandco/delice-de-henan/52876799_317155372274438_1985507262898110464_o_Vo3TF0kuS.jpg",
+            "https://ik.imagekit.io/resandco/delice-de-henan/52661117_317155042274471_1165291182218018816_o_cruYOGloV.jpg",
+            "https://ik.imagekit.io/resandco/delice-de-henan/53160348_317155408941101_5508084240434069504_o_vhn7yORdLL.jpg",
+            "https://ik.imagekit.io/resandco/delice-de-henan/52961255_317155145607794_865530605582942208_o_lpIoppFwenBB.jpg",
+            "https://ik.imagekit.io/resandco/delice-de-henan/52729390_317155272274448_5330184358571540480_o_e75q2_av0.jpg",
+        ],
+        tags: ['Asiatique', 'Vente à emporter'],
+        creneaux: {
+            'lundi midi': ['12h30', '13h', '13h30', '14h', '14h30'],
+            'lundi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h'],
+            'mardi midi': ['12h30', '13h', '13h30', '14h', '14h30'],
+            'mardi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h'],
+            'mercredi midi': ['12h30', '13h', '13h30', '14h', '14h30'],
+            'mercredi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h'],
+            'jeudi midi': ['12h30', '13h', '13h30', '14h', '14h30'],
+            'jeudi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h'],
+            'vendredi midi': ['12h30', '13h', '13h30', '14h', '14h30'],
+            'vendredi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h'],
+            'samedi midi': ['12h30', '13h', '13h30', '14h', '14h30'],
+            'samedi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h'],
+            'dimanche soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h'],
+        },
+        menus: [
+            {
+                menu: "plat + entrée ou accompagnement ou dessert",
+                prix: 10
+            },
+            {
+                menu: "plat + entrée ou accompagnement ou dessert - végétarien",
+                prix: 10
+            },
+        ],
+        description: `
+Le plat est surprise, il sera composé d'un des plats suivants : soupe de boulettes, nouilles sautées, soupe de nouilles, bo bun...
+Le service sera assuré uniquement à emporter ou en livraison (+2€).
+        `,
+        infos: [
+         "Option végétarienne",
+         "Vente à emporter"
         ],
         allergenes: [
           
