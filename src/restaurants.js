@@ -1220,7 +1220,7 @@ Plus d'informations sur www.chokdeecafe.com
         title: 'Saveurs du monde',
         badge: 'En livraison ou à emporter',
         stitle: '55 rue de la charité',
-        scity: 'Lyon',
+        scity: 'Lyon 2e',
         szip: '69002',
         coordinates: { lat: 45.750270, lng: 4.830275 },
         image: "https://ik.imagekit.io/resandco/saveurs-du-monde/123801109_661835127833791_1823386090005053462_n_QxluJ0tGj.jpg",
@@ -1274,7 +1274,7 @@ Le service sera assuré uniquement à emporter ou en livraison (+2€).
         title: 'Mr Burritos',
         badge: 'Offre spéciale confinement',
         stitle: '26 Rue Custine',
-        scity: 'Paris',
+        scity: 'Paris 18e',
         szip: '75018',
         coordinates: { lat: 48.889343, lng: 2.347359 },
         image: "https://ik.imagekit.io/resandco/mr-burritos/2020-06-11_G_98snmue.jpg",
@@ -1320,7 +1320,7 @@ Le service sera assuré uniquement à emporter.
     'delice-de-henan': {
         title: 'Délice de Henan',
         stitle: '18 route de genas',
-        scity: 'Lyon',
+        scity: 'Lyon 3e',
         szip: '69003',
         coordinates: { lat: 45.75536559066979, lng: 4.879239313841082 }, 
         image: "https://ik.imagekit.io/resandco/delice-de-henan/51752266_312363542753621_2917545312505561088_n_xrT66G4bcYvm.jpg",
@@ -1365,6 +1365,48 @@ Le service sera assuré uniquement à emporter ou en livraison (+2€).
         `,
         infos: [
          "Option végétarienne",
+         "Vente à emporter"
+        ],
+        allergenes: [
+          
+        ]
+    },
+    'tim-la-princesse': {
+        title: 'Tim la Princesse',
+        badge: 'Offre Spéciale Confinement',
+        stitle: '46 Rue Marcadet',
+        scity: 'Paris 18e',
+        szip: '75018',
+        coordinates: { lat: 48.891433738048946, lng: 2.352889936443292 }, 
+        image: "",
+        gallerie: [
+        ],
+        tags: ['Africain', 'Traiteur', 'Vente à emporter'],
+        creneaux: {
+            'mardi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'mardi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'mercredi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'mercredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'jeudi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'jeudi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'vendredi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'vendredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'samedi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'samedi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'], 
+            'dimanche midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'dimanche soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+        },
+        menus: [
+            {
+                menu: "plat",
+                prix: 6.9
+            },
+        ],
+        description: `
+Le plat est surprise, il sera composé d'un des plats suivants : 
+Le service sera assuré uniquement en vente à emporter pendant toute la durée du confinement.
+        `,
+        infos: [
          "Vente à emporter"
         ],
         allergenes: [
