@@ -1371,6 +1371,59 @@ Le service sera assuré uniquement à emporter ou en livraison (+2€).
           
         ]
     },
+    'noglu': {
+        title: 'Noglu',
+        badge: 'Offre Spéciale Confinement'
+        stitle: '15 rue Basfroi',
+        scity: 'Paris 11e',
+        szip: '75011',
+        coordinates: { lat: 48.85573811254915, lng: 2.38080612959192 }, 
+        image: "https://ik.imagekit.io/resandco/noglu/123210253_3666388923411454_7204687095473266534_o_9dkcbcjcEk.jpg",
+        gallerie: [
+            "https://ik.imagekit.io/resandco/noglu/bakery05_HsTcJpRLdkKF.jpg",
+            "https://ik.imagekit.io/resandco/noglu/101828169_3222475894469428_8173105769655304192_o_QDd4btCMZxP8v.jpg",
+            "https://ik.imagekit.io/resandco/noglu/100987922_3219746201409064_6623992180740456448_o_Sh9yhI-P8A__.jpg",
+            "https://ik.imagekit.io/resandco/noglu/100731085_3210560392327645_2069276498312822784_o_qtTQgoektd.jpg",
+            "https://ik.imagekit.io/resandco/noglu/98423592_3195467237170294_1935452833562230784_o_mfluAlpDzLl6.jpg",
+            "https://ik.imagekit.io/resandco/noglu/97997255_3182596865123998_1857262344053194752_o_Z0IKqNR83.jpg",
+        ],
+        tags: ['Sans gluten', 'Vente à emporter'],
+        creneaux: {
+            'lundi matin': ['10h', '10h30', '11h', '11h30'],
+            'lundi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
+            'mardi matin': ['10h', '10h30', '11h', '11h30'],
+            'mardi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
+            'mercredi matin': ['10h', '10h30', '11h', '11h30'],
+            'mercredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
+            'jeudi matin': ['10h', '10h30', '11h', '11h30'],
+            'jeudi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
+            'vendredi matin': ['10h', '10h30', '11h', '11h30'],
+            'vendredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
+            'samedi matin': ['10h', '10h30', '11h', '11h30'],
+            'samedi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
+        },
+        menus: [
+            {
+                menu: "plat - végétarien",
+                prix: 12
+            },
+            {
+                menu: "plat + dessert - vegan",
+                prix: 15
+            },
+        ],
+        description: `
+Le service sera assuré uniquement à emporter.
+        `,
+        infos: [
+         "Option végétarienne",
+         "Sans gluten",
+         "Vente à emporter"
+        ],
+        allergenes: [
+          
+        ]
+    },
 }
 
 Object.keys(restaurants).forEach((restaurantId) => (
