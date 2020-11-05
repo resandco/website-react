@@ -1373,7 +1373,7 @@ Le service sera assuré uniquement à emporter ou en livraison (+2€).
     },
     'noglu': {
         title: 'Noglu',
-        badge: 'Offre Spéciale Confinement'
+        badge: 'Offre Spéciale Confinement',
         stitle: '15 rue Basfroi',
         scity: 'Paris 11e',
         szip: '75011',
