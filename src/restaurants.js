@@ -1358,14 +1358,15 @@ Le service sera assuré uniquement à emporter.
                 menu: "plat + entrée ou accompagnement ou dessert - végétarien",
                 prix: 10
             },
-        ],
+         ],
         description: `
-Le plat est surprise, il sera composé d'un des plats suivants : soupe de boulettes, nouilles sautées, soupe de nouilles, bo bun...
+All food, Végétarien, Halal ou Vegan, il y en a pour tous les goûts ! Laissez-vous tenter et profitez de leur cuisine chinoise, asiatique et diversifiée.Le plat est surprise, il sera composé d'un des plats suivants : soupe de boulettes, nouilles sautées, soupe de nouilles, bo bun...
 Le service sera assuré uniquement à emporter ou en livraison (+2€).
         `,
         infos: [
          "Option végétarienne",
-         "Vente à emporter"
+
+        "Vente à emporter"
         ],
         allergenes: [
           
@@ -1413,6 +1414,7 @@ Le service sera assuré uniquement à emporter ou en livraison (+2€).
             },
         ],
         description: `
+Un café et comptoir à emporter prêchant toujours la cuisine saine, bio et sans gluten ! Breakfast or Lunch, faites-vous plaisir avec leurs gourmandises et leurs plats colorés !
 Le service sera assuré uniquement à emporter.
         `,
         infos: [
@@ -1430,9 +1432,10 @@ Le service sera assuré uniquement à emporter.
         stitle: '46 Rue Marcadet',
         scity: 'Paris 18e',
         szip: '75018',
-        coordinates: { lat: 48.891433738048946, lng: 2.352889936443292 }, 
-        image: "",
-        gallerie: [
+        coordinates: { lat: 48.891433738048946, lng: 2.352889936443292 },
+        gallerie: "https://ik.imagekit.io/resandco/tim-la-princesse/11222169_1657589794516660_3417431682628300910_n_tJXWnt9yZ.jpg",
+        image: [
+        "https://ik.imagekit.io/resandco/tim-la-princesse/52961255_317155145607794_865530605582942208_o_pb6Ds5lvB.jpg",
         ],
         tags: ['Africain', 'Traiteur', 'Vente à emporter'],
         creneaux: {
@@ -1456,7 +1459,8 @@ Le service sera assuré uniquement à emporter.
             },
         ],
         description: `
-Le plat est surprise, il sera composé d'un des plats suivants : 
+Les classiques de la cuisine africaine toujours frais et savoureux, tiep, poulet braisé, poisson grillé avec sa sauce authentique...En un mot, c’est l'Afrique dans les assiettes. Dégustez les plats de la cheffe guinéenne exclusivement à emporter !
+Le plat est surprise, il sera composé d'un des plats suivants : mafé, pintade en soupe...
 Le service sera assuré uniquement en vente à emporter pendant toute la durée du confinement.
         `,
         infos: [
