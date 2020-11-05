@@ -1399,7 +1399,7 @@ Le service sera assuré uniquement à emporter ou en livraison (+2€).
         menus: [
             {
                 menu: "plat",
-                prix: 6,9
+                prix: 6.9
             },
         ],
         description: `
