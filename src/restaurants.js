@@ -1285,19 +1285,19 @@ Le service sera assuré uniquement à emporter ou en livraison (+2€).
         tags: ['Mexicain', 'Vente à emporter', 'Offre spéciale confinement'],
         creneaux: {
             'lundi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30'],
-            'lundi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'],
+            'lundi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h'],
             'mardi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30'],
-            'mardi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'],
+            'mardi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h'],
             'mercredi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30'],
-            'mercredi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'],
+            'mercredi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h'],
             'jeudi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30'],
-            'jeudi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'],
+            'jeudi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h'],
             'vendredi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30'],
-            'vendredi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'],
+            'vendredi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h'],
             'samedi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30'],
-            'samedi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'],
+            'samedi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h'],
             'dimanche midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30'],
-            'dimanche soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'],
+            'dimanche soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h'],
         },
         menus: [
             {
@@ -1433,8 +1433,8 @@ Le service sera assuré uniquement à emporter.
         scity: 'Paris 18e',
         szip: '75018',
         coordinates: { lat: 48.891433738048946, lng: 2.352889936443292 },
-        gallerie: "https://ik.imagekit.io/resandco/tim-la-princesse/11222169_1657589794516660_3417431682628300910_n_tJXWnt9yZ.jpg",
-        image: [
+        image: "https://ik.imagekit.io/resandco/tim-la-princesse/11222169_1657589794516660_3417431682628300910_n_tJXWnt9yZ.jpg",
+        gallerie: [
         "https://ik.imagekit.io/resandco/tim-la-princesse/52961255_317155145607794_865530605582942208_o_pb6Ds5lvB.jpg",
         ],
         tags: ['Africain', 'Traiteur', 'Vente à emporter'],
@@ -1465,6 +1465,70 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
         `,
         infos: [
          "Vente à emporter"
+        ],
+        allergenes: [
+          
+        ]
+    },
+    'tropicalia': {
+        title: 'Tropicalia & Hot dog\'s do Fael',
+        badge: 'Offre Spéciale Confinement',
+        stitle: '114 Bis Rue des Moines',
+        scity: 'Paris 17e',
+        szip: '75017',
+        coordinates: { lat: 48.89377020127393, lng: 2.323030424314586 },
+        image: "https://ik.imagekit.io/resandco/tropicalia/12184082_894450303975722_8523454070010366891_o_qN69fdy-8.jpg",
+        gallerie: [
+        "https://ik.imagekit.io/resandco/tropicalia/12065666_894465347307551_4244201988414979720_n_HWEuegjOI7.jpg",
+        "https://ik.imagekit.io/resandco/tropicalia/place-12905-c8e82bb0-fc7a-40e6-ad50-ca64745df9dc_Uby49LNDoB.jpeg",
+        "https://ik.imagekit.io/resandco/tropicalia/place-12905-v2pi0mo6eruooiqojojo_QGlzBBm5nt9A.jpeg",
+        "https://ik.imagekit.io/resandco/tropicalia/place-12905-pw9xvsofnvgfaz5jc69a_9qHKZ3MXt.jpeg",
+        "https://ik.imagekit.io/resandco/tropicalia/place-12905-sztcuvzrliatctyp32fx_HSTrCJN_d.jpeg",
+        "https://ik.imagekit.io/resandco/tropicalia/place-12905-6c0b398a-68e5-4859-98a1-17e16f724540_1RFjShrjO.jpeg",
+        ],
+        tags: ['Brésilien', 'Traiteur', 'Vente à emporter', 'Offre spéciale confinement'],
+        creneaux: {
+            'lundi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'lundi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'mardi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'mardi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'mercredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'mercredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'jeudi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'jeudi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'vendredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'vendredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'samedi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'samedi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'], 
+            'dimanche soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+        },
+        menus: [
+            {
+                menu: "plat",
+                prix: 15
+            },
+            {
+                menu: "entrée + plat ou plat + dessert",
+                prix: 20
+            },
+            {
+                menu: "entrée + plat + dessert",
+                prix: 24
+            },
+        ],
+        description: `
+Dans votre menu susprirse, vous retrouverez les classiques de la cuisine brésiellienne fait-maison : feijoada, moqueca de crevette ou poisson, frango tropicalia, etc...
+Le service sera assuré uniquement en vente à emporter pendant toute la durée du confinement.
+        `,
+        infos: [
+         "Vente à emporter",
+         "Accès handicapés",
+         "Wifi gratuite",
+         "Option végétarienne",
+         "Option végétalienne",
+         "Option sans gluten",
+         "Option sans lactose",
+         "Terrasse",
         ],
         allergenes: [
           
