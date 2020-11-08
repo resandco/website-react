@@ -1551,6 +1551,7 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
         "https://ik.imagekit.io/resandco/michele/121248620_407827087283109_3212752741874773940_o_wIh0cf9Z4_.jpg",
         "https://ik.imagekit.io/resandco/michele/122392814_417563326309485_2678530227656573123_o_DOuK070Ot.jpg",
         "https://ik.imagekit.io/resandco/michele/121229978_407823467283471_8444599404352765512_o_Z2NCySRfEAjA.jpg",
+        ],
         tags: ['Sandwicherie', 'Fait maison', 'Offre spéciale confinement'],
         creneaux: {
             'lundi midi': ['11h30','12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
