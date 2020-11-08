@@ -1517,7 +1517,7 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
             },
         ],
         description: `
-Dans votre menu susprirse, vous retrouverez les classiques de la cuisine brésiellienne fait-maison : feijoada, moqueca de crevette ou poisson, frango tropicalia, etc...
+Dans votre menu susprise, vous retrouverez les classiques de la cuisine brésiellienne fait-maison : feijoada, moqueca de crevette ou poisson, frango tropicalia, etc...
 Le service sera assuré uniquement en vente à emporter pendant toute la durée du confinement.
         `,
         infos: [
@@ -1529,6 +1529,76 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
          "Option sans gluten",
          "Option sans lactose",
          "Terrasse",
+        ],
+        allergenes: [
+          
+        ]
+    },
+    'michele': {
+        title: 'Michèle',
+        badge: 'Offre Spéciale Confinement',
+        stitle: '111 rue du faubourg Poissonnière',
+        scity: 'Paris 9e',
+        szip: '75009',
+        coordinates: { lat: 48.878999970563434, lng: 2.3496439547820818 }, 
+        image: "https://ik.imagekit.io/resandco/michele/117762839_355459089186576_9074680122565520252_o_oNK61Za7g.jpg",
+        gallerie: [
+        "https://ik.imagekit.io/resandco/michele/123709612_427784405287377_2577866176611534060_o_7XKBbaat_dMQf.jpg",
+        "https://ik.imagekit.io/resandco/michele/120100239_390203835712101_8820802752009083778_o_PukF8yoVB7d43.jpg",
+        "https://ik.imagekit.io/resandco/michele/123365678_424472862285198_6177441947753966397_o_jx0K3KBvSQJv.jpg",
+        "https://ik.imagekit.io/resandco/michele/122896061_422099179189233_1532469774958281716_o_wM3NXpoA1P.jpg",
+        "https://ik.imagekit.io/resandco/michele/123773701_427763298622821_6235300265339739189_o_UzBmJA7wW.jpg",
+        "https://ik.imagekit.io/resandco/michele/121248620_407827087283109_3212752741874773940_o_wIh0cf9Z4_.jpg",
+        "https://ik.imagekit.io/resandco/michele/122392814_417563326309485_2678530227656573123_o_DOuK070Ot.jpg",
+        "https://ik.imagekit.io/resandco/michele/121229978_407823467283471_8444599404352765512_o_Z2NCySRfEAjA.jpg",
+        tags: ['Sandwicherie', 'Fait maison', 'Offre spéciale confinement'],
+        creneaux: {
+            'lundi midi': ['11h30','12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
+            'mardi midi': ['11h30','12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
+            'mercredi midi': ['11h30','12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
+            'jeudi midi': ['11h30','12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
+            'vendredi midi': ['11h30','12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
+        },
+        menus: [
+            {
+                menu: "sandwich - carné",
+                prix: 6.5
+            },
+            {
+                menu: "sandwich - végétarien",
+                prix: 6.5
+            },
+            {
+                menu: "bowl - carné",
+                prix: 9.4
+            },
+            {
+                menu: "bowl - végétarien",
+                prix: 9.4
+            },
+            {
+                menu: "soupe + sandwich ou sandwich + dessert - carné",
+                prix: 10.4
+            },
+            {
+                menu: "soupe + sandwich ou sandwich + dessert - végétarien",
+                prix: 10.4
+            },
+            {
+                menu: "bowl + dessert - carné",
+                prix: 13.9
+            },
+            {
+                menu: "bowl + dessert - végétarien",
+                prix: 13.9
+            },
+        ],
+        description: `
+Le service sera assuré uniquement en vente à emporter pendant toute la durée du confinement.
+        `,
+        infos: [
+         "Vente à emporter",
+         "Option végétarienne",
         ],
         allergenes: [
           
