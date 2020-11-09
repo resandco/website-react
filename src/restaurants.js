@@ -1382,6 +1382,9 @@ Le service sera assuré uniquement à emporter ou en livraison (+2€).
         image: "https://ik.imagekit.io/resandco/noglu/123210253_3666388923411454_7204687095473266534_o_9dkcbcjcEk.jpg",
         gallerie: [
             "https://ik.imagekit.io/resandco/noglu/bakery05_HsTcJpRLdkKF.jpg",
+            "https://ik.imagekit.io/resandco/noglu/Capture_d_e_cran_2020-11-09_a__12.56.37_WiEy7dhR_.png",
+            "https://ik.imagekit.io/resandco/noglu/Capture_d_e_cran_2020-11-09_a__12.57.11_gyJwm2dg7kxR.png",
+            "https://ik.imagekit.io/resandco/noglu/Capture_d_e_cran_2020-11-09_a__12.57.47_7NpwkzqgJ.png",
             "https://ik.imagekit.io/resandco/noglu/101828169_3222475894469428_8173105769655304192_o_QDd4btCMZxP8v.jpg",
             "https://ik.imagekit.io/resandco/noglu/100987922_3219746201409064_6623992180740456448_o_Sh9yhI-P8A__.jpg",
             "https://ik.imagekit.io/resandco/noglu/100731085_3210560392327645_2069276498312822784_o_qtTQgoektd.jpg",
@@ -1405,12 +1408,36 @@ Le service sera assuré uniquement à emporter ou en livraison (+2€).
         },
         menus: [
             {
-                menu: "plat - végétarien",
+                menu: "sandwich",
+                prix: 11
+            },
+            {
+                menu: "sandwich bun - végétarien",
                 prix: 12
             },
             {
-                menu: "plat + dessert - vegan",
+                menu: "plat + dessert",
                 prix: 15
+            },
+            {
+                menu: "plat + dessert - végétarien",
+                prix: 15
+            },
+            {
+                menu: "entrée + plat + dessert",
+                prix: 20
+            },
+            {
+                menu: "entrée + plat + dessert - végétarien",
+                prix: 20
+            },
+            {
+                menu: "pain 500g",
+                prix: 8
+            },
+            {
+                menu: "boîte de 5 viennoiseries",
+                prix: 10
             },
         ],
         description: `
