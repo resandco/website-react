@@ -1696,13 +1696,13 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
         "https://ik.imagekit.io/resandco/madamann/madamann-1_I8bjhoYXovZv.jpg",
         ],
         tags: ['Crêperie', 'Street food', 'Traiteur', 'Fait-maison', 'Engagé'],
-        /*creneaux: {
+        creneaux: {/*
             'mardi midi': ['11h30','12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
             'mercredi midi': ['11h30','12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
-            'jeudi midi': ['11h30','12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
+            'jeudi midi': ['11h30','12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],*/
         },
         menus: [
-            {
+            /*{
                 menu: "",
                 prix: 
             },
@@ -1721,8 +1721,8 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
             {
                 menu: "",
                 prix: 
-            },
-        ],*/
+            },*/
+        ],
         description: `
 Il y a comme un air de Bretagne en plein centre de Lyon ! Ce comptoir à crêpes mélange traditions bretonnes et recettes lyonnaises au sein d’une carte très fournie qui vous conviendra que vous soyez pressé de manger à emporter ou que vous souhaitiez manger tranquillement entre amis. Dans les deux cas vous ne pourrez pas rester insensible à ce petit bout de Bretagne.
 Les crêpes de Madamann sont faites à base de produits du Rhône, des oeufs fermiers, en passant par la farine jusqu’au fromage et au jambon. Des crêpiers engagés au service de clients gourmands, la mayonnaise prend totalement.
