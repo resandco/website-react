@@ -1691,11 +1691,9 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
         scity: 'Lyon 1er',
         szip: '69001',
         coordinates: { lat: 45.76853059523653, lng: 4.830111032298397 },
-        image: "https://ik.imagekit.io/resandco/madamann/madamann-4_UBAQ1g0m0lX0.png",
+        image: "https://ik.imagekit.io/resandco/madamann/madamann-1_I8bjhoYXovZv.jpg",
         gallerie: [
-        "https://ik.imagekit.io/resandco/madamann/madamann-3_m48yOxjES.png",
         "https://ik.imagekit.io/resandco/madamann/madamann-1_I8bjhoYXovZv.jpg",
-        "https://ik.imagekit.io/resandco/madamann/madamann-2_vMIlJvcj0Zzp.png",
         ],
         tags: ['Crêperie', 'Street food', 'Traiteur', 'Fait-maison', 'Engagé'],
         /*creneaux: {
