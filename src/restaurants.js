@@ -1684,59 +1684,6 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
           
         ]
     },
-    'madamann': {
-        title: 'Madamann',
-        badge: 'Fermé pendant le confinement',
-        stitle: 'Halles de la Martinière, Place Rambaud',
-        scity: 'Lyon 1er',
-        szip: '69001',
-        coordinates: { lat: 45.76853059523653, lng: 4.830111032298397 },
-        image: "https://ik.imagekit.io/resandco/madamann/madamann-1_I8bjhoYXovZv.jpg",
-        gallerie: [
-        "https://ik.imagekit.io/resandco/madamann/madamann-1_I8bjhoYXovZv.jpg",
-        ],
-        tags: ['Crêperie', 'Street food', 'Traiteur', 'Fait-maison', 'Engagé'],
-        creneaux: {/*
-            'mardi midi': ['11h30','12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
-            'mercredi midi': ['11h30','12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
-            'jeudi midi': ['11h30','12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],*/
-        },
-        menus: [
-            /*{
-                menu: "",
-                prix: 
-            },
-            {
-                menu: "",
-                prix: 
-            },
-            {
-                menu: "",
-                prix:
-            },
-            {
-                menu: "",
-                prix: 
-            },
-            {
-                menu: "",
-                prix: 
-            },*/
-        ],
-        description: `
-Il y a comme un air de Bretagne en plein centre de Lyon ! Ce comptoir à crêpes mélange traditions bretonnes et recettes lyonnaises au sein d’une carte très fournie qui vous conviendra que vous soyez pressé de manger à emporter ou que vous souhaitiez manger tranquillement entre amis. Dans les deux cas vous ne pourrez pas rester insensible à ce petit bout de Bretagne.
-Les crêpes de Madamann sont faites à base de produits du Rhône, des oeufs fermiers, en passant par la farine jusqu’au fromage et au jambon. Des crêpiers engagés au service de clients gourmands, la mayonnaise prend totalement.
-Faites confiance à Simon, qui saura vous régaler avec sa galette surprise anti-gaspi !
-Le service sera assuré uniquement en vente à emporter pendant toute la durée du confinement.
-        `,
-        infos: [
-         "Vente à emporter",
-         "Option végétarienne",
-        ],
-        allergenes: [
-          
-        ]
-    },
 }
 
 Object.keys(restaurants).forEach((restaurantId) => (
