@@ -1632,6 +1632,108 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
           
         ]
     },
+    'soeurs': {
+        title: 'SOEURS',
+        badge: 'Offre Spéciale Confinement',
+        stitle: '27 rue cambacérès',
+        scity: 'Paris 8e',
+        szip: '75008',
+        coordinates: { lat: 48.87417202437757, lng: 2.317726930692054 },
+        image: "https://ik.imagekit.io/resandco/soeurs/soeurs-3_D1XQrkg8oOsq.jpg",
+        gallerie: [
+        "https://ik.imagekit.io/resandco/soeurs/soeurs-1_SetkKhYAoNe4r.jpg",
+        "https://ik.imagekit.io/resandco/soeurs/soeurs-2_WBXklaiN7.jpg",
+        ],
+        tags: ['Cantine', 'Coffee shop', 'Bio', 'Fait-maison', 'Offre spéciale confinement'],
+        creneaux: {
+            'mardi midi': ['11h30','12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
+            'mercredi midi': ['11h30','12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
+            'jeudi midi': ['11h30','12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
+        },
+        menus: [
+            {
+                menu: "soupe + crudité + pain",
+                prix: 10
+            },
+            {
+                menu: "plat",
+                prix: 10
+            },
+            {
+                menu: "soupe + plat",
+                prix: 13
+            },
+            {
+                menu: "plat + dessert",
+                prix: 13
+            },
+            {
+                menu: "soupe + plat + dessert",
+                prix: 16.5
+            },
+        ],
+        description: `
+Le service sera assuré uniquement en vente à emporter pendant toute la durée du confinement.
+        `,
+        infos: [
+         "Vente à emporter",
+         "Option végétarienne",
+        ],
+        allergenes: [
+          
+        ]
+    },
+    /*'madamann': {
+        title: 'Madamann',
+        badge: 'Fermé pendant le confinement',
+        stitle: 'Halles de la Martinière, Place Rambaud',
+        scity: 'Lyon 1er',
+        szip: '69001',
+        coordinates: { lat: 45.76853059523653, lng: 4.830111032298397 },
+        image: "https://ik.imagekit.io/resandco/soeurs/soeurs-3_D1XQrkg8oOsq.jpg",
+        gallerie: [
+        "https://ik.imagekit.io/resandco/soeurs/soeurs-1_SetkKhYAoNe4r.jpg",
+        "https://ik.imagekit.io/resandco/soeurs/soeurs-2_WBXklaiN7.jpg",
+        ],
+        tags: ['Cantine', 'Coffee shop', 'Bio', 'Fait-maison', 'Offre spéciale confinement'],
+        creneaux: {
+            'mardi midi': ['11h30','12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
+            'mercredi midi': ['11h30','12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
+            'jeudi midi': ['11h30','12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
+        },
+        menus: [
+            {
+                menu: "",
+                prix: 
+            },
+            {
+                menu: "",
+                prix: 
+            },
+            {
+                menu: "",
+                prix:
+            },
+            {
+                menu: "",
+                prix: 
+            },
+            {
+                menu: "",
+                prix: 
+            },
+        ],
+        description: `
+Le service sera assuré uniquement en vente à emporter pendant toute la durée du confinement.
+        `,
+        infos: [
+         "Vente à emporter",
+         "Option végétarienne",
+        ],
+        allergenes: [
+          
+        ]
+    },*/
 }
 
 Object.keys(restaurants).forEach((restaurantId) => (
