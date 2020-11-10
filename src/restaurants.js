@@ -1673,6 +1673,7 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
             },
         ],
         description: `
+Deux soeurs, des produits bio et locaux faits maison. Voilà comment résumer la cuisine de ce restaurant du quartier de la Madeleine. Emilie et Mathilde sauront vous régaler avec une cuisine de saison saine et gourmande. Et pour les plus gourmands et les plus matinaux d’entre vous, SOEURS propose même des petits-déjeuners dès 8h.
 Le service sera assuré uniquement en vente à emporter pendant toute la durée du confinement.
         `,
         infos: [
@@ -1683,20 +1684,21 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
           
         ]
     },
-    /*'madamann': {
+    'madamann': {
         title: 'Madamann',
         badge: 'Fermé pendant le confinement',
         stitle: 'Halles de la Martinière, Place Rambaud',
         scity: 'Lyon 1er',
         szip: '69001',
         coordinates: { lat: 45.76853059523653, lng: 4.830111032298397 },
-        image: "https://ik.imagekit.io/resandco/soeurs/soeurs-3_D1XQrkg8oOsq.jpg",
+        image: "https://ik.imagekit.io/resandco/madamann/madamann-4_UBAQ1g0m0lX0.png",
         gallerie: [
-        "https://ik.imagekit.io/resandco/soeurs/soeurs-1_SetkKhYAoNe4r.jpg",
-        "https://ik.imagekit.io/resandco/soeurs/soeurs-2_WBXklaiN7.jpg",
+        "https://ik.imagekit.io/resandco/madamann/madamann-3_m48yOxjES.png",
+        "https://ik.imagekit.io/resandco/madamann/madamann-1_I8bjhoYXovZv.jpg",
+        "https://ik.imagekit.io/resandco/madamann/madamann-2_vMIlJvcj0Zzp.png",
         ],
-        tags: ['Cantine', 'Coffee shop', 'Bio', 'Fait-maison', 'Offre spéciale confinement'],
-        creneaux: {
+        tags: ['Crêperie', 'Street food', 'Traiteur', 'Fait-maison', 'Engagé'],
+        /*creneaux: {
             'mardi midi': ['11h30','12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
             'mercredi midi': ['11h30','12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
             'jeudi midi': ['11h30','12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
@@ -1722,8 +1724,11 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
                 menu: "",
                 prix: 
             },
-        ],
+        ],*/
         description: `
+Il y a comme un air de Bretagne en plein centre de Lyon ! Ce comptoir à crêpes mélange traditions bretonnes et recettes lyonnaises au sein d’une carte très fournie qui vous conviendra que vous soyez pressé de manger à emporter ou que vous souhaitiez manger tranquillement entre amis. Dans les deux cas vous ne pourrez pas rester insensible à ce petit bout de Bretagne.
+Les crêpes de Madamann sont faites à base de produits du Rhône, des oeufs fermiers, en passant par la farine jusqu’au fromage et au jambon. Des crêpiers engagés au service de clients gourmands, la mayonnaise prend totalement.
+Faites confiance à Simon, qui saura vous régaler avec sa galette surprise anti-gaspi !
 Le service sera assuré uniquement en vente à emporter pendant toute la durée du confinement.
         `,
         infos: [
@@ -1733,7 +1738,7 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
         allergenes: [
           
         ]
-    },*/
+    },
 }
 
 Object.keys(restaurants).forEach((restaurantId) => (
