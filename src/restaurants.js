@@ -1738,7 +1738,7 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
         allergenes: [
           
         ]
-    },*/
+    },
 }
 
 Object.keys(restaurants).forEach((restaurantId) => (
