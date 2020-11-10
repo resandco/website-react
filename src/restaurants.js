@@ -1684,6 +1684,59 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
           
         ]
     },
+    'madamann': {
+        badge: 'fermé pendant confinement',
+        title: 'Madamann',
+        stitle: 'Halles de la Martinière, Place Rambaud',
+        scity: 'Lyon 1er',
+        szip: '69001',
+        coordinates: { lat: 45.76853059523653, lng: 4.830111032298397 },
+        image: "https://ik.imagekit.io/resandco/madamann/madamann-1_I8bjhoYXovZv.jpg",
+        gallerie: [
+            "https://ik.imagekit.io/resandco/madamann/madamann-1_I8bjhoYXovZv.jpg",
+        ],
+        tags: ['Crêperie', 'Street food', 'Traiteur', 'Fait-maison', 'Engagé'],
+        creneaux: {
+            /*'jeudi midi': ['13h30', '14h', '14h40'],
+            'jeudi soir': ['19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'],*/
+        },
+        menus: [
+            /*{
+                menu: "midi : entrée + plat ou plat + dessert",
+                prix: 14
+            },
+            {
+                menu: "midi : entrée + plat ou plat + dessert - végétarien",
+                prix: 14
+            },
+            {
+                menu: "soir : entrée + plat ou plat + dessert",
+                prix: 18
+            },
+            {
+                menu: "soir : entrée + plat ou plat + dessert - végétarien",
+                prix: 18
+            },
+            {
+                menu: "enfant : entrée + plat ou plat + dessert",
+                prix: 10
+            }*/
+        ],
+        description: `
+### L’ambiance
+
+Il y a comme un air de Bretagne en plein centre de Lyon ! Ce comptoir à crêpes mélange traditions bretonnes et recettes lyonnaises au sein d’une carte très fournie qui vous conviendra que vous soyez pressé de manger à emporter ou que vous souhaitiez manger tranquillement entre amis. Dans les deux cas vous ne pourrez pas rester insensible à ce petit bout de Bretagne.
+Les crêpes de Madamann sont faites à base de produits du Rhône, des oeufs fermiers, en passant par la farine jusqu’au fromage et au jambon. Des crêpiers engagés au service de clients gourmands, la mayonnaise prend totalement.
+
+### L’équipe
+
+Faites confiance à Simon, qui saura vous régaler avec sa galette surprise anti-gaspi !
+
+Le service sera assuré uniquement en vente à emporter pendant toute la durée du confinement.
+            `,
+            infos: [
+        ]
+    },
 }
 
 Object.keys(restaurants).forEach((restaurantId) => (
