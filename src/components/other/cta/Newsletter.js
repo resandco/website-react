@@ -13,7 +13,7 @@ export default function Newsletter() {
                         <div className="col-lg-12">
                             <div className="cta-box d-flex align-items-center">
                                 <div className="col-lg-8">
-                                    <SectionsHeading title="Abonnez-vous à notre newsletter" titleClass="text-white" desc="Soyez les premiers à découvrir nos nouveaux restaurants partenaires." />
+                                    <SectionsHeading title="La lutte contre le gaspillage alimentaire ne s'arrête jamais" titleClass="text-white" desc="Reçois en avant-première tous les bons plans, astuces et évènements anti-gaspi RES&CO directement dans ta boîte mail !" />
                                 </div>
                                 <div className="col-lg-4">
                                     <div className="contact-form-action">
@@ -28,7 +28,7 @@ export default function Newsletter() {
                                                 </span>
                                                 <input className="form-control" type="email"
                                                     name="EMAIL"
-                                                    placeholder="votre@email.ici"
+                                                    placeholder="ton@email.ici"
                                                     ref={email}
                                                 />
                                                 { /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */ }
@@ -37,7 +37,7 @@ export default function Newsletter() {
                                                 </div>
                                                 <input type="submit" className="theme-btn"
                                                     name="subscribe"
-                                                    value="S'abonner"
+                                                    value="Je m'abonne"
                                                 />
                                             </div>
                                         </form>
