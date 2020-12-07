@@ -1736,7 +1736,7 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
             `,
             infos: [
         ]
-   ,}*/
+   },*/
 }
 
 Object.keys(restaurants).forEach((restaurantId) => (
