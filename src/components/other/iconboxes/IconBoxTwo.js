@@ -7,27 +7,27 @@ class IconBoxTwo extends Component {
         items: [
             {
                 id: 1,
-                icon: <GiAirplane />,
-                title: 'Découverte',
-                desc: 'Découvrez de nouveaux restaurants et de nouvelles saveurs'
+                icon: <FiGift />,
+                title: 'TE FAIRE PLAISIR',
+                desc: 'En découvrant de nouvelles saveurs et en se laissant surprendre par un menu original préparé par tes restaurateurs'
             },
             {
                 id: 2,
-                icon: <GiEcology />,
-                title: 'Eco-responsable',
-                desc: 'Optez pour une restauration qui limite le gaspillage alimentaire'
+                icon: <GiAirplane />,
+                title: 'AIDER TES COMMERCANTS',
+                desc: 'En leur apportant ton soutien pour surmonter la crise sanitaire et leur permettre de ne rien jeter'
             },
             {
                 id: 3,
-                icon: <FiGift />,
-                title: 'Surprise',
-                desc: 'Laissez-vous surprendre par un menu surprise sélectionné par le Chef'
+                icon: <FiPercent />,
+                title: 'FAIRE DES ECONOMIES',
+                desc: 'En profitant de tarifs réduits. Jusqu’à 64% de réduction par rapport aux menus habituels'
             },
             {
                 id: 4,
-                icon: <FiPercent />,
-                title: 'Promotion',
-                desc: 'Bénéficiez d’un tarif réduit sur le prix habituel du menu'
+                icon: <GiEcology />,
+                title: 'PRÉSERVER LA PLANÈTE',
+                desc: 'En nous aidant à réduire le gaspillage alimentaire mondial'
             }
         ]
     }
