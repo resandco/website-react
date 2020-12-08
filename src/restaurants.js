@@ -1010,7 +1010,7 @@ Après votre dégustation vous serez amenés vous même à débarrasser votre pl
             "Graines de sésame",
         ]
     },
-        'new-shri-ganesh': {
+        /*'new-shri-ganesh': {
         title: 'New Shri Ganesh',
         badge: 'Offre Spéciale Confinement',
        
@@ -1316,7 +1316,7 @@ Le service sera assuré uniquement à emporter.
         allergenes: [
           
         ]
-    },
+    },*/
     'delice-de-henan': {
         title: 'Délice de Henan',
         stitle: '18 route de genas',
@@ -1372,7 +1372,7 @@ Le service sera assuré uniquement à emporter ou en livraison (+2€).
           
         ]
     },
-    'noglu': {
+    /*'noglu': {
         title: 'Noglu',
         badge: 'Offre Spéciale Confinement',
         stitle: '15 rue Basfroi',
@@ -1697,11 +1697,11 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
         ],
         tags: ['Crêperie', 'Street food', 'Traiteur', 'Fait-maison', 'Engagé'],
         creneaux: {
-            /*'jeudi midi': ['13h30', '14h', '14h40'],
-            'jeudi soir': ['19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'],*/
+            'jeudi midi': ['13h30', '14h', '14h40'],
+            'jeudi soir': ['19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'],
         },
         menus: [
-            /*{
+            {
                 menu: "midi : entrée + plat ou plat + dessert",
                 prix: 14
             },
@@ -1720,7 +1720,7 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
             {
                 menu: "enfant : entrée + plat ou plat + dessert",
                 prix: 10
-            }*/
+            }
         ],
         description: `
 ### L’ambiance
@@ -1736,7 +1736,7 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
             `,
             infos: [
         ]
-    },
+   },*/
 }
 
 Object.keys(restaurants).forEach((restaurantId) => (
