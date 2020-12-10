@@ -1214,8 +1214,8 @@ Plus d'informations sur www.chokdeecafe.com
         ],
         allergenes: [
           
-        ]*/
-    },
+        ]
+    },*/
     'saveurs-du-monde': {
         title: 'Saveurs du monde',
         badge: 'En livraison ou à emporter',
