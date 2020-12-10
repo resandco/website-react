@@ -1214,7 +1214,7 @@ Plus d'informations sur www.chokdeecafe.com
         ],
         allergenes: [
           
-        ]
+        ]*/
     },
     'saveurs-du-monde': {
         title: 'Saveurs du monde',
@@ -1236,24 +1236,34 @@ Plus d'informations sur www.chokdeecafe.com
         ],
         tags: ['Asiatique', 'Viet', 'Vente à emporter', 'livraison', 'option végane'],
         creneaux: {
-            'mardi soir': ['18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
-            'mercredi soir': ['18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
-            'jeudi soir': ['18h', '18h30', '19h', '19h30', '20h', '20h30', '21h'],
+            'mardi soir': ['19h30', '20h', '20h30', '21h', '21h30'],
+            'mercredi soir': ['19h30', '20h', '20h30', '21h', '21h30'],
+            'jeudi soir': ['19h30', '20h', '20h30', '21h', '21h30'],
+            'vendredi soir': ['19h30', '20h', '20h30', '21h', '21h30'],
+            'dimanche soir': ['19h30', '20h', '20h30', '21h', '21h30'],
         },
         menus: [
             {
                 menu: "plat",
-                prix: 10.5
+                prix: 10
             },
             {
-                menu: "entrée + plat",
-                prix: 16
+                menu: "plat - végan",
+                prix: 10
+            },
+            {
+                menu: "entrée + plat ou plat + dessert",
+                prix: 14
+            },
+            {
+                menu: "entrée + plat ou plat + dessert - végan",
+                prix: 14
             },
         ],
         description: `
 Découvrez la cuisine fusion asiatique du traiteur « Saveur du monde », bobun traditionnel ou végan, samoussa veggie ou encore nems savoureux. N’hésitez pas à commander votre menu à emporter ! 
 Toutes les commandes doivent être passées avant 15h pour une livraison/retrait le jour-même. Toute commande passée après 15h ne pourra pas être prise en compte.
-Le service sera assuré uniquement à emporter ou en livraison (+2€). 
+Le service sera assuré uniquement à emporter ou en livraison (+3€). 
         `,
         infos: [
             "Option végétarienne",
@@ -1269,7 +1279,7 @@ Le service sera assuré uniquement à emporter ou en livraison (+2€).
             "Lait",
             "Graines de sésame",
         ]
-     },
+    /* },
     'mr-burritos': {
         title: 'Mr Burritos',
         badge: 'Offre spéciale confinement',
