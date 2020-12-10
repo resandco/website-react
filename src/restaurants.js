@@ -1279,8 +1279,8 @@ Le service sera assuré uniquement à emporter ou en livraison (+3€).
             "Lait",
             "Graines de sésame",
         ]
-    /* },
-    'mr-burritos': {
+    },
+    /*'mr-burritos': {
         title: 'Mr Burritos',
         badge: 'Offre spéciale confinement',
         stitle: '26 Rue Custine',
