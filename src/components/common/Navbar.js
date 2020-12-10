@@ -17,6 +17,9 @@ export default function Navbar() {
                             <Link to="/">Accueil</Link>
                         </li>
                         <li>
+                            <Link to="/restaurant-a-offrir/">Cadeau Noël</Link>
+                        </li>
+                        <li>
                             <Link to="/reservation-restaurant">Commander un repas surprise</Link>
                         </li>
                         <li>
@@ -41,6 +44,9 @@ export default function Navbar() {
                     <ul className="side-menu-ul">
                         <li>
                             <Link to="/">Accueil</Link>
+                        </li>
+                        <li>
+                            <Link to="/restaurant-a-offrir/">Cadeau Noël</Link>
                         </li>
                         <li>
                             <Link to="/reservation-restaurant">Commander un repas surprise</Link>
