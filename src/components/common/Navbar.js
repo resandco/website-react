@@ -17,7 +17,7 @@ export default function Navbar() {
                             <Link to="/">Accueil</Link>
                         </li>
                         <li>
-                            <Link to="/restaurant-a-offrir/">Cadeau Noël</Link>
+                            <a href="/restaurant-a-offrir/">Cadeau de Noël</a>
                         </li>
                         <li>
                             <Link to="/reservation-restaurant">Commander un repas surprise</Link>
