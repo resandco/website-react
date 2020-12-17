@@ -369,24 +369,24 @@ Le comptoir 43 - Bio Ô Top était déjà engagé au niveau anti-gaspi. Cependan
         ],
         tags: ['Français', 'Scandinave', 'Co-working', 'Coffee shop'],
         creneaux: {
-            /*'lundi matin': ['9h', '9h30', '10h', '10h30', '11h'],
+            /*'lundi matin': ['9h', '9h30', '10h', '10h30', '11h'],*/
             'lundi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
-            'lundi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
-            'mardi matin': ['9h', '9h30', '10h', '10h30', '11h'],
+            /*'lundi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
+            'mardi matin': ['9h', '9h30', '10h', '10h30', '11h'],*/
             'mardi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
-            'mardi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
-            'mercredi matin': ['9h', '9h30', '10h', '10h30', '11h'],
+            /*'mardi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
+            'mercredi matin': ['9h', '9h30', '10h', '10h30', '11h'],*/
             'mercredi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
-            'mercredi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
-            'jeudi matin': ['9h', '9h30', '10h', '10h30', '11h'],
+            /*'mercredi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
+            'jeudi matin': ['9h', '9h30', '10h', '10h30', '11h'],*/
             'jeudi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
-            'jeudi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
-            'vendredi matin': ['9h', '9h30', '10h', '10h30', '11h'],
+            /*'jeudi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
+            'vendredi matin': ['9h', '9h30', '10h', '10h30', '11h'],*/
             'vendredi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
-            'vendredi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
-            'samedi matin': ['10h', '10h30', '11h'],
+            /*'vendredi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
+            'samedi matin': ['10h', '10h30', '11h'],*/
             'samedi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
-            'samedi soir': ['16h30', '17h', '17h30', '18h', '18h30'],*/
+            /*'samedi soir': ['16h30', '17h', '17h30', '18h', '18h30'],*/
         },
         menus: [
             {
@@ -404,6 +404,10 @@ Le comptoir 43 - Bio Ô Top était déjà engagé au niveau anti-gaspi. Cependan
             {
                 menu: "gourmandise sucrée + jus à l'extracteur (25cl)",
                 prix: 6.5
+            },
+            {
+                menu: "brunch (2 boissons + 3 petits plats sucrés ou salés",
+                prix: 20
             }
         ],
         description: `
@@ -967,7 +971,7 @@ N’hésitez plus, rendez-vous dans ce bar gastronomique pour un voyage 100% haw
             },
             {
                 menu: "plat + dessert",
-                prix: 9
+                prix: 8
             },
             {
                 menu: "plat - végétarien",
@@ -975,7 +979,7 @@ N’hésitez plus, rendez-vous dans ce bar gastronomique pour un voyage 100% haw
             },
             {
                 menu: "plat + dessert - végétarien",
-                prix: 9
+                prix: 8
             },
         ],
         description: `
