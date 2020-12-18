@@ -1750,7 +1750,51 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
             `,
             infos: [
         ]
-   },*/
+   },
+   'veggie-tasty': {
+        title: 'Veggie Tasty',
+        stitle: '78 Rue la Fayette',
+        scity: 'Paris 9e',
+        szip: '75009',
+        coordinates: { lat: 48.87639321596875, lng: 2.345870811093884 },
+        image: "https://ik.imagekit.io/resandco/soeurs/soeurs-3_D1XQrkg8oOsq.jpg",
+        gallerie: [
+        "https://ik.imagekit.io/resandco/soeurs/soeurs-1_SetkKhYAoNe4r.jpg",
+        "https://ik.imagekit.io/resandco/soeurs/soeurs-2_WBXklaiN7.jpg",
+        ],
+        tags: ['végétarien'],
+        creneaux: {
+            'lundi midi': ['15h','15h30', '16h'],
+            'mardi midi': ['15h','15h30', '16h'],
+            'mercredi midi': ['15h','15h30', '16h'],
+            'jeudi midi': ['15h','15h30', '16h'],
+            'vendredi midi': ['15h','15h30', '16h'],
+        },
+        menus: [
+            {
+                menu: "un wrap ou une salade",
+                prix: 4
+            },
+            {
+                menu: "un wrap ou une salade + un accompagnement ou un dessert",
+                prix: 5
+            },
+            {
+                menu: "un wrap ou une salade + un accompagnement + un dessert",
+                prix: 6
+            },
+        ],
+        description: `
+Un trésor de bonnes choses à manger, voilà la définition même de Veggie Tasty. Ce restaurant street-food à ouvert ses portes en 2015 et propose de la cuisine certifiée Vegan, simple mais terriblement efficace à un tarif plus que raisonnable. Tous les produits utilisés sont des produits frais et ça se ressent ! Le restaurant est chaleureux et nous éloigne de la grisaille de Paris grâce à son ambiance boisée et ses petites plantes disposées partout dans le restaurant. 
+        `,
+        infos: [
+         "Vente à emporter",
+         "Option végétarienne",
+        ],
+        allergenes: [
+          
+        ]
+    },*/
 }
 
 Object.keys(restaurants).forEach((restaurantId) => (
