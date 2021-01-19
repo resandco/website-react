@@ -76,6 +76,25 @@ function ListingDetails () {
                                     </ul>
                                 </div>
 
+                                <div className="feature-listing padding-top-40px padding-bottom-35px">
+                                    <h2 className="widget-title">
+                                        Allergènes
+                                    </h2>
+                                    <div className="title-shape"></div>
+                                    <ul className="list-items mt-4">
+                                        { restaurant.allergenes !== undefined && restaurant.allergenes.length > 0 ? 
+                                        (restaurant.allergenes.sort() || []).map((info, i) => {
+                                            return (
+                                                <li key={i}>
+                                                    {info}
+                                                </li>
+                                            )
+                                        })
+                                        : "Non renseignés"
+                                        }
+                                    </ul>
+                                </div>
+
                                 <div className="listing-map gmaps padding-top-40px padding-bottom-70px">
                                     <h2 className="widget-title">
                                         Plan
