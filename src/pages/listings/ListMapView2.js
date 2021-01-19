@@ -164,6 +164,7 @@ export default function ListMapView2() {
             {/* Place List */}
             <section className="card-area margin-top-100px padding-bottom-100px">
                 <div className="container">
+                    <h1 className="margin-bottom-30px font-size-30 font-weight-semi-bold color-text-2">Nos meilleurs restaurants</h1>
                     <div className="row align-items-start">
 
                         <div className="col-lg-8 ">
