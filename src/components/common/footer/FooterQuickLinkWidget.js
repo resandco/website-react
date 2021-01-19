@@ -16,6 +16,10 @@ class FooterQuickLinkWidget extends Component {
                 path: 'https://resandco.typeform.com/to/xP5GlH',
                 text: 'Devenir partenaire'
             },
+            {
+                path: "https://www.res-and-co.fr/conditions-generales-dutilisation/",
+                text: "Conditions d'utilisation",
+            },
         ]
     }
     render() {
