@@ -82,13 +82,16 @@ function ListingDetails () {
                                     </h2>
                                     <div className="title-shape"></div>
                                     <ul className="list-items mt-4">
-                                        {(restaurant.allergenes.sort() || []).map((info, i) => {
+                                        { restaurant.allergenes !== undefined && restaurant.allergenes.length > 0 ? 
+                                        (restaurant.allergenes.sort() || []).map((info, i) => {
                                             return (
                                                 <li key={i}>
                                                     {info}
                                                 </li>
                                             )
-                                        })}
+                                        })
+                                        : "Non renseignés"
+                                        }
                                     </ul>
                                 </div>
 
