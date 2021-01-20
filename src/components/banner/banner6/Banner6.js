@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 import { FiSearch } from 'react-icons/fi'
 
-function Banner6({title}) {
+function Banner6({ title }) {
     return (
         <>
             <section className="breadcrumb-area faq-breadcrumb">
@@ -19,10 +19,20 @@ function Banner6({title}) {
                                                 <div className="col-lg-7 mx-auto">
                                                     <div className="input-box">
                                                         <div className="form-group mb-0">
-                                                            <button type="button" className="theme-btn submit-btn border-0">
-                                                                <span className="d-inline-block"><FiSearch /></span>
+                                                            <button
+                                                                type="button"
+                                                                className="theme-btn submit-btn border-0"
+                                                            >
+                                                                <span className="d-inline-block">
+                                                                    <FiSearch />
+                                                                </span>
                                                             </button>
-                                                            <input className="form-control" type="text" name="name" placeholder="Search your question here..." />
+                                                            <input
+                                                                className="form-control"
+                                                                type="text"
+                                                                name="name"
+                                                                placeholder="Search your question here..."
+                                                            />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -36,7 +46,7 @@ function Banner6({title}) {
                 </div>
             </section>
         </>
-    );
+    )
 }
 
-export default Banner6;
+export default Banner6

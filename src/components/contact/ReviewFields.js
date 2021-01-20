@@ -1,22 +1,24 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react'
 import { MdStar } from 'react-icons/md'
 import { AiOutlineUser } from 'react-icons/ai'
 import { FaRegEnvelope } from 'react-icons/fa'
 import { BsPencil } from 'react-icons/bs'
-import PhotoUploader2 from "../addlisting/PhotoUploader2";
+import PhotoUploader2 from '../addlisting/PhotoUploader2'
 
 class ReviewFields extends Component {
     states = {
         title: 'Add a Review',
-        subtitle: 'Your email address will not be published. Required fields are marked *'
+        subtitle:
+            'Your email address will not be published. Required fields are marked *',
     }
     render() {
         return (
             <>
-                <div className="add-review-listing padding-top-50px" id="review">
-                    <h2 className="widget-title">
-                        {this.states.title}
-                    </h2>
+                <div
+                    className="add-review-listing padding-top-50px"
+                    id="review"
+                >
+                    <h2 className="widget-title">{this.states.title}</h2>
                     <div className="title-shape"></div>
                     <div className="section-heading padding-top-20px">
                         <p className="sec__desc font-size-16">
@@ -105,38 +107,71 @@ class ReviewFields extends Component {
                             <div className="row">
                                 <div className="col-lg-6">
                                     <div className="input-box">
-                                        <label className="label-text">Name</label>
+                                        <label className="label-text">
+                                            Name
+                                        </label>
                                         <div className="form-group">
-                                            <span className="la form-icon"><AiOutlineUser /></span>
-                                            <input className="form-control" type="text" name="name" placeholder="Your Name" />
+                                            <span className="la form-icon">
+                                                <AiOutlineUser />
+                                            </span>
+                                            <input
+                                                className="form-control"
+                                                type="text"
+                                                name="name"
+                                                placeholder="Your Name"
+                                            />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="input-box">
-                                        <label className="label-text">Email</label>
+                                        <label className="label-text">
+                                            Email
+                                        </label>
                                         <div className="form-group">
-                                            <span className="la form-icon"><FaRegEnvelope /></span>
-                                            <input className="form-control" type="email" name="email" placeholder="Email Address" />
+                                            <span className="la form-icon">
+                                                <FaRegEnvelope />
+                                            </span>
+                                            <input
+                                                className="form-control"
+                                                type="email"
+                                                name="email"
+                                                placeholder="Email Address"
+                                            />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="input-box">
-                                        <label className="label-text">Review</label>
+                                        <label className="label-text">
+                                            Review
+                                        </label>
                                         <div className="form-group">
-                                            <span className="la form-icon"><BsPencil /></span>
-                                            <textarea className="message-control form-control" name="message" placeholder="Write Message"></textarea>
+                                            <span className="la form-icon">
+                                                <BsPencil />
+                                            </span>
+                                            <textarea
+                                                className="message-control form-control"
+                                                name="message"
+                                                placeholder="Write Message"
+                                            ></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="upload-btn-box">
-                                        <form action="#" method="post" encType="multipart/form-data">
-
+                                        <form
+                                            action="#"
+                                            method="post"
+                                            encType="multipart/form-data"
+                                        >
                                             <PhotoUploader2 />
 
-                                            <button className="theme-btn border-0 margin-top-20px" type="submit" value="submit">
+                                            <button
+                                                className="theme-btn border-0 margin-top-20px"
+                                                type="submit"
+                                                value="submit"
+                                            >
                                                 Submit review
                                             </button>
                                         </form>
@@ -147,8 +182,8 @@ class ReviewFields extends Component {
                     </div>
                 </div>
             </>
-        );
+        )
     }
 }
 /* First tell me why you have used this in the responsive device*/
-export default ReviewFields;
+export default ReviewFields

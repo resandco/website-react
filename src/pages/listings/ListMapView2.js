@@ -1,13 +1,13 @@
-import React, { useState, useRef } from 'react';
-import Helmet from "react-helmet";
-import Select from "react-select";
+import React, { useState, useRef } from 'react'
+import Helmet from 'react-helmet'
+import Select from 'react-select'
 
-import GeneralHeader from "../../components/common/GeneralHeader";
-import Newsletter from "../../components/other/cta/Newsletter";
-import Footer from "../../components/common/footer/Footer";
-import ScrollTopBtn from "../../components/common/ScrollTopBtn";
-import MapViewCluster from "../../components/contact/MapViewCluster";
-import RecommendedPlace from '../../components/places/RecommendedPlace';
+import GeneralHeader from '../../components/common/GeneralHeader'
+import Newsletter from '../../components/other/cta/Newsletter'
+import Footer from '../../components/common/footer/Footer'
+import ScrollTopBtn from '../../components/common/ScrollTopBtn'
+import MapViewCluster from '../../components/contact/MapViewCluster'
+import RecommendedPlace from '../../components/places/RecommendedPlace'
 
 import restaurants from '../../restaurants'
 
@@ -26,20 +26,21 @@ const locationOptions = [
                 unique.push(scity)
             }
 
-            return unique; 
+            return unique
         }, [])
         .sort((aRaw, bRaw) => {
             // We want Paris to always come first and arrondissements properly sorted
-            const fixLocation = (loc) => loc.replace(/^Paris/i, "00Paris").replace(/ (\d[eè])/, " 0$1")
+            const fixLocation = (loc) =>
+                loc.replace(/^Paris/i, '00Paris').replace(/ (\d[eè])/, ' 0$1')
             const a = fixLocation(aRaw)
             const b = fixLocation(bRaw)
-            
-            return a === b ? 0 : (a < b ? -1 : 1)
+
+            return a === b ? 0 : a < b ? -1 : 1
         })
         .map((value) => ({
             value,
-            label: value
-        }))
+            label: value,
+        })),
 ]
 const timeslotOptions = [
     {
@@ -56,7 +57,7 @@ const timeslotOptions = [
                 unique.push(scity)
             }
 
-            return unique; 
+            return unique
         }, [])
         .sort((a, b) => {
             const timeslotsOrder = {
@@ -80,54 +81,68 @@ const timeslotOptions = [
                 'samedi soir': 52,
                 'dimanche matin': 60,
                 'dimanche midi': 61,
-                'dimanche soir': 62
+                'dimanche soir': 62,
             }
 
             return timeslotsOrder[a] - timeslotsOrder[b]
         })
         .map((value) => ({
             value,
-            label: value
-        }))
+            label: value,
+        })),
 ]
 
 function filterRestaurants(all, location, timeslot) {
     return all.reduce((acc, curr) => {
         if (location && location !== curr.scity) {
-            return acc;
+            return acc
         }
 
         if (timeslot && !(timeslot in curr.creneaux)) {
-            return acc;
+            return acc
         }
 
-        acc.push(curr);
-        return acc;
+        acc.push(curr)
+        return acc
     }, [])
 }
 
 export default function ListMapView2() {
-    const cardListRef = useRef();
+    const cardListRef = useRef()
 
-    const [filteredRestaurants, setFilteredRestaurants] = useState(allRestaurants)
+    const [filteredRestaurants, setFilteredRestaurants] = useState(
+        allRestaurants
+    )
     const [selectedTimeslot, setSelectedTimeslot] = useState(timeslotOptions[0])
     const [selectedLocation, setSelectedLocation] = useState(locationOptions[0])
     const [selectedRestaurant, setSelectedRestaurant] = useState()
     const [hoveredRestaurant, setHoveredRestaurant] = useState()
 
-    const handleTimeslotChange = ( newTimeslot ) => {
-        setFilteredRestaurants( filterRestaurants(allRestaurants, selectedLocation.value, newTimeslot.value) )
+    const handleTimeslotChange = (newTimeslot) => {
+        setFilteredRestaurants(
+            filterRestaurants(
+                allRestaurants,
+                selectedLocation.value,
+                newTimeslot.value
+            )
+        )
         setSelectedTimeslot(newTimeslot)
         setSelectedRestaurant(null)
     }
 
-    const handleLocationChange = ( newLocation ) => {
-        setFilteredRestaurants( filterRestaurants(allRestaurants, newLocation.value, selectedTimeslot.value) )
+    const handleLocationChange = (newLocation) => {
+        setFilteredRestaurants(
+            filterRestaurants(
+                allRestaurants,
+                newLocation.value,
+                selectedTimeslot.value
+            )
+        )
         setSelectedLocation(newLocation)
         setSelectedRestaurant(null)
     }
-    
-    const handleRestaurantChange = ( placeId ) => {
+
+    const handleRestaurantChange = (placeId) => {
         const newRestaurants = [
             filteredRestaurants.filter(({ id }) => id === placeId)[0],
             ...filteredRestaurants.filter(({ id }) => id !== placeId),
@@ -137,16 +152,17 @@ export default function ListMapView2() {
 
         setTimeout(() => {
             const placeCard = document.getElementById(`place-${placeId}`)
-            placeCard.scrollIntoView && placeCard.scrollIntoView({
-                behavior: "smooth",
-                block: "end",
-                inline: "nearest"
-            })
+            placeCard.scrollIntoView &&
+                placeCard.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'end',
+                    inline: 'nearest',
+                })
         }, 150)
     }
 
-    const handleEnterPlace = ( placeId ) => {
-        setHoveredRestaurant( placeId )
+    const handleEnterPlace = (placeId) => {
+        setHoveredRestaurant(placeId)
     }
     const handleLeavePlace = () => {
         setHoveredRestaurant(null)
@@ -164,16 +180,19 @@ export default function ListMapView2() {
             {/* Place List */}
             <section className="card-area margin-top-100px padding-bottom-100px">
                 <div className="container">
-                    <h1 className="margin-bottom-30px font-size-30 font-weight-semi-bold color-text-2">Nos meilleurs restaurants</h1>
+                    <h1 className="margin-bottom-30px font-size-30 font-weight-semi-bold color-text-2">
+                        Nos meilleurs restaurants
+                    </h1>
                     <div className="row align-items-start">
-
                         <div className="col-lg-8 ">
                             <div className="home-map">
                                 <div className="map-container map-height w-100">
                                     <MapViewCluster
                                         restaurants={filteredRestaurants}
                                         hoveredRestaurant={hoveredRestaurant}
-                                        selectRestaurant={handleRestaurantChange}
+                                        selectRestaurant={
+                                            handleRestaurantChange
+                                        }
                                     />
                                 </div>
                             </div>
@@ -182,7 +201,9 @@ export default function ListMapView2() {
                         <div className="col-lg-4">
                             <div className="sidebar">
                                 <div className="sidebar-widget">
-                                    <h3 className="widget-title">Choisissez un créneau</h3>
+                                    <h3 className="widget-title">
+                                        Choisissez un créneau
+                                    </h3>
                                     <div className="sidebar-option mb-3">
                                         <Select
                                             value={selectedTimeslot}
@@ -193,7 +214,9 @@ export default function ListMapView2() {
                                     </div>
                                 </div>
                                 <div className="sidebar-widget">
-                                    <h3 className="widget-title">Choisissez une localisation</h3>
+                                    <h3 className="widget-title">
+                                        Choisissez une localisation
+                                    </h3>
                                     <div className="sidebar-option">
                                         <Select
                                             className="Select"
@@ -206,30 +229,37 @@ export default function ListMapView2() {
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
                     <div className="row align-items-start">
                         <div className="col-lg-8 ">
-                            <div className="row twocol align-items-start justify-content-start margin-top-30px" ref={cardListRef}>
-                                {
-                                    filteredRestaurants.length === 0
-                                        ? (
-                                            <div className="col-lg-8">
-                                                <span>Aucun restaurant ne correspond à ces critères</span>
-                                            </div>
-                                        )
-                                        : filteredRestaurants.map((item, index) => (
-                                            <RecommendedPlace
-                                                place={item}
-                                                key={index}
-                                                isSelected={item.id === selectedRestaurant}
-                                                isHovered={item.id === hoveredRestaurant}
-                                                handleEnterPlace={handleEnterPlace}
-                                                handleLeavePlace={handleLeavePlace}
-                                            />
-                                        ))
-                                }
+                            <div
+                                className="row twocol align-items-start justify-content-start margin-top-30px"
+                                ref={cardListRef}
+                            >
+                                {filteredRestaurants.length === 0 ? (
+                                    <div className="col-lg-8">
+                                        <span>
+                                            Aucun restaurant ne correspond à ces
+                                            critères
+                                        </span>
+                                    </div>
+                                ) : (
+                                    filteredRestaurants.map((item, index) => (
+                                        <RecommendedPlace
+                                            place={item}
+                                            key={index}
+                                            isSelected={
+                                                item.id === selectedRestaurant
+                                            }
+                                            isHovered={
+                                                item.id === hoveredRestaurant
+                                            }
+                                            handleEnterPlace={handleEnterPlace}
+                                            handleLeavePlace={handleLeavePlace}
+                                        />
+                                    ))
+                                )}
                             </div>
                         </div>
                     </div>
@@ -244,5 +274,5 @@ export default function ListMapView2() {
 
             <ScrollTopBtn />
         </main>
-    );
+    )
 }

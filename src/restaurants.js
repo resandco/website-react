@@ -1,17 +1,18 @@
 const restaurants = {
     'ma-cantine-thai': {
-        badge: 'jusqu\'à -20%',
+        badge: "jusqu'à -20%",
         title: 'Ma Cantine Thaï',
         verifie: true,
         stitle: '56 rue Richer',
         scity: 'Paris 9ème',
         szip: '75009',
         coordinates: { lat: 48.874093, lng: 2.342877 },
-        image: "https://ik.imagekit.io/resandco/ma-cantine-thai/45577670_696108444093647_1150228534342451200_o-1200x675_rCMzYH00ev.jpg",
+        image:
+            'https://ik.imagekit.io/resandco/ma-cantine-thai/45577670_696108444093647_1150228534342451200_o-1200x675_rCMzYH00ev.jpg',
         gallerie: [
-            "https://ik.imagekit.io/resandco/ma-cantine-thai/110187553_626836098250757_4907096043537717425_n_GKnmQOdoEs.jpg",
-            "https://ik.imagekit.io/resandco/ma-cantine-thai/109828368_270233987610730_226588165942920836_n_j3wFX2NXA.jpg",
-            "https://ik.imagekit.io/resandco/ma-cantine-thai/109914501_593930324643817_2668679964449695222_n_7DrRxZBaS.jpg",
+            'https://ik.imagekit.io/resandco/ma-cantine-thai/110187553_626836098250757_4907096043537717425_n_GKnmQOdoEs.jpg',
+            'https://ik.imagekit.io/resandco/ma-cantine-thai/109828368_270233987610730_226588165942920836_n_j3wFX2NXA.jpg',
+            'https://ik.imagekit.io/resandco/ma-cantine-thai/109914501_593930324643817_2668679964449695222_n_7DrRxZBaS.jpg',
         ],
         tags: ['Asiatique', 'Thaï'],
         creneaux: {
@@ -20,21 +21,21 @@ const restaurants = {
         },
         menus: [
             {
-                menu: "entrée + plat ou plat + dessert",
-                prix: 10
+                menu: 'entrée + plat ou plat + dessert',
+                prix: 10,
             },
             {
-                menu: "entrée + plat ou plat + dessert - végétarien",
-                prix: 10
+                menu: 'entrée + plat ou plat + dessert - végétarien',
+                prix: 10,
             },
             {
-                menu: "plat",
-                prix: 7.9
+                menu: 'plat',
+                prix: 7.9,
             },
             {
-                menu: "plat - végétarien",
-                prix: 7.9
-            }
+                menu: 'plat - végétarien',
+                prix: 7.9,
+            },
         ],
         description: `
 ### L’ambiance
@@ -50,19 +51,18 @@ Au sein de ce restaurant familial, faites la rencontre de Charlotte, Théodore e
 Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire, Ma Cantine Thaï renforce son engagement en devenant partenaire RES&CO. Une belle façon d’allier convivialité et consommation responsable.
         `,
         infos: [
-            "Animaux acceptés",
-            "Climatisé",
-            "Option végétarienne",
-            "Wifi",
-            "Option sans gluten",
-        ]
-         ,
+            'Animaux acceptés',
+            'Climatisé',
+            'Option végétarienne',
+            'Wifi',
+            'Option sans gluten',
+        ],
         allergenes: [
-            "Arachides",
-            "Soja",
-            "Fruits à coque",
-            "Graines de sésame",
-        ]
+            'Arachides',
+            'Soja',
+            'Fruits à coque',
+            'Graines de sésame',
+        ],
     },
     'opium-la-cabane': {
         title: 'Opium, La Cabane',
@@ -70,46 +70,229 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
         stitle: '44 Rue du Dauphine',
         scity: 'Paris 6ème',
         szip: '75006',
-        coordinates: { lat: 48.854150, lng: 2.338720 },
-        image: "https://ik.imagekit.io/resandco/opium-la-cabane/41768518_666678753716538_636533506389835776_n_KNrA1F7rV.jpg",
+        coordinates: { lat: 48.85415, lng: 2.33872 },
+        image:
+            'https://ik.imagekit.io/resandco/opium-la-cabane/41768518_666678753716538_636533506389835776_n_KNrA1F7rV.jpg',
         gallerie: [
-            "https://ik.imagekit.io/resandco/opium-la-cabane/IMG_20200713_141556_GAVYY2krA.jpg",
-            "https://ik.imagekit.io/resandco/opium-la-cabane/IMG_20200713_141424_XpqNZmtcb.jpg",
-            "https://ik.imagekit.io/resandco/opium-la-cabane/IMG_20200713_141522_zDLTxzdsF.jpg",
+            'https://ik.imagekit.io/resandco/opium-la-cabane/IMG_20200713_141556_GAVYY2krA.jpg',
+            'https://ik.imagekit.io/resandco/opium-la-cabane/IMG_20200713_141424_XpqNZmtcb.jpg',
+            'https://ik.imagekit.io/resandco/opium-la-cabane/IMG_20200713_141522_zDLTxzdsF.jpg',
         ],
         tags: ['Français', 'Bar à huîtres'],
         creneaux: {
-            'lundi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'lundi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
-            'mardi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'mardi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
-            'mercredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'mercredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
-            'jeudi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'jeudi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
-            'vendredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'vendredi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
-            'samedi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'samedi soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
-            'dimanche midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'dimanche soir': ['17h', '17h30', '18h', '18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30', '23h', '23h30'],
+            'lundi midi': [
+                '12h',
+                '12h30',
+                '13h',
+                '13h30',
+                '14h',
+                '14h30',
+                '15h',
+                '15h30',
+                '16h',
+                '16h30',
+            ],
+            'lundi soir': [
+                '17h',
+                '17h30',
+                '18h',
+                '18h30',
+                '19h',
+                '19h30',
+                '20h',
+                '20h30',
+                '21h',
+                '21h30',
+                '22h',
+                '22h30',
+                '23h',
+                '23h30',
+            ],
+            'mardi midi': [
+                '12h',
+                '12h30',
+                '13h',
+                '13h30',
+                '14h',
+                '14h30',
+                '15h',
+                '15h30',
+                '16h',
+                '16h30',
+            ],
+            'mardi soir': [
+                '17h',
+                '17h30',
+                '18h',
+                '18h30',
+                '19h',
+                '19h30',
+                '20h',
+                '20h30',
+                '21h',
+                '21h30',
+                '22h',
+                '22h30',
+                '23h',
+                '23h30',
+            ],
+            'mercredi midi': [
+                '12h',
+                '12h30',
+                '13h',
+                '13h30',
+                '14h',
+                '14h30',
+                '15h',
+                '15h30',
+                '16h',
+                '16h30',
+            ],
+            'mercredi soir': [
+                '17h',
+                '17h30',
+                '18h',
+                '18h30',
+                '19h',
+                '19h30',
+                '20h',
+                '20h30',
+                '21h',
+                '21h30',
+                '22h',
+                '22h30',
+                '23h',
+                '23h30',
+            ],
+            'jeudi midi': [
+                '12h',
+                '12h30',
+                '13h',
+                '13h30',
+                '14h',
+                '14h30',
+                '15h',
+                '15h30',
+                '16h',
+                '16h30',
+            ],
+            'jeudi soir': [
+                '17h',
+                '17h30',
+                '18h',
+                '18h30',
+                '19h',
+                '19h30',
+                '20h',
+                '20h30',
+                '21h',
+                '21h30',
+                '22h',
+                '22h30',
+                '23h',
+                '23h30',
+            ],
+            'vendredi midi': [
+                '12h',
+                '12h30',
+                '13h',
+                '13h30',
+                '14h',
+                '14h30',
+                '15h',
+                '15h30',
+                '16h',
+                '16h30',
+            ],
+            'vendredi soir': [
+                '17h',
+                '17h30',
+                '18h',
+                '18h30',
+                '19h',
+                '19h30',
+                '20h',
+                '20h30',
+                '21h',
+                '21h30',
+                '22h',
+                '22h30',
+                '23h',
+                '23h30',
+            ],
+            'samedi midi': [
+                '12h',
+                '12h30',
+                '13h',
+                '13h30',
+                '14h',
+                '14h30',
+                '15h',
+                '15h30',
+                '16h',
+                '16h30',
+            ],
+            'samedi soir': [
+                '17h',
+                '17h30',
+                '18h',
+                '18h30',
+                '19h',
+                '19h30',
+                '20h',
+                '20h30',
+                '21h',
+                '21h30',
+                '22h',
+                '22h30',
+                '23h',
+                '23h30',
+            ],
+            'dimanche midi': [
+                '12h',
+                '12h30',
+                '13h',
+                '13h30',
+                '14h',
+                '14h30',
+                '15h',
+                '15h30',
+                '16h',
+                '16h30',
+            ],
+            'dimanche soir': [
+                '17h',
+                '17h30',
+                '18h',
+                '18h30',
+                '19h',
+                '19h30',
+                '20h',
+                '20h30',
+                '21h',
+                '21h30',
+                '22h',
+                '22h30',
+                '23h',
+                '23h30',
+            ],
         },
         menus: [
             {
-                menu: "Plateau de 12 huîtres Fines de Claire",
-                prix: 20
+                menu: 'Plateau de 12 huîtres Fines de Claire',
+                prix: 20,
             },
             {
-                menu: "Plateau de 12 huîtres Spéciales de Claire",
-                prix: 24
+                menu: 'Plateau de 12 huîtres Spéciales de Claire',
+                prix: 24,
             },
             {
-                menu: "Plateau de 12 huîtres Pousses en Claire",
-                prix: 36
+                menu: 'Plateau de 12 huîtres Pousses en Claire',
+                prix: 36,
             },
             {
-                menu: "Plateau de 12 huîtres bretonnes",
-                prix: 44
+                menu: 'Plateau de 12 huîtres bretonnes',
+                prix: 44,
             },
             /*{
                 menu: "assortiment de douze huîtres",
@@ -135,66 +318,58 @@ Vous n'êtes pas fan de poisson ? Pas de panique, le restaurant propose de déli
 Pascal, le gérant d'Opium la Cabane est un véritable artiste. Issu du monde de la mode, il travaille tous les jours de l'année dans sa nouvelle cabane restaurant, son nouveau terrain de jeu artistique depuis 2012. 
 Chez lui, les clients y sont accueillis comme des rois.
         `,
-        infos: [
-            "Animaux acceptés",
-            "Climatisé",
-            "Option sans gluten",
-            "Wifi",
-        ],
-        allergenes: [
-            "Crustacés",
-            "Poissons",
-            "Mollusques",
-        ]
+        infos: ['Animaux acceptés', 'Climatisé', 'Option sans gluten', 'Wifi'],
+        allergenes: ['Crustacés', 'Poissons', 'Mollusques'],
     },
-    'casadiagana': {
+    casadiagana: {
         title: 'Casadiagana',
-        badge: 'jusqu\'à -20%',
+        badge: "jusqu'à -20%",
         verifie: true,
         stitle: '78 Avenue de la République',
         scity: 'Paris 11ème',
         szip: '75011',
         coordinates: { lat: 48.864427, lng: 2.378987 },
-        image: "https://ik.imagekit.io/resandco/Casadiagana/Casadiagana-1055-site_BD1594975128554_-b3vhZCqq.jpg",
+        image:
+            'https://ik.imagekit.io/resandco/Casadiagana/Casadiagana-1055-site_BD1594975128554_-b3vhZCqq.jpg',
         gallerie: [
-            "https://ik.imagekit.io/resandco/Casadiagana/IMG_20200904_182951_H5YPofbGaG.jpg",
-            "https://ik.imagekit.io/resandco/Casadiagana/Casadiagana-1017_HD1595530160548_RzojxgyK-S.jpg",
-            "https://ik.imagekit.io/resandco/Casadiagana/IMG_20200904_181411_7V6vNYoxr.jpg",
-            "https://ik.imagekit.io/resandco/Casadiagana/Casadiagana-1036-site_HD1594974835479_hHnvKgxNm.jpg"
+            'https://ik.imagekit.io/resandco/Casadiagana/IMG_20200904_182951_H5YPofbGaG.jpg',
+            'https://ik.imagekit.io/resandco/Casadiagana/Casadiagana-1017_HD1595530160548_RzojxgyK-S.jpg',
+            'https://ik.imagekit.io/resandco/Casadiagana/IMG_20200904_181411_7V6vNYoxr.jpg',
+            'https://ik.imagekit.io/resandco/Casadiagana/Casadiagana-1036-site_HD1594974835479_hHnvKgxNm.jpg',
         ],
         tags: ['Traiteur', 'Sandwicherie', 'Africain'],
         creneaux: {
             'vendredi midi': ['14h30', '15h', '15h30', '16h', '16h30'],
-            'vendredi soir': ['17h', '17h30', '18h']
+            'vendredi soir': ['17h', '17h30', '18h'],
         },
         menus: [
             {
-                menu: "plat",
-                prix: 6
+                menu: 'plat',
+                prix: 6,
             },
             {
-                menu: "plat - végétarien",
-                prix: 6
+                menu: 'plat - végétarien',
+                prix: 6,
             },
             {
-                menu: "entrée + plat",
-                prix: 7.5
+                menu: 'entrée + plat',
+                prix: 7.5,
             },
             {
-                menu: "entrée + plat - végétarien",
-                prix: 7.5
+                menu: 'entrée + plat - végétarien',
+                prix: 7.5,
             },
             {
-                menu: "entrée + plat - végétarien",
-                prix: 7.5
+                menu: 'entrée + plat - végétarien',
+                prix: 7.5,
             },
             {
-                menu: "sandwich ou salade + pastels",
-                prix: 6
+                menu: 'sandwich ou salade + pastels',
+                prix: 6,
             },
             {
-                menu: "sandwich ou salade + pastels - végétarien",
-                prix: 6
+                menu: 'sandwich ou salade + pastels - végétarien',
+                prix: 6,
             },
         ],
         description: `
@@ -208,10 +383,7 @@ Ils décident de changer de carte tous les jours, pour ne pas lasser leurs clien
 
 Casadiagana est déjà engagé depuis un an dans la lutte contre le gaspillage alimentaire. C'est le vendredi qu'il y a le plus de restes.
         `,
-        infos: [
-            "Terrasse",
-            "Option végétarienne",
-        ]
+        infos: ['Terrasse', 'Option végétarienne'],
     },
     'carmen-ragosta': {
         title: 'Carmen Ragosta',
@@ -221,15 +393,16 @@ Casadiagana est déjà engagé depuis un an dans la lutte contre le gaspillage a
         scity: 'Paris 10ème',
         szip: '75010',
         coordinates: { lat: 48.873615, lng: 2.364612 },
-        image: "https://ik.imagekit.io/resandco/carmen-ragosta/Carmen_Ragosta_2_-_site_internet_Iwm3vobhaP.png",
+        image:
+            'https://ik.imagekit.io/resandco/carmen-ragosta/Carmen_Ragosta_2_-_site_internet_Iwm3vobhaP.png',
         gallerie: [
-            "https://ik.imagekit.io/resandco/carmen-ragosta/Carmen_Ragosta_1_-_site_internet_vyfCOyZc4.png",
-            "https://ik.imagekit.io/resandco/carmen-ragosta/Carmen_Ragosta_4_-_photo_perso_jKnXNCt_8.jpg",
-            "https://ik.imagekit.io/resandco/carmen-ragosta/Carmen_Ragosta_7_-_photo_perso_xp2HXpWEI.jpg",
-            "https://ik.imagekit.io/resandco/carmen-ragosta/Carmen_Ragosta_5_-_site_internet_dRJKZRvm9.png",
-            "https://ik.imagekit.io/resandco/carmen-ragosta/Carmen_Ragosta_4_-_site_internet_fjdWOb8mc.png",
-            "https://ik.imagekit.io/resandco/carmen-ragosta/Carmen_Ragosta_6_-_site_internet_-F5Pfrgp_.png",
-            "https://ik.imagekit.io/resandco/carmen-ragosta/Carmen_Ragosta_3_-_site_internet_rzQI_fTMk.png",
+            'https://ik.imagekit.io/resandco/carmen-ragosta/Carmen_Ragosta_1_-_site_internet_vyfCOyZc4.png',
+            'https://ik.imagekit.io/resandco/carmen-ragosta/Carmen_Ragosta_4_-_photo_perso_jKnXNCt_8.jpg',
+            'https://ik.imagekit.io/resandco/carmen-ragosta/Carmen_Ragosta_7_-_photo_perso_xp2HXpWEI.jpg',
+            'https://ik.imagekit.io/resandco/carmen-ragosta/Carmen_Ragosta_5_-_site_internet_dRJKZRvm9.png',
+            'https://ik.imagekit.io/resandco/carmen-ragosta/Carmen_Ragosta_4_-_site_internet_fjdWOb8mc.png',
+            'https://ik.imagekit.io/resandco/carmen-ragosta/Carmen_Ragosta_6_-_site_internet_-F5Pfrgp_.png',
+            'https://ik.imagekit.io/resandco/carmen-ragosta/Carmen_Ragosta_3_-_site_internet_rzQI_fTMk.png',
         ],
         tags: ['Créative', 'Italien', 'Végan'],
         creneaux: {
@@ -242,21 +415,21 @@ Casadiagana est déjà engagé depuis un an dans la lutte contre le gaspillage a
         },
         menus: [
             {
-                menu: "plat - végan",
-                prix: 19
+                menu: 'plat - végan',
+                prix: 19,
             },
             {
-                menu: "entrée + plat - végan",
-                prix: 25
+                menu: 'entrée + plat - végan',
+                prix: 25,
             },
             {
-                menu: "plat + dessert - végan",
-                prix: 25
+                menu: 'plat + dessert - végan',
+                prix: 25,
             },
             {
-                menu: "entrée + plat + dessert - végan",
-                prix: 29
-            }
+                menu: 'entrée + plat + dessert - végan',
+                prix: 29,
+            },
         ],
         description: `
 ### L’ambiance et l'équipe
@@ -266,37 +439,38 @@ De l’extérieur, impossible de se douter qu’il est possible d'y déguster de
 ### Et l’anti-gaspi ?
 
 Carmen a toujours été très attentive à l’anti-gaspi. D'ailleurs, c'est menu surprise depuis toujours chez Carmen Ragosta. Tous les plats sont cuisinés dans sa boutique-restaurant et sont confectionnés à partir d’ingrédients frais, issus de l’agriculture biologique et toujours de saison. Pour lutter contre le gaspillage alimentaire, Carmen a décidé de n’acheter qu’un petit réfrigérateur dans son restaurant pour ne pas stocker trop de nourriture. Elle achète ses ingrédients tous les jours en fonction de ses besoins. Sachez que ses engagements environnementaux ne se traduisent pas seulement dans sa manière de cuisiner mais aussi dans son rôle de styliste puisqu’elle utilise de plus en plus de pièces recyclées dans ses créations.        `,
-       
+
         infos: [
-            "Animaux acceptés",
-            "100% vegan",
-            "Option sans gluten",
-            "Bio",
-            "Accessibilité handicapé",
-            "Terrasse",
-            "Kids friendly",
+            'Animaux acceptés',
+            '100% vegan',
+            'Option sans gluten',
+            'Bio',
+            'Accessibilité handicapé',
+            'Terrasse',
+            'Kids friendly',
         ],
         allergenes: [
-            "Céréales contenant du gluten",
-            "Crustacés",
-            "Oeufs",
-            "Poissons",
-            "Arachides",
-            "Soja",
-            "Lait",
-        ]
+            'Céréales contenant du gluten',
+            'Crustacés',
+            'Oeufs',
+            'Poissons',
+            'Arachides',
+            'Soja',
+            'Lait',
+        ],
     },
     'comptoir-43': {
         title: 'Comptoir 43 Bio Ô Top',
         badge: 'fermé pendant confinement',
-        stitle: '43 Rue de l\'Arbre Sec',
+        stitle: "43 Rue de l'Arbre Sec",
         scity: 'Paris 1er',
         szip: '75001',
         coordinates: { lat: 48.861129, lng: 2.342405 },
-        image: "https://ik.imagekit.io/resandco/comptoir-43/Comptoir_43_-_site_internet_2_J4EHG61t5.jpg",
+        image:
+            'https://ik.imagekit.io/resandco/comptoir-43/Comptoir_43_-_site_internet_2_J4EHG61t5.jpg',
         gallerie: [
-            "https://ik.imagekit.io/resandco/comptoir-43/Comptoir_43_-_site_internet_1_4oKFRTIOj9.jpg",
-            "https://ik.imagekit.io/resandco/comptoir-43/Comptoir_43_-_site_internet_3_E2fdSHAsr.jpg",
+            'https://ik.imagekit.io/resandco/comptoir-43/Comptoir_43_-_site_internet_1_4oKFRTIOj9.jpg',
+            'https://ik.imagekit.io/resandco/comptoir-43/Comptoir_43_-_site_internet_3_E2fdSHAsr.jpg',
         ],
         tags: ['Français', 'Epicerie fine', 'Bio'],
         creneaux: {
@@ -305,12 +479,12 @@ Carmen a toujours été très attentive à l’anti-gaspi. D'ailleurs, c'est men
         },
         menus: [
             {
-                menu: "plat + dessert",
-                prix: 12
+                menu: 'plat + dessert',
+                prix: 12,
             },
             {
-                menu: "plat + dessert - végétarien",
-                prix: 12
+                menu: 'plat + dessert - végétarien',
+                prix: 12,
             },
         ],
         description: `
@@ -330,85 +504,152 @@ Vous serez chaleureusement accueillis par Valérie et Julie, les co-fondatrices.
 
 Le comptoir 43 - Bio Ô Top était déjà engagé au niveau anti-gaspi. Cependant, il renforce sa lutte contre le gaspillage en devenant restaurant partenaire avec RES&CO. En effet, Valérie, sensible à cette cause souhaite limiter toute perte à l’issue de son service et c’est pour cette raison qu’elle vous accueille, de 12h à 15h, le mardi et le jeudi dans son restaurant, au 43 rue de l’Arbre Sec !
 `,
-   
+
         infos: [
-            "Accès handicapé",
-            "Animaux acceptés",
-            "Climatisé",
-            "Option végétarienne",
-            "Option végane",
-            "Bio",
-            "Option sans gluten",
-            "Terrasse",
-            "Wifi",
-        ]
+            'Accès handicapé',
+            'Animaux acceptés',
+            'Climatisé',
+            'Option végétarienne',
+            'Option végane',
+            'Bio',
+            'Option sans gluten',
+            'Terrasse',
+            'Wifi',
+        ],
     },
-    'cafezen': {
-        badge: 'fermé pendant confinement', /*'jusqu\'à -38%',*/
+    cafezen: {
+        badge: 'fermé pendant confinement' /*'jusqu\'à -38%',*/,
         title: 'CaféZen',
         verifie: true,
         stitle: '3 Rue Poissonnière',
         scity: 'Paris 2ème',
         szip: '75002',
         coordinates: { lat: 48.868752, lng: 2.347661 },
-        image: "https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_site_internet_2_Y8XqRHLoE.jpeg",
+        image:
+            'https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_site_internet_2_Y8XqRHLoE.jpeg',
         gallerie: [
-            "https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_perso_3_dtc9tVxLoJ.jpeg",
-            "https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_site_interet_3_wqRo2af2i.jpeg",
-            "https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_perso_2__einyN4Crm.jpeg",
-            "https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_site_internet_8_PPeU7323Gs.jpeg",
-            "https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_site_internet_11_udK8AdvI5J.jpeg",
-            "https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_site_internet_7_dljoZAZDKf.jpeg",
-            "https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_site_internet_10_VkydIFGMsW.jpeg",
-            "https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_site_internet_9_pt9vv02p1m.jpeg",
-            "https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_site_internet_1_lShm-hdV9D.jpeg",
-            "https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_perso_1_ICKGjtT6i.jpeg",
-            "https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_site_internet_4_P9p1cEiao.jpeg",
-            "https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_site_internet_6_FTROTCpQZp.jpeg",
-            "https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_site_internet_12_sjP42nte2V.jpeg",
+            'https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_perso_3_dtc9tVxLoJ.jpeg',
+            'https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_site_interet_3_wqRo2af2i.jpeg',
+            'https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_perso_2__einyN4Crm.jpeg',
+            'https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_site_internet_8_PPeU7323Gs.jpeg',
+            'https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_site_internet_11_udK8AdvI5J.jpeg',
+            'https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_site_internet_7_dljoZAZDKf.jpeg',
+            'https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_site_internet_10_VkydIFGMsW.jpeg',
+            'https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_site_internet_9_pt9vv02p1m.jpeg',
+            'https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_site_internet_1_lShm-hdV9D.jpeg',
+            'https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_perso_1_ICKGjtT6i.jpeg',
+            'https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_site_internet_4_P9p1cEiao.jpeg',
+            'https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_site_internet_6_FTROTCpQZp.jpeg',
+            'https://ik.imagekit.io/resandco/cafezen/Cafe_Zen_-_site_internet_12_sjP42nte2V.jpeg',
         ],
         tags: ['Français', 'Scandinave', 'Co-working', 'Coffee shop'],
         creneaux: {
             /*'lundi matin': ['9h', '9h30', '10h', '10h30', '11h'],*/
-            'lundi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
+            'lundi midi': [
+                '11h30',
+                '12h',
+                '12h30',
+                '13h',
+                '13h30',
+                '14h',
+                '14h30',
+                '15h',
+                '15h30',
+                '16h',
+            ],
             /*'lundi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
             'mardi matin': ['9h', '9h30', '10h', '10h30', '11h'],*/
-            'mardi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
+            'mardi midi': [
+                '11h30',
+                '12h',
+                '12h30',
+                '13h',
+                '13h30',
+                '14h',
+                '14h30',
+                '15h',
+                '15h30',
+                '16h',
+            ],
             /*'mardi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
             'mercredi matin': ['9h', '9h30', '10h', '10h30', '11h'],*/
-            'mercredi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
+            'mercredi midi': [
+                '11h30',
+                '12h',
+                '12h30',
+                '13h',
+                '13h30',
+                '14h',
+                '14h30',
+                '15h',
+                '15h30',
+                '16h',
+            ],
             /*'mercredi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
             'jeudi matin': ['9h', '9h30', '10h', '10h30', '11h'],*/
-            'jeudi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
+            'jeudi midi': [
+                '11h30',
+                '12h',
+                '12h30',
+                '13h',
+                '13h30',
+                '14h',
+                '14h30',
+                '15h',
+                '15h30',
+                '16h',
+            ],
             /*'jeudi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
             'vendredi matin': ['9h', '9h30', '10h', '10h30', '11h'],*/
-            'vendredi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
+            'vendredi midi': [
+                '11h30',
+                '12h',
+                '12h30',
+                '13h',
+                '13h30',
+                '14h',
+                '14h30',
+                '15h',
+                '15h30',
+                '16h',
+            ],
             /*'vendredi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
             'samedi matin': ['10h', '10h30', '11h'],*/
-            'samedi midi': ['11h30', '12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h'],
+            'samedi midi': [
+                '11h30',
+                '12h',
+                '12h30',
+                '13h',
+                '13h30',
+                '14h',
+                '14h30',
+                '15h',
+                '15h30',
+                '16h',
+            ],
             /*'samedi soir': ['16h30', '17h', '17h30', '18h', '18h30'],*/
         },
         menus: [
             {
                 menu: "petit déjeuner avec jus à l'extracteur (25cl)",
-                prix: 9
+                prix: 9,
             },
             {
-                menu: "entrée + plat ou plat + dessert - végétarien",
-                prix: 16
+                menu: 'entrée + plat ou plat + dessert - végétarien',
+                prix: 16,
             },
             {
-                menu: "entrée + plat ou plat + dessert",
-                prix: 16
+                menu: 'entrée + plat ou plat + dessert',
+                prix: 16,
             },
             {
                 menu: "gourmandise sucrée + jus à l'extracteur (25cl)",
-                prix: 6.5
+                prix: 6.5,
             },
             {
-                menu: "brunch (2 boissons + 3 petits plats sucrés ou salés",
-                prix: 20
-            }
+                menu: 'brunch (2 boissons + 3 petits plats sucrés ou salés',
+                prix: 20,
+            },
         ],
         description: `
 ### L’ambiance
@@ -435,44 +676,45 @@ Les jus frais sont leur spécialité, mais leur conservation est de courte duré
 
 `,
         infos: [
-            "Animaux acceptés",
-            "Climatisé",
-            "Compost",
-            "Bio",
-            "Option sans gluten",
-            "Option végane",
-            "Option végétarienne",
-            "Terrasse",
-            "Wifi",
+            'Animaux acceptés',
+            'Climatisé',
+            'Compost',
+            'Bio',
+            'Option sans gluten',
+            'Option végane',
+            'Option végétarienne',
+            'Terrasse',
+            'Wifi',
         ],
         allergenes: [
-            "Cérérales contenant du gluten",
-            "Oeufs",
-            "Poissons",
-            "Arachides",
-            "Soja",
-            "Lait",
-            "Fruits à coque",
-            "Graines de sésame",
-            "Moutarde",
-        ]
+            'Cérérales contenant du gluten',
+            'Oeufs',
+            'Poissons',
+            'Arachides',
+            'Soja',
+            'Lait',
+            'Fruits à coque',
+            'Graines de sésame',
+            'Moutarde',
+        ],
     },
-    'seunsep': {
-        badge: 'fermé pendant le confinement', /*'jusqu\'à -42%',*/
+    seunsep: {
+        badge: 'fermé pendant le confinement' /*'jusqu\'à -42%',*/,
         title: 'Seunsep',
         verifie: true,
         stitle: '46 Passage Choiseul',
         scity: 'Paris 2ème',
         szip: '75002',
         coordinates: { lat: 48.868019104003906, lng: 2.335505723953247 },
-        image: "https://ik.imagekit.io/resandco/seunsep/Seunsep_-_perso_1_3kFVrSaz3.jpg",
+        image:
+            'https://ik.imagekit.io/resandco/seunsep/Seunsep_-_perso_1_3kFVrSaz3.jpg',
         gallerie: [
-            "https://ik.imagekit.io/resandco/seunsep/Seunsep_-_internet_1_HmJ-9JhS2g.jpg",
-            "https://ik.imagekit.io/resandco/seunsep/Seunsep_-_perso_3_yuRUbAV1sE.jpg",
-            "https://ik.imagekit.io/resandco/seunsep/Seunsep_-_internet_2_iIbcsotGAh.jpg",
-            "https://ik.imagekit.io/resandco/seunsep/Seunsep_-_internet_4_GsMevlplRS.jpg",
-            "https://ik.imagekit.io/resandco/seunsep/Seunsep_-_perso_1_3kFVrSaz3.jpg",
-            "https://ik.imagekit.io/resandco/seunsep/Seunsep_-_perso_4_W-xNJTP2Ew.jpg",
+            'https://ik.imagekit.io/resandco/seunsep/Seunsep_-_internet_1_HmJ-9JhS2g.jpg',
+            'https://ik.imagekit.io/resandco/seunsep/Seunsep_-_perso_3_yuRUbAV1sE.jpg',
+            'https://ik.imagekit.io/resandco/seunsep/Seunsep_-_internet_2_iIbcsotGAh.jpg',
+            'https://ik.imagekit.io/resandco/seunsep/Seunsep_-_internet_4_GsMevlplRS.jpg',
+            'https://ik.imagekit.io/resandco/seunsep/Seunsep_-_perso_1_3kFVrSaz3.jpg',
+            'https://ik.imagekit.io/resandco/seunsep/Seunsep_-_perso_4_W-xNJTP2Ew.jpg',
         ],
         tags: ['Asiatique', 'Thaï-lao', 'Street-food'],
         creneaux: {
@@ -480,21 +722,21 @@ Les jus frais sont leur spécialité, mais leur conservation est de courte duré
         },
         menus: [
             {
-                menu: "plat",
-                prix: 7
+                menu: 'plat',
+                prix: 7,
             },
             {
-                menu: "plat - végétarien",
-                prix: 7
+                menu: 'plat - végétarien',
+                prix: 7,
             },
             {
-                menu: "entrée + plat",
-                prix: 10
+                menu: 'entrée + plat',
+                prix: 10,
             },
             {
-                menu: "entrée + plat",
-                prix: 10
-            }
+                menu: 'entrée + plat',
+                prix: 10,
+            },
         ],
         description: `
 ### L’ambiance
@@ -515,23 +757,23 @@ L’anti-gaspi apparaît clairement être une priorité pour le Seunsep. En effe
 
 `,
         infos: [
-            "Animaux acceptés",
-            "Option sans gluten",
-            "Option végane",
-            "Option végétarienne",
-            "Terrasse",
-            "Wifi",
+            'Animaux acceptés',
+            'Option sans gluten',
+            'Option végane',
+            'Option végétarienne',
+            'Terrasse',
+            'Wifi',
         ],
         allergenes: [
-            "Cérérales contenant du gluten",
-            "Crustacés",
-            "Oeufs",
-            "Poissons",
-            "Arachides",
-            "Graines de sésame",
-        ]
+            'Cérérales contenant du gluten',
+            'Crustacés',
+            'Oeufs',
+            'Poissons',
+            'Arachides',
+            'Graines de sésame',
+        ],
     },
-    'yuman': {
+    yuman: {
         badge: 'fermé pendant confinement' /*'jusqu\'à -52%'*/,
         title: 'Yuman',
         verifie: true,
@@ -539,16 +781,16 @@ L’anti-gaspi apparaît clairement être une priorité pour le Seunsep. En effe
         scity: 'Paris 13ème',
         szip: '75013',
         coordinates: { lat: 48.8306509, lng: 2.3750197 },
-        image: "https://ik.imagekit.io/resandco/yuman/Yuman_-_Gabetsouah_6_ll68oWX0r.jpg",
+        image:
+            'https://ik.imagekit.io/resandco/yuman/Yuman_-_Gabetsouah_6_ll68oWX0r.jpg',
         gallerie: [
-            "https://ik.imagekit.io/resandco/yuman/Yuman_-_Gabetsouah_1_dHDcvqNtb.jpg",
-            "https://ik.imagekit.io/resandco/yuman/Yuman_-_Gabetsouah_4_ToK2auDw1.jpg",
-            "https://ik.imagekit.io/resandco/yuman/Yuman_-_Gabetsouah_9_RqKO3SG7Z.jpg",
-            "https://ik.imagekit.io/resandco/yuman/Yuman_-_Gabetsouah_3_wT06NyBfa.jpg",
-            "https://ik.imagekit.io/resandco/yuman/Yuman_-_Gabetsouah_2_jG4afzj3Z.jpg",
-            "https://ik.imagekit.io/resandco/yuman/10c7652d-25af-4c09-ae2a-9c4c346c4e63_mXH9puNNO.jpeg",
-            "https://ik.imagekit.io/resandco/yuman/80779977_1233724673497400_8911725434580762624_n_JmtETaSyy3.jpg",
-            
+            'https://ik.imagekit.io/resandco/yuman/Yuman_-_Gabetsouah_1_dHDcvqNtb.jpg',
+            'https://ik.imagekit.io/resandco/yuman/Yuman_-_Gabetsouah_4_ToK2auDw1.jpg',
+            'https://ik.imagekit.io/resandco/yuman/Yuman_-_Gabetsouah_9_RqKO3SG7Z.jpg',
+            'https://ik.imagekit.io/resandco/yuman/Yuman_-_Gabetsouah_3_wT06NyBfa.jpg',
+            'https://ik.imagekit.io/resandco/yuman/Yuman_-_Gabetsouah_2_jG4afzj3Z.jpg',
+            'https://ik.imagekit.io/resandco/yuman/10c7652d-25af-4c09-ae2a-9c4c346c4e63_mXH9puNNO.jpeg',
+            'https://ik.imagekit.io/resandco/yuman/80779977_1233724673497400_8911725434580762624_n_JmtETaSyy3.jpg',
         ],
         tags: ['Bio', 'Cuisine créative', 'Français', 'Cuisine engagée'],
         creneaux: {
@@ -557,25 +799,25 @@ L’anti-gaspi apparaît clairement être une priorité pour le Seunsep. En effe
         },
         menus: [
             {
-                menu: "midi : entrée + plat ou plat + dessert",
-                prix: 14
+                menu: 'midi : entrée + plat ou plat + dessert',
+                prix: 14,
             },
             {
-                menu: "midi : entrée + plat ou plat + dessert - végétarien",
-                prix: 14
+                menu: 'midi : entrée + plat ou plat + dessert - végétarien',
+                prix: 14,
             },
             {
-                menu: "soir : entrée + plat ou plat + dessert",
-                prix: 18
+                menu: 'soir : entrée + plat ou plat + dessert',
+                prix: 18,
             },
             {
-                menu: "soir : entrée + plat ou plat + dessert - végétarien",
-                prix: 18
+                menu: 'soir : entrée + plat ou plat + dessert - végétarien',
+                prix: 18,
             },
             {
-                menu: "enfant : entrée + plat ou plat + dessert",
-                prix: 10
-            }
+                menu: 'enfant : entrée + plat ou plat + dessert',
+                prix: 10,
+            },
         ],
         description: `
 ### L’ambiance
@@ -589,50 +831,46 @@ Chez Yuman, faites la rencontre de Gilles, Malo et Julie. Une équipe soudée, a
 ### Et l’anti-gaspi ?
 
 Les recettes sont préparées à partir d’ingrédients ultra frais, 100% bio et de saison. La plupart des fruits et légumes sont cultivés en France et si possible, à moins de 200 km de Paris, par des agriculteurs raisonnés. Chaque jeudi, Yuman s’est lancé le défi ambitieux de changer sa carte afin de s’adapter aux saisons, et proposer un renouvellement continuel des saveurs. Lors de ce changement, certains produits à disposition ne seront donc plus utilisés dans les menus de la semaine. C’est donc à ce moment-là que les menus surprises anti-gaspi prennent tout leur sens. En mangeant chez Yuman, vous faites honneur aux ingrédients rescapés du menu de la semaine précédente !        `,
-       
-            infos: [
-            "Accès handicapé",
-            "Bio",
-            "Wifi",
-            "Climatisé",
-        ]
+
+        infos: ['Accès handicapé', 'Bio', 'Wifi', 'Climatisé'],
     },
     'bmk-paris-bamako': {
-        badge: 'jusqu\'à -46%',
+        badge: "jusqu'à -46%",
         title: 'BMK Paris-Bamako',
         verifie: true,
         stitle: '14 Rue de la Fidélité ',
         scity: 'Paris 10ème',
         szip: '75010',
         coordinates: { lat: 48.874613, lng: 2.3565 },
-        image: "https://ik.imagekit.io/resandco/bmk-paris-bamako/BMK_1_5hQUiQnsG-.jpg",
+        image:
+            'https://ik.imagekit.io/resandco/bmk-paris-bamako/BMK_1_5hQUiQnsG-.jpg',
         gallerie: [
-            "https://ik.imagekit.io/resandco/bmk-paris-bamako/BMK_4_N-pv7bb0x.jpg",
-            "https://ik.imagekit.io/resandco/bmk-paris-bamako/BMK_3_OVuM1vRiv.jpg",
-            "https://ik.imagekit.io/resandco/bmk-paris-bamako/BMK_1_5hQUiQnsG-.jpg",
-            "https://ik.imagekit.io/resandco/bmk-paris-bamako/BMK_-_Gabetsouah_1_h2hEOcoxXC.jpg",
+            'https://ik.imagekit.io/resandco/bmk-paris-bamako/BMK_4_N-pv7bb0x.jpg',
+            'https://ik.imagekit.io/resandco/bmk-paris-bamako/BMK_3_OVuM1vRiv.jpg',
+            'https://ik.imagekit.io/resandco/bmk-paris-bamako/BMK_1_5hQUiQnsG-.jpg',
+            'https://ik.imagekit.io/resandco/bmk-paris-bamako/BMK_-_Gabetsouah_1_h2hEOcoxXC.jpg',
         ],
         tags: ['Africain', 'Epicerie'],
         creneaux: {
-            'mardi soir': ['20h30', '21h', '21h30'/*'22h', '22h30'*/],
-            'mercredi soir': ['20h30', '21h', '21h30'/*'22h', '22h30'*/],
-            'jeudi soir': ['20h30', '21h', '21h30'/*'22h', '22h30'*/],
-            'vendredi soir': ['20h30', '21h', '21h30'/*'22h', '22h30'*/],
-            'samedi soir': ['20h30', '21h', '21h30'/*'22h', '22h30'*/],
+            'mardi soir': ['20h30', '21h', '21h30' /*'22h', '22h30'*/],
+            'mercredi soir': ['20h30', '21h', '21h30' /*'22h', '22h30'*/],
+            'jeudi soir': ['20h30', '21h', '21h30' /*'22h', '22h30'*/],
+            'vendredi soir': ['20h30', '21h', '21h30' /*'22h', '22h30'*/],
+            'samedi soir': ['20h30', '21h', '21h30' /*'22h', '22h30'*/],
         },
         menus: [
             {
-                menu: "plat + dessert",
-                prix: 15
+                menu: 'plat + dessert',
+                prix: 15,
             },
             {
-                menu: "plat + dessert - végétarien",
-                prix: 15
+                menu: 'plat + dessert - végétarien',
+                prix: 15,
             },
             {
-                menu: "enfant : plat + dessert",
-                prix: 6
-            }
+                menu: 'enfant : plat + dessert',
+                prix: 6,
+            },
         ],
         description: `
 ### L’ambiance
@@ -648,35 +886,33 @@ Abdou, Naceur et son équipe vous serviront avec bonne humeur leurs plats africa
 BMK est fermé tous les lundis. Le gaspillage alimentaire est donc plus important le dimanche soir lors de la fermeture du restaurant.
 C'est donc le dimanche soir, que BMK a choisit d'ouvrir des créneaux de réservation de menu surprise anti-gaspi. 
 `,
-        infos: [
-            "Option végétarienne",
-            "Kids friendly",
-        ],
+        infos: ['Option végétarienne', 'Kids friendly'],
         allergenes: [
-            "Céréales contenant du gluten",
-            "Oeufs",
-            "Arachides",
-            "Poissons",
-            "Lait",
-            "Fruits à coque",   
-        ]
+            'Céréales contenant du gluten',
+            'Oeufs',
+            'Arachides',
+            'Poissons',
+            'Lait',
+            'Fruits à coque',
+        ],
     },
     'nos-grands-meres-ont-du-talent': {
-        badge: 'fermé pendant le confinement', /*'jusqu\'à -32%',*/
+        badge: 'fermé pendant le confinement' /*'jusqu\'à -32%',*/,
         title: 'Nos Grands-Mères ont du Talent',
         verifie: true,
         stitle: '43 Rue des Petits Carreaux',
         scity: 'Paris 2ème',
         szip: '75002',
         coordinates: { lat: 48.868239, lng: 2.347445 },
-        image: "https://ik.imagekit.io/resandco/ngmodt/NGMODT_-_perso_3_cjSaPkezc.jpg",
+        image:
+            'https://ik.imagekit.io/resandco/ngmodt/NGMODT_-_perso_3_cjSaPkezc.jpg',
         gallerie: [
-            "https://ik.imagekit.io/resandco/ngmodt/NGMODT_-_site_internet_2_zK9tpZQ9tA.jpg",
-            "https://ik.imagekit.io/resandco/ngmodt/NGMODT_-_site_internet_3_nClwZ2hDJ.jpg",
-            "https://ik.imagekit.io/resandco/ngmodt/NGMODT_-_perso_2_eM2jD40nDi.jpg",
-            "https://ik.imagekit.io/resandco/ngmodt/NGMODT_-_site_internet_1_-jPJK7X84U.jpg",
-            "https://ik.imagekit.io/resandco/ngmodt/NGMODT_-_perso_1_GPoZQaOwsR.jpg",
-            "https://ik.imagekit.io/resandco/ngmodt/NGMODT_-_perso_3_cjSaPkezc.jpg",
+            'https://ik.imagekit.io/resandco/ngmodt/NGMODT_-_site_internet_2_zK9tpZQ9tA.jpg',
+            'https://ik.imagekit.io/resandco/ngmodt/NGMODT_-_site_internet_3_nClwZ2hDJ.jpg',
+            'https://ik.imagekit.io/resandco/ngmodt/NGMODT_-_perso_2_eM2jD40nDi.jpg',
+            'https://ik.imagekit.io/resandco/ngmodt/NGMODT_-_site_internet_1_-jPJK7X84U.jpg',
+            'https://ik.imagekit.io/resandco/ngmodt/NGMODT_-_perso_1_GPoZQaOwsR.jpg',
+            'https://ik.imagekit.io/resandco/ngmodt/NGMODT_-_perso_3_cjSaPkezc.jpg',
         ],
         tags: ['Français', 'Restauration Rapide'],
         creneaux: {
@@ -687,12 +923,12 @@ C'est donc le dimanche soir, que BMK a choisit d'ouvrir des créneaux de réserv
         },
         menus: [
             {
-                menu: "entrée + plat ou plat + dessert",
-                prix: 9
+                menu: 'entrée + plat ou plat + dessert',
+                prix: 9,
             },
             {
-                menu: "entrée + plat ou plat + dessert - végétarien",
-                prix: 9
+                menu: 'entrée + plat ou plat + dessert - végétarien',
+                prix: 9,
             },
         ],
         description: `
@@ -710,47 +946,48 @@ Leur idée ? Valoriser la cuisine des grands-mères et favoriser l’emploi des 
 
 Engagés dans une démarche éco-responsable, Arthur et Jean ont tout de suite dit oui à la valorisation de leurs invendus. Ça serait bête de jeter des plats de Mère-Grand !
 `,
-        infos: [
-            "Option végétarienne",
-            "Terrasse",
-            "Wifi",
-            "Emploi senior"
-        ],
+        infos: ['Option végétarienne', 'Terrasse', 'Wifi', 'Emploi senior'],
         allergenes: [
-            "Céréales contenant du gluten",
-            "Lait",
-            "Moutarde",
-            "Anhydride sulfureux et sulfites",
-        ]
+            'Céréales contenant du gluten',
+            'Lait',
+            'Moutarde',
+            'Anhydride sulfureux et sulfites',
+        ],
     },
     'cafe-cote-rive': {
-        badge: 'jusqu\'à -51%',
+        badge: "jusqu'à -51%",
         title: 'Café Côté Rive',
         verifie: true,
         stitle: '284 Boulevard Jean Jaurès',
         scity: 'Boulogne-Billancourt',
         szip: '92100',
         coordinates: { lat: 48.8249769, lng: 2.2455377 },
-        image: "https://ik.imagekit.io/resandco/cafe-cote-rive/Cafe__Co_te__Rive_-_site_internet_1_BVRDyv9ID.jpg",
+        image:
+            'https://ik.imagekit.io/resandco/cafe-cote-rive/Cafe__Co_te__Rive_-_site_internet_1_BVRDyv9ID.jpg',
         gallerie: [
-            "https://ik.imagekit.io/resandco/cafe-cote-rive/Cafe__Cote__rIve_-_site_internet_2_vmz9jW6Xo.jpg",
-            "https://ik.imagekit.io/resandco/cafe-cote-rive/Cafe__Cote__rIve_-_perso_12_6sL8DGox_b.jpeg",
-            "https://ik.imagekit.io/resandco/cafe-cote-rive/Cafe__Cote__rIve_-_site_internet_4_8WiDuCoP1.jpg",
-            "https://ik.imagekit.io/resandco/cafe-cote-rive/Cafe__Cote__rIve_-_site_internet_3_lr9tCGiim.jpg",
+            'https://ik.imagekit.io/resandco/cafe-cote-rive/Cafe__Cote__rIve_-_site_internet_2_vmz9jW6Xo.jpg',
+            'https://ik.imagekit.io/resandco/cafe-cote-rive/Cafe__Cote__rIve_-_perso_12_6sL8DGox_b.jpeg',
+            'https://ik.imagekit.io/resandco/cafe-cote-rive/Cafe__Cote__rIve_-_site_internet_4_8WiDuCoP1.jpg',
+            'https://ik.imagekit.io/resandco/cafe-cote-rive/Cafe__Cote__rIve_-_site_internet_3_lr9tCGiim.jpg',
         ],
         tags: ['Français', 'Brasserie'],
         creneaux: {
             'samedi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30'],
-            'samedi soir': ['19h', '19h30', '20h', '20h30', /*'21h', '21h30', '22h', '22h30'*/],
+            'samedi soir': [
+                '19h',
+                '19h30',
+                '20h',
+                '20h30' /*'21h', '21h30', '22h', '22h30'*/,
+            ],
         },
         menus: [
             {
-                menu: "entrée + plat ou plat + dessert",
-                prix: 15
+                menu: 'entrée + plat ou plat + dessert',
+                prix: 15,
             },
             {
-                menu: "entrée + plat ou plat + dessert - végétarien",
-                prix: 14
+                menu: 'entrée + plat ou plat + dessert - végétarien',
+                prix: 14,
             },
         ],
         description: `
@@ -765,31 +1002,32 @@ Le personnel met son enthousiasme et son savoir-faire à votre disposition et vo
 
 `,
         infos: [
-            "Accessibilité handicapées",
-            "Option végétarienne",
-            "Accepte les animaux",
-            "Climatisé",
-            "Terrasse",
-            "Wifi",
-            "Kids friendly",
-        ]
+            'Accessibilité handicapées',
+            'Option végétarienne',
+            'Accepte les animaux',
+            'Climatisé',
+            'Terrasse',
+            'Wifi',
+            'Kids friendly',
+        ],
     },
     'tiki-bowls': {
-        badge: 'jusqu\'à -40%',
+        badge: "jusqu'à -40%",
         title: 'Tiki Bowls',
         stitle: '12 Rue de Castellane',
         scity: 'Paris 8ème',
         szip: '75008',
         coordinates: { lat: 48.872727, lng: 2.324529 },
-        image: "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_Bowls-Photos-13_tSCgHmxGS6.jpg",
+        image:
+            'https://ik.imagekit.io/resandco/tiki-bowls/Tiki_Bowls-Photos-13_tSCgHmxGS6.jpg',
         gallerie: [
-            "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_en_photos-lieu-06_ek_gNYsMEi.jpg",
-            "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_en_photos-lieu-01_T7Q1AFWTlt.jpg",
-            "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_Bowls-Photos-34_we7w1oa3bS.jpg",
-            "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_en_photos-lieu-03_5mtQcmvban.jpg",
-            "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_Bowls-Photos-32_GhxDbtCwiZ.jpg",
-            "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_Bowls-Photos-18_2m1pzg2Ri.jpg",
-            "https://ik.imagekit.io/resandco/tiki-bowls/Tiki_en_photos-lieu-02_NUFq4edUR.jpg",
+            'https://ik.imagekit.io/resandco/tiki-bowls/Tiki_en_photos-lieu-06_ek_gNYsMEi.jpg',
+            'https://ik.imagekit.io/resandco/tiki-bowls/Tiki_en_photos-lieu-01_T7Q1AFWTlt.jpg',
+            'https://ik.imagekit.io/resandco/tiki-bowls/Tiki_Bowls-Photos-34_we7w1oa3bS.jpg',
+            'https://ik.imagekit.io/resandco/tiki-bowls/Tiki_en_photos-lieu-03_5mtQcmvban.jpg',
+            'https://ik.imagekit.io/resandco/tiki-bowls/Tiki_Bowls-Photos-32_GhxDbtCwiZ.jpg',
+            'https://ik.imagekit.io/resandco/tiki-bowls/Tiki_Bowls-Photos-18_2m1pzg2Ri.jpg',
+            'https://ik.imagekit.io/resandco/tiki-bowls/Tiki_en_photos-lieu-02_NUFq4edUR.jpg',
         ],
         tags: ['Hawaïen', 'Poké', 'Healthy'],
         creneaux: {
@@ -797,21 +1035,21 @@ Le personnel met son enthousiasme et son savoir-faire à votre disposition et vo
         },
         menus: [
             {
-                menu: "petit bol + dessert",
-                prix: 7
+                menu: 'petit bol + dessert',
+                prix: 7,
             },
             {
-                menu: "petit bol + dessert - végétarien",
-                prix: 7
+                menu: 'petit bol + dessert - végétarien',
+                prix: 7,
             },
             {
-                menu: "grand bol + dessert",
-                prix: 9
+                menu: 'grand bol + dessert',
+                prix: 9,
             },
             {
-                menu: "grand bol + dessert - végétarien",
-                prix: 9
-            }
+                menu: 'grand bol + dessert - végétarien',
+                prix: 9,
+            },
         ],
         description: `
 ### L’ambiance et l'équipe
@@ -823,46 +1061,46 @@ Chez Tiki, on s'évade dans l'univers des plages et des vacances à Hawaï. Leur
 Tiki Bowls est fermé le week-end. Les pertes alimentaires sont donc essentiellement le vendredi, à la fin du service. C'est pour cette raison que nos menus surprises anti-gaspi sont disponibles uniquement le vendredi midi !
         `,
         infos: [
-            "Option végétarienne",
-            "Option végane",
-            "Terrasse",
-            "Animaux acceptés",
-            "Climatisé",
-            "Wifi",
-            "Option sans gluten",
-        ]
-         ,
+            'Option végétarienne',
+            'Option végane',
+            'Terrasse',
+            'Animaux acceptés',
+            'Climatisé',
+            'Wifi',
+            'Option sans gluten',
+        ],
         allergenes: [
-            "Céréales contenant du gluten",
-            "Crustacés",
-            "Oeufs",
-            "Poissons",
-            "Arachides",
-            "Soja",
-            "Lait",
-            "Fruits à coque",
-            "Graines de sésame",
-            "Moutarde",
-            "Mollusques",
-        ]
+            'Céréales contenant du gluten',
+            'Crustacés',
+            'Oeufs',
+            'Poissons',
+            'Arachides',
+            'Soja',
+            'Lait',
+            'Fruits à coque',
+            'Graines de sésame',
+            'Moutarde',
+            'Mollusques',
+        ],
     },
     'bar-bol': {
         title: 'Bar Bol',
-        badge: 'jusqu\'à -15%',
+        badge: "jusqu'à -15%",
         verifie: true,
         stitle: '3bis Rue de Vaugirard',
         scity: 'Paris 6ème',
         szip: '75006',
-        coordinates: { lat: 48.849010, lng: 2.340342 },
-        image: "https://ik.imagekit.io/resandco/bar-bol/121699103_792897407939343_3123092142266481611_n_k3fZdD8YAt.jpg",
+        coordinates: { lat: 48.84901, lng: 2.340342 },
+        image:
+            'https://ik.imagekit.io/resandco/bar-bol/121699103_792897407939343_3123092142266481611_n_k3fZdD8YAt.jpg',
         gallerie: [
-            "https://ik.imagekit.io/resandco/bar-bol/121629264_2687870774862321_5694144547547571565_n_2RXFXJYXGN.jpg",
-            "https://ik.imagekit.io/resandco/bar-bol/121564518_1373244736363114_4361378519185792611_n_VBxfM9QUjJ.jpg",
-            "https://ik.imagekit.io/resandco/bar-bol/121699103_792897407939343_3123092142266481611_n_k3fZdD8YAt.jpg",
-            "https://ik.imagekit.io/resandco/bar-bol/121541146_399699831032219_8234539388690704283_n_XB25DBgO35F-.jpg",
-            "https://ik.imagekit.io/resandco/bar-bol/121645318_1262786907412626_3262946073193933546_n_OmvCVcXSQ3.jpg",
-            "https://ik.imagekit.io/resandco/bar-bol/121547274_413694492966157_2753976060741265428_n_gTjN4KbpZW.jpg",
-            "https://ik.imagekit.io/resandco/bar-bol/121542772_358430588689190_5996482935606606149_n_Woj10jBCuseu.jpg",
+            'https://ik.imagekit.io/resandco/bar-bol/121629264_2687870774862321_5694144547547571565_n_2RXFXJYXGN.jpg',
+            'https://ik.imagekit.io/resandco/bar-bol/121564518_1373244736363114_4361378519185792611_n_VBxfM9QUjJ.jpg',
+            'https://ik.imagekit.io/resandco/bar-bol/121699103_792897407939343_3123092142266481611_n_k3fZdD8YAt.jpg',
+            'https://ik.imagekit.io/resandco/bar-bol/121541146_399699831032219_8234539388690704283_n_XB25DBgO35F-.jpg',
+            'https://ik.imagekit.io/resandco/bar-bol/121645318_1262786907412626_3262946073193933546_n_OmvCVcXSQ3.jpg',
+            'https://ik.imagekit.io/resandco/bar-bol/121547274_413694492966157_2753976060741265428_n_gTjN4KbpZW.jpg',
+            'https://ik.imagekit.io/resandco/bar-bol/121542772_358430588689190_5996482935606606149_n_Woj10jBCuseu.jpg',
         ],
         tags: ['Hawaïen', 'Poké'],
         creneaux: {
@@ -872,20 +1110,20 @@ Tiki Bowls est fermé le week-end. Les pertes alimentaires sont donc essentielle
         },
         menus: [
             {
-                menu: "grand bol",
-                prix: 11.90
+                menu: 'grand bol',
+                prix: 11.9,
             },
             {
-                menu: "grand bol - végétarien",
-                prix: 11.90
+                menu: 'grand bol - végétarien',
+                prix: 11.9,
             },
             {
-                menu: "grand bol + dessert",
-                prix: 14.90
+                menu: 'grand bol + dessert',
+                prix: 14.9,
             },
             {
-                menu: "grand bol + dessert - végétarien",
-                prix: 14.90
+                menu: 'grand bol + dessert - végétarien',
+                prix: 14.9,
             },
         ],
         description: `
@@ -922,39 +1160,39 @@ Chez Bar Bol, c'est un repas de qualité, sain, copieux, et engagé, avec des pr
 N’hésitez plus, rendez-vous dans ce bar gastronomique pour un voyage 100% hawaïen et sain.
         `,
         infos: [
-            "Option végétarienne",
-            "Option végane",
-            "Produits bio",
-            "Animaux acceptés",
-            "Terrasse",
-            "Option sans gluten",
-            "Wifi",
+            'Option végétarienne',
+            'Option végane',
+            'Produits bio',
+            'Animaux acceptés',
+            'Terrasse',
+            'Option sans gluten',
+            'Wifi',
         ],
         allergenes: [
-            "Céréales contenant du glutent",
-            "Oeufs",
-            "Poissons",
-            "Soja",
-            "Graines de sésame",
-            "Anhydride sulfureux et sulfites",
-        ]
+            'Céréales contenant du glutent',
+            'Oeufs',
+            'Poissons',
+            'Soja',
+            'Graines de sésame',
+            'Anhydride sulfureux et sulfites',
+        ],
     },
-    'verde': {
+    verde: {
         title: 'Verdé',
-        badge: 'jusqu\'à -25%',
+        badge: "jusqu'à -25%",
         verifie: true,
         stitle: '138 Rue Victor Hugo',
         scity: 'Levallois-Perret',
         szip: '92300',
         coordinates: { lat: 48.898146, lng: 2.294886 },
-        image: "https://ik.imagekit.io/resandco/verde/IMG_6389_9yBImsPtJY.jpg",
+        image: 'https://ik.imagekit.io/resandco/verde/IMG_6389_9yBImsPtJY.jpg',
         gallerie: [
-            "https://ik.imagekit.io/resandco/verde/2791910D-BE2B-4E91-85C2-5A4DA3D35C1F_b5s-aki1MS.JPG",
-            "https://ik.imagekit.io/resandco/verde/IMG_6193_W2l6DabFZ5IMP.jpg",
-            "https://ik.imagekit.io/resandco/verde/14129029-B5E9-4A03-A4EE-D76CD539AD45_yuc_vbkEw4.JPG",
-            "https://ik.imagekit.io/resandco/verde/IMG_6079_DHxxtp7ur-.jpg",
-            "https://ik.imagekit.io/resandco/verde/IMG_6288_jCfnlh3hdzJm3.jpg",
-            "https://ik.imagekit.io/resandco/verde/IMG_6235_Qe0fZAjArAhGc.jpg",
+            'https://ik.imagekit.io/resandco/verde/2791910D-BE2B-4E91-85C2-5A4DA3D35C1F_b5s-aki1MS.JPG',
+            'https://ik.imagekit.io/resandco/verde/IMG_6193_W2l6DabFZ5IMP.jpg',
+            'https://ik.imagekit.io/resandco/verde/14129029-B5E9-4A03-A4EE-D76CD539AD45_yuc_vbkEw4.JPG',
+            'https://ik.imagekit.io/resandco/verde/IMG_6079_DHxxtp7ur-.jpg',
+            'https://ik.imagekit.io/resandco/verde/IMG_6288_jCfnlh3hdzJm3.jpg',
+            'https://ik.imagekit.io/resandco/verde/IMG_6235_Qe0fZAjArAhGc.jpg',
         ],
         tags: ['Salade', 'Poké', 'Quiche', 'Soupe'],
         creneaux: {
@@ -966,20 +1204,20 @@ N’hésitez plus, rendez-vous dans ce bar gastronomique pour un voyage 100% haw
         },
         menus: [
             {
-                menu: "plat",
-                prix: 6
+                menu: 'plat',
+                prix: 6,
             },
             {
-                menu: "plat + dessert",
-                prix: 8
+                menu: 'plat + dessert',
+                prix: 8,
             },
             {
-                menu: "plat - végétarien",
-                prix: 6
+                menu: 'plat - végétarien',
+                prix: 6,
             },
             {
-                menu: "plat + dessert - végétarien",
-                prix: 8
+                menu: 'plat + dessert - végétarien',
+                prix: 8,
             },
         ],
         description: `
@@ -998,23 +1236,23 @@ Engagée pour la valorisation des légumes et fruits, Nathalie déborde d’idé
 Après votre dégustation vous serez amenés vous même à débarrasser votre plateau et à trier vos déchets. Chez Verdé chaque chose à sa place et le plastique, les couverts et les cartons ont tous un emplacement réservé pour le bonheur de dame nature.
         `,
         infos: [
-            "Option végétarienne",
-            "Option végane",
-            "Option sans gluten",
-            "Compost",
+            'Option végétarienne',
+            'Option végane',
+            'Option sans gluten',
+            'Compost',
         ],
         allergenes: [
-            "Céréales contenant du gluten",
-            "Oeufs",
-            "Poissons",
-            "Soja",
-            "Lait",
-            "Fruits à coque",
-            "Moutarde",
-            "Graines de sésame",
-        ]
+            'Céréales contenant du gluten',
+            'Oeufs',
+            'Poissons',
+            'Soja',
+            'Lait',
+            'Fruits à coque',
+            'Moutarde',
+            'Graines de sésame',
+        ],
     },
-        /*'new-shri-ganesh': {
+    /*'new-shri-ganesh': {
         title: 'New Shri Ganesh',
         badge: 'Offre Spéciale Confinement',
        
@@ -1226,19 +1464,26 @@ Plus d'informations sur www.chokdeecafe.com
         stitle: '55 rue de la charité',
         scity: 'Lyon 2e',
         szip: '69002',
-        coordinates: { lat: 45.750270, lng: 4.830275 },
-        image: "https://ik.imagekit.io/resandco/saveurs-du-monde/123801109_661835127833791_1823386090005053462_n_QxluJ0tGj.jpg",
+        coordinates: { lat: 45.75027, lng: 4.830275 },
+        image:
+            'https://ik.imagekit.io/resandco/saveurs-du-monde/123801109_661835127833791_1823386090005053462_n_QxluJ0tGj.jpg',
         gallerie: [
-            "https://ik.imagekit.io/resandco/saveurs-du-monde/123801109_661835127833791_1823386090005053462_n_QxluJ0tGj.jpg",
-            "https://ik.imagekit.io/resandco/saveurs-du-monde/123856749_839171070152494_3240175817640180472_n_68qR9hmGYgA5r.jpg",
-            "https://ik.imagekit.io/resandco/saveurs-du-monde/123907891_880996128971787_4236354405004895616_n_DghLR7ie9.jpg",
-            "https://ik.imagekit.io/resandco/saveurs-du-monde/123551477_994683807704678_7942670629398486502_n_c_DDOzZ4Q7bj.jpg",
-            "https://ik.imagekit.io/resandco/saveurs-du-monde/123738183_3997867400241763_5665585955128079970_n_uY19KhVoeeLj.jpg",
-            "https://ik.imagekit.io/resandco/saveurs-du-monde/123365049_2897914123641403_4625769503621430336_n_DnInGk0sBLaJ.jpg",
-            "https://ik.imagekit.io/resandco/saveurs-du-monde/123524869_2894096490827693_6318062346654306517_n_NUqBKZeng.jpg",
-            "https://ik.imagekit.io/resandco/saveurs-du-monde/123763606_2764571003790030_7864632122463096900_n_sETJyKS2S.jpg",
+            'https://ik.imagekit.io/resandco/saveurs-du-monde/123801109_661835127833791_1823386090005053462_n_QxluJ0tGj.jpg',
+            'https://ik.imagekit.io/resandco/saveurs-du-monde/123856749_839171070152494_3240175817640180472_n_68qR9hmGYgA5r.jpg',
+            'https://ik.imagekit.io/resandco/saveurs-du-monde/123907891_880996128971787_4236354405004895616_n_DghLR7ie9.jpg',
+            'https://ik.imagekit.io/resandco/saveurs-du-monde/123551477_994683807704678_7942670629398486502_n_c_DDOzZ4Q7bj.jpg',
+            'https://ik.imagekit.io/resandco/saveurs-du-monde/123738183_3997867400241763_5665585955128079970_n_uY19KhVoeeLj.jpg',
+            'https://ik.imagekit.io/resandco/saveurs-du-monde/123365049_2897914123641403_4625769503621430336_n_DnInGk0sBLaJ.jpg',
+            'https://ik.imagekit.io/resandco/saveurs-du-monde/123524869_2894096490827693_6318062346654306517_n_NUqBKZeng.jpg',
+            'https://ik.imagekit.io/resandco/saveurs-du-monde/123763606_2764571003790030_7864632122463096900_n_sETJyKS2S.jpg',
         ],
-        tags: ['Asiatique', 'Viet', 'Vente à emporter', 'livraison', 'option végane'],
+        tags: [
+            'Asiatique',
+            'Viet',
+            'Vente à emporter',
+            'livraison',
+            'option végane',
+        ],
         creneaux: {
             'mardi soir': ['19h30', '20h', '20h30', '21h', '21h30'],
             'mercredi soir': ['19h30', '20h', '20h30', '21h', '21h30'],
@@ -1248,20 +1493,20 @@ Plus d'informations sur www.chokdeecafe.com
         },
         menus: [
             {
-                menu: "plat",
-                prix: 10
+                menu: 'plat',
+                prix: 10,
             },
             {
-                menu: "plat - végan",
-                prix: 10
+                menu: 'plat - végan',
+                prix: 10,
             },
             {
-                menu: "entrée + plat ou plat + dessert",
-                prix: 14
+                menu: 'entrée + plat ou plat + dessert',
+                prix: 14,
             },
             {
-                menu: "entrée + plat ou plat + dessert - végan",
-                prix: 14
+                menu: 'entrée + plat ou plat + dessert - végan',
+                prix: 14,
             },
         ],
         description: `
@@ -1270,19 +1515,19 @@ Toutes les commandes doivent être passées avant 15h pour une livraison/retrait
 Le service sera assuré uniquement à emporter ou en livraison (+3€). 
         `,
         infos: [
-            "Option végétarienne",
-            "Option végane",
-            "Option sans gluten",
-            "Fruits et légumes locaux",
+            'Option végétarienne',
+            'Option végane',
+            'Option sans gluten',
+            'Fruits et légumes locaux',
         ],
         allergenes: [
-            "Crustacé",
-            "Oeuf",
-            "Poisson",
-            "Soja",
-            "Lait",
-            "Graines de sésame",
-        ]
+            'Crustacé',
+            'Oeuf',
+            'Poisson',
+            'Soja',
+            'Lait',
+            'Graines de sésame',
+        ],
     },
     /*'mr-burritos': {
         title: 'Mr Burritos',
@@ -1336,55 +1581,113 @@ Le service sera assuré uniquement à emporter.
         stitle: '18 route de genas',
         scity: 'Lyon 3e',
         szip: '69003',
-        coordinates: { lat: 45.75536559066979, lng: 4.879239313841082 }, 
-        image: "https://ik.imagekit.io/resandco/delice-de-henan/51752266_312363542753621_2917545312505561088_n_xrT66G4bcYvm.jpg",
+        coordinates: { lat: 45.75536559066979, lng: 4.879239313841082 },
+        image:
+            'https://ik.imagekit.io/resandco/delice-de-henan/51752266_312363542753621_2917545312505561088_n_xrT66G4bcYvm.jpg',
         gallerie: [
-            "https://ik.imagekit.io/resandco/delice-de-henan/52816619_317155065607802_6245043067275968512_o_1WbDvhJlV.jpg",
-            "https://ik.imagekit.io/resandco/delice-de-henan/52877858_317155342274441_7239055029653471232_o_0Z--Gk4Mt.jpg",
-            "https://ik.imagekit.io/resandco/delice-de-henan/52876799_317155372274438_1985507262898110464_o_Vo3TF0kuS.jpg",
-            "https://ik.imagekit.io/resandco/delice-de-henan/52661117_317155042274471_1165291182218018816_o_cruYOGloV.jpg",
-            "https://ik.imagekit.io/resandco/delice-de-henan/53160348_317155408941101_5508084240434069504_o_vhn7yORdLL.jpg",
-            "https://ik.imagekit.io/resandco/delice-de-henan/52961255_317155145607794_865530605582942208_o_lpIoppFwenBB.jpg",
-            "https://ik.imagekit.io/resandco/delice-de-henan/52729390_317155272274448_5330184358571540480_o_e75q2_av0.jpg",
+            'https://ik.imagekit.io/resandco/delice-de-henan/52816619_317155065607802_6245043067275968512_o_1WbDvhJlV.jpg',
+            'https://ik.imagekit.io/resandco/delice-de-henan/52877858_317155342274441_7239055029653471232_o_0Z--Gk4Mt.jpg',
+            'https://ik.imagekit.io/resandco/delice-de-henan/52876799_317155372274438_1985507262898110464_o_Vo3TF0kuS.jpg',
+            'https://ik.imagekit.io/resandco/delice-de-henan/52661117_317155042274471_1165291182218018816_o_cruYOGloV.jpg',
+            'https://ik.imagekit.io/resandco/delice-de-henan/53160348_317155408941101_5508084240434069504_o_vhn7yORdLL.jpg',
+            'https://ik.imagekit.io/resandco/delice-de-henan/52961255_317155145607794_865530605582942208_o_lpIoppFwenBB.jpg',
+            'https://ik.imagekit.io/resandco/delice-de-henan/52729390_317155272274448_5330184358571540480_o_e75q2_av0.jpg',
         ],
         tags: ['Asiatique', 'Vente à emporter'],
         creneaux: {
             'lundi midi': ['12h30', '13h', '13h30', '14h', '14h30'],
-            'lundi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h'],
+            'lundi soir': [
+                '18h30',
+                '19h',
+                '19h30',
+                '20h',
+                '20h30',
+                '21h',
+                '21h30',
+                '22h',
+            ],
             'mardi midi': ['12h30', '13h', '13h30', '14h', '14h30'],
-            'mardi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h'],
+            'mardi soir': [
+                '18h30',
+                '19h',
+                '19h30',
+                '20h',
+                '20h30',
+                '21h',
+                '21h30',
+                '22h',
+            ],
             'mercredi midi': ['12h30', '13h', '13h30', '14h', '14h30'],
-            'mercredi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h'],
+            'mercredi soir': [
+                '18h30',
+                '19h',
+                '19h30',
+                '20h',
+                '20h30',
+                '21h',
+                '21h30',
+                '22h',
+            ],
             'jeudi midi': ['12h30', '13h', '13h30', '14h', '14h30'],
-            'jeudi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h'],
+            'jeudi soir': [
+                '18h30',
+                '19h',
+                '19h30',
+                '20h',
+                '20h30',
+                '21h',
+                '21h30',
+                '22h',
+            ],
             'vendredi midi': ['12h30', '13h', '13h30', '14h', '14h30'],
-            'vendredi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h'],
+            'vendredi soir': [
+                '18h30',
+                '19h',
+                '19h30',
+                '20h',
+                '20h30',
+                '21h',
+                '21h30',
+                '22h',
+            ],
             'samedi midi': ['12h30', '13h', '13h30', '14h', '14h30'],
-            'samedi soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h'],
-            'dimanche soir': ['18h30', '19h', '19h30', '20h', '20h30', '21h', '21h30', '22h'],
+            'samedi soir': [
+                '18h30',
+                '19h',
+                '19h30',
+                '20h',
+                '20h30',
+                '21h',
+                '21h30',
+                '22h',
+            ],
+            'dimanche soir': [
+                '18h30',
+                '19h',
+                '19h30',
+                '20h',
+                '20h30',
+                '21h',
+                '21h30',
+                '22h',
+            ],
         },
         menus: [
             {
-                menu: "plat + entrée ou accompagnement ou dessert",
-                prix: 10
+                menu: 'plat + entrée ou accompagnement ou dessert',
+                prix: 10,
             },
             {
-                menu: "plat + entrée ou accompagnement ou dessert - végétarien",
-                prix: 10
+                menu: 'plat + entrée ou accompagnement ou dessert - végétarien',
+                prix: 10,
             },
-         ],
+        ],
         description: `
 All food, Végétarien, Halal ou Vegan, il y en a pour tous les goûts ! Laissez-vous tenter et profitez de leur cuisine chinoise, asiatique et diversifiée.Le plat est surprise, il sera composé d'un des plats suivants : soupe de boulettes, nouilles sautées, soupe de nouilles, bo bun...
 Le service sera assuré uniquement à emporter ou en livraison (+2€).
         `,
-        infos: [
-         "Option végétarienne",
-
-        "Vente à emporter"
-        ],
-        allergenes: [
-          
-        ]
+        infos: ['Option végétarienne', 'Vente à emporter'],
+        allergenes: [],
     },
     /*'noglu': {
         title: 'Noglu',
@@ -1753,8 +2056,8 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
    },*/
 }
 
-Object.keys(restaurants).forEach((restaurantId) => (
-    restaurants[restaurantId].id = restaurantId
-))
+Object.keys(restaurants).forEach(
+    (restaurantId) => (restaurants[restaurantId].id = restaurantId)
+)
 
 module.exports = restaurants

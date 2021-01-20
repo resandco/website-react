@@ -1,17 +1,17 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react'
 
 class CopyrightMenu extends Component {
     state = {
         links: [
             {
                 path: 'https://www.res-and-co.fr/mentions-legales/',
-                text: 'Mentions légales'
+                text: 'Mentions légales',
             },
             {
                 path: 'https://www.res-and-co.fr/politique-de-confidentialite/',
-                text: 'Politique de confidentialité'
+                text: 'Politique de confidentialité',
             },
-        ]
+        ],
     }
     render() {
         return (
@@ -26,8 +26,8 @@ class CopyrightMenu extends Component {
                     })}
                 </ul>
             </>
-        );
+        )
     }
 }
 
-export default CopyrightMenu;
+export default CopyrightMenu

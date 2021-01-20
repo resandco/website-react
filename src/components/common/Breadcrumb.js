@@ -1,10 +1,13 @@
-import React from 'react';
-import {Link} from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-function Breadcrumb ({CurrentPgTitle, MenuPgTitle, img}) {
+function Breadcrumb({ CurrentPgTitle, MenuPgTitle, img }) {
     return (
         <>
-            <section className="breadcrumb-area" style={{backgroundImage: 'url('+img+')'}}>
+            <section
+                className="breadcrumb-area"
+                style={{ backgroundImage: 'url(' + img + ')' }}
+            >
                 <div className="breadcrumb-wrap">
                     <div className="container">
                         <div className="row">
@@ -14,14 +17,18 @@ function Breadcrumb ({CurrentPgTitle, MenuPgTitle, img}) {
                                         {CurrentPgTitle}
                                     </h2>
                                     <ul className="breadcrumb__list">
-                                        <li className="active__list-item"><Link to="/">home</Link></li>
-                                        {MenuPgTitle? (
-                                            <li className="active__list-item">{MenuPgTitle}</li>
-                                        ) : ''}
-
-                                        <li>
-                                            {CurrentPgTitle}
+                                        <li className="active__list-item">
+                                            <Link to="/">home</Link>
                                         </li>
+                                        {MenuPgTitle ? (
+                                            <li className="active__list-item">
+                                                {MenuPgTitle}
+                                            </li>
+                                        ) : (
+                                            ''
+                                        )}
+
+                                        <li>{CurrentPgTitle}</li>
                                     </ul>
                                 </div>
                             </div>
@@ -35,7 +42,7 @@ function Breadcrumb ({CurrentPgTitle, MenuPgTitle, img}) {
                 </div>
             </section>
         </>
-    );
+    )
 }
 
-export default Breadcrumb;
+export default Breadcrumb

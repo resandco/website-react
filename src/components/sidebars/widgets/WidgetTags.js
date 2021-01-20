@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {Link} from "react-router-dom";
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 class WidgetTags extends Component {
     state = {
@@ -7,60 +7,57 @@ class WidgetTags extends Component {
         lists: [
             {
                 text: 'Travel',
-                url: '#'
+                url: '#',
             },
             {
                 text: 'Restaurant',
-                url: '#'
+                url: '#',
             },
             {
                 text: 'Gym',
-                url: '#'
+                url: '#',
             },
             {
                 text: 'Food',
-                url: '#'
+                url: '#',
             },
             {
                 text: 'Office',
-                url: '#'
+                url: '#',
             },
             {
                 text: 'Bar',
-                url: '#'
+                url: '#',
             },
             {
                 text: 'Health',
-                url: '#'
+                url: '#',
             },
             {
                 text: 'Car Parking',
-                url: '#'
+                url: '#',
             },
             {
                 text: 'Nightlife',
-                url: '#'
+                url: '#',
             },
             {
                 text: 'Doctor',
-                url: '#'
+                url: '#',
             },
             {
                 text: 'Bike Parking',
-                url: '#'
+                url: '#',
             },
-        ]
+        ],
     }
     render() {
         return (
             <>
                 <div className="sidebar-widget tag-widget">
-                    <h3 className="widget-title">
-                        {this.state.title}
-                    </h3>
+                    <h3 className="widget-title">{this.state.title}</h3>
                     <div className="title-shape"></div>
                     <ul className="tag-list padding-top-30px">
-
                         {this.state.lists.map((item, i) => {
                             return (
                                 <li key={i}>
@@ -68,12 +65,11 @@ class WidgetTags extends Component {
                                 </li>
                             )
                         })}
-
                     </ul>
                 </div>
             </>
-        );
+        )
     }
 }
 
-export default WidgetTags;
+export default WidgetTags

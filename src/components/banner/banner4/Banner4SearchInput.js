@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {Link} from "react-router-dom";
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class BannerOneSearchInput extends Component {
     state = {
@@ -7,17 +7,21 @@ export default class BannerOneSearchInput extends Component {
     }
 
     handleChangeCat = () => {
-        const { selectedCatOp } = this.state;
-        this.setState(
-            { selectedCatOp }
-        );
+        const { selectedCatOp } = this.state
+        this.setState({ selectedCatOp })
     }
     render() {
         return (
             <>
                 <div className="main-search-input">
                     <div className="main-search-input-btn">
-                        <Link to="/reservation-restaurant" className="button theme-btn" type="submit">Je commande un repas surprise</Link>
+                        <Link
+                            to="/reservation-restaurant"
+                            className="button theme-btn"
+                            type="submit"
+                        >
+                            Je commande un repas surprise
+                        </Link>
                     </div>
                 </div>
             </>

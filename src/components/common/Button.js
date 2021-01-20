@@ -1,10 +1,12 @@
-import React from 'react';
-import {Link} from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-export default function Button({text, url, className, children}) {
+export default function Button({ text, url, className, children }) {
     return (
         <>
-            <Link to={url} className={'theme-btn ' + className}>{children} {text}</Link>
+            <Link to={url} className={'theme-btn ' + className}>
+                {children} {text}
+            </Link>
         </>
-    );
+    )
 }

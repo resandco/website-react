@@ -1,13 +1,13 @@
-import React, {Component} from 'react';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import React, { Component } from 'react'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import { GiPositionMarker } from 'react-icons/gi'
 import { IoMdMusicalNotes } from 'react-icons/io'
 import { AiOutlineHome } from 'react-icons/ai'
 import { FaSearchPlus } from 'react-icons/fa'
-import {Link} from "react-router-dom";
-import BannerOneSearchInput from "../banner1/BannerOneSearchInput";
-import BannerThreeSearchInput2 from "./BannerThreeSearchInput2";
-import BannerThreeSearchInput3 from "./BannerThreeSearchInput3";
+import { Link } from 'react-router-dom'
+import BannerOneSearchInput from '../banner1/BannerOneSearchInput'
+import BannerThreeSearchInput2 from './BannerThreeSearchInput2'
+import BannerThreeSearchInput3 from './BannerThreeSearchInput3'
 
 class Banner3Tab extends Component {
     render() {
@@ -17,33 +17,49 @@ class Banner3Tab extends Component {
                     <div className="tab-shared">
                         <TabList className="nav nav-tabs" id="myTab">
                             <Tab>
-                                <Link className="nav-link theme-btn radius-rounded"  to="#">
+                                <Link
+                                    className="nav-link theme-btn radius-rounded"
+                                    to="#"
+                                >
                                     <span>
                                         <GiPositionMarker />
-                                    </span> places
+                                    </span>{' '}
+                                    places
                                 </Link>
                             </Tab>
                             <Tab>
-                                <Link className="nav-link theme-btn radius-rounded"  to="#">
+                                <Link
+                                    className="nav-link theme-btn radius-rounded"
+                                    to="#"
+                                >
                                     <span>
                                         <IoMdMusicalNotes />
-                                    </span> Events
+                                    </span>{' '}
+                                    Events
                                 </Link>
-                             </Tab>
+                            </Tab>
                             <Tab>
-                                <Link className="nav-link theme-btn radius-rounded"  to="#">
+                                <Link
+                                    className="nav-link theme-btn radius-rounded"
+                                    to="#"
+                                >
                                     <span>
                                         <FaSearchPlus />
-                                    </span> Jobs
+                                    </span>{' '}
+                                    Jobs
                                 </Link>
-                             </Tab>
+                            </Tab>
                             <Tab>
-                                <Link className="nav-link theme-btn radius-rounded"  to="#">
+                                <Link
+                                    className="nav-link theme-btn radius-rounded"
+                                    to="#"
+                                >
                                     <span>
                                         <AiOutlineHome />
-                                    </span> Real Estate
+                                    </span>{' '}
+                                    Real Estate
                                 </Link>
-                             </Tab>
+                            </Tab>
                         </TabList>
                     </div>
 
@@ -61,8 +77,8 @@ class Banner3Tab extends Component {
                     </TabPanel>
                 </Tabs>
             </>
-        );
+        )
     }
 }
 
-export default Banner3Tab;
+export default Banner3Tab

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react'
 
 class WidgetOpenHours extends Component {
     state = {
@@ -34,8 +34,8 @@ class WidgetOpenHours extends Component {
                 day: 'Sat-Sun',
                 time: 'Closed',
                 close: true,
-            }
-        ]
+            },
+        ],
     }
     render() {
         return (
@@ -49,15 +49,29 @@ class WidgetOpenHours extends Component {
                                 </h3>
                                 <div className="title-shape"></div>
                             </div>
-                            <p><span className="theme-btn button-success">
-                                {this.state.stitle}
-                            </span></p>
+                            <p>
+                                <span className="theme-btn button-success">
+                                    {this.state.stitle}
+                                </span>
+                            </p>
                         </div>
                         <ul className="list-items padding-top-30px">
                             {this.state.items.map((item, i) => {
                                 return (
-                                    <li key={i} className="d-flex justify-content-between">
-                                        {item.day} <strong className={item.close ? 'color-text' : 'font-weight-medium'}>{item.time}</strong>
+                                    <li
+                                        key={i}
+                                        className="d-flex justify-content-between"
+                                    >
+                                        {item.day}{' '}
+                                        <strong
+                                            className={
+                                                item.close
+                                                    ? 'color-text'
+                                                    : 'font-weight-medium'
+                                            }
+                                        >
+                                            {item.time}
+                                        </strong>
                                     </li>
                                 )
                             })}
@@ -65,8 +79,8 @@ class WidgetOpenHours extends Component {
                     </div>
                 </div>
             </>
-        );
+        )
     }
 }
 
-export default WidgetOpenHours;
+export default WidgetOpenHours

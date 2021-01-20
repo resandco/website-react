@@ -1,9 +1,16 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react'
 import { GiPositionMarker } from 'react-icons/gi'
-import { FaRegEnvelope, FaFacebookF, FaTwitter, FaInstagram, FaDribbble, FaBehance } from 'react-icons/fa'
+import {
+    FaRegEnvelope,
+    FaFacebookF,
+    FaTwitter,
+    FaInstagram,
+    FaDribbble,
+    FaBehance,
+} from 'react-icons/fa'
 import { AiOutlineUser } from 'react-icons/ai'
 import { FiPhone, FiExternalLink } from 'react-icons/fi'
-import Button from "../../common/Button";
+import Button from '../../common/Button'
 
 class WidgetAuthor extends Component {
     state = {
@@ -18,25 +25,25 @@ class WidgetAuthor extends Component {
         socials: [
             {
                 icon: <FaFacebookF />,
-                url: 'https://facebook.com'
+                url: 'https://facebook.com',
             },
             {
                 icon: <FaTwitter />,
-                url: 'https://twitter.com'
+                url: 'https://twitter.com',
             },
             {
                 icon: <FaInstagram />,
-                url: 'https://instagram.com'
+                url: 'https://instagram.com',
             },
             {
                 icon: <FaDribbble />,
-                url: 'https://dribbble.com'
+                url: 'https://dribbble.com',
             },
             {
                 icon: <FaBehance />,
-                url: 'https://behance.be'
-            }
-        ]
+                url: 'https://behance.be',
+            },
+        ],
     }
     render() {
         return (
@@ -58,24 +65,37 @@ class WidgetAuthor extends Component {
                     <div className="info-list">
                         <ul>
                             <li className="mb-2">
-                                <i className="la"><GiPositionMarker /></i> {this.state.address}
+                                <i className="la">
+                                    <GiPositionMarker />
+                                </i>{' '}
+                                {this.state.address}
                             </li>
                             <li className="mb-2">
-                                <i className="la"><FaRegEnvelope /></i> <a href={'mailto:'+this.state.email}>
-                                {this.state.email}
-                            </a>
+                                <i className="la">
+                                    <FaRegEnvelope />
+                                </i>{' '}
+                                <a href={'mailto:' + this.state.email}>
+                                    {this.state.email}
+                                </a>
                             </li>
                             <li className="mb-2">
-                                <i className="la"><FiPhone /></i> {this.state.number}
+                                <i className="la">
+                                    <FiPhone />
+                                </i>{' '}
+                                {this.state.number}
                             </li>
                             <li className="mb-2">
-                                <i className="la"><FiExternalLink /></i> <a href={this.state.websiteUrl}>{this.state.website}</a>
+                                <i className="la">
+                                    <FiExternalLink />
+                                </i>{' '}
+                                <a href={this.state.websiteUrl}>
+                                    {this.state.website}
+                                </a>
                             </li>
                         </ul>
                     </div>
                     <div className="section-block-2 margin-top-35px margin-bottom-35px"></div>
                     <ul className="social-profile margin-bottom-35px text-center">
-
                         {this.state.socials.map((item, index) => {
                             return (
                                 <li key={index}>
@@ -89,14 +109,20 @@ class WidgetAuthor extends Component {
                         })}
                     </ul>
                     <div className="btn-box text-center">
-                        <Button text="view Profile" url="/user-profile" className="d-block">
-                            <span className="d-inline-block"><AiOutlineUser /></span>
+                        <Button
+                            text="view Profile"
+                            url="/user-profile"
+                            className="d-block"
+                        >
+                            <span className="d-inline-block">
+                                <AiOutlineUser />
+                            </span>
                         </Button>
                     </div>
                 </div>
             </>
-        );
+        )
     }
 }
 
-export default WidgetAuthor;
+export default WidgetAuthor

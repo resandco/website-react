@@ -1,43 +1,44 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 
 export default class BannerOneHeroHeading extends Component {
-    state  = {
+    state = {
         title: 'What are you interested in ',
         titleHighlight: [
             {
                 active: true,
-                text: 'Hotels'
+                text: 'Hotels',
             },
             {
                 active: false,
-                text: 'Restaurants'
+                text: 'Restaurants',
             },
             {
                 active: false,
-                text: 'Shops'
+                text: 'Shops',
             },
             {
                 active: false,
-                text: 'Salons'
+                text: 'Salons',
             },
             {
                 active: false,
-                text: 'Apartments'
+                text: 'Apartments',
             },
             {
                 active: false,
-                text: 'Travels'
+                text: 'Travels',
             },
             {
                 active: false,
-                text: 'Business'
+                text: 'Business',
             },
             {
                 active: false,
-                text: 'Fitness'
-            }
+                text: 'Fitness',
+            },
         ],
-        desc: 'Discover the best places to stay, eat, shop & visit the city nearest to you.'
+        desc:
+            'Discover the best places to stay, eat, shop & visit the city nearest to you.',
     }
     render() {
         return (
@@ -47,16 +48,26 @@ export default class BannerOneHeroHeading extends Component {
                         <h2 className="sec__title cd-headline zoom">
                             {this.state.title}
                             <span className="cd-words-wrapper">
-                                {this.state.titleHighlight.map((item, index) => {
-                                    return (
-                                        <b className={item.active ? 'is-visible' : ' '} key={index}> {item.text}</b>
-                                    )
-                                })}
+                                {this.state.titleHighlight.map(
+                                    (item, index) => {
+                                        return (
+                                            <b
+                                                className={
+                                                    item.active
+                                                        ? 'is-visible'
+                                                        : ' '
+                                                }
+                                                key={index}
+                                            >
+                                                {' '}
+                                                {item.text}
+                                            </b>
+                                        )
+                                    }
+                                )}
                             </span>
                         </h2>
-                        <p className="sec__desc">
-                            {this.state.desc}
-                        </p>
+                        <p className="sec__desc">{this.state.desc}</p>
                     </div>
                 </div>
             </>

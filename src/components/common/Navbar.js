@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import {Link} from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
     const [navOpen, setNavOpen] = useState(false)
 
-    const handleToggleNavOpen = function() {
+    const handleToggleNavOpen = function () {
         setNavOpen(!navOpen)
     }
 
@@ -20,10 +20,14 @@ export default function Navbar() {
                             <a href="/restaurant-a-offrir/">Cadeau de Noël</a>
                         </li>
                         <li>
-                            <Link to="/reservation-restaurant">Commander un repas surprise</Link>
+                            <Link to="/reservation-restaurant">
+                                Commander un repas surprise
+                            </Link>
                         </li>
                         <li>
-                            <a href="https://resandco.typeform.com/to/xP5GlH">Devenir partenaire</a>
+                            <a href="https://resandco.typeform.com/to/xP5GlH">
+                                Devenir partenaire
+                            </a>
                         </li>
                         <li>
                             <a href="https://www.res-and-co.fr/blog/">Blog</a>
@@ -36,9 +40,16 @@ export default function Navbar() {
                 <span className="menu__bar"></span>
                 <span className="menu__bar"></span>
             </div>
-            <div className={navOpen ? 'side-nav-container active' : 'side-nav-container'}>
+            <div
+                className={
+                    navOpen ? 'side-nav-container active' : 'side-nav-container'
+                }
+            >
                 <div className="humburger-menu">
-                    <div className="humburger-menu-lines side-menu-close" onClick={handleToggleNavOpen}></div>
+                    <div
+                        className="humburger-menu-lines side-menu-close"
+                        onClick={handleToggleNavOpen}
+                    ></div>
                 </div>
                 <div className="side-menu-wrap">
                     <ul className="side-menu-ul">
@@ -49,10 +60,14 @@ export default function Navbar() {
                             <Link to="/restaurant-a-offrir/">Cadeau Noël</Link>
                         </li>
                         <li>
-                            <Link to="/reservation-restaurant">Commander un repas surprise</Link>
+                            <Link to="/reservation-restaurant">
+                                Commander un repas surprise
+                            </Link>
                         </li>
                         <li>
-                            <a href="https://resandco.typeform.com/to/xP5GlH">Devenir partenaire</a>
+                            <a href="https://resandco.typeform.com/to/xP5GlH">
+                                Devenir partenaire
+                            </a>
                         </li>
                         <li>
                             <a href="https://www.res-and-co.fr/blog/">Blog</a>

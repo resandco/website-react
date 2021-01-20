@@ -1,54 +1,53 @@
-import React, {Component} from 'react'
-import  { FiSearch } from 'react-icons/fi'
-import SelectCountry from "../../common/SelectCountry";
-import Select from "react-select";
-
+import React, { Component } from 'react'
+import { FiSearch } from 'react-icons/fi'
+import SelectCountry from '../../common/SelectCountry'
+import Select from 'react-select'
 
 const categories = [
     {
         value: 0,
-        label: 'Select a category'
+        label: 'Select a category',
     },
     {
         value: 1,
-        label: 'All Category'
+        label: 'All Category',
     },
     {
         value: 2,
-        label: 'Shops'
+        label: 'Shops',
     },
     {
         value: 3,
-        label: 'Hotels'
+        label: 'Hotels',
     },
     {
         value: 4,
-        label: 'Foods & Restaurants'
+        label: 'Foods & Restaurants',
     },
     {
         value: 5,
-        label: 'Fitness'
+        label: 'Fitness',
     },
     {
         value: 6,
-        label: 'Travel'
+        label: 'Travel',
     },
     {
         value: 7,
-        label: 'Salons'
+        label: 'Salons',
     },
     {
         value: 8,
-        label: 'Event'
+        label: 'Event',
     },
     {
         value: 9,
-        label: 'Business'
+        label: 'Business',
     },
     {
         value: 10,
-        label: 'Jobs'
-    }
+        label: 'Jobs',
+    },
 ]
 
 export default class BannerOneSearchInput extends Component {
@@ -57,25 +56,25 @@ export default class BannerOneSearchInput extends Component {
     }
 
     handleChangeCat = () => {
-        const { selectedCatOp } = this.state;
-        this.setState(
-            { selectedCatOp }
-        );
+        const { selectedCatOp } = this.state
+        this.setState({ selectedCatOp })
     }
     render() {
         return (
             <>
                 <div className="main-search-input">
-
                     <div className="main-search-input-item">
                         <div className="contact-form-action">
                             <form action="#">
                                 <div className="form-group mb-0">
-                                <span className="form-icon">
-                                    <FiSearch/>
-                                </span>
-                                    <input className="form-control" type="text"
-                                           placeholder="What are you looking for?"/>
+                                    <span className="form-icon">
+                                        <FiSearch />
+                                    </span>
+                                    <input
+                                        className="form-control"
+                                        type="text"
+                                        placeholder="What are you looking for?"
+                                    />
                                 </div>
                             </form>
                         </div>
@@ -95,9 +94,10 @@ export default class BannerOneSearchInput extends Component {
                     </div>
 
                     <div className="main-search-input-btn">
-                        <button className="button theme-btn" type="submit">Search</button>
+                        <button className="button theme-btn" type="submit">
+                            Search
+                        </button>
                     </div>
-
                 </div>
             </>
         )

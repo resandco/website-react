@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import CopyrightMenu from "./CopyrightMenu";
+import React, { Component } from 'react'
+import CopyrightMenu from './CopyrightMenu'
 
 class Copyright extends Component {
     render() {
@@ -9,7 +9,7 @@ class Copyright extends Component {
                     <div className="col-lg-12">
                         <div className="copy-right margin-top-50px padding-top-60px">
                             <p className="copy__desc">
-                                &copy; RES&amp;CO 2020, Tous droits réservés 
+                                &copy; RES&amp;CO 2020, Tous droits réservés
                             </p>
 
                             <CopyrightMenu />
@@ -17,8 +17,8 @@ class Copyright extends Component {
                     </div>
                 </div>
             </>
-        );
+        )
     }
 }
 
-export default Copyright;
+export default Copyright

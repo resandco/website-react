@@ -4,20 +4,20 @@ import Logo from './Logo'
 
 export default class GeneralHeader extends Component {
     componentDidMount() {
-        const {$} = window;
-        
+        const { $ } = window
+
         $(window).on('scroll', function () {
             //header fixed animation and control
             if ($(window).scrollTop() > 10) {
-                $('.header-menu-wrapper').addClass('header-fixed');
+                $('.header-menu-wrapper').addClass('header-fixed')
             } else {
-                $('.header-menu-wrapper').removeClass('header-fixed');
+                $('.header-menu-wrapper').removeClass('header-fixed')
             }
-        });
+        })
     }
 
     state = {
-        logo: require('../../assets/images/logo-resandco.png')
+        logo: require('../../assets/images/logo-resandco.png'),
     }
     render() {
         return (

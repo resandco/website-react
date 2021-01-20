@@ -1,5 +1,11 @@
-import React, {Component} from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram, FaDribbble, FaBehance } from 'react-icons/fa'
+import React, { Component } from 'react'
+import {
+    FaFacebookF,
+    FaTwitter,
+    FaInstagram,
+    FaDribbble,
+    FaBehance,
+} from 'react-icons/fa'
 
 class WidgetFollow extends Component {
     state = {
@@ -7,33 +13,31 @@ class WidgetFollow extends Component {
         socials: [
             {
                 icon: <FaFacebookF />,
-                url: 'https://facebook.com'
+                url: 'https://facebook.com',
             },
             {
                 icon: <FaTwitter />,
-                url: 'https://twitter.com'
+                url: 'https://twitter.com',
             },
             {
                 icon: <FaInstagram />,
-                url: 'https://instagram.com'
+                url: 'https://instagram.com',
             },
             {
                 icon: <FaDribbble />,
-                url: 'https://dribbble.com'
+                url: 'https://dribbble.com',
             },
             {
                 icon: <FaBehance />,
-                url: 'https://behance.be'
+                url: 'https://behance.be',
             },
-        ]
+        ],
     }
     render() {
         return (
             <>
                 <div className="sidebar-widget social-widget">
-                    <h3 className="widget-title">
-                        {this.state.title}
-                    </h3>
+                    <h3 className="widget-title">{this.state.title}</h3>
                     <div className="title-shape"></div>
                     <ul className="social-profile padding-top-30px">
                         {this.state.socials.map((item, i) => {
@@ -50,8 +54,8 @@ class WidgetFollow extends Component {
                     </ul>
                 </div>
             </>
-        );
+        )
     }
 }
 
-export default WidgetFollow;
+export default WidgetFollow

@@ -1,7 +1,15 @@
-import React from 'react';
-import {Link} from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-function WidgetBookingProduct({img, title, subtitle, cardTypeIcon, cardType, badge, cardLink}) {
+function WidgetBookingProduct({
+    img,
+    title,
+    subtitle,
+    cardTypeIcon,
+    cardType,
+    badge,
+    cardLink,
+}) {
     return (
         <>
             <div className="card-item">
@@ -14,7 +22,10 @@ function WidgetBookingProduct({img, title, subtitle, cardTypeIcon, cardType, bad
                 <div className="card-content-wrap">
                     <div className="card-content">
                         <Link to={cardLink}>
-                            <h5 className="card-meta"><span className="la">{cardTypeIcon}</span> {cardType}</h5>
+                            <h5 className="card-meta">
+                                <span className="la">{cardTypeIcon}</span>{' '}
+                                {cardType}
+                            </h5>
                             <h4 className="card-title">{title}</h4>
                             <p className="card-sub">{subtitle}</p>
                         </Link>
@@ -22,8 +33,7 @@ function WidgetBookingProduct({img, title, subtitle, cardTypeIcon, cardType, bad
                 </div>
             </div>
         </>
-    );
+    )
 }
 
-export default WidgetBookingProduct;
-
+export default WidgetBookingProduct

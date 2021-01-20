@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
-import Button from "../../common/Button";
+import React, { Component } from 'react'
+import Button from '../../common/Button'
 import { BsEye } from 'react-icons/bs'
-import {Link} from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 class WidgetPopularPost extends Component {
     state = {
@@ -43,7 +43,7 @@ class WidgetPopularPost extends Component {
                 authorUrl: 'https://techydevs.com',
                 cardClass: '',
             },
-        ]
+        ],
     }
     render() {
         return (
@@ -51,10 +51,11 @@ class WidgetPopularPost extends Component {
                 <div className="sidebar-widget similar-widget">
                     {this.state.title ? (
                         <h3 className="widget-title">{this.state.title}</h3>
-                    ) : ''}
+                    ) : (
+                        ''
+                    )}
                     <div className="title-shape"></div>
                     <div className="similar-list padding-top-30px">
-
                         {this.state.items.map((item, i) => {
                             return (
                                 <div key={i} className="recent-item mb-3">
@@ -65,24 +66,36 @@ class WidgetPopularPost extends Component {
                                     </div>
                                     <div className="recentpost-body">
                                         <h4 className="recent__link">
-                                            <Link to={item.titleLink}>{item.title}</Link>
+                                            <Link to={item.titleLink}>
+                                                {item.title}
+                                            </Link>
                                         </h4>
-                                        <p className="recent__meta">{item.date} by <a href={item.authorUrl}>{item.author}</a></p>
+                                        <p className="recent__meta">
+                                            {item.date} by{' '}
+                                            <a href={item.authorUrl}>
+                                                {item.author}
+                                            </a>
+                                        </p>
                                     </div>
                                 </div>
                             )
                         })}
-
                     </div>
                     <div className="btn-box text-center padding-top-30px">
-                        <Button url="#" text="view all posts" className=" d-block">
-                            <span><BsEye /></span>
+                        <Button
+                            url="#"
+                            text="view all posts"
+                            className=" d-block"
+                        >
+                            <span>
+                                <BsEye />
+                            </span>
                         </Button>
                     </div>
                 </div>
             </div>
-        );
+        )
     }
 }
 
-export default WidgetPopularPost;
+export default WidgetPopularPost

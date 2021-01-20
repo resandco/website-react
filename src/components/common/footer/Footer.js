@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
-import Copyright from "./Copyright";
-import FooterLeftWidget from "./FooterLeftWidget";
-import FooterQuickLinkWidget from "./FooterQuickLinkWidget";
-import FooterCategoryWidget from "./FooterCategoryWidget";
-import FooterContactWidget from "./FooterContactWidget";
+import React, { Component } from 'react'
+import Copyright from './Copyright'
+import FooterLeftWidget from './FooterLeftWidget'
+import FooterQuickLinkWidget from './FooterQuickLinkWidget'
+import FooterCategoryWidget from './FooterCategoryWidget'
+import FooterContactWidget from './FooterContactWidget'
 
 class Footer extends Component {
     render() {
@@ -29,8 +29,8 @@ class Footer extends Component {
                     </div>
                 </section>
             </>
-        );
+        )
     }
 }
 
-export default Footer;
+export default Footer

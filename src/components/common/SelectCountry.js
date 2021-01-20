@@ -1,958 +1,958 @@
-import React, {Component} from 'react';
-import Select from "react-select";
+import React, { Component } from 'react'
+import Select from 'react-select'
 
 const countries = [
     {
         value: 's',
-        label: 'Select a Location'
+        label: 'Select a Location',
     },
     {
         value: 'AF',
-        label: 'Afghanistan'
+        label: 'Afghanistan',
     },
     {
         value: 'AX',
-        label: 'Åland Islands'
+        label: 'Åland Islands',
     },
     {
         value: 'AL',
-        label: 'Albania'
+        label: 'Albania',
     },
     {
         value: 'DZ',
-        label: 'Algeria'
+        label: 'Algeria',
     },
     {
         prefix: 'AD',
-        label: 'Andorra'
+        label: 'Andorra',
     },
     {
         prefix: 'AO',
-        label: 'Angola'
+        label: 'Angola',
     },
     {
         prefix: 'AI',
-        label: 'Anguilla'
+        label: 'Anguilla',
     },
     {
         prefix: 'AQ',
-        label: 'Antarctica'
+        label: 'Antarctica',
     },
     {
         prefix: 'AG',
-        label: 'Antigua & Barbuda'
+        label: 'Antigua & Barbuda',
     },
     {
         prefix: 'AR',
-        label: 'Argentina'
+        label: 'Argentina',
     },
     {
         prefix: 'AM',
-        label: 'Armenia'
+        label: 'Armenia',
     },
     {
         prefix: 'AW',
-        label: 'Aruba'
+        label: 'Aruba',
     },
     {
         prefix: 'AC',
-        label: 'Ascension Island'
+        label: 'Ascension Island',
     },
     {
         prefix: 'AU',
-        label: 'Australia'
+        label: 'Australia',
     },
     {
         prefix: 'AT',
-        label: 'Austria'
+        label: 'Austria',
     },
     {
         prefix: 'AZ',
-        label: 'Azerbaijan'
+        label: 'Azerbaijan',
     },
     {
         prefix: 'BS',
-        label: 'Bahamas'
+        label: 'Bahamas',
     },
     {
         prefix: 'BH',
-        label: 'Bahrain'
+        label: 'Bahrain',
     },
     {
         prefix: 'BD',
-        label: 'Bangladesh'
+        label: 'Bangladesh',
     },
     {
         prefix: 'BB',
-        label: 'Barbados'
+        label: 'Barbados',
     },
     {
         prefix: 'BY',
-        label: 'Belarus'
+        label: 'Belarus',
     },
     {
         prefix: 'BE',
-        label: 'Belgium'
+        label: 'Belgium',
     },
     {
         prefix: 'BZ',
-        label: 'Belize'
+        label: 'Belize',
     },
     {
         prefix: 'BJ',
-        label: 'Benin'
+        label: 'Benin',
     },
     {
         prefix: 'BM',
-        label: 'Bermuda'
+        label: 'Bermuda',
     },
     {
         prefix: 'BT',
-        label: 'Bhutan'
+        label: 'Bhutan',
     },
     {
         prefix: 'BO',
-        label: 'Bolivia'
+        label: 'Bolivia',
     },
     {
         prefix: 'BA',
-        label: 'Bosnia & Herzegovina'
+        label: 'Bosnia & Herzegovina',
     },
     {
         prefix: 'BW',
-        label: 'Botswana'
+        label: 'Botswana',
     },
     {
         prefix: 'BV',
-        label: 'Bouvet Island'
+        label: 'Bouvet Island',
     },
     {
         prefix: 'BR',
-        label: 'Brazil'
+        label: 'Brazil',
     },
     {
         prefix: 'IO',
-        label: 'British Indian Ocean Territory'
+        label: 'British Indian Ocean Territory',
     },
     {
         prefix: 'VG',
-        label: 'British Virgin Islands'
+        label: 'British Virgin Islands',
     },
     {
         prefix: 'BN',
-        label: 'Brunei'
+        label: 'Brunei',
     },
     {
         prefix: 'BG',
-        label: 'Bulgaria'
+        label: 'Bulgaria',
     },
     {
         prefix: 'BF',
-        label: 'Burkina Faso'
+        label: 'Burkina Faso',
     },
     {
         prefix: 'BI',
-        label: 'Burundi'
+        label: 'Burundi',
     },
     {
         prefix: 'KH',
-        label: 'Cambodia'
+        label: 'Cambodia',
     },
     {
         prefix: 'CH',
-        label: 'Cameroon'
+        label: 'Cameroon',
     },
     {
         prefix: 'CA',
-        label: 'Canada'
+        label: 'Canada',
     },
     {
         prefix: 'CV',
-        label: 'Cape Verde'
+        label: 'Cape Verde',
     },
     {
         prefix: 'BQ',
-        label: 'Caribbean Netherlands'
+        label: 'Caribbean Netherlands',
     },
     {
         prefix: 'KY',
-        label: 'Cayman Islands'
+        label: 'Cayman Islands',
     },
     {
         prefix: 'CF',
-        label: 'Central African Republic'
+        label: 'Central African Republic',
     },
     {
         prefix: 'TD',
-        label: 'Chad'
+        label: 'Chad',
     },
     {
         prefix: 'CL',
-        label: 'Chile'
+        label: 'Chile',
     },
     {
         prefix: 'CN',
-        label: 'China'
+        label: 'China',
     },
     {
         prefix: 'CO',
-        label: 'Colombia'
+        label: 'Colombia',
     },
     {
         prefix: 'KM',
-        label: 'Comoros'
+        label: 'Comoros',
     },
     {
         prefix: 'CG',
-        label: 'Congo - Brazzaville'
+        label: 'Congo - Brazzaville',
     },
     {
         prefix: 'CD',
-        label: 'Congo - Kinshasa'
+        label: 'Congo - Kinshasa',
     },
     {
         prefix: 'CK',
-        label: 'Cook Islands'
+        label: 'Cook Islands',
     },
     {
         prefix: 'CR',
-        label: 'Costa Rica'
+        label: 'Costa Rica',
     },
     {
         prefix: 'CI',
-        label: 'Côte d’Ivoire'
+        label: 'Côte d’Ivoire',
     },
     {
         prefix: 'HR',
-        label: 'Croatia'
+        label: 'Croatia',
     },
     {
         prefix: 'CW',
-        label: 'Curaçao'
+        label: 'Curaçao',
     },
     {
         prefix: 'CY',
-        label: 'Cyprus'
+        label: 'Cyprus',
     },
     {
         prefix: 'CZ',
-        label: 'Czechia'
+        label: 'Czechia',
     },
     {
         prefix: 'DK',
-        label: 'Denmark'
+        label: 'Denmark',
     },
     {
         prefix: 'DJ',
-        label: 'Djibouti'
+        label: 'Djibouti',
     },
     {
         prefix: 'DM',
-        label: 'Dominica'
+        label: 'Dominica',
     },
     {
         prefix: 'DO',
-        label: 'Dominican Republic'
+        label: 'Dominican Republic',
     },
     {
         prefix: 'EC',
-        label: 'Ecuador'
+        label: 'Ecuador',
     },
     {
         prefix: 'EG',
-        label: 'Egypt'
+        label: 'Egypt',
     },
     {
         prefix: 'SV',
-        label: 'El Salvador'
+        label: 'El Salvador',
     },
     {
         prefix: 'GQ',
-        label: 'Equatorial Guinea'
+        label: 'Equatorial Guinea',
     },
     {
         prefix: 'ER',
-        label: 'Eritrea'
+        label: 'Eritrea',
     },
     {
         prefix: 'EE',
-        label: 'Estonia'
+        label: 'Estonia',
     },
     {
         prefix: 'SZ',
-        label: 'Eswatini'
+        label: 'Eswatini',
     },
     {
         prefix: 'ET',
-        label: 'Ethiopia'
+        label: 'Ethiopia',
     },
     {
         prefix: 'FK',
-        label: 'Falkland Islands'
+        label: 'Falkland Islands',
     },
     {
         prefix: 'FO',
-        label: 'Faroe Islands'
+        label: 'Faroe Islands',
     },
     {
         prefix: 'FJ',
-        label: 'Fiji'
+        label: 'Fiji',
     },
     {
         prefix: 'FI',
-        label: 'Finland'
+        label: 'Finland',
     },
     {
         prefix: 'FR',
-        label: 'France'
+        label: 'France',
     },
     {
         prefix: 'GF',
-        label: 'French Guiana'
+        label: 'French Guiana',
     },
     {
         prefix: 'PF',
-        label: 'French Polynesia'
+        label: 'French Polynesia',
     },
     {
         prefix: 'TF',
-        label: 'French Southern Territories'
+        label: 'French Southern Territories',
     },
     {
         prefix: 'GA',
-        label: 'Gabon'
+        label: 'Gabon',
     },
     {
         prefix: 'GM',
-        label: 'Gambia'
+        label: 'Gambia',
     },
     {
         prefix: 'GE',
-        label: 'Georgia'
+        label: 'Georgia',
     },
     {
         prefix: 'DE',
-        label: 'Germany'
+        label: 'Germany',
     },
     {
         prefix: 'GH',
-        label: 'Ghana'
+        label: 'Ghana',
     },
     {
         prefix: 'GI',
-        label: 'Gibraltar'
+        label: 'Gibraltar',
     },
     {
         prefix: 'GR',
-        label: 'Greece'
+        label: 'Greece',
     },
     {
         prefix: 'GL',
-        label: 'Greenland'
+        label: 'Greenland',
     },
     {
         prefix: 'GD',
-        label: 'Grenada'
+        label: 'Grenada',
     },
     {
         prefix: 'GP',
-        label: 'Guadeloupe'
+        label: 'Guadeloupe',
     },
     {
         prefix: 'GU',
-        label: 'Guam'
+        label: 'Guam',
     },
     {
         prefix: 'GT',
-        label: 'Guatemala'
+        label: 'Guatemala',
     },
     {
         prefix: 'GG',
-        label: 'Guernsey'
+        label: 'Guernsey',
     },
     {
         prefix: 'GN',
-        label: 'Guinea'
+        label: 'Guinea',
     },
     {
         prefix: 'GW',
-        label: 'Guinea-Bissau'
+        label: 'Guinea-Bissau',
     },
     {
         prefix: 'GY',
-        label: 'Guyana'
+        label: 'Guyana',
     },
     {
         prefix: 'HT',
-        label: 'Haiti'
+        label: 'Haiti',
     },
     {
         prefix: 'HN',
-        label: 'Honduras'
+        label: 'Honduras',
     },
     {
         prefix: 'HK',
-        label: 'Hong Kong SAR China'
+        label: 'Hong Kong SAR China',
     },
     {
         prefix: 'HU',
-        label: 'Hungary'
+        label: 'Hungary',
     },
     {
         prefix: 'IS',
-        label: 'Iceland'
+        label: 'Iceland',
     },
     {
         prefix: 'IN',
-        label: 'India'
+        label: 'India',
     },
     {
         prefix: 'ID',
-        label: 'Indonesia'
+        label: 'Indonesia',
     },
     {
         prefix: 'IR',
-        label: 'Iran'
+        label: 'Iran',
     },
     {
         prefix: 'IQ',
-        label: 'Iraq'
+        label: 'Iraq',
     },
     {
         prefix: 'IE',
-        label: 'Ireland'
+        label: 'Ireland',
     },
     {
         prefix: 'IM',
-        label: 'Isle of Man'
+        label: 'Isle of Man',
     },
     {
         prefix: 'IL',
-        label: 'Israel'
+        label: 'Israel',
     },
     {
         prefix: 'IT',
-        label: 'Italy'
+        label: 'Italy',
     },
     {
         prefix: 'JM',
-        label: 'Jamaica'
+        label: 'Jamaica',
     },
     {
         prefix: 'JP',
-        label: 'Japan'
+        label: 'Japan',
     },
     {
         prefix: 'JE',
-        label: 'Jersey'
+        label: 'Jersey',
     },
     {
         prefix: 'JO',
-        label: 'Jordan'
+        label: 'Jordan',
     },
     {
         prefix: 'KZ',
-        label: 'Kazakhstan'
+        label: 'Kazakhstan',
     },
     {
         prefix: 'KE',
-        label: 'Kenya'
+        label: 'Kenya',
     },
     {
         prefix: 'KI',
-        label: 'Kiribati'
+        label: 'Kiribati',
     },
     {
         prefix: 'XK',
-        label: 'Kosovo'
+        label: 'Kosovo',
     },
     {
         prefix: 'KW',
-        label: 'Kuwait'
+        label: 'Kuwait',
     },
     {
         prefix: 'KG',
-        label: 'Kyrgyzstan'
+        label: 'Kyrgyzstan',
     },
     {
         prefix: 'LA',
-        label: 'Laos'
+        label: 'Laos',
     },
     {
         prefix: 'LV',
-        label: 'Latvia'
+        label: 'Latvia',
     },
     {
         prefix: 'LB',
-        label: 'Lebanon'
+        label: 'Lebanon',
     },
     {
         prefix: 'LS',
-        label: 'Lesotho'
+        label: 'Lesotho',
     },
     {
         prefix: 'LR',
-        label: 'Liberia'
+        label: 'Liberia',
     },
     {
         prefix: 'LY',
-        label: 'Libya'
+        label: 'Libya',
     },
     {
         prefix: 'LI',
-        label: 'Liechtenstein'
+        label: 'Liechtenstein',
     },
     {
         prefix: 'LT',
-        label: 'Lithuania'
+        label: 'Lithuania',
     },
     {
         prefix: 'LU',
-        label: 'Luxembourg'
+        label: 'Luxembourg',
     },
     {
         prefix: 'MO',
-        label: 'Macao SAR China'
+        label: 'Macao SAR China',
     },
     {
         prefix: 'MG',
-        label: 'Madagascar'
+        label: 'Madagascar',
     },
     {
         prefix: 'MW',
-        label: 'Malawi'
+        label: 'Malawi',
     },
     {
         prefix: 'MY',
-        label: 'Malaysia'
+        label: 'Malaysia',
     },
     {
         prefix: 'MV',
-        label: 'Maldives'
+        label: 'Maldives',
     },
     {
         prefix: 'ML',
-        label: 'Mali'
+        label: 'Mali',
     },
     {
         prefix: 'MT',
-        label: 'Malta'
+        label: 'Malta',
     },
     {
         prefix: 'MQ',
-        label: 'Martinique'
+        label: 'Martinique',
     },
     {
         prefix: 'MR',
-        label: 'Mauritania'
+        label: 'Mauritania',
     },
     {
         prefix: 'MU',
-        label: 'Mauritius'
+        label: 'Mauritius',
     },
     {
         prefix: 'YT',
-        label: 'Mayotte'
+        label: 'Mayotte',
     },
     {
         prefix: 'MX',
-        label: 'Mexico'
+        label: 'Mexico',
     },
     {
         prefix: 'MD',
-        label: 'Moldova'
+        label: 'Moldova',
     },
     {
         prefix: 'MC',
-        label: 'Monaco'
+        label: 'Monaco',
     },
     {
         prefix: 'MN',
-        label: 'Mongolia'
+        label: 'Mongolia',
     },
     {
         prefix: 'ME',
-        label: 'Montenegro'
+        label: 'Montenegro',
     },
     {
         prefix: 'MS',
-        label: 'Montserrat'
+        label: 'Montserrat',
     },
     {
         prefix: 'MA',
-        label: 'Morocco'
+        label: 'Morocco',
     },
     {
         prefix: 'MZ',
-        label: 'Mozambique'
+        label: 'Mozambique',
     },
     {
         prefix: 'MM',
-        label: 'Myanmar (Burma)'
+        label: 'Myanmar (Burma)',
     },
     {
         prefix: 'NA',
-        label: 'Namibia'
+        label: 'Namibia',
     },
     {
         prefix: 'NR',
-        label: 'Nauru'
+        label: 'Nauru',
     },
     {
         prefix: 'NP',
-        label: 'Nepal'
+        label: 'Nepal',
     },
     {
         prefix: 'NL',
-        label: 'Netherlands'
+        label: 'Netherlands',
     },
     {
         prefix: 'NC',
-        label: 'New Caledonia'
+        label: 'New Caledonia',
     },
     {
         prefix: 'NZ',
-        label: 'New Zealand'
+        label: 'New Zealand',
     },
     {
         prefix: 'NI',
-        label: 'Nicaragua'
+        label: 'Nicaragua',
     },
     {
         prefix: 'NE',
-        label: 'Niger'
+        label: 'Niger',
     },
     {
         prefix: 'NG',
-        label: 'Nigeria'
+        label: 'Nigeria',
     },
     {
         prefix: 'NU',
-        label: 'Niue'
+        label: 'Niue',
     },
     {
         prefix: 'MK',
-        label: 'North Macedonia'
+        label: 'North Macedonia',
     },
     {
         prefix: 'NO',
-        label: 'Norway'
+        label: 'Norway',
     },
     {
         prefix: 'OM',
-        label: 'Oman'
+        label: 'Oman',
     },
     {
         prefix: 'PK',
-        label: 'Pakistan'
+        label: 'Pakistan',
     },
     {
         prefix: 'PS',
-        label: 'Palestinian Territories'
+        label: 'Palestinian Territories',
     },
     {
         prefix: 'PA',
-        label: 'Panama'
+        label: 'Panama',
     },
     {
         prefix: 'PG',
-        label: 'Papua New Guinea'
+        label: 'Papua New Guinea',
     },
     {
         prefix: 'PY',
-        label: 'Paraguay'
+        label: 'Paraguay',
     },
     {
         prefix: 'PE',
-        label: 'Peru'
+        label: 'Peru',
     },
     {
         prefix: 'PH',
-        label: 'Philippines'
+        label: 'Philippines',
     },
     {
         prefix: 'PN',
-        label: 'Pitcairn Islands'
+        label: 'Pitcairn Islands',
     },
     {
         prefix: 'PL',
-        label: 'Poland'
+        label: 'Poland',
     },
     {
         prefix: 'PT',
-        label: 'Portugal'
+        label: 'Portugal',
     },
     {
         prefix: 'PR',
-        label: 'Puerto Rico'
+        label: 'Puerto Rico',
     },
     {
         prefix: 'QA',
-        label: 'Qatar'
+        label: 'Qatar',
     },
     {
         prefix: 'RE',
-        label: 'Réunion'
+        label: 'Réunion',
     },
     {
         prefix: 'RO',
-        label: 'Romania'
+        label: 'Romania',
     },
     {
         prefix: 'RU',
-        label: 'Russia'
+        label: 'Russia',
     },
     {
         prefix: 'RW',
-        label: 'Rwanda'
+        label: 'Rwanda',
     },
     {
         prefix: 'WS',
-        label: 'Samoa'
+        label: 'Samoa',
     },
     {
         prefix: 'SM',
-        label: 'San Marino'
+        label: 'San Marino',
     },
     {
         prefix: 'ST',
-        label: 'São Tomé & Príncipe'
+        label: 'São Tomé & Príncipe',
     },
     {
         prefix: 'SA',
-        label: 'Saudi Arabia'
+        label: 'Saudi Arabia',
     },
     {
         prefix: 'SN',
-        label: 'Senegal'
+        label: 'Senegal',
     },
     {
         prefix: 'RS',
-        label: 'Serbia'
+        label: 'Serbia',
     },
     {
         prefix: 'SC',
-        label: 'Seychelles'
+        label: 'Seychelles',
     },
     {
         prefix: 'SL',
-        label: 'Sierra Leone'
+        label: 'Sierra Leone',
     },
     {
         prefix: 'SG',
-        label: 'Singapore'
+        label: 'Singapore',
     },
     {
         prefix: 'SX',
-        label: 'Sint Maarten'
+        label: 'Sint Maarten',
     },
     {
         prefix: 'SK',
-        label: 'Slovakia'
+        label: 'Slovakia',
     },
     {
         prefix: 'SI',
-        label: 'Slovenia'
+        label: 'Slovenia',
     },
     {
         prefix: 'SB',
-        label: 'Solomon Islands'
+        label: 'Solomon Islands',
     },
     {
         prefix: 'SO',
-        label: 'Somalia'
+        label: 'Somalia',
     },
     {
         prefix: 'ZA',
-        label: 'South Africa'
+        label: 'South Africa',
     },
     {
         prefix: 'GS',
-        label: 'South Georgia & South Sandwich Islands'
+        label: 'South Georgia & South Sandwich Islands',
     },
     {
         prefix: 'KR',
-        label: 'South Korea'
+        label: 'South Korea',
     },
     {
         prefix: 'SS',
-        label: 'South Sudan'
+        label: 'South Sudan',
     },
     {
         prefix: 'ES',
-        label: 'Spain'
+        label: 'Spain',
     },
     {
         prefix: 'LK',
-        label: 'Sri Lanka'
+        label: 'Sri Lanka',
     },
     {
         prefix: 'BL',
-        label: 'St. Barthélemy'
+        label: 'St. Barthélemy',
     },
     {
         prefix: 'SH',
-        label: 'St. Helena'
+        label: 'St. Helena',
     },
     {
         prefix: 'KN',
-        label: 'St. Kitts & Nevis'
+        label: 'St. Kitts & Nevis',
     },
     {
         prefix: 'LC',
-        label: 'St. Lucia'
+        label: 'St. Lucia',
     },
     {
         prefix: 'MF',
-        label: 'St. Martin'
+        label: 'St. Martin',
     },
     {
         prefix: 'PM',
-        label: 'St. Pierre & Miquelon'
+        label: 'St. Pierre & Miquelon',
     },
     {
         prefix: 'VC',
-        label: 'St. Vincent & Grenadines'
+        label: 'St. Vincent & Grenadines',
     },
     {
         prefix: 'SR',
-        label: 'Suriname'
+        label: 'Suriname',
     },
     {
         prefix: 'SJ',
-        label: 'Svalbard & Jan Mayen'
+        label: 'Svalbard & Jan Mayen',
     },
     {
         prefix: 'SE',
-        label: 'Sweden'
+        label: 'Sweden',
     },
     {
         prefix: 'CH',
-        label: 'Switzerland'
+        label: 'Switzerland',
     },
     {
         prefix: 'TW',
-        label: 'Taiwan'
+        label: 'Taiwan',
     },
     {
         prefix: 'TJ',
-        label: 'Tajikistan'
+        label: 'Tajikistan',
     },
     {
         prefix: 'TZ',
-        label: 'Tanzania'
+        label: 'Tanzania',
     },
     {
         prefix: 'TH',
-        label: 'Thailand'
+        label: 'Thailand',
     },
     {
         prefix: 'TL',
-        label: 'Timor-Leste'
+        label: 'Timor-Leste',
     },
     {
         prefix: 'TG',
-        label: 'Togo'
+        label: 'Togo',
     },
     {
         prefix: 'TK',
-        label: 'Tokelau'
+        label: 'Tokelau',
     },
     {
         prefix: 'TO',
-        label: 'Tonga'
+        label: 'Tonga',
     },
     {
         prefix: 'TT',
-        label: 'Trinidad & Tobago'
+        label: 'Trinidad & Tobago',
     },
     {
         prefix: 'TA',
-        label: 'Tristan da Cunha'
+        label: 'Tristan da Cunha',
     },
     {
         prefix: 'TN',
-        label: 'Tunisia'
+        label: 'Tunisia',
     },
     {
         prefix: 'TR',
-        label: 'Turkey'
+        label: 'Turkey',
     },
     {
         prefix: 'TM',
-        label: 'Turkmenistan'
+        label: 'Turkmenistan',
     },
     {
         prefix: 'TC',
-        label: 'Turks & Caicos Islands'
+        label: 'Turks & Caicos Islands',
     },
     {
         prefix: 'TV',
-        label: 'Tuvalu'
+        label: 'Tuvalu',
     },
     {
         prefix: 'UG',
-        label: 'Uganda'
+        label: 'Uganda',
     },
     {
         prefix: 'UA',
-        label: 'Ukraine'
+        label: 'Ukraine',
     },
     {
         prefix: 'AE',
-        label: 'United Arab Emirates'
+        label: 'United Arab Emirates',
     },
     {
         prefix: 'UK',
-        label: 'United Kingdom'
+        label: 'United Kingdom',
     },
     {
         prefix: 'US',
-        label: 'United States'
+        label: 'United States',
     },
     {
         prefix: 'UY',
-        label: 'Uruguay'
+        label: 'Uruguay',
     },
     {
         prefix: 'UZ',
-        label: 'Uzbekistan'
+        label: 'Uzbekistan',
     },
     {
         prefix: 'VU',
-        label: 'Vanuatu'
+        label: 'Vanuatu',
     },
     {
         prefix: 'VA',
-        label: 'Vatican City'
+        label: 'Vatican City',
     },
     {
         prefix: 'VE',
-        label: 'Venezuela'
+        label: 'Venezuela',
     },
     {
         prefix: 'VN',
-        label: 'Vietnam'
+        label: 'Vietnam',
     },
     {
         prefix: 'WF',
-        label: 'Wallis & Futuna'
+        label: 'Wallis & Futuna',
     },
     {
         prefix: 'EH',
-        label: 'Western Sahara'
+        label: 'Western Sahara',
     },
     {
         prefix: 'YE',
-        label: 'Yemen'
+        label: 'Yemen',
     },
     {
         prefix: 'ZM',
-        label: 'Zambia'
+        label: 'Zambia',
     },
     {
         prefix: 'ZW',
-        label: 'Zimbabwe'
+        label: 'Zimbabwe',
     },
 ]
 
@@ -962,11 +962,9 @@ class SelectCountry extends Component {
     }
 
     handleChange = () => {
-        const { selectedOption } = this.state;
-        this.setState(
-            { selectedOption }
-        );
-    };
+        const { selectedOption } = this.state
+        this.setState({ selectedOption })
+    }
     render() {
         return (
             <>
@@ -977,8 +975,8 @@ class SelectCountry extends Component {
                     options={countries}
                 />
             </>
-        );
+        )
     }
 }
 
-export default SelectCountry;
+export default SelectCountry

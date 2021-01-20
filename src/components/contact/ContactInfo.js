@@ -1,6 +1,13 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react'
 import { GiPositionMarker } from 'react-icons/gi'
-import { FaRegEnvelope, FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
+import {
+    FaRegEnvelope,
+    FaFacebookF,
+    FaTwitter,
+    FaInstagram,
+    FaLinkedinIn,
+    FaYoutube,
+} from 'react-icons/fa'
 import { FiPhone, FiExternalLink } from 'react-icons/fi'
 
 class ContactInfo extends Component {
@@ -15,66 +22,100 @@ class ContactInfo extends Component {
             {
                 icon: <FaFacebookF />,
                 title: 'facebook',
-                url: 'https://facebook.com'
+                url: 'https://facebook.com',
             },
             {
                 icon: <FaTwitter />,
                 title: 'twitter',
-                url: 'https://twitter.com'
+                url: 'https://twitter.com',
             },
             {
                 icon: <FaInstagram />,
                 title: 'instagram',
-                url: 'https://instagram.com'
+                url: 'https://instagram.com',
             },
             {
                 icon: <FaLinkedinIn />,
                 title: 'linkedinIn',
-                url: 'https://linkedin.com'
+                url: 'https://linkedin.com',
             },
             {
                 icon: <FaYoutube />,
                 title: 'youtube',
-                url: 'https://youtube.com'
-            }
-        ]
+                url: 'https://youtube.com',
+            },
+        ],
     }
     render() {
         return (
             <>
                 <div className="contact-listing padding-top-40px padding-bottom-40px">
-                    <h2 className="widget-title">
-                        {this.states.title}
-                    </h2>
+                    <h2 className="widget-title">{this.states.title}</h2>
                     <div className="title-shape"></div>
                     <div className="info-list margin-top-35px padding-bottom-35px">
                         <ul>
                             {this.states.address ? (
-                                <li className="mb-2"><span><i className="la d-inline-block"><GiPositionMarker /></i> Address:</span>
+                                <li className="mb-2">
+                                    <span>
+                                        <i className="la d-inline-block">
+                                            <GiPositionMarker />
+                                        </i>{' '}
+                                        Address:
+                                    </span>
                                     {this.states.address}
                                 </li>
-                            ) : ''}
+                            ) : (
+                                ''
+                            )}
                             {this.states.email ? (
-                                <li className="mb-2"><span><i className="la d-inline-block"><FaRegEnvelope /></i> Email:</span>
-                                    <a href={'mailto:'+this.states.email}>{this.states.email}</a>
+                                <li className="mb-2">
+                                    <span>
+                                        <i className="la d-inline-block">
+                                            <FaRegEnvelope />
+                                        </i>{' '}
+                                        Email:
+                                    </span>
+                                    <a href={'mailto:' + this.states.email}>
+                                        {this.states.email}
+                                    </a>
                                 </li>
-                            ) : ''}
+                            ) : (
+                                ''
+                            )}
                             {this.states.number ? (
-                                <li className="mb-2"><span><i className="la d-inline-block"><FiPhone /></i> Phone:</span>
+                                <li className="mb-2">
+                                    <span>
+                                        <i className="la d-inline-block">
+                                            <FiPhone />
+                                        </i>{' '}
+                                        Phone:
+                                    </span>
                                     {this.states.number}
                                 </li>
-                            ) : '' }
+                            ) : (
+                                ''
+                            )}
                             {this.states.website ? (
-                                <li><span><i className="la d-inline-block"><FiExternalLink /></i> Website:</span>
-                                    <a href={this.states.websiteUrl}>{this.states.website}</a>
+                                <li>
+                                    <span>
+                                        <i className="la d-inline-block">
+                                            <FiExternalLink />
+                                        </i>{' '}
+                                        Website:
+                                    </span>
+                                    <a href={this.states.websiteUrl}>
+                                        {this.states.website}
+                                    </a>
                                 </li>
-                            ) : ''}
+                            ) : (
+                                ''
+                            )}
                         </ul>
                     </div>
                 </div>
             </>
-        );
+        )
     }
 }
 
-export default ContactInfo;
+export default ContactInfo

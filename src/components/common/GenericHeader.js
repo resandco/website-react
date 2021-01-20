@@ -1,53 +1,53 @@
-import React, {Component} from 'react';
-import {Link} from "react-router-dom";
-import {BsGrid, BsListUl} from "react-icons/bs";
-import Select from "react-select";
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import { BsGrid, BsListUl } from 'react-icons/bs'
+import Select from 'react-select'
 
 const shortby = [
     {
         value: 0,
-        label: 'Short by'
+        label: 'Short by',
     },
     {
         value: 1,
-        label: 'Short by default'
+        label: 'Short by default',
     },
     {
         value: 2,
-        label: 'High Rated'
+        label: 'High Rated',
     },
     {
         value: 3,
-        label: 'Most Reviewed'
+        label: 'Most Reviewed',
     },
     {
         value: 4,
-        label: 'Popular Listing'
+        label: 'Popular Listing',
     },
     {
         value: 5,
-        label: 'Newest Listing'
+        label: 'Newest Listing',
     },
     {
         value: 6,
-        label: 'Older Listing'
+        label: 'Older Listing',
     },
     {
         value: 7,
-        label: 'Price: low to high'
+        label: 'Price: low to high',
     },
     {
         value: 8,
-        label: 'Price: high to low'
+        label: 'Price: high to low',
     },
     {
         value: 9,
-        label: 'Price: high to low'
+        label: 'Price: high to low',
     },
     {
         value: 10,
-        label: 'Random listing'
-    }
+        label: 'Random listing',
+    },
 ]
 
 class GenericHeader extends Component {
@@ -64,16 +64,13 @@ class GenericHeader extends Component {
                 path: '/listing-grid',
                 icon: <BsGrid />,
                 active: true,
-            }
+            },
         ],
-
     }
 
     handleChangeshortby = () => {
-        const { selectedShortby } = this.state;
-        this.setState(
-            { selectedShortby }
-        );
+        const { selectedShortby } = this.state
+        this.setState({ selectedShortby })
     }
     render() {
         return (
@@ -94,7 +91,10 @@ class GenericHeader extends Component {
                         {this.state.navs.map((item, index) => {
                             return (
                                 <li key={index}>
-                                    <Link to={item.path} className={ item.active ? 'active': ' '}>
+                                    <Link
+                                        to={item.path}
+                                        className={item.active ? 'active' : ' '}
+                                    >
                                         <span className="d-inline-block">
                                             {item.icon}
                                         </span>
@@ -105,8 +105,8 @@ class GenericHeader extends Component {
                     </ul>
                 </div>
             </>
-        );
+        )
     }
 }
 
-export default GenericHeader;
+export default GenericHeader

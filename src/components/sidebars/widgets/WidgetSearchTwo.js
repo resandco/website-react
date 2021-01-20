@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react'
 import { FiSearch } from 'react-icons/fi'
 
 class WidgetSearchTwo extends Component {
@@ -12,15 +12,24 @@ class WidgetSearchTwo extends Component {
                                 <span className="form-icon">
                                     <FiSearch />
                                 </span>
-                                <input className="form-control" type="text" placeholder="Search..." />
-                                <button type="submit" className="theme-btn submit-btn border-0">search</button>
+                                <input
+                                    className="form-control"
+                                    type="text"
+                                    placeholder="Search..."
+                                />
+                                <button
+                                    type="submit"
+                                    className="theme-btn submit-btn border-0"
+                                >
+                                    search
+                                </button>
                             </div>
                         </form>
                     </div>
                 </div>
             </>
-        );
+        )
     }
 }
 
-export default WidgetSearchTwo;
+export default WidgetSearchTwo

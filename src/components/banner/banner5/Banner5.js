@@ -1,12 +1,12 @@
-import React, {Component} from 'react';
-import ModalVideo from "react-modal-video";
-import {Link} from "react-router-dom";
+import React, { Component } from 'react'
+import ModalVideo from 'react-modal-video'
+import { Link } from 'react-router-dom'
 
 class Banner5 extends Component {
     constructor() {
         super()
         this.state = {
-            isOpen: false
+            isOpen: false,
         }
         this.openModal = this.openModal.bind(this)
     }
@@ -16,15 +16,22 @@ class Banner5 extends Component {
     render() {
         return (
             <>
-                <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='R2kiP9Qu7Pc' onClose={() => this.setState({ isOpen: false })} />
+                <ModalVideo
+                    channel="youtube"
+                    isOpen={this.state.isOpen}
+                    videoId="R2kiP9Qu7Pc"
+                    onClose={() => this.setState({ isOpen: false })}
+                />
                 <section className="breadcrumb-area about-breadcrumb">
                     <div className="breadcrumb-wrap">
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-8">
                                     <div className="breadcrumb-content">
-                                        <h2 className="breadcrumb__title mb-0">Dirto connects people <br /> with great
-                                            local <br /> businesses</h2>
+                                        <h2 className="breadcrumb__title mb-0">
+                                            Dirto connects people <br /> with
+                                            great local <br /> businesses
+                                        </h2>
                                     </div>
                                 </div>
                                 <div className="col-lg-4 text-right">
@@ -32,7 +39,9 @@ class Banner5 extends Component {
                                         <Link
                                             className="mfp-iframe video-popup-btn"
                                             onClick={this.openModal}
-                                           to="#" title="Play Video">
+                                            to="#"
+                                            title="Play Video"
+                                        >
                                             Play
                                         </Link>
                                     </div>
@@ -47,8 +56,8 @@ class Banner5 extends Component {
                     </div>
                 </section>
             </>
-        );
+        )
     }
 }
 
-export default Banner5;
+export default Banner5
