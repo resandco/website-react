@@ -17,9 +17,8 @@ class FooterQuickLinkWidget extends Component {
                 text: 'Devenir partenaire',
             },
             {
-                path:
-                    'https://www.res-and-co.fr/conditions-generales-dutilisation/',
-                text: "Conditions d'utilisation",
+                path: 'https://www.res-and-co.fr/cgu/',
+                text: 'CGU',
             },
         ],
     }
