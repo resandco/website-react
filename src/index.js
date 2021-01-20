@@ -8,6 +8,8 @@ import ScrollToTop from './components/common/ScrollToTop';
 
 ReactDOM.render(
     <Router>
+        {/* ScrollToTop : component that will scroll the window up on every navigation
+          See the react-router docs : https://reactrouter.com/web/guides/scroll-restoration */}
         <ScrollToTop />
         <App />
     </Router>,
