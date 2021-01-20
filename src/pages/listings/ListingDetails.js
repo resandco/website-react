@@ -89,7 +89,9 @@ function ListingDetails() {
                                 </div>
 
                                 <div className="feature-listing padding-top-40px padding-bottom-35px">
-                                    <h2 className="widget-title">Allergènes</h2>
+                                    <h2 className="widget-title">
+                                        Ingrédients allergènes
+                                    </h2>
                                     <div className="title-shape"></div>
                                     <ul className="list-items mt-4">
                                         {restaurant.allergenes !== undefined &&
