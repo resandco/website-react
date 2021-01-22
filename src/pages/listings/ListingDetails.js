@@ -16,9 +16,36 @@ import ScrollTopBtn from '../../components/common/ScrollTopBtn'
 
 import restaurants from '../../restaurants'
 
+// practical information icons
+import airCond from './../../assets/images/icon/air-conditioner.png'
+import disabled from './../../assets/images/icon/disabled.png'
+import ecoFriendly from './../../assets/images/icon/eco-friendly.png'
+import glutenFree from './../../assets/images/icon/gluten-free.png'
+import milk from './../../assets/images/icon/milk-bottle.png'
+import pawprint from './../../assets/images/icon/pawprint.png'
+import terrace from './../../assets/images/icon/terrace.png'
+import vegan from './../../assets/images/icon/vegan.png'
+import vegetables from './../../assets/images/icon/vegetables.png'
+import wifi from './../../assets/images/icon/wifi.png'
+
 function ListingDetails() {
     let { placeId } = useParams()
     const restaurant = restaurants[placeId]
+
+    const displayInfoIcon = (info) => {
+        if (info.includes('Accès handicapé')) return disabled
+        if (info.includes('Animaux acceptés')) return pawprint
+        if (info.includes('Climatisé')) return airCond
+        if (info.includes('Kids friendly')) return milk
+        if (info.includes('Option sans gluten')) return glutenFree
+        if (info.includes('Option végane') || info.includes('100% vegan'))
+            return vegan
+        if (info.includes('Option végétarienne')) return vegetables
+        if (info.includes('Produits bio')) return ecoFriendly
+        if (info.includes('Terrasse')) return terrace
+        if (info.includes('Wifi')) return wifi
+        else return false
+    }
 
     return (
         <main className="listing-details">
@@ -73,13 +100,29 @@ function ListingDetails() {
                                     </h2>
                                     <div className="title-shape"></div>
                                     <ul className="list-items mt-4">
-                                        {(restaurant.infos || []).map(
+                                        {(restaurant.infos.sort() || []).map(
                                             (info, i) => {
                                                 return (
                                                     <li key={i}>
-                                                        <i className="color-text font-size-18">
-                                                            <FaCheckCircle />
-                                                        </i>{' '}
+                                                        {displayInfoIcon(
+                                                            info
+                                                        ) ? (
+                                                            <img
+                                                                src={displayInfoIcon(
+                                                                    info
+                                                                )}
+                                                                alt={info}
+                                                                height="22"
+                                                                style={{
+                                                                    paddingRight:
+                                                                        '10px',
+                                                                }}
+                                                            />
+                                                        ) : (
+                                                            <i className="color-text font-size-18">
+                                                                <FaCheckCircle />
+                                                            </i>
+                                                        )}
                                                         {info}
                                                     </li>
                                                 )
