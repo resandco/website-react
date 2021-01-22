@@ -444,8 +444,8 @@ Carmen a toujours été très attentive à l’anti-gaspi. D'ailleurs, c'est men
             'Animaux acceptés',
             '100% vegan',
             'Option sans gluten',
-            'Bio',
-            'Accessibilité handicapé',
+            'Produits bio',
+            'Accès handicapé',
             'Terrasse',
             'Kids friendly',
         ],
@@ -511,7 +511,7 @@ Le comptoir 43 - Bio Ô Top était déjà engagé au niveau anti-gaspi. Cependan
             'Climatisé',
             'Option végétarienne',
             'Option végane',
-            'Bio',
+            'Produits bio',
             'Option sans gluten',
             'Terrasse',
             'Wifi',
@@ -679,7 +679,7 @@ Les jus frais sont leur spécialité, mais leur conservation est de courte duré
             'Animaux acceptés',
             'Climatisé',
             'Compost',
-            'Bio',
+            'Produits bio',
             'Option sans gluten',
             'Option végane',
             'Option végétarienne',
@@ -832,7 +832,7 @@ Chez Yuman, faites la rencontre de Gilles, Malo et Julie. Une équipe soudée, a
 
 Les recettes sont préparées à partir d’ingrédients ultra frais, 100% bio et de saison. La plupart des fruits et légumes sont cultivés en France et si possible, à moins de 200 km de Paris, par des agriculteurs raisonnés. Chaque jeudi, Yuman s’est lancé le défi ambitieux de changer sa carte afin de s’adapter aux saisons, et proposer un renouvellement continuel des saveurs. Lors de ce changement, certains produits à disposition ne seront donc plus utilisés dans les menus de la semaine. C’est donc à ce moment-là que les menus surprises anti-gaspi prennent tout leur sens. En mangeant chez Yuman, vous faites honneur aux ingrédients rescapés du menu de la semaine précédente !        `,
 
-        infos: ['Accès handicapé', 'Bio', 'Wifi', 'Climatisé'],
+        infos: ['Accès handicapé', 'Produits bio', 'Wifi', 'Climatisé'],
     },
     'bmk-paris-bamako': {
         badge: "jusqu'à -46%",
@@ -1002,9 +1002,9 @@ Le personnel met son enthousiasme et son savoir-faire à votre disposition et vo
 
 `,
         infos: [
-            'Accessibilité handicapées',
+            'Accès handicapé',
             'Option végétarienne',
-            'Accepte les animaux',
+            'Animaux acceptés',
             'Climatisé',
             'Terrasse',
             'Wifi',
