@@ -896,8 +896,8 @@ C'est donc le dimanche soir, que BMK a choisit d'ouvrir des créneaux de réserv
             'Fruits à coque',
         ],
     },
-    'nos-grands-meres-ont-du-talent': {
-        badge: 'fermé pendant le confinement' /*'jusqu\'à -32%',*/,
+    /*'nos-grands-meres-ont-du-talent': {
+        badge: 'fermé pendant le confinement',
         title: 'Nos Grands-Mères ont du Talent',
         verifie: true,
         stitle: '43 Rue des Petits Carreaux',
@@ -916,10 +916,10 @@ C'est donc le dimanche soir, que BMK a choisit d'ouvrir des créneaux de réserv
         ],
         tags: ['Français', 'Restauration Rapide'],
         creneaux: {
-            /*'mardi midi': ['13h45', '14h', '14h30', '15h'],
+            'mardi midi': ['13h45', '14h', '14h30', '15h'],
             'mercredi midi': ['13h45', '14h', '14h30', '15h'],
             'jeudi midi': ['13h45', '14h', '14h30', '15h'],
-            'vendredi midi': ['13h45', '14h', '14h30', '15h'],*/
+            'vendredi midi': ['13h45', '14h', '14h30', '15h'],
         },
         menus: [
             {
@@ -953,7 +953,7 @@ Engagés dans une démarche éco-responsable, Arthur et Jean ont tout de suite d
             'Moutarde',
             'Anhydride sulfureux et sulfites',
         ],
-    },
+    },*/
     'cafe-cote-rive': {
         badge: "jusqu'à -51%",
         title: 'Café Côté Rive',
@@ -1458,7 +1458,7 @@ Plus d'informations sur www.chokdeecafe.com
           
         ]
     },*/
-    'saveurs-du-monde': {
+    /*'saveurs-du-monde': {
         title: 'Saveurs du monde',
         badge: 'En livraison ou à emporter',
         stitle: '55 rue de la charité',
@@ -1527,7 +1527,7 @@ Le service sera assuré uniquement à emporter ou en livraison (+3€).
             'Soja',
             'Lait',
             'Graines de sésame',
-        ],
+        ],*/
     },
     /*'mr-burritos': {
         title: 'Mr Burritos',
