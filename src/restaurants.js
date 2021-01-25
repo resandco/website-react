@@ -741,7 +741,8 @@ Les jus frais sont leur spécialité, mais leur conservation est de courte duré
         description: `
 ### L’ambiance
 
-Que vous soyez fan, amateur ou que vous souhaitiez simplement découvrir la délicieuse cuisine Thaï-Lao, le Seunsep est l’adresse qu’il vous faut. Une cuisine traditionnelle avec des produits de qualité, le tout préparé sur place par des chefs passionnés ce qui assure des plats uniques qui sauront régaler vos papilles. Une fois en bouche, c’est l’explosion de saveurs qui vous fera voyager instantanément dans les contrées lointaines de la Thaïlande ou du Laos; mais pas que!
+Que vous soyez fan, amateur ou que vous souhaitiez simplement découvrir la délicieuse cuisine Thaï-Lao, le Seunsep est l’adresse qu’il vous faut. Une cuisine traditionnelle avec des produits de qualité, le tout préparé sur place par des chefs passionnés ce qui assure des plats uniques qui sauront régaler vos papilles. Une fois en bouche, c’est l’explosion de 
+qui vous fera voyager instantanément dans les contrées lointaines de la Thaïlande ou du Laos; mais pas que!
 Sur place il y en a pour tous les goûts, que vous soyez plus terre ou plus mer : bo bun, poulet curry, nems, nouilles sautées etc…
 Par ailleurs le cadre est lumineux, apaisant et moderne tout en rappelant les racines de sa cuisine traditionnelle grâce aux différents tableaux aux murs. Le restaurant se dispose de 3 étages, refaites à neuf. Tout est fait pour que vous vous y sentez bien, et que le temps d’un instant, vous puissiez vous évader de la routine parisienne sous ce fameux toit du passage Choiseul. 
 Alors, convaincu ? Il ne reste plus qu’à vous y rendre et de déguster la délicieuse cuisine des chefs !
@@ -1527,8 +1528,8 @@ Le service sera assuré uniquement à emporter ou en livraison (+3€).
             'Soja',
             'Lait',
             'Graines de sésame',
-        ],*/
-    },
+        ],
+    },*/
     /*'mr-burritos': {
         title: 'Mr Burritos',
         badge: 'Offre spéciale confinement',
