@@ -741,7 +741,8 @@ Les jus frais sont leur spécialité, mais leur conservation est de courte duré
         description: `
 ### L’ambiance
 
-Que vous soyez fan, amateur ou que vous souhaitiez simplement découvrir la délicieuse cuisine Thaï-Lao, le Seunsep est l’adresse qu’il vous faut. Une cuisine traditionnelle avec des produits de qualité, le tout préparé sur place par des chefs passionnés ce qui assure des plats uniques qui sauront régaler vos papilles. Une fois en bouche, c’est l’explosion de saveurs qui vous fera voyager instantanément dans les contrées lointaines de la Thaïlande ou du Laos; mais pas que!
+Que vous soyez fan, amateur ou que vous souhaitiez simplement découvrir la délicieuse cuisine Thaï-Lao, le Seunsep est l’adresse qu’il vous faut. Une cuisine traditionnelle avec des produits de qualité, le tout préparé sur place par des chefs passionnés ce qui assure des plats uniques qui sauront régaler vos papilles. Une fois en bouche, c’est l’explosion de 
+qui vous fera voyager instantanément dans les contrées lointaines de la Thaïlande ou du Laos; mais pas que!
 Sur place il y en a pour tous les goûts, que vous soyez plus terre ou plus mer : bo bun, poulet curry, nems, nouilles sautées etc…
 Par ailleurs le cadre est lumineux, apaisant et moderne tout en rappelant les racines de sa cuisine traditionnelle grâce aux différents tableaux aux murs. Le restaurant se dispose de 3 étages, refaites à neuf. Tout est fait pour que vous vous y sentez bien, et que le temps d’un instant, vous puissiez vous évader de la routine parisienne sous ce fameux toit du passage Choiseul. 
 Alors, convaincu ? Il ne reste plus qu’à vous y rendre et de déguster la délicieuse cuisine des chefs !
@@ -896,8 +897,8 @@ C'est donc le dimanche soir, que BMK a choisit d'ouvrir des créneaux de réserv
             'Fruits à coque',
         ],
     },
-    'nos-grands-meres-ont-du-talent': {
-        badge: 'fermé pendant le confinement' /*'jusqu\'à -32%',*/,
+    /*'nos-grands-meres-ont-du-talent': {
+        badge: 'fermé pendant le confinement',
         title: 'Nos Grands-Mères ont du Talent',
         verifie: true,
         stitle: '43 Rue des Petits Carreaux',
@@ -916,10 +917,10 @@ C'est donc le dimanche soir, que BMK a choisit d'ouvrir des créneaux de réserv
         ],
         tags: ['Français', 'Restauration Rapide'],
         creneaux: {
-            /*'mardi midi': ['13h45', '14h', '14h30', '15h'],
+            'mardi midi': ['13h45', '14h', '14h30', '15h'],
             'mercredi midi': ['13h45', '14h', '14h30', '15h'],
             'jeudi midi': ['13h45', '14h', '14h30', '15h'],
-            'vendredi midi': ['13h45', '14h', '14h30', '15h'],*/
+            'vendredi midi': ['13h45', '14h', '14h30', '15h'],
         },
         menus: [
             {
@@ -953,7 +954,7 @@ Engagés dans une démarche éco-responsable, Arthur et Jean ont tout de suite d
             'Moutarde',
             'Anhydride sulfureux et sulfites',
         ],
-    },
+    },*/
     'cafe-cote-rive': {
         badge: "jusqu'à -51%",
         title: 'Café Côté Rive',
@@ -1458,7 +1459,7 @@ Plus d'informations sur www.chokdeecafe.com
           
         ]
     },*/
-    'saveurs-du-monde': {
+    /*'saveurs-du-monde': {
         title: 'Saveurs du monde',
         badge: 'En livraison ou à emporter',
         stitle: '55 rue de la charité',
@@ -1528,7 +1529,7 @@ Le service sera assuré uniquement à emporter ou en livraison (+3€).
             'Lait',
             'Graines de sésame',
         ],
-    },
+    },*/
     /*'mr-burritos': {
         title: 'Mr Burritos',
         badge: 'Offre spéciale confinement',
