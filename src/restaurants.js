@@ -2055,6 +2055,57 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
             infos: [
         ]
    },*/
+   'papilles-nomades': {
+        badge: 'en livraison',
+        title: 'Papilles Nomades',
+        stitle: '22 rue du Dauphiné',
+        scity: 'Lyon 3e',
+        szip: '69003',
+        coordinates: { lat: 45.75157393184017 , lng: 4.865144438623499 },
+        image: "https://ik.imagekit.io/resandco/papilles-nomades/7E786579-15BE-4BDB-885E-5D9068BE6544_1_105_c_VDEgbVmYvm.jpeg",
+        gallerie: [
+            "https://ik.imagekit.io/resandco/papilles-nomades/B138B867-A0F3-4451-A458-D1E0EB43D646_1_105_c_o0Jm6GRDMz.jpeg",
+            "https://ik.imagekit.io/resandco/papilles-nomades/7AB59952-5265-4A1C-A96F-1291E840BDC7_1_105_c_xKktU3t4a.jpeg",
+            "https://ik.imagekit.io/resandco/papilles-nomades/D4A40AFB-E2BC-4FA0-AD73-FBD9EE9BFDA2_1_105_c_UypxdFRuJN.jpeg",
+            "https://ik.imagekit.io/resandco/papilles-nomades/099562C6-69F1-40C4-A437-BF5D4DDF22FD_1_105_c_y3atOurPh7WTU.jpeg",
+            "https://ik.imagekit.io/resandco/papilles-nomades/833632C0-8472-421E-B84A-A4D3A29D303A_1_105_c_kl0thOjTpeHhl.jpeg",
+            "https://ik.imagekit.io/resandco/papilles-nomades/4453EED1-7FB0-4D45-9CF4-E0985D967305_1_105_c_XCLUZEffYs70.jpeg",
+        ],
+        tags: ['Végétarien', 'Zéro déchet', 'Traiteur', 'Fait-maison', 'Engagé'],
+        creneaux: {
+            'mardi midi': ['12h', '12h30', '13h', '13h30', '13h45'],
+            'mardi soir': ['16h', '16h30', '17h', '17h30', '17h45'],
+            'jeudi midi': ['12h', '12h30', '13h', '13h30', '13h45'],
+            'jeudi soir': ['16h', '16h30', '17h', '17h30', '17h45'],
+            'vendredi midi': ['12h', '12h30', '13h', '13h30', '13h45'],
+            'vendredi soir': ['16h', '16h30', '17h', '17h30', '17h45'],
+        },
+        menus: [
+            {
+                menu: "entrée + plat ou plat + dessert - végétarien",
+                prix: 12
+            },
+            {
+                menu: "entrée + plat + dessert - végétarien",
+                prix: 15
+            },
+        ],
+        description: `
+### La cuisine
+
+Un voyage culinaire, des produits de saison et des plats savoureux de l'entrée au dessert. Voilà autant d'adjectifs qui décrivent la cuisine d'Amandine, qui est à l'origine de Papilles Nomades, traiteur flexitarien à Lyon 3. Ces menus sont disponibles en vente à emporter, ou en livraison (+3€).
+Chez Papilles Nomades, c'est Amandine qui est aux fourneaux ! Passionnée de voyages et de cuisine, elle est passée maître dans l'art du mélange de cultures culinaires. Amandine innove constamment ses plats en fonction des fruits et légumes disponibles chez les primeurs du coin. Elle vous fera découvrir de nouvelles saveurs, inspirées de ses voyages.  
+
+Attention, toutes les commandes doivent être commandées minimum 3h avant l'heure de retrait.
+
+### Et l'anti-gaspi alors ?
+
+Concernant l'anti-gaspi, Amandine travaille principalement avec des producteurs locaux, soucieux d'une agriculture raisonnée. Dans la lignée de sa cuisine responsable, elle privilégie aussi les contenants réutilisables et recyclables pour le bien de notre petite planète. Elle propose notamment des contenants consignés, et des furoshikis pour des emballages zéro déchet.
+            `,
+          infos: ['Option végétarienne', 'Vente à emporter', 'livraison', 'Option végane', 'Option sans gluten', 'Produits locaux'],
+          allergenes: ['Céréales contenant du gluten', 'Oeufs', 'Arachides', 'Soja', 'Lait', 'Fruits à coque', 'Céleri', 'Moutarde', 'Graines de sésame', 'Anhydride sulfureux et sulfites'],
+        ]
+   },
 }
 
 Object.keys(restaurants).forEach(
