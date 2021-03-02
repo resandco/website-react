@@ -2101,10 +2101,9 @@ Attention, toutes les commandes doivent être commandées minimum 3h avant l'heu
 ### Et l'anti-gaspi alors ?
 
 Concernant l'anti-gaspi, Amandine travaille principalement avec des producteurs locaux, soucieux d'une agriculture raisonnée. Dans la lignée de sa cuisine responsable, elle privilégie aussi les contenants réutilisables et recyclables pour le bien de notre petite planète. Elle propose notamment des contenants consignés, et des furoshikis pour des emballages zéro déchet.
-            `,
-          infos: ['Option végétarienne', 'Vente à emporter', 'livraison', 'Option végane', 'Option sans gluten', 'Produits locaux'],
-          allergenes: ['Céréales contenant du gluten', 'Oeufs', 'Arachides', 'Soja', 'Lait', 'Fruits à coque', 'Céleri', 'Moutarde', 'Graines de sésame', 'Anhydride sulfureux et sulfites'],
-        ]
+       `,
+       infos: ['Option végétarienne', 'Vente à emporter', 'livraison', 'Option végane', 'Option sans gluten', 'Produits locaux'],
+       allergenes: ['Céréales contenant du gluten', 'Oeufs', 'Arachides', 'Soja', 'Lait', 'Fruits à coque', 'Céleri', 'Moutarde', 'Graines de sésame', 'Anhydride sulfureux et sulfites'],
    },
 }
 
