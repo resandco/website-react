@@ -98,7 +98,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
                 '18h',
                 '18h30',
                 '19h',
-                '19h30',
+                /*'19h30',
                 '20h',
                 '20h30',
                 '21h',
@@ -106,7 +106,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
                 '22h',
                 '22h30',
                 '23h',
-                '23h30',
+                '23h30',*/
             ],
             'mardi midi': [
                 '12h',
@@ -126,7 +126,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
                 '18h',
                 '18h30',
                 '19h',
-                '19h30',
+                /*'19h30',
                 '20h',
                 '20h30',
                 '21h',
@@ -134,7 +134,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
                 '22h',
                 '22h30',
                 '23h',
-                '23h30',
+                '23h30',*/
             ],
             'mercredi midi': [
                 '12h',
@@ -154,7 +154,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
                 '18h',
                 '18h30',
                 '19h',
-                '19h30',
+                /*'19h30',
                 '20h',
                 '20h30',
                 '21h',
@@ -162,7 +162,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
                 '22h',
                 '22h30',
                 '23h',
-                '23h30',
+                '23h30',*/
             ],
             'jeudi midi': [
                 '12h',
@@ -182,7 +182,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
                 '18h',
                 '18h30',
                 '19h',
-                '19h30',
+               /* '19h30',
                 '20h',
                 '20h30',
                 '21h',
@@ -190,7 +190,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
                 '22h',
                 '22h30',
                 '23h',
-                '23h30',
+                '23h30',*/
             ],
             'vendredi midi': [
                 '12h',
@@ -210,7 +210,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
                 '18h',
                 '18h30',
                 '19h',
-                '19h30',
+               /* '19h30',
                 '20h',
                 '20h30',
                 '21h',
@@ -218,7 +218,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
                 '22h',
                 '22h30',
                 '23h',
-                '23h30',
+                '23h30',*/
             ],
             'samedi midi': [
                 '12h',
@@ -238,7 +238,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
                 '18h',
                 '18h30',
                 '19h',
-                '19h30',
+              /*  '19h30',
                 '20h',
                 '20h30',
                 '21h',
@@ -246,7 +246,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
                 '22h',
                 '22h30',
                 '23h',
-                '23h30',
+                '23h30',*/
             ],
             'dimanche midi': [
                 '12h',
@@ -266,7 +266,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
                 '18h',
                 '18h30',
                 '19h',
-                '19h30',
+               /* '19h30',
                 '20h',
                 '20h30',
                 '21h',
@@ -274,7 +274,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
                 '22h',
                 '22h30',
                 '23h',
-                '23h30',
+                '23h30',*/
             ],
         },
         menus: [
@@ -853,11 +853,11 @@ Les recettes sont préparées à partir d’ingrédients ultra frais, 100% bio e
         ],
         tags: ['Africain', 'Epicerie'],
         creneaux: {
-            'mardi soir': ['20h30', '21h', '21h30' /*'22h', '22h30'*/],
-            'mercredi soir': ['20h30', '21h', '21h30' /*'22h', '22h30'*/],
-            'jeudi soir': ['20h30', '21h', '21h30' /*'22h', '22h30'*/],
-            'vendredi soir': ['20h30', '21h', '21h30' /*'22h', '22h30'*/],
-            'samedi soir': ['20h30', '21h', '21h30' /*'22h', '22h30'*/],
+           /* 'mardi soir': ['20h30', '21h', '21h30' '22h', '22h30'],
+            'mercredi soir': ['20h30', '21h', '21h30' '22h', '22h30'],
+            'jeudi soir': ['20h30', '21h', '21h30' '22h', '22h30'],
+            'vendredi soir': ['20h30', '21h', '21h30' '22h', '22h30'],
+            'samedi soir': ['20h30', '21h', '21h30' '22h', '22h30'], */
         },
         menus: [
             {
@@ -975,10 +975,10 @@ Engagés dans une démarche éco-responsable, Arthur et Jean ont tout de suite d
         creneaux: {
             'samedi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30'],
             'samedi soir': [
-                '19h',
-                '19h30',
+                '19h'
+               /*, '19h30',
                 '20h',
-                '20h30' /*'21h', '21h30', '22h', '22h30'*/,
+                '20h30' '21h', '21h30', '22h', '22h30'*/,
             ],
         },
         menus: [
@@ -1105,9 +1105,9 @@ Tiki Bowls est fermé le week-end. Les pertes alimentaires sont donc essentielle
         ],
         tags: ['Hawaïen', 'Poké'],
         creneaux: {
-            'lundi soir': ['18h', '18h30', '19h', '19h30'],
-            'mardi soir': ['18h', '18h30', '19h', '19h30'],
-            'mercredi soir': ['18h', '18h30', '19h', '19h30'],
+            'lundi soir': ['18h', '18h30', '19h' /*, '19h30'*/],
+            'mardi soir': ['18h', '18h30', '19h' /*, '19h30'*/],
+            'mercredi soir': ['18h', '18h30', '19h' /*, '19h30'*/],
         },
         menus: [
             {
@@ -1600,77 +1600,77 @@ Le service sera assuré uniquement à emporter.
             'lundi soir': [
                 '18h30',
                 '19h',
-                '19h30',
+                /*'19h30',
                 '20h',
                 '20h30',
                 '21h',
                 '21h30',
-                '22h',
+                '22h',*/
             ],
             'mardi midi': ['12h30', '13h', '13h30', '14h', '14h30'],
             'mardi soir': [
                 '18h30',
                 '19h',
-                '19h30',
+               /* '19h30',
                 '20h',
                 '20h30',
                 '21h',
                 '21h30',
-                '22h',
+                '22h',*/
             ],
             'mercredi midi': ['12h30', '13h', '13h30', '14h', '14h30'],
             'mercredi soir': [
                 '18h30',
                 '19h',
-                '19h30',
+               /* '19h30',
                 '20h',
                 '20h30',
                 '21h',
                 '21h30',
-                '22h',
+                '22h',*/
             ],
             'jeudi midi': ['12h30', '13h', '13h30', '14h', '14h30'],
             'jeudi soir': [
                 '18h30',
                 '19h',
-                '19h30',
+                /*'19h30',
                 '20h',
                 '20h30',
                 '21h',
                 '21h30',
-                '22h',
+                '22h',*/
             ],
             'vendredi midi': ['12h30', '13h', '13h30', '14h', '14h30'],
             'vendredi soir': [
                 '18h30',
                 '19h',
-                '19h30',
+                /*'19h30',
                 '20h',
                 '20h30',
                 '21h',
                 '21h30',
-                '22h',
+                '22h',*/
             ],
             'samedi midi': ['12h30', '13h', '13h30', '14h', '14h30'],
             'samedi soir': [
                 '18h30',
                 '19h',
-                '19h30',
+              /*  '19h30',
                 '20h',
                 '20h30',
                 '21h',
                 '21h30',
-                '22h',
+                '22h', */
             ],
             'dimanche soir': [
                 '18h30',
                 '19h',
-                '19h30',
+               /* '19h30',
                 '20h',
                 '20h30',
                 '21h',
                 '21h30',
-                '22h',
+                '22h',*/
             ],
         },
         menus: [
