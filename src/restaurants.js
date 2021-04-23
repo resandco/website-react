@@ -2108,7 +2108,13 @@ Attention, toutes les commandes doivent être commandées minimum 3h avant l'heu
 ### Et l'anti-gaspi alors ?
 
 Concernant l'anti-gaspi, Amandine travaille principalement avec des producteurs locaux, soucieux d'une agriculture raisonnée. Dans la lignée de sa cuisine responsable, elle privilégie aussi les contenants réutilisables et recyclables pour le bien de notre petite planète. Elle propose notamment des contenants consignés, et des furoshikis pour des emballages zéro déchet.
-       `,
+    
+Attention, aux détails suivants :
+
+• L'intégralité du Menu Surprise est livré froid, certains plats seront à faire réchauffer à la poêle ou au micro-onde.
+
+• Livraison et retrait click-and-collect sans couverts pour des raisons écologiques.
+`,
         infos: [
             'Option végétarienne',
             'Vente à emporter',
@@ -2130,7 +2136,8 @@ Concernant l'anti-gaspi, Amandine travaille principalement avec des producteurs 
             'Anhydride sulfureux et sulfites',
         ],
     },
-    'FENOTTE - Traiteur Militant': {
+    'fenotte-traiteur-militant': {
+
         title: 'FENOTTE - Traiteur Militant',
         badge: "jusqu'à -25%",
         stitle: '32 quai Arloing',
