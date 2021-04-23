@@ -182,7 +182,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
                 '18h',
                 '18h30',
                 '19h',
-               /* '19h30',
+                /* '19h30',
                 '20h',
                 '20h30',
                 '21h',
@@ -210,7 +210,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
                 '18h',
                 '18h30',
                 '19h',
-               /* '19h30',
+                /* '19h30',
                 '20h',
                 '20h30',
                 '21h',
@@ -238,7 +238,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
                 '18h',
                 '18h30',
                 '19h',
-              /*  '19h30',
+                /*  '19h30',
                 '20h',
                 '20h30',
                 '21h',
@@ -266,7 +266,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
                 '18h',
                 '18h30',
                 '19h',
-               /* '19h30',
+                /* '19h30',
                 '20h',
                 '20h30',
                 '21h',
@@ -853,7 +853,7 @@ Les recettes sont préparées à partir d’ingrédients ultra frais, 100% bio e
         ],
         tags: ['Africain', 'Epicerie'],
         creneaux: {
-           /* 'mardi soir': ['20h30', '21h', '21h30' '22h', '22h30'],
+            /* 'mardi soir': ['20h30', '21h', '21h30' '22h', '22h30'],
             'mercredi soir': ['20h30', '21h', '21h30' '22h', '22h30'],
             'jeudi soir': ['20h30', '21h', '21h30' '22h', '22h30'],
             'vendredi soir': ['20h30', '21h', '21h30' '22h', '22h30'],
@@ -975,10 +975,10 @@ Engagés dans une démarche éco-responsable, Arthur et Jean ont tout de suite d
         creneaux: {
             'samedi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30'],
             'samedi soir': [
-                '19h'
-               /*, '19h30',
+                '19h',
+                /*, '19h30',
                 '20h',
-                '20h30' '21h', '21h30', '22h', '22h30'*/,
+                '20h30' '21h', '21h30', '22h', '22h30'*/
             ],
         },
         menus: [
@@ -1611,7 +1611,7 @@ Le service sera assuré uniquement à emporter.
             'mardi soir': [
                 '18h30',
                 '19h',
-               /* '19h30',
+                /* '19h30',
                 '20h',
                 '20h30',
                 '21h',
@@ -1622,7 +1622,7 @@ Le service sera assuré uniquement à emporter.
             'mercredi soir': [
                 '18h30',
                 '19h',
-               /* '19h30',
+                /* '19h30',
                 '20h',
                 '20h30',
                 '21h',
@@ -1655,7 +1655,7 @@ Le service sera assuré uniquement à emporter.
             'samedi soir': [
                 '18h30',
                 '19h',
-              /*  '19h30',
+                /*  '19h30',
                 '20h',
                 '20h30',
                 '21h',
@@ -1665,7 +1665,7 @@ Le service sera assuré uniquement à emporter.
             'dimanche soir': [
                 '18h30',
                 '19h',
-               /* '19h30',
+                /* '19h30',
                 '20h',
                 '20h30',
                 '21h',
@@ -2055,23 +2055,30 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
             infos: [
         ]
    },*/
-   'papilles-nomades': {
+    'papilles-nomades': {
         badge: 'en livraison',
         title: 'Papilles Nomades',
         stitle: '22 rue du Dauphiné',
         scity: 'Lyon 3e',
         szip: '69003',
-        coordinates: { lat: 45.75157393184017 , lng: 4.865144438623499 },
-        image: "https://ik.imagekit.io/resandco/papilles-nomades/7E786579-15BE-4BDB-885E-5D9068BE6544_1_105_c_VDEgbVmYvm.jpeg",
+        coordinates: { lat: 45.75157393184017, lng: 4.865144438623499 },
+        image:
+            'https://ik.imagekit.io/resandco/papilles-nomades/7E786579-15BE-4BDB-885E-5D9068BE6544_1_105_c_VDEgbVmYvm.jpeg',
         gallerie: [
-            "https://ik.imagekit.io/resandco/papilles-nomades/B138B867-A0F3-4451-A458-D1E0EB43D646_1_105_c_o0Jm6GRDMz.jpeg",
-            "https://ik.imagekit.io/resandco/papilles-nomades/7AB59952-5265-4A1C-A96F-1291E840BDC7_1_105_c_xKktU3t4a.jpeg",
-            "https://ik.imagekit.io/resandco/papilles-nomades/D4A40AFB-E2BC-4FA0-AD73-FBD9EE9BFDA2_1_105_c_UypxdFRuJN.jpeg",
-            "https://ik.imagekit.io/resandco/papilles-nomades/099562C6-69F1-40C4-A437-BF5D4DDF22FD_1_105_c_y3atOurPh7WTU.jpeg",
-            "https://ik.imagekit.io/resandco/papilles-nomades/833632C0-8472-421E-B84A-A4D3A29D303A_1_105_c_kl0thOjTpeHhl.jpeg",
-            "https://ik.imagekit.io/resandco/papilles-nomades/4453EED1-7FB0-4D45-9CF4-E0985D967305_1_105_c_XCLUZEffYs70.jpeg",
+            'https://ik.imagekit.io/resandco/papilles-nomades/B138B867-A0F3-4451-A458-D1E0EB43D646_1_105_c_o0Jm6GRDMz.jpeg',
+            'https://ik.imagekit.io/resandco/papilles-nomades/7AB59952-5265-4A1C-A96F-1291E840BDC7_1_105_c_xKktU3t4a.jpeg',
+            'https://ik.imagekit.io/resandco/papilles-nomades/D4A40AFB-E2BC-4FA0-AD73-FBD9EE9BFDA2_1_105_c_UypxdFRuJN.jpeg',
+            'https://ik.imagekit.io/resandco/papilles-nomades/099562C6-69F1-40C4-A437-BF5D4DDF22FD_1_105_c_y3atOurPh7WTU.jpeg',
+            'https://ik.imagekit.io/resandco/papilles-nomades/833632C0-8472-421E-B84A-A4D3A29D303A_1_105_c_kl0thOjTpeHhl.jpeg',
+            'https://ik.imagekit.io/resandco/papilles-nomades/4453EED1-7FB0-4D45-9CF4-E0985D967305_1_105_c_XCLUZEffYs70.jpeg',
         ],
-        tags: ['Végétarien', 'Zéro déchet', 'Traiteur', 'Fait-maison', 'Engagé'],
+        tags: [
+            'Végétarien',
+            'Zéro déchet',
+            'Traiteur',
+            'Fait-maison',
+            'Engagé',
+        ],
         creneaux: {
             'mardi midi': ['12h', '12h30', '13h', '13h30', '13h45'],
             'mardi soir': ['16h', '16h30', '17h', '17h30', '17h45'],
@@ -2082,12 +2089,12 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
         },
         menus: [
             {
-                menu: "entrée + plat ou plat + dessert - végétarien",
-                prix: 12
+                menu: 'entrée + plat ou plat + dessert - végétarien',
+                prix: 12,
             },
             {
-                menu: "entrée + plat + dessert - végétarien",
-                prix: 15
+                menu: 'entrée + plat + dessert - végétarien',
+                prix: 15,
             },
         ],
         description: `
@@ -2102,9 +2109,124 @@ Attention, toutes les commandes doivent être commandées minimum 3h avant l'heu
 
 Concernant l'anti-gaspi, Amandine travaille principalement avec des producteurs locaux, soucieux d'une agriculture raisonnée. Dans la lignée de sa cuisine responsable, elle privilégie aussi les contenants réutilisables et recyclables pour le bien de notre petite planète. Elle propose notamment des contenants consignés, et des furoshikis pour des emballages zéro déchet.
        `,
-       infos: ['Option végétarienne', 'Vente à emporter', 'livraison', 'Option végane', 'Option sans gluten', 'Produits locaux'],
-       allergenes: ['Céréales contenant du gluten', 'Oeufs', 'Arachides', 'Soja', 'Lait', 'Fruits à coque', 'Céleri', 'Moutarde', 'Graines de sésame', 'Anhydride sulfureux et sulfites'],
-   },
+        infos: [
+            'Option végétarienne',
+            'Vente à emporter',
+            'livraison',
+            'Option végane',
+            'Option sans gluten',
+            'Produits locaux',
+        ],
+        allergenes: [
+            'Céréales contenant du gluten',
+            'Oeufs',
+            'Arachides',
+            'Soja',
+            'Lait',
+            'Fruits à coque',
+            'Céleri',
+            'Moutarde',
+            'Graines de sésame',
+            'Anhydride sulfureux et sulfites',
+        ],
+    },
+    'FENOTTE - Traiteur Militant': {
+        title: 'FENOTTE - Traiteur Militant',
+        badge: "jusqu'à -25%",
+        stitle: '32 quai Arloing',
+        scity: 'Lyon 9e',
+        szip: '69009',
+        coordinates: { lat: 45.7712, lng: 4.8116 },
+        image:
+            'https://ik.imagekit.io/pryqylpquhb/production/FENOTTE_BOUTIQUE_BD_14___Jonathan_Letoublon_WNYEqKw2tU.JPG',
+        gallerie: [
+            'https://ik.imagekit.io/pryqylpquhb/production/IMG-20210203-WA0037_centr_e_aF3SK6RuoC.jpg',
+            'https://ik.imagekit.io/pryqylpquhb/production/coffret_myijm0raSE.JPG',
+            'https://ik.imagekit.io/pryqylpquhb/production/FENOTTE_BOUTIQUE_BD_6___Jonathan_Letoublon_GP9FKluiI.JPG',
+            'https://ik.imagekit.io/pryqylpquhb/production/FENOTTE_BOUTIQUE_BD_7___Jonathan_Letoublon_qzgjRkk3tZF.JPG',
+            'https://ik.imagekit.io/pryqylpquhb/production/GO1A3198_c7OXTfN7D.JPG',
+        ],
+        tags: ['Français'],
+        creneaux: {
+            'lundi midi': ['13h', '13h30', '14h', '14h30'],
+            'vendredi midi': ['13h', '13h30', '14h', '14h30'],
+        },
+        menus: [
+            {
+                menu: 'Entrée + plat omnivore + dessert (omnivore)',
+                prix: 15,
+            },
+            {
+                menu: 'Entrée + plat + dessert (végétarien)',
+                prix: 15,
+            },
+            {
+                menu: 'Entrée + Plat ou Plat + Dessert (omnivore)',
+                prix: 12,
+            },
+            {
+                menu: 'Entrée + Plat ou Plat + Dessert (végétarien)',
+                prix: 12,
+            },
+            {
+                menu: 'Plat (omnivore)',
+                prix: 7.5,
+            },
+            {
+                menu: 'Plat (végétarien)',
+                prix: 7.5,
+            },
+        ],
+        description: `
+### L'ambiance
+
+"Délices sans déchet. Mangez bocal !"  
+
+L'intérieur tout de bois vêtu nous met vraiment dans une ambiance sobre et naturelle sans artifices qui correspond parfaitement aux valeurs de Fenotte. Une cuisine locale avec des produits respectueux de l'environnement. Vegan, végétarien, ou omnivore vous trouverez forcément votre bonheur dans la cuisine bistronomique de ce traiteur du 9ème arrondissement Lyonnais. 
+    
+### L'équipe 
+
+L'équipe de Fenotte est composée de 4 personnes, Livia, Romain, Caroline et Margaux. Tous n'ont pas eu le même parcours mais ils sont aujourd'hui tous réunis par la volonté de proposer une cuisine respectueuse de l'environnement et des producteurs locaux. 
+
+### Et l'anti-gaspi ?
+
+Si il y avait un roi de l'antigaspi et de l'économie circulaire, ce dernier se nommerai sans doutes Fenotte. 
+
+L'antigaspi est au centre de leur cuisine et l'intégralité des déchets organiques sont compostés grâce aux "Alchimistes", la première structure de compost sur Lyon. Une fois compostés, ces mêmes déchets reviennent à Fenotte et sont revendus aux clients dans la foulée pour les utilisés en jardinage. De plus à chaque bocal rendu vous gagnez un tampon. Ainsi tous les 10 tampons vous gagnez un bon d'achat de 10 euros !
+
+    `,
+        infos: [
+            'Végétarien',
+            'vegan',
+            'Option sans gluten',
+            'produits bio',
+            'produits locaux',
+            'commerce équitable',
+            'accessibilité handicapé',
+            'zéro déchet',
+            'climatisation',
+            'terrasse',
+            'wifi',
+            'compost',
+            'Wifi',
+        ],
+        allergenes: [
+            'Crustacés',
+            'Oeufs',
+            'Poissons',
+            'Arachides',
+            'Soja',
+            'Lait',
+            'Fruits à coque',
+            'Célerie',
+            'Moutarde',
+            'Graines de sésame',
+            'Anhydride sulfureux et sulfites',
+            'Lupin',
+            'Mollusques',
+            'Céréales contenant du gluten',
+        ],
+    },
 }
 
 Object.keys(restaurants).forEach(
