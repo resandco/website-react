@@ -2137,7 +2137,6 @@ Attention, aux détails suivants :
         ],
     },
     'fenotte-traiteur-militant': {
-
         title: 'FENOTTE - Traiteur Militant',
         badge: "jusqu'à -25%",
         stitle: '32 quai Arloing',
@@ -2189,18 +2188,17 @@ Attention, aux détails suivants :
 
 "Délices sans déchet. Mangez bocal !"  
 
-L'intérieur tout de bois vêtu nous met vraiment dans une ambiance sobre et naturelle sans artifices qui correspond parfaitement aux valeurs de Fenotte. Une cuisine locale avec des produits respectueux de l'environnement. Vegan, végétarien, ou omnivore vous trouverez forcément votre bonheur dans la cuisine bistronomique de ce traiteur du 9ème arrondissement Lyonnais. 
-    
+L'intérieur tout de bois vêtu nous met vraiment dans une ambiance sobre et naturelle sans artifices qui correspond parfaitement aux valeurs de Fenotte. Une cuisine locale avec des produits respectueux de l'environnement. Vegan, végétarien, ou omnivore vous trouverez forcément votre bonheur dans la cuisine bistronomique de ce traiteur du 9ème arrondissement Lyonnais.  
+
 ### L'équipe 
 
-L'équipe de Fenotte est composée de 4 personnes, Livia, Romain, Caroline et Margaux. Tous n'ont pas eu le même parcours mais ils sont aujourd'hui tous réunis par la volonté de proposer une cuisine respectueuse de l'environnement et des producteurs locaux. 
+L'équipe de Fenotte est composée de 4 personnes, Livia, Romain, Caroline et Margaux. Tous n'ont pas eu le même parcours mais ils sont aujourd'hui tous réunis par la volonté de proposer une cuisine respectueuse de l'environnement et des producteurs locaux.
 
 ### Et l'anti-gaspi ?
 
-Si il y avait un roi de l'antigaspi et de l'économie circulaire, ce dernier se nommerai sans doutes Fenotte. 
+S’il y avait un roi de l'antigaspi et de l'économie circulaire, ce dernier se nommerait sans doute Fenotte.
 
-L'antigaspi est au centre de leur cuisine et l'intégralité des déchets organiques sont compostés grâce aux "Alchimistes", la première structure de compost sur Lyon. Une fois compostés, ces mêmes déchets reviennent à Fenotte et sont revendus aux clients dans la foulée pour les utilisés en jardinage. De plus à chaque bocal rendu vous gagnez un tampon. Ainsi tous les 10 tampons vous gagnez un bon d'achat de 10 euros !
-
+L'antigaspi est au centre de leur cuisine et l'intégralité des déchets organiques est compostée grâce aux "Alchimistes", la première structure de compost sur Lyon. Pour boucler la boucle, les clients peuvent même acheter du compost à la boutique pour le jardinage. De plus à chaque bocal rendu vous gagnez un tampon. Ainsi tous les 10 tampons vous gagnez un bon d'achat de 10 euros !
     `,
         infos: [
             'Végétarien',
