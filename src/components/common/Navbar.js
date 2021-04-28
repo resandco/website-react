@@ -14,7 +14,7 @@ export default function Navbar() {
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/">Accueil</Link>
+                            <a href="https://www.res-and-co.fr/">Accueil</a>
                         </li>
                         <li>
                             <a href="/resto-jazz/">Resto Jazz</a>
@@ -54,7 +54,7 @@ export default function Navbar() {
                 <div className="side-menu-wrap">
                     <ul className="side-menu-ul">
                         <li>
-                            <Link to="/">Accueil</Link>
+                            <a href="https://www.res-and-co.fr/">Accueil</a>
                         </li>
                         <li>
                             <Link to="/restaurant-a-offrir/">Cadeau Noël</Link>
