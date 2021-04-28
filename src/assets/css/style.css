@@ -3067,7 +3067,7 @@ select,
     position: relative;
 }
 .main-menu-content nav ul li a {
-    color: #000;
+    color: hsla(0, 0%, 100%, 0.5);
     font-size: 15px;
     font-weight: 600;
     display: block;
@@ -3300,7 +3300,7 @@ select,
     left: 0;
     width: 100%;
     height: 0;
-    background-color: #fff;
+    background-color: #4b7169;
     z-index: -1;
 }
 
@@ -3666,6 +3666,7 @@ select,
     top: 0;
     width: 100%;
     z-index: 1010;
+    background-color: #4b7169;
 }
 @media (max-width: 1199px) {
     .header-area {
@@ -3683,7 +3684,7 @@ select,
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: #fff;
+    background-color: #4b7169;
     opacity: 0.1;
 }
 
@@ -3705,7 +3706,7 @@ select,
     header-area 3
  ====================================================*/
 .header-area3 .header-menu-wrapper {
-    background-color: #fff;
+    background-color: #4b7169;
 }
 @media (max-width: 1199px) {
     .header-area3 .header-menu-wrapper {
@@ -3747,7 +3748,7 @@ select,
 .booking-confirmation-page .header-area,
 .header-area4,
 .header-area5 {
-    background-color: #f7f7f7;
+    background-color: #4b7169;
 }
 .List-map-view2 .card-area .col-lg-8 .twocol > * {
     flex: 0 0 50%;
