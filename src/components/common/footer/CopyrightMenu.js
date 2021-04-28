@@ -8,6 +8,10 @@ class CopyrightMenu extends Component {
                 text: 'Mentions légales',
             },
             {
+                path: 'https://www.res-and-co.fr/CGU/',
+                text: 'CGU',
+            },
+            {
                 path: 'https://www.res-and-co.fr/politique-de-confidentialite/',
                 text: 'Politique de confidentialité',
             },

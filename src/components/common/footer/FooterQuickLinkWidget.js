@@ -5,20 +5,24 @@ class FooterQuickLinkWidget extends Component {
         title: 'Liens',
         links: [
             {
-                path: 'https://www.res-and-co.fr/faq/',
-                text: 'À propos',
+                path: 'https://www.res-and-co.fr/qui-sommes-nous/',
+                text: 'Qui sommes-nous ?',
+            },
+            {
+                path: 'https://www.res-and-co.fr/nos-partenaires/',
+                text: 'Nos partenaires',
+            },
+            {
+                path: 'https://www.res-and-co.fr/rejoignez-nous/',
+                text: 'Nous rejoindre',
             },
             {
                 path: 'https://www.res-and-co.fr/faq/',
                 text: 'FAQ',
             },
             {
-                path: 'https://resandco.typeform.com/to/xP5GlH',
-                text: 'Devenir partenaire',
-            },
-            {
-                path: 'https://www.res-and-co.fr/cgu/',
-                text: 'CGU',
+                path: 'https://www.res-and-co.fr/blog/',
+                text: 'Blog',
             },
         ],
     }
