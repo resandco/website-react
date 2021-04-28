@@ -1,3 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
+# As long as this site is hosted through a subdomain,
+# we don't want the subdomain to be indexed.
 User-agent: *
-Disallow:
+Disallow: /
