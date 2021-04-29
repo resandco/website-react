@@ -14,7 +14,7 @@ function App() {
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/reservation-restaurant/">
-                    <Redirect to="/reservation-restaurant/paris" />
+                    <Redirect to="/reservation-restaurant/france" />
                 </Route>
                 <Route
                     path="/reservation-restaurant/:region"

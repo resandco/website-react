@@ -5,6 +5,10 @@ import useSupercluster from 'use-supercluster'
 const Marker = ({ children }) => children
 
 const defaults = {
+    france: {
+        center: { lat: 46.2276, lng: 2.2137 },
+        zoom: 6,
+    },
     paris: {
         center: { lat: 48.853032, lng: 2.347713 },
         zoom: 12,
