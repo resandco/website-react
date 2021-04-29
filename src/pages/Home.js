@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 
 import GeneralHeader from '../components/common/GeneralHeader'
-import Banner4 from '../components/banner/banner4/Banner4'
+import Hero from '../components/Hero'
 import SectionsHeading from '../components/common/SectionsHeading'
 import IconBoxTwo from '../components/other/iconboxes/IconBoxTwo'
 import RecommendedPlace from '../components/places/RecommendedPlace'
@@ -61,8 +61,7 @@ class Home4 extends Component {
                 {/* Header */}
                 <GeneralHeader />
 
-                {/* Banner */}
-                <Banner4 />
+                <Hero />
 
                 {/* Recommended Place */}
                 <section className="card-area padding-top-100px padding-bottom-90px text-left">

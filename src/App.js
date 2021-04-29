@@ -1,10 +1,10 @@
 import React from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './assets/css/style.css'
 import './App.css'
 import Home from './pages/Home'
-import ListMapView2 from './pages/listings/ListMapView2'
+import ListingMapView from './pages/listings/ListingMapView'
 import ListingDetails from './pages/listings/ListingDetails'
 import Error from './pages/Error'
 
@@ -13,9 +13,12 @@ function App() {
         <Route>
             <Switch>
                 <Route exact path="/" component={Home} />
+                <Route exact path="/reservation-restaurant/">
+                    <Redirect to="/reservation-restaurant/paris" />
+                </Route>
                 <Route
-                    path="/reservation-restaurant"
-                    component={ListMapView2}
+                    path="/reservation-restaurant/:region"
+                    component={ListingMapView}
                 />
                 <Route path="/restaurant/:placeId" component={ListingDetails} />
                 <Route component={Error} />

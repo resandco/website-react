@@ -4,14 +4,25 @@ import useSupercluster from 'use-supercluster'
 
 const Marker = ({ children }) => children
 
+const defaults = {
+    paris: {
+        center: { lat: 48.853032, lng: 2.347713 },
+        zoom: 12,
+    },
+    lyon: {
+        center: { lat: 45.756892, lng: 4.854167 },
+        zoom: 13,
+    },
+}
+
 export default function MapViewCluster({
     restaurants,
     hoveredRestaurant,
     selectRestaurant,
+    region,
 }) {
-    // 1) map setup
     const mapRef = useRef()
-    const [zoom, setZoom] = useState(10)
+    const [zoom, setZoom] = useState(defaults[region].zoom)
     const [bounds, setBounds] = useState(null)
 
     // 2) load and format data
@@ -66,8 +77,8 @@ export default function MapViewCluster({
                         key:
                             'AIzaSyAYzby4yYDVaXPmtu4jZAGR258K6IYwjIY&libraries',
                     }}
-                    defaultCenter={{ lat: 48.853032, lng: 2.3477133 }}
-                    defaultZoom={12}
+                    defaultCenter={defaults[region].center}
+                    defaultZoom={defaults[region].zoom}
                     yesIWantToUseGoogleMapApiInternals={true}
                     onGoogleApiLoaded={({ map }) => {
                         mapRef.current = map

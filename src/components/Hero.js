@@ -1,9 +1,9 @@
 import React from 'react'
-import Banner4SearchInput from './Banner4SearchInput'
-import SectionsHeading from '../../common/SectionsHeading'
+import { Link } from 'react-router-dom'
+import SectionsHeading from './common/SectionsHeading'
 import { FiChevronDown } from 'react-icons/fi'
 
-function Banner4() {
+export default function Hero() {
     return (
         <>
             <section className="hero-wrapper hero-wrapper4">
@@ -18,7 +18,18 @@ function Banner4() {
                                     desc="Découvrir de nouvelles saveurs près de chez toi, à prix réduit et en préservant la planète, ça te tente ?"
                                 />
                             </div>
-                            <Banner4SearchInput />
+
+                            <div className="main-search-input">
+                                <div className="main-search-input-btn">
+                                    <Link
+                                        to="/reservation-restaurant"
+                                        className="button theme-btn"
+                                        type="submit"
+                                    >
+                                        Je commande un repas surprise
+                                    </Link>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -31,5 +42,3 @@ function Banner4() {
         </>
     )
 }
-
-export default Banner4

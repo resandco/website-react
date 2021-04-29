@@ -1,4 +1,5 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useMemo } from 'react'
+import { useParams } from 'react-router-dom'
 import Helmet from 'react-helmet'
 import Select from 'react-select'
 
@@ -12,85 +13,111 @@ import RecommendedPlace from '../../components/places/RecommendedPlace'
 import restaurants from '../../restaurants'
 
 const allRestaurants = Object.values(restaurants)
-const locationOptions = [
-    {
-        label: 'Tout voir',
-        value: null,
-    },
-    ...allRestaurants
-        .map(({ scity }) => {
-            return scity
-        })
-        .reduce((unique, scity) => {
-            if (!unique.includes(scity)) {
-                unique.push(scity)
-            }
 
-            return unique
-        }, [])
-        .sort((aRaw, bRaw) => {
-            // We want Paris to always come first and arrondissements properly sorted
-            const fixLocation = (loc) =>
-                loc.replace(/^Paris/i, '00Paris').replace(/ (\d[eè])/, ' 0$1')
-            const a = fixLocation(aRaw)
-            const b = fixLocation(bRaw)
+function filterByRegion(region) {
+    return ({ szip }) =>
+        region === 'paris'
+            ? /^(75|92|93|94)/.test(szip)
+            : region === 'lyon' && /^(69)/.test(szip)
+}
 
-            return a === b ? 0 : a < b ? -1 : 1
-        })
-        .map((value) => ({
-            value,
-            label: value,
-        })),
-]
-const timeslotOptions = [
-    {
-        label: 'Tout voir',
-        value: null,
-    },
-    ...allRestaurants
-        .map(({ creneaux }) => {
-            return Object.keys(creneaux)
-        })
-        .flat()
-        .reduce((unique, scity) => {
-            if (!unique.includes(scity)) {
-                unique.push(scity)
-            }
+function getLocationOptions(allRestaurants, region) {
+    return [
+        {
+            label: 'Tout voir',
+            value: null,
+        },
+        ...allRestaurants
+            // filter by region
+            .filter(filterByRegion(region))
+            // keep only the scity field
+            .map(({ scity }) => {
+                return scity
+            })
+            // unique filter
+            .reduce((unique, scity) => {
+                if (!unique.includes(scity)) {
+                    unique.push(scity)
+                }
 
-            return unique
-        }, [])
-        .sort((a, b) => {
-            const timeslotsOrder = {
-                'lundi matin': 0,
-                'lundi midi': 1,
-                'lundi soir': 2,
-                'mardi matin': 10,
-                'mardi midi': 11,
-                'mardi soir': 12,
-                'mercredi matin': 20,
-                'mercredi midi': 21,
-                'mercredi soir': 22,
-                'jeudi matin': 30,
-                'jeudi midi': 31,
-                'jeudi soir': 32,
-                'vendredi matin': 40,
-                'vendredi midi': 41,
-                'vendredi soir': 42,
-                'samedi matin': 50,
-                'samedi midi': 51,
-                'samedi soir': 52,
-                'dimanche matin': 60,
-                'dimanche midi': 61,
-                'dimanche soir': 62,
-            }
+                return unique
+            }, [])
+            // We want Paris and Lyon to always come first and arrondissements properly sorted
+            .sort((aRaw, bRaw) => {
+                const fixLocation = (loc) =>
+                    loc
+                        .replace(/^Paris/i, '00Paris')
+                        .replace(/^Lyon/i, '00Lyon')
+                        .replace(/ (\d[eè])/, ' 0$1')
+                const a = fixLocation(aRaw)
+                const b = fixLocation(bRaw)
 
-            return timeslotsOrder[a] - timeslotsOrder[b]
-        })
-        .map((value) => ({
-            value,
-            label: value,
-        })),
-]
+                return a === b ? 0 : a < b ? -1 : 1
+            })
+            .map((value) => ({
+                value,
+                label: value,
+            })),
+        {
+            label: region === 'paris' ? 'Lyon' : 'Paris',
+            value: 'switchRegion',
+        },
+    ]
+}
+
+function getTimeslotOptions(allRestaurants, region) {
+    return [
+        {
+            label: 'Tout voir',
+            value: null,
+        },
+        ...allRestaurants
+            // filter by region
+            .filter(filterByRegion(region))
+            .map(({ creneaux }) => {
+                return Object.keys(creneaux)
+            })
+            .flat()
+            .reduce((unique, scity) => {
+                if (!unique.includes(scity)) {
+                    unique.push(scity)
+                }
+
+                return unique
+            }, [])
+            .sort((a, b) => {
+                const timeslotsOrder = {
+                    'lundi matin': 0,
+                    'lundi midi': 1,
+                    'lundi soir': 2,
+                    'mardi matin': 10,
+                    'mardi midi': 11,
+                    'mardi soir': 12,
+                    'mercredi matin': 20,
+                    'mercredi midi': 21,
+                    'mercredi soir': 22,
+                    'jeudi matin': 30,
+                    'jeudi midi': 31,
+                    'jeudi soir': 32,
+                    'vendredi matin': 40,
+                    'vendredi midi': 41,
+                    'vendredi soir': 42,
+                    'samedi matin': 50,
+                    'samedi midi': 51,
+                    'samedi soir': 52,
+                    'dimanche matin': 60,
+                    'dimanche midi': 61,
+                    'dimanche soir': 62,
+                }
+
+                return timeslotsOrder[a] - timeslotsOrder[b]
+            })
+            .map((value) => ({
+                value,
+                label: value,
+            })),
+    ]
+}
 
 function filterRestaurants(all, location, timeslot) {
     return all.reduce((acc, curr) => {
@@ -107,8 +134,18 @@ function filterRestaurants(all, location, timeslot) {
     }, [])
 }
 
-export default function ListMapView2() {
+export default function ListingMapView() {
+    const { region } = useParams()
     const cardListRef = useRef()
+
+    const timeslotOptions = useMemo(
+        () => getTimeslotOptions(allRestaurants, region),
+        [region]
+    )
+    const locationOptions = useMemo(
+        () => getLocationOptions(allRestaurants, region),
+        [region]
+    )
 
     const [filteredRestaurants, setFilteredRestaurants] = useState(
         allRestaurants
@@ -131,6 +168,14 @@ export default function ListMapView2() {
     }
 
     const handleLocationChange = (newLocation) => {
+        if (newLocation.value === 'switchRegion') {
+            // changing window.location is a quick and dirty hack
+            // but the map wouldn't update when I used history.push
+            return (window.location = `/reservation-restaurant/${
+                region === 'paris' ? 'lyon' : 'paris'
+            }`)
+        }
+
         setFilteredRestaurants(
             filterRestaurants(
                 allRestaurants,
@@ -190,6 +235,7 @@ export default function ListMapView2() {
                                     <MapViewCluster
                                         restaurants={filteredRestaurants}
                                         hoveredRestaurant={hoveredRestaurant}
+                                        region={region}
                                         selectRestaurant={
                                             handleRestaurantChange
                                         }
