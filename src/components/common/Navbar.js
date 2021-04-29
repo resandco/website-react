@@ -14,19 +14,18 @@ export default function Navbar() {
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/">Accueil</Link>
-                        </li>
-                        <li>
-                            <a href="/resto-jazz/">Resto Jazz</a>
-                        </li>
-                        <li>
                             <Link to="/reservation-restaurant">
-                                Commander un repas surprise
+                                Trouver un menu surprise
                             </Link>
                         </li>
                         <li>
                             <a href="https://resandco.typeform.com/to/xP5GlH">
                                 Devenir partenaire
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://pro.res-and-co.fr/restauration-entreprise-engagee">
+                                Offre entreprise
                             </a>
                         </li>
                         <li>
@@ -54,19 +53,18 @@ export default function Navbar() {
                 <div className="side-menu-wrap">
                     <ul className="side-menu-ul">
                         <li>
-                            <Link to="/">Accueil</Link>
-                        </li>
-                        <li>
-                            <Link to="/restaurant-a-offrir/">Cadeau Noël</Link>
-                        </li>
-                        <li>
                             <Link to="/reservation-restaurant">
-                                Commander un repas surprise
+                                Trouver un menu surprise
                             </Link>
                         </li>
                         <li>
                             <a href="https://resandco.typeform.com/to/xP5GlH">
                                 Devenir partenaire
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://pro.res-and-co.fr/restauration-entreprise-engagee">
+                                Offre entreprise
                             </a>
                         </li>
                         <li>
