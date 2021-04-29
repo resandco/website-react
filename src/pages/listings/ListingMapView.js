@@ -14,22 +14,21 @@ import restaurants from '../../restaurants'
 
 const allRestaurants = Object.values(restaurants)
 
-function filterByRegion(region) {
-    return ({ szip }) =>
+function getLocalListings(allRestaurants, region) {
+    return allRestaurants.filter(({ szip }) =>
         region === 'paris'
             ? /^(75|92|93|94)/.test(szip)
             : region === 'lyon' && /^(69)/.test(szip)
+    )
 }
 
-function getLocationOptions(allRestaurants, region) {
+function getLocationOptions(listings, region) {
     return [
         {
             label: 'Tout voir',
             value: null,
         },
-        ...allRestaurants
-            // filter by region
-            .filter(filterByRegion(region))
+        ...listings
             // keep only the scity field
             .map(({ scity }) => {
                 return scity
@@ -65,15 +64,13 @@ function getLocationOptions(allRestaurants, region) {
     ]
 }
 
-function getTimeslotOptions(allRestaurants, region) {
+function getTimeslotOptions(listings, region) {
     return [
         {
             label: 'Tout voir',
             value: null,
         },
-        ...allRestaurants
-            // filter by region
-            .filter(filterByRegion(region))
+        ...listings
             .map(({ creneaux }) => {
                 return Object.keys(creneaux)
             })
@@ -119,7 +116,7 @@ function getTimeslotOptions(allRestaurants, region) {
     ]
 }
 
-function filterRestaurants(all, location, timeslot) {
+function filterListings(all, location, timeslot) {
     return all.reduce((acc, curr) => {
         if (location && location !== curr.scity) {
             return acc
@@ -138,17 +135,21 @@ export default function ListingMapView() {
     const { region } = useParams()
     const cardListRef = useRef()
 
-    const timeslotOptions = useMemo(
-        () => getTimeslotOptions(allRestaurants, region),
+    const localListings = useMemo(
+        () => getLocalListings(allRestaurants, region),
         [region]
     )
+    const timeslotOptions = useMemo(
+        () => getTimeslotOptions(localListings, region),
+        [localListings, region]
+    )
     const locationOptions = useMemo(
-        () => getLocationOptions(allRestaurants, region),
-        [region]
+        () => getLocationOptions(localListings, region),
+        [localListings, region]
     )
 
     const [filteredRestaurants, setFilteredRestaurants] = useState(
-        allRestaurants
+        localListings
     )
     const [selectedTimeslot, setSelectedTimeslot] = useState(timeslotOptions[0])
     const [selectedLocation, setSelectedLocation] = useState(locationOptions[0])
@@ -157,8 +158,8 @@ export default function ListingMapView() {
 
     const handleTimeslotChange = (newTimeslot) => {
         setFilteredRestaurants(
-            filterRestaurants(
-                allRestaurants,
+            filterListings(
+                localListings,
                 selectedLocation.value,
                 newTimeslot.value
             )
@@ -177,8 +178,8 @@ export default function ListingMapView() {
         }
 
         setFilteredRestaurants(
-            filterRestaurants(
-                allRestaurants,
+            filterListings(
+                localListings,
                 newLocation.value,
                 selectedTimeslot.value
             )
