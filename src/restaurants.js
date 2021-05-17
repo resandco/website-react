@@ -1682,6 +1682,14 @@ Le service sera assuré uniquement à emporter.
                 menu: 'plat + entrée ou accompagnement ou dessert - végétarien',
                 prix: 10,
             },
+            {
+                menu: 'entrée ou accompagnement + plat + dessert - végétarien',
+                prix: 13,
+            },
+            {
+                menu: 'entrée ou accompagnement + plat + dessert',
+                prix: 13,
+            },
         ],
         description: `
 All food, Végétarien, Halal ou Vegan, il y en a pour tous les goûts ! Laissez-vous tenter et profitez de leur cuisine chinoise, asiatique et diversifiée.Le plat est surprise, il sera composé d'un des plats suivants : soupe de boulettes, nouilles sautées, soupe de nouilles, bo bun...
@@ -2090,11 +2098,11 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
         menus: [
             {
                 menu: 'entrée + plat ou plat + dessert - végétarien',
-                prix: 12,
+                prix: 11,
             },
             {
                 menu: 'entrée + plat + dessert - végétarien',
-                prix: 15,
+                prix: 14,
             },
         ],
         description: `
