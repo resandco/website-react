@@ -387,7 +387,7 @@ Casadiagana est déjà engagé depuis un an dans la lutte contre le gaspillage a
     },
     'carmen-ragosta': {
         title: 'Carmen Ragosta',
-        badge: 'fermé pendant confinement',
+        badge: 'vegan',
         verifie: true,
         stitle: '8 Rue de la Grange aux Belles',
         scity: 'Paris 10ème',
@@ -406,12 +406,16 @@ Casadiagana est déjà engagé depuis un an dans la lutte contre le gaspillage a
         ],
         tags: ['Créative', 'Italien', 'Végan'],
         creneaux: {
-            /*'mercredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'mercredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
             'mercredi soir': ['17h', '17h30', '18h', '18h30'],
             'jeudi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
             'jeudi soir': ['17h', '17h30', '18h', '18h30'],
             'vendredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
-            'vendredi soir': ['17h', '17h30', '18h', '18h30'],*/
+            'vendredi soir': ['17h', '17h30', '18h', '18h30'],
+            'samedi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'samedi soir': ['17h', '17h30', '18h', '18h30'],
+            'dimanche midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'dimanche soir': ['17h', '17h30', '18h', '18h30'],
         },
         menus: [
             {
@@ -699,7 +703,7 @@ Les jus frais sont leur spécialité, mais leur conservation est de courte duré
         ],
     },
     seunsep: {
-        badge: 'fermé pendant le confinement' /*'jusqu\'à -42%',*/,
+        badge: 'jusqu\'à -42%',
         title: 'Seunsep',
         verifie: true,
         stitle: '46 Passage Choiseul',
@@ -718,7 +722,7 @@ Les jus frais sont leur spécialité, mais leur conservation est de courte duré
         ],
         tags: ['Asiatique', 'Thaï-lao', 'Street-food'],
         creneaux: {
-            /*'mercredi midi': ['14h', '14h30', '15h'],*/
+            'mercredi midi': ['14h', '14h30', '15h'],
         },
         menus: [
             {
@@ -775,7 +779,7 @@ L’anti-gaspi apparaît clairement être une priorité pour le Seunsep. En effe
         ],
     },
     yuman: {
-        badge: 'fermé pendant confinement' /*'jusqu\'à -52%'*/,
+        badge: 'indisponible' /*'jusqu\'à -52%'*/,
         title: 'Yuman',
         verifie: true,
         stitle: '70 Rue du Chevaleret',
@@ -1197,10 +1201,10 @@ N’hésitez plus, rendez-vous dans ce bar gastronomique pour un voyage 100% haw
         ],
         tags: ['Salade', 'Poké', 'Quiche', 'Soupe'],
         creneaux: {
-            'lundi midi': ['12h', '12h30', '13h', '13h30'],
+            /*'lundi midi': ['12h', '12h30', '13h', '13h30'],
             'mardi midi': ['12h', '12h30', '13h', '13h30'],
             'mercredi midi': ['12h', '12h30', '13h', '13h30'],
-            'jeudi midi': ['12h', '12h30', '13h', '13h30'],
+            'jeudi midi': ['12h', '12h30', '13h', '13h30'],*/
             'vendredi midi': ['12h', '12h30', '13h', '13h30'],
         },
         menus: [
@@ -1594,7 +1598,7 @@ Le service sera assuré uniquement à emporter.
             'https://ik.imagekit.io/resandco/delice-de-henan/52961255_317155145607794_865530605582942208_o_lpIoppFwenBB.jpg',
             'https://ik.imagekit.io/resandco/delice-de-henan/52729390_317155272274448_5330184358571540480_o_e75q2_av0.jpg',
         ],
-        tags: ['Asiatique', 'Vente à emporter'],
+        tags: ['Asiatique', 'Vente à emporter', 'Livraison'],
         creneaux: {
             'lundi midi': ['12h30', '13h', '13h30', '14h', '14h30'],
             'lundi soir': [
@@ -1693,7 +1697,7 @@ Le service sera assuré uniquement à emporter.
         ],
         description: `
 All food, Végétarien, Halal ou Vegan, il y en a pour tous les goûts ! Laissez-vous tenter et profitez de leur cuisine chinoise, asiatique et diversifiée.Le plat est surprise, il sera composé d'un des plats suivants : soupe de boulettes, nouilles sautées, soupe de nouilles, bo bun...
-Le service sera assuré uniquement à emporter ou en livraison (+2€).
+Le service sera assuré uniquement à emporter ou en livraison (+3€). Pour la livraison, merci de renseigner votre adresse dans le formulaire de réservation.
         `,
         infos: ['Option végétarienne', 'Vente à emporter'],
         allergenes: [],
@@ -2121,11 +2125,10 @@ Attention, aux détails suivants :
 
 • L'intégralité du Menu Surprise est livré froid, certains plats seront à faire réchauffer à la poêle ou au micro-onde.
 
-• Livraison et retrait click-and-collect sans couverts pour des raisons écologiques.
+• Livraison +3€ sans couverts pour des raisons écologiques. Pour une demande de livraison, merci de renseigner ton adresse dans le formulaire de réservation.
 `,
         infos: [
             'Option végétarienne',
-            'Vente à emporter',
             'livraison',
             'Option végane',
             'Option sans gluten',
@@ -2207,7 +2210,9 @@ L'équipe de Fenotte est composée de 4 personnes, Livia, Romain, Caroline et Ma
 S’il y avait un roi de l'antigaspi et de l'économie circulaire, ce dernier se nommerait sans doute Fenotte.
 
 L'antigaspi est au centre de leur cuisine et l'intégralité des déchets organiques est compostée grâce aux "Alchimistes", la première structure de compost sur Lyon. Pour boucler la boucle, les clients peuvent même acheter du compost à la boutique pour le jardinage. De plus à chaque bocal rendu vous gagnez un tampon. Ainsi tous les 10 tampons vous gagnez un bon d'achat de 10 euros !
-    `,
+  
+Les Menus Surprises anti-gaspi de chez Fenotte sont disponibles en click-and-collect ou en livraison à domicile +5€. En cas de livraison, le paiement se fait à la livraison. Merci de renseigner votre adresse dans le formulaire de réservation.
+  `,
         infos: [
             'Végétarien',
             'vegan',
