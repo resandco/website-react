@@ -522,7 +522,7 @@ Le comptoir 43 - Bio Ô Top était déjà engagé au niveau anti-gaspi. Cependan
         ],
     },
     cafezen: {
-        badge: 'fermé pendant confinement' /*'jusqu\'à -38%',*/,
+        badge: 'jusqu\'à -38%',
         title: 'CaféZen',
         verifie: true,
         stitle: '3 Rue Poissonnière',
@@ -548,7 +548,7 @@ Le comptoir 43 - Bio Ô Top était déjà engagé au niveau anti-gaspi. Cependan
         ],
         tags: ['Français', 'Scandinave', 'Co-working', 'Coffee shop'],
         creneaux: {
-            /*'lundi matin': ['9h', '9h30', '10h', '10h30', '11h'],*/
+            'lundi matin': ['9h', '9h30', '10h', '10h30', '11h'],
             'lundi midi': [
                 '11h30',
                 '12h',
@@ -560,9 +560,11 @@ Le comptoir 43 - Bio Ô Top était déjà engagé au niveau anti-gaspi. Cependan
                 '15h',
                 '15h30',
                 '16h',
+                '16h30',
+                '17h',
+                '17h30'
             ],
-            /*'lundi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
-            'mardi matin': ['9h', '9h30', '10h', '10h30', '11h'],*/
+            'mardi matin': ['9h', '9h30', '10h', '10h30', '11h'],
             'mardi midi': [
                 '11h30',
                 '12h',
@@ -574,9 +576,11 @@ Le comptoir 43 - Bio Ô Top était déjà engagé au niveau anti-gaspi. Cependan
                 '15h',
                 '15h30',
                 '16h',
+                '16h30',
+                '17h',
+                '17h30',
             ],
-            /*'mardi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
-            'mercredi matin': ['9h', '9h30', '10h', '10h30', '11h'],*/
+            'mercredi matin': ['9h', '9h30', '10h', '10h30', '11h'],
             'mercredi midi': [
                 '11h30',
                 '12h',
@@ -588,9 +592,11 @@ Le comptoir 43 - Bio Ô Top était déjà engagé au niveau anti-gaspi. Cependan
                 '15h',
                 '15h30',
                 '16h',
+                '16h30',
+                '17h',
+                '17h30',
             ],
-            /*'mercredi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
-            'jeudi matin': ['9h', '9h30', '10h', '10h30', '11h'],*/
+            'jeudi matin': ['9h', '9h30', '10h', '10h30', '11h'],
             'jeudi midi': [
                 '11h30',
                 '12h',
@@ -602,9 +608,11 @@ Le comptoir 43 - Bio Ô Top était déjà engagé au niveau anti-gaspi. Cependan
                 '15h',
                 '15h30',
                 '16h',
+                '16h30',
+                '17h',
+                '17h30',
             ],
-            /*'jeudi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
-            'vendredi matin': ['9h', '9h30', '10h', '10h30', '11h'],*/
+            'vendredi matin': ['9h', '9h30', '10h', '10h30', '11h'],
             'vendredi midi': [
                 '11h30',
                 '12h',
@@ -616,9 +624,11 @@ Le comptoir 43 - Bio Ô Top était déjà engagé au niveau anti-gaspi. Cependan
                 '15h',
                 '15h30',
                 '16h',
+                '16h30',
+                '17h',
+                '17h30',
             ],
-            /*'vendredi soir': ['16h30', '17h', '17h30', '18h', '18h30'],
-            'samedi matin': ['10h', '10h30', '11h'],*/
+            'samedi matin': ['10h', '10h30', '11h'],
             'samedi midi': [
                 '11h30',
                 '12h',
@@ -630,8 +640,10 @@ Le comptoir 43 - Bio Ô Top était déjà engagé au niveau anti-gaspi. Cependan
                 '15h',
                 '15h30',
                 '16h',
+                '16h30',
+                '17h',
+                '17h30',
             ],
-            /*'samedi soir': ['16h30', '17h', '17h30', '18h', '18h30'],*/
         },
         menus: [
             {
