@@ -113,13 +113,10 @@ function ListingDetails() {
                                                                 )}
                                                                 alt={info}
                                                                 height="22"
-                                                                style={{
-                                                                    paddingRight:
-                                                                        '10px',
-                                                                }}
+                                                                className="pr-2"
                                                             />
                                                         ) : (
-                                                            <i className="color-text font-size-18">
+                                                            <i className="color-text font-size-22 pr-2">
                                                                 <FaCheckCircle />
                                                             </i>
                                                         )}
