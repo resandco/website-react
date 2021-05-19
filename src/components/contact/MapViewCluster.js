@@ -78,8 +78,7 @@ export default function MapViewCluster({
             <div className="map-container map-height w-100">
                 <GoogleMapReact
                     bootstrapURLKeys={{
-                        key:
-                            'AIzaSyAYzby4yYDVaXPmtu4jZAGR258K6IYwjIY&libraries',
+                        key: 'AIzaSyDOwi6fToAqM0pwgxwzw7_00PNIjxMHILw',
                     }}
                     defaultCenter={defaults[region].center}
                     defaultZoom={defaults[region].zoom}
