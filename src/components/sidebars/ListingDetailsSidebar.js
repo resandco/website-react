@@ -170,7 +170,14 @@ function ListingDetailsSidebar({ restaurant }) {
                             checked={isCgvChecked}
                         />
                         &nbsp;J'ai lu et j'accepte les{' '}
-                        <a href="#nogo">Conditions Générales de Vente</a>*
+                        <a
+                            href="https://www.res-and-co.fr/CGU/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Conditions Générales de Vente
+                        </a>
+                        *
                     </label>
                 </div>
 
