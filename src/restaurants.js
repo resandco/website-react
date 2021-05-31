@@ -278,7 +278,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
             ],
         },
         menus: [
-            {
+            /*{
                 menu: 'Plateau de 12 huîtres Fines de Claire',
                 prix: 20,
             },
@@ -293,8 +293,8 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
             {
                 menu: 'Plateau de 12 huîtres bretonnes',
                 prix: 44,
-            },
-            /*{
+            },*/
+            {
                 menu: "assortiment de douze huîtres",
                 prix: 20
             },
@@ -305,7 +305,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
             {
                 menu: "de la terre",
                 prix: 20
-            },*/
+            },
         ],
         description: `
 ### L’ambiance
@@ -353,10 +353,6 @@ Chez lui, les clients y sont accueillis comme des rois.
             },
             {
                 menu: 'entrée + plat',
-                prix: 7.5,
-            },
-            {
-                menu: 'entrée + plat - végétarien',
                 prix: 7.5,
             },
             {
@@ -432,7 +428,7 @@ Casadiagana est déjà engagé depuis un an dans la lutte contre le gaspillage a
             },
             {
                 menu: 'entrée + plat + dessert - végan',
-                prix: 29,
+                prix: 28,
             },
         ],
         description: `
@@ -484,11 +480,11 @@ Carmen a toujours été très attentive à l’anti-gaspi. D'ailleurs, c'est men
         menus: [
             {
                 menu: 'plat + dessert',
-                prix: 12,
+                prix: 11,
             },
             {
                 menu: 'plat + dessert - végétarien',
-                prix: 12,
+                prix: 11,
             },
         ],
         description: `
@@ -666,6 +662,10 @@ Le comptoir 43 - Bio Ô Top était déjà engagé au niveau anti-gaspi. Cependan
                 menu: 'brunch (2 boissons + 3 petits plats sucrés ou salés',
                 prix: 20,
             },
+            {
+                menu: 'brunch végétarien (2 boissons + 3 petits plats sucrés ou salés',
+                prix: 20,
+            },
         ],
         description: `
 ### L’ambiance
@@ -750,7 +750,7 @@ Les jus frais sont leur spécialité, mais leur conservation est de courte duré
                 prix: 10,
             },
             {
-                menu: 'entrée + plat',
+                menu: 'entrée + plat - végétarien',
                 prix: 10,
             },
         ],
@@ -913,64 +913,6 @@ C'est donc le dimanche soir, que BMK a choisit d'ouvrir des créneaux de réserv
             'Fruits à coque',
         ],
     },
-    /*'nos-grands-meres-ont-du-talent': {
-        badge: 'fermé pendant le confinement',
-        title: 'Nos Grands-Mères ont du Talent',
-        verifie: true,
-        stitle: '43 Rue des Petits Carreaux',
-        scity: 'Paris 2ème',
-        szip: '75002',
-        coordinates: { lat: 48.868239, lng: 2.347445 },
-        image:
-            'https://ik.imagekit.io/resandco/ngmodt/NGMODT_-_perso_3_cjSaPkezc.jpg',
-        gallerie: [
-            'https://ik.imagekit.io/resandco/ngmodt/NGMODT_-_site_internet_2_zK9tpZQ9tA.jpg',
-            'https://ik.imagekit.io/resandco/ngmodt/NGMODT_-_site_internet_3_nClwZ2hDJ.jpg',
-            'https://ik.imagekit.io/resandco/ngmodt/NGMODT_-_perso_2_eM2jD40nDi.jpg',
-            'https://ik.imagekit.io/resandco/ngmodt/NGMODT_-_site_internet_1_-jPJK7X84U.jpg',
-            'https://ik.imagekit.io/resandco/ngmodt/NGMODT_-_perso_1_GPoZQaOwsR.jpg',
-            'https://ik.imagekit.io/resandco/ngmodt/NGMODT_-_perso_3_cjSaPkezc.jpg',
-        ],
-        tags: ['Français', 'Restauration Rapide'],
-        creneaux: {
-            'mardi midi': ['13h45', '14h', '14h30', '15h'],
-            'mercredi midi': ['13h45', '14h', '14h30', '15h'],
-            'jeudi midi': ['13h45', '14h', '14h30', '15h'],
-            'vendredi midi': ['13h45', '14h', '14h30', '15h'],
-        },
-        menus: [
-            {
-                menu: 'entrée + plat ou plat + dessert',
-                prix: 9,
-            },
-            {
-                menu: 'entrée + plat ou plat + dessert - végétarien',
-                prix: 9,
-            },
-        ],
-        description: `
-### L’ambiance
-
-Tout le monde sait qu'il n'y a pas meilleur moment que d'aller déjeuner chez mamie le dimanche ! On sait d'avance que l'on va se régaler avec des plats délicieux, copieux et toujours faits avec de bons produits !  
-Dans un cadre atypique qui rappelle la cuisine de grand maman, Nos Grands-Mères ont du Talent vous invite à découvrir chaque semaine de nouvelles recettes traditionnelles savoureuses remises au goût du jour !  Des plats cuisinés pour tous les goûts, des salades exquises gorgées de fraîcheur et des desserts gourmands dignes de ceux de nos grands-mères !
-
-### L’équipe
-
-Nos Grands-Mères ont du Talent a été créé en 2015 par deux entrepreneurs débordant d'énergie : Arthur et Jean.
-Leur idée ? Valoriser la cuisine des grands-mères et favoriser l’emploi des séniors.
-
-### Et l’anti-gaspi ?
-
-Engagés dans une démarche éco-responsable, Arthur et Jean ont tout de suite dit oui à la valorisation de leurs invendus. Ça serait bête de jeter des plats de Mère-Grand !
-`,
-        infos: ['Option végétarienne', 'Terrasse', 'Wifi', 'Emploi senior'],
-        allergenes: [
-            'Céréales contenant du gluten',
-            'Lait',
-            'Moutarde',
-            'Anhydride sulfureux et sulfites',
-        ],
-    },*/
     'cafe-cote-rive': {
         badge: "jusqu'à -51%",
         title: 'Café Côté Rive',
