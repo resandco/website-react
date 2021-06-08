@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useMemo } from 'react'
 import { addDays, getDay, format, isToday, getHours } from 'date-fns'
 import { fr } from 'date-fns/locale'
 import Select from 'react-select'
@@ -30,7 +30,7 @@ function numberToEuroPrice(number = 0) {
         : `${number}€`
 }
 
-const modesConso = [
+const allModesConso = [
     {
         label: 'Sur place (+0€)',
         value: 'eatIn',
@@ -55,8 +55,25 @@ function ListingDetailsSidebar({ restaurant }) {
     const [isCgvChecked, setIsCgvChecked] = useState(false)
     const today = new Date()
     const inTwoMonths = addDays(new Date(), 60)
-    const openingDays = Object.keys(restaurant.creneaux).map((creneau) =>
-        dayNameToNumber(creneau.split(' ')[0])
+    const openingDays = useMemo(
+        () =>
+            Object.keys(restaurant.creneaux).map((creneau) =>
+                dayNameToNumber(creneau.split(' ')[0])
+            ),
+        [restaurant.creneaux]
+    )
+    const modesConso = useMemo(
+        () =>
+            allModesConso.filter(({ value }) =>
+                restaurant.conso.includes(value)
+            ),
+        [restaurant.conso]
+    )
+    const isTest = useMemo(
+        () =>
+            process.env.NODE_ENV !== 'production' ||
+            !/^(www\.)?res-and-co.fr$/.test(window.location.hostname),
+        []
     )
     const isOpen = (date) => openingDays.includes(getDay(date))
     const handleDateChange = (date) => {
@@ -126,7 +143,7 @@ function ListingDetailsSidebar({ restaurant }) {
                     )
                     .join('\n\n')
             )}`,
-            `isTest=${process.env.NODE_ENV !== 'production'}`,
+            `isTest=${isTest}`,
         ].join('&')
     }
     const getFormUrl = () =>
