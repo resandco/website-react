@@ -771,6 +771,10 @@ body {
     padding-top: 10px;
 }
 
+.padding-top-5px {
+    padding-top: 5px;
+}
+
 .padding-bottom-200px {
     padding-bottom: 200px;
 }
