@@ -19,6 +19,7 @@ const restaurants = {
             'mardi midi': ['14h15', '14h30', '14h45'],
             'vendredi midi': ['14h15', '14h30', '14h45'],
         },
+        conso: ['eatIn', 'takeAway'],
         menus: [
             {
                 menu: 'entrée + plat ou plat + dessert',
@@ -277,6 +278,7 @@ Déjà convaincue de l’importance de la lutte contre le gaspillage alimentaire
                 '23h30',*/
             ],
         },
+        conso: ['eatIn', 'takeAway'],
         menus: [
             /*{
                 menu: 'Plateau de 12 huîtres Fines de Claire',
@@ -342,6 +344,7 @@ Chez lui, les clients y sont accueillis comme des rois.
             'vendredi midi': ['14h30', '15h', '15h30', '16h', '16h30'],
             'vendredi soir': ['17h', '17h30', '18h'],
         },
+        conso: ['eatIn', 'takeAway'],
         menus: [
             {
                 menu: 'plat',
@@ -402,17 +405,73 @@ Casadiagana est déjà engagé depuis un an dans la lutte contre le gaspillage a
         ],
         tags: ['Créative', 'Italien', 'Végan'],
         creneaux: {
-            'mercredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'mercredi midi': [
+                '12h',
+                '12h30',
+                '13h',
+                '13h30',
+                '14h',
+                '14h30',
+                '15h',
+                '15h30',
+                '16h',
+                '16h30',
+            ],
             'mercredi soir': ['17h', '17h30', '18h', '18h30'],
-            'jeudi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'jeudi midi': [
+                '12h',
+                '12h30',
+                '13h',
+                '13h30',
+                '14h',
+                '14h30',
+                '15h',
+                '15h30',
+                '16h',
+                '16h30',
+            ],
             'jeudi soir': ['17h', '17h30', '18h', '18h30'],
-            'vendredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'vendredi midi': [
+                '12h',
+                '12h30',
+                '13h',
+                '13h30',
+                '14h',
+                '14h30',
+                '15h',
+                '15h30',
+                '16h',
+                '16h30',
+            ],
             'vendredi soir': ['17h', '17h30', '18h', '18h30'],
-            'samedi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'samedi midi': [
+                '12h',
+                '12h30',
+                '13h',
+                '13h30',
+                '14h',
+                '14h30',
+                '15h',
+                '15h30',
+                '16h',
+                '16h30',
+            ],
             'samedi soir': ['17h', '17h30', '18h', '18h30'],
-            'dimanche midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h', '15h30', '16h', '16h30'],
+            'dimanche midi': [
+                '12h',
+                '12h30',
+                '13h',
+                '13h30',
+                '14h',
+                '14h30',
+                '15h',
+                '15h30',
+                '16h',
+                '16h30',
+            ],
             'dimanche soir': ['17h', '17h30', '18h', '18h30'],
         },
+        conso: ['eatIn', 'takeAway'],
         menus: [
             {
                 menu: 'plat - végan',
@@ -477,6 +536,7 @@ Carmen a toujours été très attentive à l’anti-gaspi. D'ailleurs, c'est men
             /*'mardi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],
             'jeudi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30', '15h'],*/
         },
+        conso: ['eatIn', 'takeAway'],
         menus: [
             {
                 menu: 'plat + dessert',
@@ -518,7 +578,7 @@ Le comptoir 43 - Bio Ô Top était déjà engagé au niveau anti-gaspi. Cependan
         ],
     },
     cafezen: {
-        badge: 'jusqu\'à -38%',
+        badge: "jusqu'à -38%",
         title: 'CaféZen',
         verifie: true,
         stitle: '3 Rue Poissonnière',
@@ -558,7 +618,7 @@ Le comptoir 43 - Bio Ô Top était déjà engagé au niveau anti-gaspi. Cependan
                 '16h',
                 '16h30',
                 '17h',
-                '17h30'
+                '17h30',
             ],
             'mardi matin': ['9h', '9h30', '10h', '10h30', '11h'],
             'mardi midi': [
@@ -641,6 +701,7 @@ Le comptoir 43 - Bio Ô Top était déjà engagé au niveau anti-gaspi. Cependan
                 '17h30',
             ],
         },
+        conso: ['eatIn', 'takeAway'],
         menus: [
             {
                 menu: "petit déjeuner avec jus à l'extracteur (25cl)",
@@ -715,7 +776,7 @@ Les jus frais sont leur spécialité, mais leur conservation est de courte duré
         ],
     },
     seunsep: {
-        badge: 'jusqu\'à -42%',
+        badge: "jusqu'à -42%",
         title: 'Seunsep',
         verifie: true,
         stitle: '46 Passage Choiseul',
@@ -736,6 +797,7 @@ Les jus frais sont leur spécialité, mais leur conservation est de courte duré
         creneaux: {
             'mercredi midi': ['14h', '14h30', '15h'],
         },
+        conso: ['eatIn', 'takeAway'],
         menus: [
             {
                 menu: 'plat',
@@ -814,6 +876,7 @@ L’anti-gaspi apparaît clairement être une priorité pour le Seunsep. En effe
             /*'jeudi midi': ['13h30', '14h', '14h40'],
             'jeudi soir': ['19h', '19h30', '20h', '20h30', '21h', '21h30', '22h', '22h30'],*/
         },
+        conso: ['eatIn', 'takeAway'],
         menus: [
             {
                 menu: 'midi : entrée + plat ou plat + dessert',
@@ -875,6 +938,7 @@ Les recettes sont préparées à partir d’ingrédients ultra frais, 100% bio e
             'vendredi soir': ['20h30', '21h', '21h30' '22h', '22h30'],
             'samedi soir': ['20h30', '21h', '21h30' '22h', '22h30'], */
         },
+        conso: ['eatIn', 'takeAway'],
         menus: [
             {
                 menu: 'plat + dessert',
@@ -939,6 +1003,7 @@ C'est donc le dimanche soir, que BMK a choisit d'ouvrir des créneaux de réserv
                 '20h30' '21h', '21h30', '22h', '22h30'*/
             ],
         },
+        conso: ['eatIn'],
         menus: [
             {
                 menu: 'entrée + plat ou plat + dessert',
@@ -992,6 +1057,7 @@ Le personnel met son enthousiasme et son savoir-faire à votre disposition et vo
         creneaux: {
             'vendredi midi': ['12h', '12h30', '13h', '13h30', '14h', '14h30'],
         },
+        conso: ['eatIn', 'takeAway'],
         menus: [
             {
                 menu: 'petit bol + dessert',
@@ -1067,6 +1133,7 @@ Tiki Bowls est fermé le week-end. Les pertes alimentaires sont donc essentielle
             'mardi soir': ['18h', '18h30', '19h' /*, '19h30'*/],
             'mercredi soir': ['18h', '18h30', '19h' /*, '19h30'*/],
         },
+        conso: ['eatIn', 'takeAway'],
         menus: [
             {
                 menu: 'grand bol',
@@ -1161,6 +1228,7 @@ N’hésitez plus, rendez-vous dans ce bar gastronomique pour un voyage 100% haw
             'jeudi midi': ['12h', '12h30', '13h', '13h30'],*/
             'vendredi midi': ['12h', '12h30', '13h', '13h30'],
         },
+        conso: ['eatIn', 'takeAway'],
         menus: [
             {
                 menu: 'plat',
@@ -1450,6 +1518,7 @@ Plus d'informations sur www.chokdeecafe.com
             'vendredi soir': ['19h30', '20h', '20h30', '21h', '21h30'],
             'dimanche soir': ['19h30', '20h', '20h30', '21h', '21h30'],
         },
+        conso: ['takeAway', 'delivery'],
         menus: [
             {
                 menu: 'plat',
@@ -1631,6 +1700,7 @@ Le service sera assuré uniquement à emporter.
                 '22h',*/
             ],
         },
+        conso: ['eatIn', 'takeAway', 'delivery'],
         menus: [
             {
                 menu: 'plat + entrée ou accompagnement ou dessert',
@@ -2053,6 +2123,7 @@ Le service sera assuré uniquement en vente à emporter pendant toute la durée 
             'vendredi midi': ['12h', '12h30', '13h', '13h30', '13h45'],
             'vendredi soir': ['16h', '16h30', '17h', '17h30', '17h45'],
         },
+        conso: ['delivery'],
         menus: [
             {
                 menu: 'entrée + plat ou plat + dessert - végétarien',
@@ -2122,6 +2193,7 @@ Attention, aux détails suivants :
             'lundi midi': ['13h', '13h30', '14h', '14h30'],
             'vendredi midi': ['13h', '13h30', '14h', '14h30'],
         },
+        conso: ['eatIn', 'takeAway', 'delivery'],
         menus: [
             {
                 menu: 'Entrée + plat omnivore + dessert (omnivore)',
