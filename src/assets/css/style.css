@@ -567,6 +567,12 @@ body {
     background-color: #b4414c;
     color: #fff;
 }
+.theme-btn-disabled,
+.theme-btn-disabled:hover {
+    background-color: #aaa;
+    color: #ddd;
+    cursor: default;
+}
 
 .download-btn {
     line-height: 55px;
