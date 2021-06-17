@@ -53,8 +53,9 @@ function ListingDetailsSidebar({ restaurant }) {
     const [timepickerOptions, setTimepickerOptions] = useState([])
     const [menus, setMenus] = useState(restaurant.menus.map(() => 0))
     const [isCgvChecked, setIsCgvChecked] = useState(false)
-    const today = new Date()
-    const inTwoMonths = addDays(new Date(), 60)
+
+    const today = useMemo(() => new Date(), [])
+    const inTwoMonths = useMemo(() => addDays(today, 60), [today])
     const openingDays = useMemo(
         () =>
             Object.keys(restaurant.creneaux).map((creneau) =>
@@ -69,13 +70,76 @@ function ListingDetailsSidebar({ restaurant }) {
             ),
         [restaurant.conso]
     )
+    const total = useMemo(
+        () =>
+            menus.reduce(
+                (sum, nbMenu, idMenu) =>
+                    sum + restaurant.menus[idMenu].prix * nbMenu,
+                selectedConso?.value === 'delivery' ? 4 : 0
+            ),
+        [menus, restaurant.menus, selectedConso]
+    )
     const isTest = useMemo(
         () =>
             process.env.NODE_ENV !== 'production' ||
             !/^(www\.)?res-and-co.fr$/.test(window.location.hostname),
         []
     )
-    const isOpen = (date) => openingDays.includes(getDay(date))
+    const isSubmitDisabled = useMemo(
+        () =>
+            selectedDate == null ||
+            selectedTime == null ||
+            isCgvChecked === false ||
+            total === 0,
+        [selectedDate, selectedTime, isCgvChecked, total]
+    )
+    const formUrl = useMemo(
+        () =>
+            isSubmitDisabled
+                ? '#nogo'
+                : [
+                      `${WEBHOOK_URL}?restoId=${restaurant.id}`,
+                      `restoName=${restaurant.title}`,
+                      `resaDate=${encodeURIComponent(
+                          format(selectedDate, 'yyyy-MM-dd')
+                      )}`,
+                      `resaTime=${selectedTime.label}`,
+                      `consumingMode=${selectedConso?.value}`,
+                      `isCgvChecked=${isCgvChecked}`,
+                      `total=${total}`,
+                      `order=${encodeURIComponent(
+                          menus
+                              .filter((nbMenu) => nbMenu > 0)
+                              .map(
+                                  (nbMenu, idMenu) =>
+                                      `${restaurant.menus[idMenu].menu} x ${nbMenu}`
+                              )
+                              .join('\n\n')
+                      )}`,
+                      `isTest=${isTest}`,
+                  ].join('&'),
+        [
+            isSubmitDisabled,
+            restaurant.id,
+            restaurant.title,
+            selectedDate,
+            selectedTime,
+            selectedConso,
+            isCgvChecked,
+            total,
+            menus,
+            restaurant.menus,
+            isTest,
+        ]
+    )
+    const target = useMemo(() => (!isSubmitDisabled ? '_blank' : ''), [
+        isSubmitDisabled,
+    ])
+
+    /*
+     * handlers and filters
+     */
+    const filterOpenDays = (date) => openingDays.includes(getDay(date))
     const handleDateChange = (date) => {
         setDate(date)
         setTimepickerDisabled(false)
@@ -114,44 +178,6 @@ function ListingDetailsSidebar({ restaurant }) {
         setIsCgvChecked(!isCgvChecked)
     }
 
-    const getTotal = () =>
-        menus.reduce(
-            (sum, nbMenu, idMenu) =>
-                sum + restaurant.menus[idMenu].prix * nbMenu,
-            selectedConso?.value === 'delivery' ? 4 : 0
-        )
-    const isSubmitDisabled = () =>
-        selectedDate == null ||
-        selectedTime == null ||
-        isCgvChecked === false ||
-        getTotal() === 0
-    const getQueryString = (dateFormat = 'yyyy-MM-dd') => {
-        return [
-            `restoId=${restaurant.id}`,
-            `restoName=${restaurant.title}`,
-            `resaDate=${encodeURIComponent(format(selectedDate, dateFormat))}`,
-            `resaTime=${selectedTime.label}`,
-            `consumingMode=${selectedConso.value}`,
-            `isCgvChecked=${isCgvChecked}`,
-            `total=${getTotal()}`,
-            `order=${encodeURIComponent(
-                menus
-                    .filter((nbMenu) => nbMenu > 0)
-                    .map(
-                        (nbMenu, idMenu) =>
-                            `${restaurant.menus[idMenu].menu} x ${nbMenu}`
-                    )
-                    .join('\n\n')
-            )}`,
-            `isTest=${isTest}`,
-        ].join('&')
-    }
-    const getFormUrl = () =>
-        !isSubmitDisabled()
-            ? `${WEBHOOK_URL}?${getQueryString('dd/MM/yyyy')}`
-            : '#nogo'
-    const getTarget = () => (!isSubmitDisabled() ? '_blank' : '')
-
     return (
         <>
             <div className="sidebar section-bg">
@@ -172,7 +198,7 @@ function ListingDetailsSidebar({ restaurant }) {
                         onChange={handleDateChange}
                         startDate={today}
                         endDate={inTwoMonths}
-                        filterDate={isOpen}
+                        filterDate={filterOpenDays}
                         locale={fr}
                         dateFormat="dd/MM/yyyy"
                     />
@@ -243,9 +269,11 @@ function ListingDetailsSidebar({ restaurant }) {
 
                 <div className="btn-box text-center padding-bottom-20px">
                     <a
-                        className="theme-btn d-block"
-                        href={getFormUrl()}
-                        target={getTarget()}
+                        className={`theme-btn d-block ${
+                            isSubmitDisabled && 'theme-btn-disabled'
+                        }`}
+                        href={formUrl}
+                        target={target}
                     >
                         Réserver
                     </a>
@@ -256,7 +284,7 @@ function ListingDetailsSidebar({ restaurant }) {
                     <div className="card-sub d-flex justify-content-between">
                         <span className="">Règlement en ligne</span>
                         <span className="color-text">
-                            {numberToEuroPrice(getTotal())}
+                            {numberToEuroPrice(total)}
                         </span>
                     </div>
                 </div>
