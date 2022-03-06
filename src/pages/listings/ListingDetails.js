@@ -74,7 +74,7 @@ function ListingDetails() {
                         </div>
 
                         <div className="col-lg-4">
-                            <ListingDetailsSidebar restaurant={restaurant} />
+                            {/* <ListingDetailsSidebar restaurant={restaurant} /> */}
                         </div>
                     </div>
                     <div className="row">
