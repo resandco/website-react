@@ -5,7 +5,7 @@ import ReactMarkdown from 'react-markdown'
 
 import GeneralHeader from '../../components/common/GeneralHeader'
 import ListingDetailsBreadcrumb from './ListingDetailsBreadcrumb'
-import ListingDetailsSidebar from '../../components/sidebars/ListingDetailsSidebar'
+// import ListingDetailsSidebar from '../../components/sidebars/ListingDetailsSidebar'
 import ListingDetailsGallery from '../../components/sliders/ListingDetailsGallery'
 import { GiPositionMarker } from 'react-icons/gi'
 import { FaCheckCircle } from 'react-icons/fa'
